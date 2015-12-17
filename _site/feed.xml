@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>THETA 360 Developers Unofficial Blog</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>RICOH THETA developer community blog. Tips on using the RICOH THETA S  360 degree camera. The API is based on Open Spherical Camera (OSC) specification 
 </description>
     <link>http://theta360developers.github.io/</link>
     <atom:link href="http://theta360developers.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Dec 2015 20:47:00 -0800</pubDate>
-    <lastBuildDate>Wed, 16 Dec 2015 20:47:00 -0800</lastBuildDate>
+    <pubDate>Wed, 16 Dec 2015 21:04:41 -0800</pubDate>
+    <lastBuildDate>Wed, 16 Dec 2015 21:04:41 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Using the RICOH THETA S With Multiple Languages</title>
+        <description>&lt;p&gt;http://qiita.com/sandinist/items/9c3a77fdf262513ede3d&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;開発者向けのページがあり、リファレンスとフォーラムが公開されています。&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;本ページではGetting Startedを元にしつつ、下記のAPIを実際に叩いた例を示します&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;カメラ本体の情報取得 GET /osc/info
+セッション開始 POST /osc/commands/execute camera.startSession
+静止画撮影 POST /osc/commands/execute camera.takePicture
+撮影状態の取得 POST /OSC/state
+ファイル取得 POST /osc/commands/execute camera.getImage
+セッション終了 POST /osc/commands/execute camera.closeSession
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;基本的にPOSTでJSON形式のパラメタ、レスポンスをやり取りします。&lt;/p&gt;
 </description>
         <pubDate>Wed, 16 Dec 2015 20:23:17 -0800</pubDate>
-        <link>http://theta360developers.github.io/jekyll/update/2015/12/16/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/jekyll/update/2015/12/16/welcome-to-jekyll.html</guid>
+        <link>http://theta360developers.github.io/api/2015/12/16/theta-s-multiple-languages.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/api/2015/12/16/theta-s-multiple-languages.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>API</category>
         
       </item>
     

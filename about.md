@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+* [RICOH THETA API v2](https://developers.theta360.com/en/docs/v2/api_reference/), compliant with Open Spherical Camera API version 1.0 from Google.
+* [THETA Developers Official Forum](https://developers.theta360.com/en/forums/)
+* [Official SDK](https://developers.theta360.com/en/docs/sdk/)
+* [Windows, Mac, iOS, Android apps](https://theta360.com/en/support/download/)
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
