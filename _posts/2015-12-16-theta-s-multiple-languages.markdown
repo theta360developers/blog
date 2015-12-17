@@ -4,6 +4,8 @@ title:  "Using the RICOH THETA S With Multiple Languages"
 date:   2015-12-16 20:23:17 -0800
 categories: API
 ---
+We're sharing information from Japanese information sources. This one on the Qiita site is useful.
+
 http://qiita.com/sandinist/items/9c3a77fdf262513ede3d
 
 開発者向けのページがあり、リファレンスとフォーラムが公開されています。
