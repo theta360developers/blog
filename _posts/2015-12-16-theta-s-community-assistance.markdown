@@ -18,8 +18,8 @@ independent developers, enthusiasts, companies, and frankly, anyone
 that thinks that 360 pictures and videos are cool.
 
 Although we are technical marketers, we're super enthusiastic about
-developers and are trying to figure out if there's anything we can do
-with limited resources. Feedback from developers is important. The services
+developers and even though we have limited resources, we're are trying
+to figure out what we can do to help. Feedback from developers is important. The services
 are for you.
 
 Here is our plan to provide basic help to you with our limited resources and
