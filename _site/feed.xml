@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
+    <title>THETA 360 Developers Unofficial Blog</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Dec 2015 20:28:57 -0800</pubDate>
-    <lastBuildDate>Wed, 16 Dec 2015 20:28:57 -0800</lastBuildDate>
+    <link>http://theta360developers.github.io/</link>
+    <atom:link href="http://theta360developers.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 16 Dec 2015 20:47:00 -0800</pubDate>
+    <lastBuildDate>Wed, 16 Dec 2015 20:47:00 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Wed, 16 Dec 2015 20:23:17 -0800</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/12/16/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/12/16/welcome-to-jekyll.html</guid>
+        <link>http://theta360developers.github.io/jekyll/update/2015/12/16/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/jekyll/update/2015/12/16/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
