@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Using the RICOH THETA S With Multiple Languages"
+post_author: Jesse Casman
+author: Craig Oda
 date:   2015-12-16 20:23:17 -0800
 categories: API
 ---
