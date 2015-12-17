@@ -4,37 +4,78 @@
     <title>THETA 360 Developers Unofficial Blog</title>
     <description>RICOH THETA developer community blog. Tips on using the RICOH THETA S  360 degree camera. The API is based on Open Spherical Camera (OSC) specification 
 </description>
-    <link>http://theta360developers.github.io/</link>
-    <atom:link href="http://theta360developers.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Dec 2015 21:04:41 -0800</pubDate>
-    <lastBuildDate>Wed, 16 Dec 2015 21:04:41 -0800</lastBuildDate>
+    <link>http://theta360developers.github.io/blog/</link>
+    <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 17 Dec 2015 11:37:54 -0800</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 11:37:54 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Using the RICOH THETA S With Multiple Languages</title>
-        <description>&lt;p&gt;http://qiita.com/sandinist/items/9c3a77fdf262513ede3d&lt;/p&gt;
+        <title>RICOH THETA Developer Community Services</title>
+        <description>&lt;p&gt;The RICOH THETA S is an extremely exciting product. We’re at the beginning
+of a larger movement for the general public to use 360 images and 360 videos.
+Every week, I learn new things about what major companies are doing
+with 360 images and videos. Facebook, YouTube, Google, The New York Times, are
+just a few of many organizations that are now supporting 360 media.&lt;/p&gt;
 
-&lt;p&gt;開発者向けのページがあり、リファレンスとフォーラムが公開されています。&lt;/p&gt;
+&lt;p&gt;My colleague, Jesse Casman, and I are helping RICOH with technical
+marketing activities in the US. Although, we are outside consultants,
+we feel like we’re part of a much larger community that includes RICOH,
+independent developers, enthusiasts, companies, and frankly, anyone
+that thinks that 360 pictures and videos are cool.&lt;/p&gt;
 
-&lt;p&gt;本ページではGetting Startedを元にしつつ、下記のAPIを実際に叩いた例を示します&lt;/p&gt;
+&lt;p&gt;Although we are technical marketers, we’re super enthusiastic about
+developers and are trying to figure out if there’s anything we can do
+with limited resources. Feedback from developers is important. The services
+are for you.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;カメラ本体の情報取得 GET /osc/info
-セッション開始 POST /osc/commands/execute camera.startSession
-静止画撮影 POST /osc/commands/execute camera.takePicture
-撮影状態の取得 POST /OSC/state
-ファイル取得 POST /osc/commands/execute camera.getImage
-セッション終了 POST /osc/commands/execute camera.closeSession
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;Here is our plan to provide basic help to you with our limited resources and
+limited technical knowledge.&lt;/p&gt;
 
-&lt;p&gt;基本的にPOSTでJSON形式のパラメタ、レスポンスをやり取りします。&lt;/p&gt;
+&lt;h2 id=&quot;forumhttpsdeveloperstheta360comenforums&quot;&gt;&lt;a href=&quot;https://developers.theta360.com/en/forums/&quot;&gt;Forum&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Jesse and I will go into the forum and answer questions when  we can. For the
+questions that we can’t answer, we’ll rely on the community. If the question
+relates to a broad group of people, we will try and replicate the problem
+and then report back to RICOH engineers. An example of a problem we’ll
+escalate is a problem with an application due to changes in Adobe Air.&lt;/p&gt;
+
+&lt;p&gt;There are certain requests for information that RICOH can’t provide. For example,
+RICOH can’t release lens parameter information or stitching library algorithms.
+For these questions, we will respond that RICOH can’t provide the information
+and organize the requests so that RICOH managers have an understand of
+what the community is requesting.&lt;/p&gt;
+
+&lt;h2 id=&quot;github-repository-managementhttpsgithubcomtheta360developers&quot;&gt;&lt;a href=&quot;https://github.com/theta360developers&quot;&gt;GitHub Repository Management&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We will organize code examples from the community. The examples cover both
+the control of the camera as well as basic functionality such as viewing a
+equirectangular image.&lt;/p&gt;
+
+&lt;p&gt;Over time, we will either test the code ourselves or get help from the community
+in testing the code. If the listing becomes too large, we will organize the
+repositories into sub-directories and categories.&lt;/p&gt;
+
+&lt;h2 id=&quot;bloghttptheta360developersgithubioblog&quot;&gt;&lt;a href=&quot;http://theta360developers.github.io/blog/&quot;&gt;Blog&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There’s a lot of great content out there about using the RICOH THETA S.
+Some of it is in Japanese and a lot of it is in English.
+The developer community in Japan is very active. Jesse can
+read Japanese quickly and
+I can struggle through it. We’ll combine content from Japan with
+English content and provide articles in English about viewing and
+streaming content, controlling the camera with the API and using
+THETA products and media with other tools or services from companies
+like Google, Facebook, Oculus, and Unity.&lt;/p&gt;
+
+&lt;h2 id=&quot;community-guidehttptheta360developersgithubiocommunity-documentcommunityhtml&quot;&gt;&lt;a href=&quot;http://theta360developers.github.io/community-document/community.html&quot;&gt;Community Guide&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We’re building a community guide based on questions and responses about the
+most common topics. Hopefully, we’ll be able to pull popular topics from the blog.&lt;/p&gt;
+
 </description>
-        <pubDate>Wed, 16 Dec 2015 20:23:17 -0800</pubDate>
-        <link>http://theta360developers.github.io/api/2015/12/16/theta-s-multiple-languages.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/api/2015/12/16/theta-s-multiple-languages.html</guid>
+        <pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/community/2015/12/17/theta-s-community-assistance.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/community/2015/12/17/theta-s-community-assistance.html</guid>
         
         
-        <category>API</category>
+        <category>community</category>
         
       </item>
     

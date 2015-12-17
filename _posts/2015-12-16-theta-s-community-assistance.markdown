@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "RICOH THETA Developer Community Services"
-date:   2015-12-17 
+date:   2015-12-17
+author: "Craig Oda"
 categories: community
 ---
 The RICOH THETA S is an extremely exciting product. We're at the beginning
