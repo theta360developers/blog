@@ -27,7 +27,7 @@ Example of taking a video with THETA
 
 When taking a video with m15, the circles overlapped. The THETA S gives beautifully separated spheres. The angle covered in one sphere is slightly larger than 180 degrees. 
 
-IMAGE
+![dual fish eye image](/blog/img/2015-12/dual-fish-eye.jpg)
 IMAGE
 
 In doing this, I've made an adjustment using sample texture, which Goroman filmed using WebCamTexture. 
