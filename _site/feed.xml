@@ -6,9 +6,105 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 20:09:36 -0800</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 20:09:36 -0800</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 08:18:10 -0800</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 08:18:10 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Using RICOH THETA Live View With Unity</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://tips.hecomi.com/about&quot;&gt;hecomi&lt;/a&gt; recently wrote an &lt;a href=&quot;http://tips.hecomi.com/entry/2015/10/11/211456&quot;&gt;interesting blog post&lt;/a&gt; using Unity to view realtime 360 degree video streaming. I personally have very little experience with Unity, but the content and pictures were useful, so I translated the blog post for others to use. This is not an exact translation, but it should be much more clear than doing Google translate.&lt;/p&gt;
+
+&lt;p&gt;I noticed GOROman (&lt;a href=&quot;https://twitter.com/GOROman&quot;&gt;@GOROman&lt;/a&gt;) tweeting about the info below, so I decided to try it myself right then and there.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/GOROman/status/645896791469068288?ref_src=twsrc%5Etfw&quot;&gt;@GOROman tweet&lt;/a&gt;: You should be able to easily build a live VR stream from this. Stitching might be an issue… For the time being, it might be fine to just connect the sphere to the UV texture.&lt;/p&gt;
+
+&lt;p&gt;The THETA S is a 360 degree camera that will be going on sale October 23rd, and it includes features that were not included in the m15 like Dual-Eye Fisheye streaming over USB (1280x720 15fps) and HDMI streaming (1920x1080 30fps). In order to view this using Unity, I made a an appropriately UV developed sphere and a shader appropriate to AlphaBlend border. Ultimately, for the purpose of making a full sphere with the THETA S, it would be much higher quality and more convenient (can use Skybox too!) to use the fragment shader, made by Nora (&lt;a href=&quot;https://twitter.com/stereoarts&quot;&gt;@Stereoarts&lt;/a&gt;, which directly writes Equirectangular onto a plane.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stereoarts.jp/&quot;&gt;Stereoarts Homepage&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Stereoarts/status/647737666520248321?ref_src=twsrc%5Etfw&quot;&gt;@Stereoarts tweet&lt;/a&gt;: I’ve released a Theta Shader Pack. A shader for converting THETA / THETA S full sphere video to Enquirectangular in Unity and supporting scripts. &lt;a href=&quot;stereoarts.jp/ThetaShaderPack_20150926.zip&quot;&gt;stereoarts.jp/ThetaShaderPack_20150926.zip&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For this article, I wanted to jot down my techniques as well.&lt;/p&gt;
+
+&lt;p&gt;Sample&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/7131835/Programs/ThetaS_LiveView_Sample.unitypackage&quot;&gt;ThetaS_LiveView_Sample.unitypackage @ Dropbox&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Example of taking a video with THETA&lt;/p&gt;
+
+&lt;p&gt;When taking a video with m15, the circles overlapped. The THETA S gives beautifully separated spheres. The angle covered in one sphere is slightly larger than 180 degrees.&lt;/p&gt;
+
+&lt;p&gt;IMAGE
+IMAGE&lt;/p&gt;
+
+&lt;p&gt;In doing this, I’ve made an adjustment using sample texture, which Goroman filmed using WebCamTexture.&lt;/p&gt;
+
+&lt;p&gt;Making a sphere with good UV setting&lt;/p&gt;
+
+&lt;p&gt;Working with Maya LT, the UV comes out like this, if you make a normal sphere.&lt;/p&gt;
+
+&lt;p&gt;IMAGE&lt;/p&gt;
+
+&lt;p&gt;It would look like below, if you make a plane with the UV.&lt;/p&gt;
+
+&lt;p&gt;IMAGE&lt;/p&gt;
+
+&lt;p&gt;All it needs is to be cut in half and be moved appropriately.&lt;/p&gt;
+
+&lt;p&gt;IMAGE
+IMAGE&lt;/p&gt;
+
+&lt;p&gt;It looks like this. (I did not adjust it, so it might be slightly off.)&lt;/p&gt;
+
+&lt;p&gt;IMAGE&lt;/p&gt;
+
+&lt;p&gt;Actually, I wanted to use alphablend for the border, so I used 2 overlapping half spheres instead of one sphere. The UV border is adequately stretched manually.&lt;/p&gt;
+
+&lt;p&gt;IMAGE&lt;/p&gt;
+
+&lt;p&gt;Incidentally, surface is set to face inward, by reversing all normal vectors. UV position and size are fine to adjust later with shader.&lt;/p&gt;
+
+&lt;p&gt;Setting with Unity&lt;/p&gt;
+
+&lt;p&gt;Import the Maya LT built model with Unity, and put the camera in the center. Write a shader, so the model’s UV position can be adjusted or can alphablend. In order to control the drawing order and to prevent the border from changing at certain orientations, each half sphere has a different shader.&lt;/p&gt;
+
+&lt;p&gt;CODE BLOCK&lt;/p&gt;
+
+&lt;p&gt;As below, for alphablend, have a texture made, that is alpha adjusted to UV. I made adjustment for perfectly fit, by exporting UV with postscript and reading with illustrator (white circle inside is alpha=1; around the circle, from inside to outside, changes from 1 to 0; outside will not be used so whatever fits.)&lt;/p&gt;
+
+&lt;p&gt;IMAGE&lt;/p&gt;
+
+&lt;p&gt;Then, adjust the parameters and you’ve got a whole sphere.&lt;/p&gt;
+
+&lt;p&gt;IMAGE
+IMAGE
+IMAGE&lt;/p&gt;
+
+&lt;p&gt;Changing into Equirectangular&lt;/p&gt;
+
+&lt;p&gt;I tried it with a modified vertex shader.&lt;/p&gt;
+
+&lt;p&gt;CODE BLOCK
+IMAGE&lt;/p&gt;
+
+&lt;p&gt;When taking a look at the mesh, it moves around like this.&lt;/p&gt;
+
+&lt;p&gt;IMAGE&lt;/p&gt;
+
+&lt;p&gt;Because polygon did not fit, there is a blank space in the corner. This could have been avoided if we have used a direct fragment shader like Nora.&lt;/p&gt;
+
+&lt;p&gt;Conclusion&lt;/p&gt;
+
+&lt;p&gt;It looks like there’s the possibility of multiple fun topics here like spherical AR and Stabilization. After the THETA S goes on sale, I would love to play with it more.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/unity/2015/12/17/Using-RICOH-Live-View-With-Unity.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/unity/2015/12/17/Using-RICOH-Live-View-With-Unity.html</guid>
+        
+        
+        <category>Unity</category>
+        
+      </item>
     
       <item>
         <title>Using Node.js with the RICOH THETA S</title>
