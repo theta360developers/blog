@@ -6,9 +6,98 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 11:37:54 -0800</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 11:37:54 -0800</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2015 20:09:36 -0800</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 20:09:36 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Using Node.js with the RICOH THETA S</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://qiita.com/FePlus&quot;&gt;Satoru Yamada&lt;/a&gt; recently wrote a
+&lt;a href=&quot;http://qiita.com/FePlus/items/aaeca40468d49786e2f5&quot;&gt;blog post describing how to access the RICOH THETA S with
+node.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since I’ve been trying to test the THETA API with JavaScript,
+I spent a few minutes to translate his main points into
+English.&lt;/p&gt;
+
+&lt;p&gt;I’ll start off Satoru’s code snippet. The rest of the text
+is also from him, including the summary, which includes an
+interesting idea about NFC tags to help with automation.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var fs = require(&#39;fs&#39;);
+var OscClientClass = require(&#39;osc-client&#39;).OscClient;
+
+var domain = &#39;192.168.1.1&#39;;
+var port = &#39;80&#39;;
+var client = new OscClientClass(domain, port);
+var sessionId;
+var filename;
+
+client.startSession().then(function(res){
+  sessionId = res.body.results.sessionId;
+  return client.takePicture(sessionId);
+  })
+
+.then(function (res) {
+  var pictureUri = res.body.results.fileUri;
+  console.log(&#39;pictureUri :%s&#39;,pictureUri);
+
+  var path = pictureUri.split(&#39;/&#39;);
+  filename = path.pop();
+  return client.getImage(pictureUri);
+})
+.then(function(res){
+  var imgData = res.body;
+  fs.writeFile(filename,imgData);
+  return client.closeSession(sessionId);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;By running the &lt;code class=&quot;highlighter-rouge&quot;&gt;node theta.js&lt;/code&gt;, you can view the &lt;code class=&quot;highlighter-rouge&quot;&gt;fileUri&lt;/code&gt;
+of the picture that you previously took.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node theta.js
+pictureUri :100RICOH/R0010009.JPG
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The file will be created in the directory where you executed
+the command.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/directory_screenshot.png&quot; alt=&quot;Directory with file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The IP address and port are described in the &lt;a href=&quot;https://developers.theta360.com/en/docs/v2/api_reference/&quot;&gt;API reference&lt;/a&gt;.
+With a P2P connection, only one client can connect.&lt;/p&gt;
+
+&lt;p&gt;An overview of the process is shown below:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;set up a new session with &lt;code class=&quot;highlighter-rouge&quot;&gt;startSession()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;takePicture&lt;/code&gt; using the &lt;code class=&quot;highlighter-rouge&quot;&gt;sessionId&lt;/code&gt; you just got from the new session&lt;/li&gt;
+  &lt;li&gt;use the &lt;code class=&quot;highlighter-rouge&quot;&gt;fileUri&lt;/code&gt; you got from &lt;code class=&quot;highlighter-rouge&quot;&gt;takePicture&lt;/code&gt; to download the image with &lt;code class=&quot;highlighter-rouge&quot;&gt;getImage()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;close the session with &lt;code class=&quot;highlighter-rouge&quot;&gt;closeSession()&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;Since the new THETA S supports Open Spherical Camera API, it’s now possible
+to easily build applications. As sales and thus the popularity of the
+camera appear to be going quite well, it seems likely that we’ll see
+many interesting uses in the future.&lt;/p&gt;
+
+&lt;p&gt;Personally, I’ve been thinking that since it may be difficult to turn the
+WiFi on and off, start THETA applications, and perform repetitive tasks,
+using a NFC tag might help with the automation. If I finish that,
+I’ll write another post.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/javascript/2015/12/17/theta-s-nodejs.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/javascript/2015/12/17/theta-s-nodejs.html</guid>
+        
+        
+        <category>javascript</category>
+        
+      </item>
     
       <item>
         <title>RICOH THETA Developer Community Services</title>
@@ -25,8 +114,8 @@ independent developers, enthusiasts, companies, and frankly, anyone
 that thinks that 360 pictures and videos are cool.&lt;/p&gt;
 
 &lt;p&gt;Although we are technical marketers, we’re super enthusiastic about
-developers and are trying to figure out if there’s anything we can do
-with limited resources. Feedback from developers is important. The services
+developers and even though we have limited resources, we’re are trying
+to figure out what we can do to help. Feedback from developers is important. The services
 are for you.&lt;/p&gt;
 
 &lt;p&gt;Here is our plan to provide basic help to you with our limited resources and
