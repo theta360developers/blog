@@ -41,7 +41,7 @@ Working with Maya LT, the UV comes out like this, if you make a normal sphere.
 
 It would look like below, if you make a plane with the UV.
 
-IMAGE
+![Maya LT UV Mapping 2](/blog/img/2015-12/MayaLT-UV-mapping-2.png)
 
 All it needs is to be cut in half and be moved appropriately.
 
