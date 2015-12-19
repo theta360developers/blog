@@ -115,6 +115,8 @@ Import the Maya LT built model with Unity, and put the camera in the center. Wri
 	    }
 	}
 
+Here's a second section of code.
+
 		Shader "Theta/Sphere2" {
 		    Properties {
 		        _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -131,6 +133,8 @@ Import the Maya LT built model with Unity, and put the camera in the center. Wri
 		        UsePass "Theta/Sphere1/BASE"
 		    }
 		}
+
+
 As below, for alphablend, have a texture made, that is alpha adjusted to UV. I made adjustment for perfectly fit, by exporting UV with postscript and reading with illustrator (white circle inside is alpha=1; around the circle, from inside to outside, changes from 1 to 0; outside will not be used so whatever fits.)
 
 IMAGE
