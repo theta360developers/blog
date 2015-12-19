@@ -51,11 +51,11 @@ All it needs is to be cut in half and be moved appropriately.
 
 It looks like this. (I did not adjust it, so it might be slightly off.)
 
-IMAGE
-
+![Crescent Moon image](/blog/img/2015-12/crescent-moon.png)
+	
 Actually, I wanted to use alphablend for the border, so I used 2 overlapping half spheres instead of one sphere. The UV border is adequately stretched manually.
 
-IMAGE
+![Overlapping](/blog/img/2015-12/overlapping.png)
 
 Incidentally, surface is set to face inward, by reversing all normal vectors. UV position and size are fine to adjust later with shader.
 
@@ -137,24 +137,27 @@ Here's a second section of code.
 
 As below, for alphablend, have a texture made, that is alpha adjusted to UV. I made adjustment for perfectly fit, by exporting UV with postscript and reading with illustrator (white circle inside is alpha=1; around the circle, from inside to outside, changes from 1 to 0; outside will not be used so whatever fits.)
 
-IMAGE
+![Two Circles](/blog/img/2015-12/two-circles.png)
 
 Then, adjust the parameters and you've got a whole sphere.
 
-IMAGE
-IMAGE
-IMAGE
+![Parameters](/blog/img/2015-12/parameters.png)
+
+![Unity Sphere](/blog/img/2015-12/sphere-unity.png)
+
+![Realtime Stitching](/blog/img/2015-12/realtime-stitching.png)
 
 Changing into Equirectangular
 
 I tried it with a modified vertex shader.
 
 CODE BLOCK
-IMAGE
+
+![Results](/blog/img/2015-12/results.png)
 
 When taking a look at the mesh, it moves around like this.
 
-IMAGE
+![Results Mesh](/blog/img/2015-12/results-mesh.png)
 
 Because polygon did not fit, there is a blank space in the corner. This could have been avoided if we have used a direct fragment shader like Nora.
 
