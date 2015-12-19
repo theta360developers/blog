@@ -45,10 +45,10 @@ It would look like below, if you make a plane with the UV.
 
 All it needs is to be cut in half and be moved appropriately.
 
-![Maya LT UV Mapping 3](/blog/img/2015-12/MayaLT-UV-mapping-3.png)
+![Maya LT UV Mapping 2](/blog/img/2015-12/MayaLT-UV-mapping-3.png)
 
-![Maya LT UV Mapping 4](/blog/img/2015-12/MayaLT-UV-mapping-4.png)
-
+![Maya LT UV Mapping 2](/blog/img/2015-12/MayaLT-UV-mapping-4.png)
+	
 It looks like this. (I did not adjust it, so it might be slightly off.)
 
 IMAGE
@@ -64,56 +64,56 @@ Setting with Unity
 
 Import the Maya LT built model with Unity, and put the camera in the center. Write a shader, so the model's UV position can be adjusted or can alphablend. In order to control the drawing order and to prevent the border from changing at certain orientations, each half sphere has a different shader.
 
-	Shader "Theta/Sphere1" {
-	    Properties {
-	        _MainTex ("Base (RGB)", 2D) = "white" {}
-	        _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
-	        _OffsetU ("Offset U", Range(-0.5, 0.5)) = 0
-	        _OffsetV ("Offset V", Range(-0.5, 0.5)) = 0
-	        _ScaleU ("Scale U", Range(0.8, 1.2)) = 1
-	        _ScaleV ("Scale V", Range(0.8, 1.2)) = 1
-	        _ScaleCenterU ("Scale Center U", Range(0.0, 1.0)) = 0
-	        _ScaleCenterV ("Scale Center V", Range(0.0, 1.0)) = 0
-	    }
-	    SubShader {
-	        Tags { "RenderType" = "Transparent" "Queue" = "Background" }
-	        Pass {
-	            Name "BASE"
+Shader "Theta/Sphere1" {
+    Properties {
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
+        _OffsetU ("Offset U", Range(-0.5, 0.5)) = 0 
+        _OffsetV ("Offset V", Range(-0.5, 0.5)) = 0
+        _ScaleU ("Scale U", Range(0.8, 1.2)) = 1
+        _ScaleV ("Scale V", Range(0.8, 1.2)) = 1
+        _ScaleCenterU ("Scale Center U", Range(0.0, 1.0)) = 0 
+        _ScaleCenterV ("Scale Center V", Range(0.0, 1.0)) = 0
+    }
+    SubShader {
+        Tags { "RenderType" = "Transparent" "Queue" = "Background" }
+        Pass {
+            Name "BASE"
+            
+            Blend SrcAlpha OneMinusSrcAlpha
+            Lighting Off
+            ZWrite Off
+            
+            CGPROGRAM
+            #pragma vertex vert_img
+            #pragma fragment frag
 
-	            Blend SrcAlpha OneMinusSrcAlpha
-	            Lighting Off
-	            ZWrite Off
+            #include "UnityCG.cginc"
 
-	            CGPROGRAM
-	            #pragma vertex vert_img
-	            #pragma fragment frag
+            uniform sampler2D _MainTex;
+            uniform sampler2D _AlphaBlendTex;
+            uniform float _OffsetU;
+            uniform float _OffsetV;
+            uniform float _ScaleU;
+            uniform float _ScaleV;
+            uniform float _ScaleCenterU;
+            uniform float _ScaleCenterV;
 
-	            #include "UnityCG.cginc"
-
-	            uniform sampler2D _MainTex;
-	            uniform sampler2D _AlphaBlendTex;
-	            uniform float _OffsetU;
-	            uniform float _OffsetV;
-	            uniform float _ScaleU;
-	            uniform float _ScaleV;
-	            uniform float _ScaleCenterU;
-	            uniform float _ScaleCenterV;
-
-	            float4 frag(v2f_img i) : COLOR {
-	                // 中心位置や大きさを微調整
-	                float2 uvCenter = float2(_ScaleCenterU, _ScaleCenterV);
-	                float2 uvOffset = float2(_OffsetU, _OffsetV);
-	                float2 uvScale = float2(_ScaleU, _ScaleV);
-	                float2 uv =  (i.uv - uvCenter) * uvScale + uvCenter + uvOffset;
-	                // アルファブレンド用のテクスチャを参照してアルファを調整
-	                float4 tex = tex2D(_MainTex, uv);
-	                tex.a *= pow(1.0 - tex2D(_AlphaBlendTex, i.uv).a, 2);
-	                return tex;
-	            }
-	            ENDCG
-	        }
-	    }
-	}
+            float4 frag(v2f_img i) : COLOR {
+                // 中心位置や大きさを微調整
+                float2 uvCenter = float2(_ScaleCenterU, _ScaleCenterV);
+                float2 uvOffset = float2(_OffsetU, _OffsetV);
+                float2 uvScale = float2(_ScaleU, _ScaleV);
+                float2 uv =  (i.uv - uvCenter) * uvScale + uvCenter + uvOffset;
+                // アルファブレンド用のテクスチャを参照してアルファを調整
+                float4 tex = tex2D(_MainTex, uv);
+                tex.a *= pow(1.0 - tex2D(_AlphaBlendTex, i.uv).a, 2);
+                return tex;
+            }
+            ENDCG
+        }
+    }
+}
 
 As below, for alphablend, have a texture made, that is alpha adjusted to UV. I made adjustment for perfectly fit, by exporting UV with postscript and reading with illustrator (white circle inside is alpha=1; around the circle, from inside to outside, changes from 1 to 0; outside will not be used so whatever fits.)
 
