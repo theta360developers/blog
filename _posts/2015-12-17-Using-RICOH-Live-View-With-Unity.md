@@ -45,9 +45,9 @@ It would look like below, if you make a plane with the UV.
 
 All it needs is to be cut in half and be moved appropriately.
 
-IMAGE
-IMAGE
-
+![Maya LT UV Mapping 2](/blog/img/2015-12/MayaLT-UV-mapping-3.png)
+![Maya LT UV Mapping 2](/blog/img/2015-12/MayaLT-UV-mapping-4.png)
+	
 It looks like this. (I did not adjust it, so it might be slightly off.)
 
 IMAGE
