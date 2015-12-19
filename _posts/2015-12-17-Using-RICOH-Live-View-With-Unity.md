@@ -52,7 +52,7 @@ All it needs is to be cut in half and be moved appropriately.
 It looks like this. (I did not adjust it, so it might be slightly off.)
 
 ![Crescent Moon image](/blog/img/2015-12/crescent-moon.png)
-	
+
 Actually, I wanted to use alphablend for the border, so I used 2 overlapping half spheres instead of one sphere. The UV border is adequately stretched manually.
 
 ![Overlapping](/blog/img/2015-12/overlapping.png)
@@ -151,7 +151,112 @@ Changing into Equirectangular
 
 I tried it with a modified vertex shader.
 
-CODE BLOCK
+	Shader "Theta/Equirectangular1" {
+	    Properties {
+	        _MainTex ("Base (RGB)", 2D) = "white" {}
+	        _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
+	        _OffsetU ("Offset U", Range(-0.5, 0.5)) = 0
+	        _OffsetV ("Offset V", Range(-0.5, 0.5)) = 0
+	        _ScaleU ("Scale U", Range(0.8, 1.2)) = 1
+	        _ScaleV ("Scale V", Range(0.8, 1.2)) = 1
+	        _ScaleCenterU ("Scale Center U", Range(0.0, 1.0)) = 0
+	        _ScaleCenterV ("Scale Center V", Range(0.0, 1.0)) = 0
+	        _Aspect ("Aspect", Float) = 1.777777777
+	    }
+	    SubShader {
+	        Tags { "RenderType" = "Transparent" "Queue" = "Background" }
+	        Pass {
+	            Name "BASE"
+
+	            Blend SrcAlpha OneMinusSrcAlpha
+	            Lighting Off
+	            ZWrite Off
+
+	            CGPROGRAM
+	            #pragma vertex vert
+	            #pragma fragment frag
+	            #define PI 3.1415925358979
+
+	            #include "UnityCG.cginc"
+
+	            uniform sampler2D _MainTex;
+	            uniform sampler2D _AlphaBlendTex;
+	            uniform float _OffsetU;
+	            uniform float _OffsetV;
+	            uniform float _ScaleU;
+	            uniform float _ScaleV;
+	            uniform float _ScaleCenterU;
+	            uniform float _ScaleCenterV;
+	            uniform float _Aspect;
+
+	            struct v2f {
+	                float4 position : SV_POSITION;
+	                float2 uv       : TEXCOORD0;
+	            };
+
+	            v2f vert(appdata_base v) {
+	                float4 modelBase = mul(_Object2World, float4(0, 0, 0, 1));
+	                float4 modelVert = mul(_Object2World, v.vertex);
+
+	                float x = modelVert.x;
+	                float y = modelVert.y;
+	                float z = modelVert.z;
+
+	                float r = sqrt(x*x + y*y + z*z);
+	                x /= 2 * r;
+	                y /= 2 * r;
+	                z /= 2 * r;
+
+	                float latitude  = atan2(0.5, -y);
+	                float longitude = atan2(x, z);  
+
+	                float ex = longitude / (2 * PI);
+	                float ey = (latitude - PI / 2) / PI * 2;
+	                float ez = 0;
+
+	                ex *= _Aspect;
+
+	                modelVert = float4(float3(ex, ey, ez) * 2 * r, 1);
+
+	                v2f o;
+	                o.position = mul(UNITY_MATRIX_VP, modelVert);
+	                o.uv       = MultiplyUV(UNITY_MATRIX_TEXTURE0, v.texcoord);
+	                return o;
+	            }    
+
+	            float4 frag(v2f i) : COLOR {
+	                float2 uvCenter = float2(_ScaleCenterU, _ScaleCenterV);
+	                float2 uvOffset = float2(_OffsetU, _OffsetV);
+	                float2 uvScale = float2(_ScaleU, _ScaleV);
+	                float2 uv =  (i.uv - uvCenter) * uvScale + uvCenter + uvOffset;
+	                float4 tex = tex2D(_MainTex, uv);
+	                tex.a *= pow(1.0 - tex2D(_AlphaBlendTex, i.uv).a, 2);
+	                return tex;
+	            }
+	            ENDCG
+	        }
+	    }
+	}
+
+Here's a second section of code.
+
+	Shader "Theta/Equirectangular2" {
+	    Properties {
+	        _MainTex ("Base (RGB)", 2D) = "white" {}
+	        _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
+	        _OffsetU ("Offset U", Range(-0.5, 0.5)) = 0
+	        _OffsetV ("Offset V", Range(-0.5, 0.5)) = 0
+	        _ScaleU ("Scale U", Range(0.8, 1.2)) = 1
+	        _ScaleV ("Scale V", Range(0.8, 1.2)) = 1
+	        _ScaleCenterU ("Scale Center U", Range(0.0, 1.0)) = 0
+	        _ScaleCenterV ("Scale Center V", Range(0.0, 1.0)) = 0
+	        _Aspect ("Aspect", Float) = 1.777777777
+	    }
+	    SubShader {
+	        Tags { "RenderType" = "Transparent" "Queue" = "Background+1" }
+	        UsePass "Theta/Equirectangular1/BASE"
+	    }
+	}
 
 ![Results](/blog/img/2015-12/results.png)
 
