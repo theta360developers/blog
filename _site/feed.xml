@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>THETA 360 Developers Unofficial Blog</title>
-    <description>RICOH THETA developer community blog. Tips on using the RICOH THETA S  360 degree camera. The API is based on Open Spherical Camera (OSC) specification 
+    <title>THETA 360 Developers Blog</title>
+    <description>Tips and technical for developers on using the RICOH THETA S 360 degree camera. Code examples and guides are available from http://theta360developers.github.io
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Dec 2015 13:43:32 -0800</pubDate>
-    <lastBuildDate>Tue, 22 Dec 2015 13:43:32 -0800</lastBuildDate>
+    <pubDate>Tue, 22 Dec 2015 14:35:31 -0800</pubDate>
+    <lastBuildDate>Tue, 22 Dec 2015 14:35:31 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
