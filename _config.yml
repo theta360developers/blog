@@ -10,8 +10,8 @@ title: THETA 360 Developers Blog
 email: ricohtheta360@oppkey.com
 description: > # this means to ignore newlines until "baseurl:"
   Tips and technical for developers on using the RICOH THETA S 360 degree camera.
-  Code examples and guides are available from
-  http://theta360developers.github.io
+  Code examples and guides are available.
+#  http://theta360developers.github.io
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://theta360developers.github.io" # the base hostname & protocol for your site
 github_username:  theta360developers
