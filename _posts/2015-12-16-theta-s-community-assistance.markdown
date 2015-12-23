@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "RICOH THETA Developer Community Services"
-date:   2015-12-17
+date:   2015-12-15
 author: "Craig Oda"
 categories: community
 ---
