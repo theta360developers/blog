@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stuff From Official 
+title: Stuff From RICOH
 permalink: /official/
 ---
 
