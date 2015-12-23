@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: THETA 360 Developers Blog
+title: THETA 360 Developers Unofficial Blog
 email: ricohtheta360@oppkey.com
 description: > # this means to ignore newlines until "baseurl:"
   Tips and technical for developers on using the RICOH THETA S 360 degree camera.

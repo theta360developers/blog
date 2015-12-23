@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Official Information
+title: Stuff From Official 
 permalink: /official/
 ---
 
