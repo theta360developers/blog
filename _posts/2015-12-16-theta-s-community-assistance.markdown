@@ -30,12 +30,12 @@ Jesse and I will go into the forum and answer questions when  we can. For the
 questions that we can't answer, we'll rely on the community. If the question
 relates to a broad group of people, we will try and replicate the problem
 and then report back to RICOH engineers. An example of a problem we'll
-escalate is a problem with an application due to changes in Adobe Air. 
+escalate is a problem with an application due to changes in Adobe Air.
 
 There are certain requests for information that RICOH can't provide. For example,
 RICOH can't release lens parameter information or stitching library algorithms.
 For these questions, we will respond that RICOH can't provide the information
-and organize the requests so that RICOH managers have an understand of
+and organize the requests so that RICOH managers have an understanding of
 what the community is requesting.
 
 ## [GitHub Repository Management](https://github.com/theta360developers)
@@ -61,4 +61,3 @@ like Google, Facebook, Oculus, and Unity.
 ## [Community Guide](http://theta360developers.github.io/community-document/community.html)
 We're building a community guide based on questions and responses about the
 most common topics. Hopefully, we'll be able to pull popular topics from the blog.
-
