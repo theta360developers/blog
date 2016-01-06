@@ -14,6 +14,6 @@ description: > # this means to ignore newlines until "baseurl:"
 #  http://theta360developers.github.io
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://theta360developers.github.io" # the base hostname & protocol for your site
-github_username:  theta360developers
+# github_username:  theta360developers
 # Build settings
 markdown: kramdown
