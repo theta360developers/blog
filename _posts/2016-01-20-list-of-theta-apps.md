@@ -6,14 +6,17 @@ author: "Craig Oda"
 categories: Applications
 ---
 
+Mobile Applications
+===================
+
 Ricoh Theta (For cameras before S)
 
--Android ->https://play.google.com/store/apps/details?id=com.theta
+- Android ->https://play.google.com/store/apps/details?id=com.theta
 -iOS ->https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8
 
 Ricoh Theta S
 
--Android -> https://play.google.com/store/apps/details?id=com.theta360
+- Android -> https://play.google.com/store/apps/details?id=com.theta360
 -iOS -> https://itunes.apple.com/us/app/ricoh-theta-s/id1023254741…
 
 Theta+ (Theta editor, post on Instagram - Developed by Ricoh)
