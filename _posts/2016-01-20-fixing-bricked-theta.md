@@ -9,7 +9,7 @@ I was able to unbrick my RICOH THETA S, and I’m sharing some of my results her
 
 Background: I was running the RICOH THETA app version 2.0.0. This version has a known bug with the firmware upgrade. Unfortunately, I was unaware of this. I updated my firmware through the MacOS X RICOH THETA app to 1.21. Soon thereafter, my RICOH THETA S would not boot up. All of the blue lights on the front would blink, then a red light would come on, and a triple bee-bee-beep would happen, and it would shut down in about 3-5 seconds. Over and over.
 
-![THETA with all lights blinking blue](/blog/img/2016-1/theta_blinking.jpg)
+![THETA with all lights blinking blue](/blog/img/2016-01/theta_blinking.jpg)
 
 First I thought it was not charged. I tried charging, but the red charging light would only stay on for about 20 seconds, maybe a little longer.
 
