@@ -45,8 +45,7 @@ Online Programs
 * [Marzipano](http://www.marzipano.net/tool/) For self panorama host
 
 
-Mobile Applications
-===================
+# Mobile Applications
 
 ## Ricoh Theta (For cameras before S)
 
