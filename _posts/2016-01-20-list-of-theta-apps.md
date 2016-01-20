@@ -9,27 +9,25 @@ categories: Applications
 Desktop Computer programs
 =========================
 
-[Theta Official](https://theta360.com/en/support/download/)
+* [Theta Official](https://theta360.com/en/support/download/)
 
-Hugin (for straightening images on a computer - See Carl Bennett turorial in the documents área -https://www.facebook.com/notes/ricoh-theta-users-on-facebook/straightening-360-images-using-hugin/1616917718526418)
--> http://hugin.sourceforge.net/
+* [Hugin](http://hugin.sourceforge.net/)
+for straightening images on a computer - See Carl Bennett turorial in the [documents area](https://www.facebook.com/notes/ricoh-theta-users-on-facebook/straightening-360-images-using-hugin/1616917718526418)
 
-[KR Pano](http://www.krpano.com/) (tool for pictures and vídeos)
+* [KR Pano](http://www.krpano.com/) tool for pictures and vídeos
 
+* [Kolor panotour](http://www.kolor.com/panotour/) to create tours
 
-[Kolor panotour](http://www.kolor.com/panotour/) (to create tours)
+* [EasyPano](http://www.easypano.com/) Similar to Kolor
 
-[EasyPano](http://www.easypano.com/) Similar to Kolor
-
-
-[PTGui](http://www.ptgui.com) (tool for straightening panos and posting panos)
+* [PTGui](http://www.ptgui.com) tool for straightening panos and posting panos
 
 
-[Pano2VR](http://ggnome.com) (tool for straightening panos and creating tour)
+* [Pano2VR](http://ggnome.com) tool for straightening panos and creating tour
 
 
-PanoramaStudio 3 (Photo stitching and pano postwork. Save to flash or HTML5)
--> http://www.tshsoft.com/en/panostudio_index
+* [PanoramaStudio 3](http://www.tshsoft.com/en/panostudio_index) Photo stitching and pano postwork. Save to flash or HTML5
+
 
 Online Programs
 ===============
