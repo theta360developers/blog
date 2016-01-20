@@ -32,23 +32,18 @@ for straightening images on a computer - See Carl Bennett turorial in the [docum
 Online Programs
 ===============
 
-HoloBuilder (Complete tour tool and totally FREE - From our friend Fabian Fabian)
--> https://www.holobuilder.com/index.html
+* [HoloBuilder](https://www.holobuilder.com/index.html) Complete tour tool and totally FREE - From our friend Fabian Fabian
 
-Spinattic (Free tour creation tool, with social network integrated)
--> http://www.spinattic.com/
+* [Spinattic](http://www.spinattic.com/) Free tour creation tool, with social network integrated
 
-You Visit (Similar to HoloBuilder, with free and paid plans)
--> http://www.youvisit.com/
+* [You Visit](http://www.youvisit.com/) Similar to HoloBuilder, with free and paid plans
 
-Round.me (Free tour creation tool, with social network integrated)
--> https://round.me/
+* [Round.me](https://round.me/) Free tour creation tool, with social network integrated
 
-Mapillary (Free street tour creation tool, with social network integrated - Wiff IOS and Android Apps)
--> http://www.mapillary.com/map
+* [Mapillary](http://www.mapillary.com/map) Free street tour creation tool, with social network integrated - Wiff IOS and Android Apps
 
-Marzipano (For self panorama host)
--> http://www.marzipano.net/tool/
+* [Marzipano](http://www.marzipano.net/tool/) For self panorama host
+
 
 Mobile Applications
 ===================
