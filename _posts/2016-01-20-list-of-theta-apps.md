@@ -48,55 +48,55 @@ Online Programs
 Mobile Applications
 ===================
 
-* Ricoh Theta (For cameras before S)
+## Ricoh Theta (For cameras before S)
 
-** Android ->https://play.google.com/store/apps/details?id=com.theta
-** iOS ->https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8
+* Android ->https://play.google.com/store/apps/details?id=com.theta
+* iOS ->https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8
 
-* Ricoh Theta S
+## Ricoh Theta S
 
-** Android -> https://play.google.com/store/apps/details?id=com.theta360
-** iOS -> https://itunes.apple.com/us/app/ricoh-theta-s/id1023254741…
+* Android -> https://play.google.com/store/apps/details?id=com.theta360
+* iOS -> https://itunes.apple.com/us/app/ricoh-theta-s/id1023254741…
 
-* Theta+ (Theta editor, post on Instagram - Developed by Ricoh)
+## Theta+ (Theta editor, post on Instagram - Developed by Ricoh)
 
-** Android ->https://play.google.com/store/apps/details…
-** iOs -> https://itunes.apple.com/us/app/theta+/id1021526610?mt=8
+* Android ->https://play.google.com/store/apps/details…
+* iOs -> https://itunes.apple.com/us/app/theta+/id1021526610?mt=8
 
-* Theta HDR (To take HDR Pictures)
+## Theta HDR (To take HDR Pictures)
 
-** Android ->https://play.google.com/store/apps/details…
-** Android Option 2 ->https://play.google.com/store/apps/details…
-** iOS -> https://itunes.apple.com/…/hdr-360-bracket-pro…/id987157511…
+* Android ->https://play.google.com/store/apps/details…
+* Android Option 2 ->https://play.google.com/store/apps/details…
+* iOS -> https://itunes.apple.com/…/hdr-360-bracket-pro…/id987157511…
 
-* Theta Action + (Motion pictures)
+## Theta Action + (Motion pictures)
 
-** Android -> https://play.google.com/store/apps/details…
+* Android -> https://play.google.com/store/apps/details…
 
-* VR Panorama Viewer (To see panos in Google Cardboard VR - From our friend Shawn Ames)
+## VR Panorama Viewer (To see panos in Google Cardboard VR - From our friend Shawn Ames)
 
-** Android -> https://play.google.com/store/apps/details…
+* Android -> https://play.google.com/store/apps/details…
 
-* Tao360 another cardboard viewer
+## Tao360 another cardboard viewer
 
-** Android -> https://play.google.com/store/apps/details…
+* Android -> https://play.google.com/store/apps/details…
 
-* [SphereCam](https://itunes.apple.com/us/app/spherecam/id973550273?mt=8)
+## [SphereCam](https://itunes.apple.com/us/app/spherecam/id973550273?mt=8)
 (Remote controller for Ricoh THETA m15/Ricoh THETA S, has tvOS version can let user view image/Video on Apple TV. Apple watch support)
 
-* kolorEyes for viewing 360 video with/without cardboard
+## kolorEyes for viewing 360 video with/without cardboard
 
-** Android -> https://play.google.com/store/apps/details…
+* Android -> https://play.google.com/store/apps/details…
 
-* Theta Transfer for copying the full size images
+## Theta Transfer for copying the full size images
 
-** Android -> https://play.google.com/store/apps/details…
+* Android -> https://play.google.com/store/apps/details…
 
-* Theta Converter for straightening images
+## Theta Converter for straightening images
 
-** Android -> https://play.google.com/store/apps/details…
+* Android -> https://play.google.com/store/apps/details…
 
-* Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)
+## Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)
 
-** Android -> https://play.google.com/store/apps/details…
+* Android -> https://play.google.com/store/apps/details…
 
