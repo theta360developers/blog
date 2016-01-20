@@ -6,6 +6,8 @@ author: "Craig Oda"
 categories: Applications
 ---
 
+This list was produced by RICOH THETA Facebook Group community member Fabio Penna.
+
 Desktop Computer programs
 =========================
 
