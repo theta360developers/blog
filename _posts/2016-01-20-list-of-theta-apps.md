@@ -72,31 +72,31 @@ Online Programs
 
 ## Theta Action + (Motion pictures)
 
-* Android -> https://play.google.com/store/apps/details…
+* [Android](https://play.google.com/store/apps/details?id=jp.sciencecow.thetaactionplus)
 
 ## VR Panorama Viewer (To see panos in Google Cardboard VR - From our friend Shawn Ames)
 
-* Android -> https://play.google.com/store/apps/details…
+* [Android](https://play.google.com/store/apps/details?id=com.Viral3D.VRPanoViewer)
 
 ## Tao360 another cardboard viewer
 
-* Android -> https://play.google.com/store/apps/details…
+* [Android](https://play.google.com/store/apps/details?id=jp.co.taosoftware.android.sphericalviewer)
 
 ## [SphereCam](https://itunes.apple.com/us/app/spherecam/id973550273?mt=8)
 (Remote controller for Ricoh THETA m15/Ricoh THETA S, has tvOS version can let user view image/Video on Apple TV. Apple watch support)
 
 ## kolorEyes for viewing 360 video with/without cardboard
 
-* Android -> https://play.google.com/store/apps/details…
+* [Android](https://play.google.com/store/apps/details?id=fi.finwe.koloreyesandroid)
 
 ## Theta Transfer for copying the full size images
 
-* Android -> https://play.google.com/store/apps/details…
+* [Android](https://play.google.com/store/apps/details?id=com.hirota41.thetatransfer)
 
 ## Theta Converter for straightening images
 
-* Android -> https://play.google.com/store/apps/details…
+* [Android](https://play.google.com/store/apps/details?id=com.hirota41.thetaconverter)
 
 ## Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)
 
-* Android -> https://play.google.com/store/apps/details…
+* [Android](https://play.google.com/store/apps/details?id=com.bitstars.panouploader)
