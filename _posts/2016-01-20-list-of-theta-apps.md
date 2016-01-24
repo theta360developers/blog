@@ -66,9 +66,9 @@ Online Programs
 
 ## Theta HDR (To take HDR Pictures)
 
-* [Android](https://play.google.com/store/apps/details)
-* [Android Option 2](https://play.google.com/store/apps/details)
-* [iOS](https://itunes.apple.com/…/hdr-360-bracket-pro…/id987157511)
+* [Android](https://play.google.com/store/apps/details?id=air.de.pl.ThetaHDRApp)
+* [Android Option 2](https://play.google.com/store/apps/details?id=com.teapps.thetahdr)
+* [iOS](https://itunes.apple.com/us/app/hdr-360-bracket-pro-for-ricoh/id987157511?mt=8)
 
 ## Theta Action + (Motion pictures)
 
