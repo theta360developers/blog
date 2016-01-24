@@ -51,13 +51,13 @@ Online Programs
 
 ## Ricoh Theta (For cameras before S)
 
-* Android ->https://play.google.com/store/apps/details?id=com.theta
-* iOS ->https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8
+* [Android](https://play.google.com/store/apps/details?id=com.theta)
+* [iOS](https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8)
 
 ## Ricoh Theta S
 
-* Android -> https://play.google.com/store/apps/details?id=com.theta360
-* iOS -> https://itunes.apple.com/us/app/ricoh-theta-s/id1023254741…
+* [Android](https://play.google.com/store/apps/details?id=com.theta360)
+* [iOS](https://itunes.apple.com/us/app/ricoh-theta-s/id102325474)
 
 ## Theta+ (Theta editor, post on Instagram - Developed by Ricoh)
 
@@ -100,4 +100,3 @@ Online Programs
 ## Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)
 
 * Android -> https://play.google.com/store/apps/details…
-
