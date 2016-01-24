@@ -22,7 +22,7 @@ for straightening images on a computer - See Carl Bennett turorial in the [docum
 
 * [EasyPano](http://www.easypano.com/) Similar to Kolor
 
-* [PTGui](http://www.ptgui.com) tool for straightening panos and posting panos (DennisMabrey says, "While PTGui is a great tool it's primary purpose is for stitching multiple images into a pano.")
+* [PTGui](http://www.ptgui.com) tool for straightening panos and posting panos - DennisMabrey says, "While PTGui is a great tool it's primary purpose is for stitching multiple images into a pano."
 
 
 * [Pano2VR](http://ggnome.com) tool for straightening panos and creating tour
