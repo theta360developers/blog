@@ -23,10 +23,13 @@ for straightening images on a computer - See Carl Bennett turorial in the [docum
 * [EasyPano](http://www.easypano.com/) Similar to Kolor
 
 * [PTGui](http://www.ptgui.com) tool for straightening panos and posting panos  
- DennisMabrey says, "While PTGui is a great tool it's primary purpose is for stitching multiple images into a pano."
+ Dennis Mabrey says, "While PTGui is a great tool it's primary purpose is for stitching multiple images into a pano."
 
 
-* [Pano2VR](http://ggnome.com) tool for straightening panos and creating tour
+* [Pano2VR](http://ggnome.com) tool for straightening panos and creating tour  
+Dennis Mabrey says, "PanoVR (at least beta ver 5) will perform automatic straightening of Theta/Theta S images. You don't have to run the stills through the Ricoh software.  
+
+PanoVR also is great for things like tripod removal or fixing images. You can select a portion of the image and edit in Photoshop and perform functions like content aware fill. Really makes getting rid of the tripod or the 'giant hand' very useful."
 
 
 * [PanoramaStudio 3](http://www.tshsoft.com/en/panostudio_index) Photo stitching and pano postwork. Save to flash or HTML5
