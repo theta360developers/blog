@@ -61,14 +61,14 @@ Online Programs
 
 ## Theta+ (Theta editor, post on Instagram - Developed by Ricoh)
 
-* Android ->https://play.google.com/store/apps/details…
-* iOs -> https://itunes.apple.com/us/app/theta+/id1021526610?mt=8
+* [Android](https://play.google.com/store/apps/details)
+* [iOs](https://itunes.apple.com/us/app/theta+/id1021526610?mt=8)
 
 ## Theta HDR (To take HDR Pictures)
 
-* Android ->https://play.google.com/store/apps/details…
-* Android Option 2 ->https://play.google.com/store/apps/details…
-* iOS -> https://itunes.apple.com/…/hdr-360-bracket-pro…/id987157511…
+* [Android](https://play.google.com/store/apps/details)
+* [Android Option 2](https://play.google.com/store/apps/details)
+* [iOS](https://itunes.apple.com/…/hdr-360-bracket-pro…/id987157511)
 
 ## Theta Action + (Motion pictures)
 
