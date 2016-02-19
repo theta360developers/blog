@@ -1,14 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>THETA 360 Developers Blog</title>
-    <description>Tips and technical for developers on using the RICOH THETA S 360 degree camera. Code examples and guides are available from http://theta360developers.github.io
+    <title>THETA 360 Developers Unofficial Blog</title>
+    <description>Tips and technical for developers on using the RICOH THETA S 360 degree camera. Code examples and guides are available.
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Dec 2015 14:35:31 -0800</pubDate>
-    <lastBuildDate>Tue, 22 Dec 2015 14:35:31 -0800</lastBuildDate>
+    <pubDate>Fri, 19 Feb 2016 10:05:34 -0800</pubDate>
+    <lastBuildDate>Fri, 19 Feb 2016 10:05:34 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>List of RICOH THETA Apps</title>
+        <description>&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+  ga(&#39;create&#39;, &#39;UA-73311422-1&#39;, &#39;auto&#39;);
+  ga(&#39;send&#39;, &#39;pageview&#39;);
+
+&lt;/script&gt;
+
+&lt;p&gt;This list was produced by &lt;a href=&quot;https://www.facebook.com/groups/RicohTHETAUsers/&quot;&gt;RICOH THETA Facebook Group&lt;/a&gt; community member Fabio Penna.&lt;/p&gt;
+
+&lt;h1 id=&quot;desktop-computer-programs&quot;&gt;Desktop Computer programs&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://theta360.com/en/support/download/&quot;&gt;Theta Official&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://hugin.sourceforge.net/&quot;&gt;Hugin&lt;/a&gt;
+for straightening images on a computer - See Carl Bennett turorial in the &lt;a href=&quot;https://www.facebook.com/notes/ricoh-theta-users-on-facebook/straightening-360-images-using-hugin/1616917718526418&quot;&gt;documents area&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.krpano.com/&quot;&gt;KR Pano&lt;/a&gt; tool for pictures and vídeos&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.kolor.com/panotour/&quot;&gt;Kolor panotour&lt;/a&gt; to create tours&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.easypano.com/&quot;&gt;EasyPano&lt;/a&gt; Similar to Kolor&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.ptgui.com&quot;&gt;PTGui&lt;/a&gt; tool for straightening panos and posting panos&lt;br /&gt;
+ Dennis Mabrey says, “While PTGui is a great tool it’s primary purpose is for stitching multiple images into a pano.”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://ggnome.com&quot;&gt;Pano2VR&lt;/a&gt; tool for straightening panos and creating tour&lt;br /&gt;
+Dennis Mabrey says, “PanoVR (at least beta ver 5) will perform automatic straightening of Theta/Theta S images. You don’t have to run the stills through the Ricoh software.&lt;br /&gt;
+PanoVR also is great for things like tripod removal or fixing images. You can select a portion of the image and edit in Photoshop and perform functions like content aware fill. Really makes getting rid of the tripod or the ‘giant hand’ very useful.”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.tshsoft.com/en/panostudio_index&quot;&gt;PanoramaStudio 3&lt;/a&gt; Photo stitching and pano postwork. Save to flash or HTML5&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;online-programs&quot;&gt;Online Programs&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.holobuilder.com/index.html&quot;&gt;HoloBuilder&lt;/a&gt; Complete tour tool and totally FREE - From our friend Fabian Fabian&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.spinattic.com/&quot;&gt;Spinattic&lt;/a&gt; Free tour creation tool, with social network integrated&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.youvisit.com/&quot;&gt;You Visit&lt;/a&gt; Similar to HoloBuilder, with free and paid plans&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://round.me/&quot;&gt;Round.me&lt;/a&gt; Free tour creation tool, with social network integrated&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.mapillary.com/map&quot;&gt;Mapillary&lt;/a&gt; Free street tour creation tool, with social network integrated - Wiff IOS and Android Apps&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.marzipano.net/tool/&quot;&gt;Marzipano&lt;/a&gt; For self panorama host&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;mobile-applications&quot;&gt;Mobile Applications&lt;/h1&gt;
+
+&lt;h2 id=&quot;ricoh-theta-for-cameras-before-s&quot;&gt;Ricoh Theta (For cameras before S)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.theta&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ricoh-theta-s&quot;&gt;Ricoh Theta S&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.theta360&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/ricoh-theta-s/id102325474&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;theta-theta-editor-post-on-instagram---developed-by-ricoh&quot;&gt;Theta+ (Theta editor, post on Instagram - Developed by Ricoh)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/theta+/id1021526610?mt=8&quot;&gt;iOs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;theta-hdr-to-take-hdr-pictures&quot;&gt;Theta HDR (To take HDR Pictures)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=air.de.pl.ThetaHDRApp&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.teapps.thetahdr&quot;&gt;Android Option 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/hdr-360-bracket-pro-for-ricoh/id987157511?mt=8&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;theta-action--motion-pictures&quot;&gt;Theta Action + (Motion pictures)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=jp.sciencecow.thetaactionplus&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;vr-panorama-viewer-to-see-panos-in-google-cardboard-vr---from-our-friend-shawn-ames&quot;&gt;VR Panorama Viewer (To see panos in Google Cardboard VR - From our friend Shawn Ames)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.Viral3D.VRPanoViewer&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;tao360-another-cardboard-viewer&quot;&gt;Tao360 another cardboard viewer&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=jp.co.taosoftware.android.sphericalviewer&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;spherecamhttpsitunesapplecomusappspherecamid973550273mt8&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/spherecam/id973550273?mt=8&quot;&gt;SphereCam&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;(Remote controller for Ricoh THETA m15/Ricoh THETA S, has tvOS version can let user view image/Video on Apple TV. Apple watch support)&lt;/p&gt;
+
+&lt;h2 id=&quot;koloreyes-for-viewing-360-video-withwithout-cardboard&quot;&gt;kolorEyes for viewing 360 video with/without cardboard&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=fi.finwe.koloreyesandroid&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;theta-transfer-for-copying-the-full-size-images&quot;&gt;Theta Transfer for copying the full size images&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.hirota41.thetatransfer&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;theta-converter-for-straightening-images&quot;&gt;Theta Converter for straightening images&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.hirota41.thetaconverter&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;holo360uploader-app-to-upload-and-share-theta-shots-works-with-holobuilder---see-it-on-the-online-programs-section&quot;&gt;Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.bitstars.panouploader&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/applications/2016/01/20/list-of-theta-apps.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/01/20/list-of-theta-apps.html</guid>
+        
+        
+        <category>Applications</category>
+        
+      </item>
+    
+      <item>
+        <title>RICOH THETA S Won&#39;t Boot - FIXED</title>
+        <description>&lt;p&gt;I was able to unbrick my RICOH THETA S, and I’m sharing some of my results here.&lt;/p&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;I was running the RICOH THETA app version 2.0.0. This version has a known bug with the firmware upgrade. Unfortunately, I was unaware of this. I updated my firmware through the MacOS X RICOH THETA app to 1.21. Soon thereafter, my RICOH THETA S would not boot up. All of the blue lights on the front would blink, then a red light would come on, and a triple bee-bee-beep would happen, and it would shut down in about 3-5 seconds. Over and over.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-01/theta_blinking.jpg&quot; alt=&quot;THETA with all lights blinking blue&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First I thought it was not charged. I tried charging, but the red charging light would only stay on for about 20 seconds, maybe a little longer.&lt;/p&gt;
+
+&lt;p&gt;Then I began imagining I had dropped it or something, maybe it was actually broken. But seeing these posts here and talking with codetricity, I realized it was bricked. If I could update the firmware, maybe we could get it to boot up again.&lt;/p&gt;
+
+&lt;h2 id=&quot;steps-to-fix&quot;&gt;Steps to fix&lt;/h2&gt;
+
+&lt;h3 id=&quot;first-step&quot;&gt;First step&lt;/h3&gt;
+
+&lt;p&gt;Press and hold wifi button on the side and the shutter button on the front. While holding them, press the power button. Mine booted, with a front red light coming on (I think), and with the front wifi, video and LIVE blue lights blinking continuously.&lt;/p&gt;
+
+&lt;h3 id=&quot;second-step&quot;&gt;Second step&lt;/h3&gt;
+
+&lt;p&gt;Press and hold the wifi and shutter buttons, and DO NOT press power. Attach to the Mac while holding the two buttons down. (Yes, this is cumbersome.) I then connected to my MacOS X Macbook Air via USB and made sure I could see it as an attached device.&lt;/p&gt;
+
+&lt;p&gt;If Photos comes up automatically, that may be an issue. Go into Photos, under the Import tab, unclick Open Photos for this device. Then unplug and plug back in.&lt;/p&gt;
+
+&lt;p&gt;If you see the RICOH THETA as a device, it’ll show up in Finder as RICODCX. Also, the front red light on the camera stays on continuously at this point (I think). Double click to open RICODCX. There should be two files, DCIM and MISC. Delete both. I believe this gets rid of a corrupted file. I do not know this for a fact, though.&lt;/p&gt;
+
+&lt;h3 id=&quot;third-step&quot;&gt;Third Step&lt;/h3&gt;
+
+&lt;p&gt;Unplug, turn off, and then reattach to the Mac while holding the wifi and shutter buttons down at the same time.&lt;/p&gt;
+
+&lt;p&gt;At some point here, under RICOH THETA please check for newest version and update the RICOH THETA app to 2.0.1.&lt;/p&gt;
+
+&lt;h3 id=&quot;final-step&quot;&gt;Final step&lt;/h3&gt;
+
+&lt;p&gt;Now, in the RICOH THETA app, under File, run Firmware Update. Here’s the interesting part. I went through the firmware update. If the camera is not connected (or not connected properly) you will get an error message. I was nicely connected at this point.&lt;/p&gt;
+
+&lt;p&gt;The updater told me I was already running 1.21 and the newest version is the same version, 1.21, therefore no need to update. This felt like a dead end. But try ignoring this. I thought it would not upgrade or reinstall the firmware, but… after unplugging and restarting, my RICOH THETA S is healthy. Attaches to iPhone, takes pictures, everything.&lt;/p&gt;
+
+&lt;p&gt;Good luck!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/camera/2016/01/20/fixing-bricked-theta.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/01/20/fixing-bricked-theta.html</guid>
+        
+        
+        <category>Camera</category>
+        
+      </item>
     
       <item>
         <title>Using RICOH THETA Live View With Unity</title>
@@ -413,7 +620,7 @@ escalate is a problem with an application due to changes in Adobe Air.&lt;/p&gt;
 &lt;p&gt;There are certain requests for information that RICOH can’t provide. For example,
 RICOH can’t release lens parameter information or stitching library algorithms.
 For these questions, we will respond that RICOH can’t provide the information
-and organize the requests so that RICOH managers have an understand of
+and organize the requests so that RICOH managers have an understanding of
 what the community is requesting.&lt;/p&gt;
 
 &lt;h2 id=&quot;github-repository-managementhttpsgithubcomtheta360developers&quot;&gt;&lt;a href=&quot;https://github.com/theta360developers&quot;&gt;GitHub Repository Management&lt;/a&gt;&lt;/h2&gt;
@@ -439,11 +646,10 @@ like Google, Facebook, Oculus, and Unity.&lt;/p&gt;
 &lt;h2 id=&quot;community-guidehttptheta360developersgithubiocommunity-documentcommunityhtml&quot;&gt;&lt;a href=&quot;http://theta360developers.github.io/community-document/community.html&quot;&gt;Community Guide&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We’re building a community guide based on questions and responses about the
 most common topics. Hopefully, we’ll be able to pull popular topics from the blog.&lt;/p&gt;
-
 </description>
-        <pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/community/2015/12/17/theta-s-community-assistance.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/community/2015/12/17/theta-s-community-assistance.html</guid>
+        <pubDate>Tue, 15 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/community/2015/12/15/theta-s-community-assistance.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/community/2015/12/15/theta-s-community-assistance.html</guid>
         
         
         <category>community</category>
