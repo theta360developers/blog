@@ -7,19 +7,17 @@ categories: Applications
 ---
 The beginning of this post
 [originally appeared](https://developers.theta360.com/en/forums/viewtopic.php?f=4&t=120&p=1408#p1389)
- in the RICOH Developers Forum. Thanks to Rune Kyndal for building this awesome remote control and posting
- it in the forum.
- I have extended the post with general information
- on ESP8266 boards and more information on the projects from Katsuya-san,
- the original author of the code for the ESP8266 project.
+in the RICOH Developers Forum. Thanks to Rune Kyndal for building this awesome remote control and posting
+it in the forum. I have extended the post with general information
+on ESP8266 boards and more information on the projects from Katsuya-san,
+the original author of the code for the ESP8266 project.
 
- If you search on the Internet, the ESP8266 is a small WiFi module that cost
- between $6 and $15, with a typical price of $10 for the module with
- accessories built on the dev board such as breadboard breakout pins, LED monitoring
- lights, and flash. Most of the easrly excitement around the ESP8266 dealt
- with adding WiFi support to Arduino boards. However, as $10 (and cheaper)
- ESP8266 boards have a MCU, flash, and bootloader, people have been running
- the $10 boards standalone with a battery.
+If you search on the Internet, the ESP8266 is a small WiFi module that cost between $6 and $15, with a typical price of $10 for the module with
+accessories built on the dev board such as breadboard breakout pins, LED monitoring
+lights, and flash. Most of the easrly excitement around the ESP8266 dealt
+with adding WiFi support to Arduino boards. However, as $10 (and cheaper)
+ESP8266 boards have a MCU, flash, and bootloader, people have been running
+the $10 boards standalone with a battery.
 
 For projects with the THETA S, the ESP8266 can connect to the THETA S
 using WiFi, then send HTTP commands directly to the THETA to take
