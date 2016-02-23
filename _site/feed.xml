@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Feb 2016 19:50:00 -0800</pubDate>
-    <lastBuildDate>Mon, 22 Feb 2016 19:50:00 -0800</lastBuildDate>
+    <pubDate>Mon, 22 Feb 2016 20:15:40 -0800</pubDate>
+    <lastBuildDate>Mon, 22 Feb 2016 20:15:40 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -55,6 +55,17 @@ that will work when the voltage drops..&lt;/p&gt;
 Maybe I will draw up a quick “Pseudo” schematic.. not much to it though.
 just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 1 battery charger circuit board + battery, stuffed in a case.&lt;/p&gt;
+
+&lt;h2 id=&quot;related-information&quot;&gt;Related Information&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler&quot;&gt;RICOH THETA S Simple Remote Controller ESP8266 GitHub source code and information&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/katsuya-san/ESP8266-THETA-S-FullRemoteControler&quot;&gt;RICOH THETA S Full Remote Controller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pictures from
+&lt;a href=&quot;https://github.com/katsuya-san&quot;&gt;Katsuya-san&lt;/a&gt;, the original author of the code.
+&lt;img src=&quot;/img/2016-02/case2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
         <link>http://theta360developers.github.io/blog/applications/2016/01/20/remote-shutter.html</link>

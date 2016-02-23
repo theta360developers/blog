@@ -47,3 +47,12 @@ Update:
 Maybe I will draw up a quick "Pseudo" schematic.. not much to it though.
 just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 1 battery charger circuit board + battery, stuffed in a case.
+
+##Related Information
+
+* [RICOH THETA S Simple Remote Controller ESP8266 GitHub source code and information](https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler)
+* [RICOH THETA S Full Remote Controller](https://github.com/katsuya-san/ESP8266-THETA-S-FullRemoteControler)
+
+Pictures from
+[Katsuya-san](https://github.com/katsuya-san), the original author of the code.
+![](/img/2016-02/case2.png)
