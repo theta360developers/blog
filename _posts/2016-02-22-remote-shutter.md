@@ -5,16 +5,37 @@ date:   2016-2-22
 author: "Craig Oda"
 categories: Applications
 ---
-This post
+The beginning of this post
 [originally appeared](https://developers.theta360.com/en/forums/viewtopic.php?f=4&t=120&p=1408#p1389)
- in the RICOH Developers Forum.
+ in the RICOH Developers Forum. Thanks to Rune Kyndal for building this awesome remote control and posting
+ it in the forum.
+ I have extended the post with general information
+ on ESP8266 boards and more information on the projects from Katsuya-san,
+ the original author of the code for the ESP8266 project.
 
-Thanks to Rune Kyndal for building this awesome remote control and posting
-it in the forum.
+ If you search on the Internet, the ESP8266 is a small WiFi module that cost
+ between $6 and $15, with a typical price of $10 for the module with
+ accessories built on the dev board such as breadboard breakout pins, LED monitoring
+ lights, and flash. Most of the easrly excitement around the ESP8266 dealt
+ with adding WiFi support to Arduino boards. However, as $10 (and cheaper)
+ ESP8266 boards have a MCU, flash, and bootloader, people have been running
+ the $10 boards standalone with a battery.
 
+For projects with the THETA S, the ESP8266 can connect to the THETA S
+using WiFi, then send HTTP commands directly to the THETA to take
+pictures and control the camera.
+
+![](/blog/img/2016-02/remote_2.png)
+
+It's quite a cool little project and quite gratifying to press a remote button
+and hear the THETA S shutter chirp. :-)
+
+Join in and share your THETA project.
+
+From Rune Kyndal
 Hi Guys..
-I just finished building a handy little remote shutter for my Theta S
-thought i would share
+I just finished building a handy little remote shutter for my THETA S camera and
+thought I would share
 
 I'm using
 [Katsuya Yamamoto's ESP8266 "simple remote" code](https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler)
@@ -26,7 +47,7 @@ I/O available on the smaller ESP-01 board
     const int led2Pin = 2;
 
 
-i used a small Lipo battery and charger circuit. built the required ESP-01 circuit straight on to the 2x4 header.
+I used a small Lipo battery and charger circuit. built the required ESP-01 circuit straight on to the 2x4 header.
 and stuffed inside a cheap 9v battery case
 (patent pending ugly hotglue birds-nest style)  
 
@@ -56,7 +77,12 @@ for the THETA S. One verion has a single button control and one version has full
 controller features. Both versions are based on the
 [Switch Science ESP-WROOM-02](https://www.switch-science.com/catalog/2500/)
  development board. Although it looks like this board may only be available in
- Japan, other 8266 boards are available globally, including the US.
+ Japan, other 8266 boards are available globally. People in the US
+ should be able to source parts from places like [Adafruit](https://www.adafruit.com/)
+ [SparkFun](https://www.sparkfun.com/). Although I have not checked their
+ parts, the you may be able to find components at places like
+ [Digi-Key](http://www.digikey.com/) and
+ [Mouser Electronics](http://www.mouser.com/).
 
 
 
@@ -69,8 +95,6 @@ Pictures from
 ![](/blog/img/2016-02/case2.png)
 
 ![](/blog/img/2016-02/remote_control_case.png)
-
-![](/blog/img/2016-02/remote_2.png)
 
 ![](/blog/img/2016-02/simple_remote.png)
 
