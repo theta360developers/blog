@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Stuff From RICOH</title>
-  <meta name="description" content="Tips and technical for developers on using the RICOH THETA S 360 degree camera. Code examples and guides are available.
-">
+  <title>Remote Shutter for THETA S Using ESP8266</title>
+  <meta name="description" content="This postoriginally appeared in the RICOH Developers Forum.">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360developers.github.io/blog/official/">
+  <link rel="canonical" href="http://theta360developers.github.io/blog/applications/2016/01/20/remote-shutter.html">
   <link rel="alternate" type="application/rss+xml" title="THETA 360 Developers Unofficial Blog" href="http://theta360developers.github.io/blog/feed.xml">
 
 </head>
@@ -71,19 +70,58 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">Stuff From RICOH</h1>
+    <h1 class="post-title" itemprop="name headline">Remote Shutter for THETA S Using ESP8266</h1>
+    <p class="post-meta">
+	<time datetime="2016-01-20T00:00:00-08:00" itemprop="datePublished">Jan 20, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
   </header>
 
-  <div class="post-content">
-    <ul>
-  <li><a href="https://developers.theta360.com/en/docs/v2/api_reference/">RICOH THETA API v2</a>, compliant with Open Spherical Camera API version 1.0 from Google.</li>
-  <li><a href="https://developers.theta360.com/en/forums/">THETA Developers Official Forum</a></li>
-  <li><a href="https://developers.theta360.com/en/docs/sdk/">Official SDK</a></li>
-  <li><a href="https://theta360.com/en/support/download/">Windows, Mac, iOS, Android apps</a></li>
-</ul>
+  <div class="post-content" itemprop="articleBody">
+    <p>This post
+<a href="https://developers.theta360.com/en/forums/viewtopic.php?f=4&amp;t=120&amp;p=1408#p1389">originally appeared</a>
+ in the RICOH Developers Forum.</p>
+
+<p>Thanks to Rune Kyndal for building this awesome remote control and posting
+it in the forum.</p>
+
+<p>Hi Guys..
+I just finished building a handy little remote shutter for my Theta S
+thought i would share</p>
+
+<p>I’m using
+<a href="https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler">Katsuya Yamamoto’s ESP8266 “simple remote” code</a></p>
+
+<p>the only change i did to the code was to swap the I/O around to make it work with the
+I/O available on the smaller ESP-01 board</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>const int buttonPin = 0;
+const int led2Pin = 2;
+</code></pre>
+</div>
+
+<p>i used a small Lipo battery and charger circuit. built the required ESP-01 circuit straight on to the 2x4 header.
+and stuffed inside a cheap 9v battery case
+(patent pending ugly hotglue birds-nest style)</p>
+
+<p>but she works</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/1644351/theta-remote/IMG_3581.JPG" alt="" /></p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/1644351/theta-remote/IMG_3590.JPG" alt="" /></p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/1644351/theta-remote/IMG_3591.JPG" alt="" /></p>
+
+<p>thoughts. I’m using a AMS1117 3.3v LDO between the ESP and the li-po cell. not sure how well
+that will work when the voltage drops..</p>
+
+<p>oh.. and get a nicer shutter button.. 20 cent one.. not quite up to par ;)</p>
+
+<p>Update:
+Maybe I will draw up a quick “Pseudo” schematic.. not much to it though.
+just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
+1 battery charger circuit board + battery, stuffed in a case.</p>
 
   </div>
 
