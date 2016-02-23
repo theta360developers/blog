@@ -9,6 +9,8 @@ This post
 [originally appeared](https://developers.theta360.com/en/forums/viewtopic.php?f=4&t=120&p=1408#p1408)
  in the RICOH Developers Forum.
 
+by RuneKyndal
+
 Hi Guys..
 I just finished building a handy little remote shutter for my Theta S
 thought i would share
