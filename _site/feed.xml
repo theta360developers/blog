@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Feb 2016 20:15:40 -0800</pubDate>
-    <lastBuildDate>Mon, 22 Feb 2016 20:15:40 -0800</lastBuildDate>
+    <pubDate>Mon, 22 Feb 2016 20:20:51 -0800</pubDate>
+    <lastBuildDate>Mon, 22 Feb 2016 20:20:51 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -64,8 +64,15 @@ just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 &lt;/ul&gt;
 
 &lt;p&gt;Pictures from
-&lt;a href=&quot;https://github.com/katsuya-san&quot;&gt;Katsuya-san&lt;/a&gt;, the original author of the code.
-&lt;img src=&quot;/img/2016-02/case2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;a href=&quot;https://github.com/katsuya-san&quot;&gt;Katsuya-san&lt;/a&gt;, the original author of the code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/case2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/remote_control_case.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/remote_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/simple_remote.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
         <link>http://theta360developers.github.io/blog/applications/2016/01/20/remote-shutter.html</link>

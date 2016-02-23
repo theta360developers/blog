@@ -55,4 +55,11 @@ just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 
 Pictures from
 [Katsuya-san](https://github.com/katsuya-san), the original author of the code.
-![](/img/2016-02/case2.png)
+
+![](/blog/img/2016-02/case2.png)
+
+![](/blog/img/2016-02/remote_control_case.png)
+
+![](/blog/img/2016-02/remote_2.png)
+
+![](/blog/img/2016-02/simple_remote.png)
