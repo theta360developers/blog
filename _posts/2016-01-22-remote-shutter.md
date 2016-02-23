@@ -6,10 +6,11 @@ author: "Craig Oda"
 categories: Applications
 ---
 This post
-[originally appeared](https://developers.theta360.com/en/forums/viewtopic.php?f=4&t=120&p=1408#p1408)
+[originally appeared](https://developers.theta360.com/en/forums/viewtopic.php?f=4&t=120&p=1408#p1389)
  in the RICOH Developers Forum.
 
-by RuneKyndal
+Thanks to Rune Kyndal for building this awesome remote control and posting
+it in the forum.
 
 Hi Guys..
 I just finished building a handy little remote shutter for my Theta S
@@ -41,3 +42,8 @@ thoughts. I'm using a AMS1117 3.3v LDO between the ESP and the li-po cell. not s
 that will work when the voltage drops..
 
 oh.. and get a nicer shutter button.. 20 cent one.. not quite up to par ;)
+
+Update:
+Maybe I will draw up a quick "Pseudo" schematic.. not much to it though.
+just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
+1 battery charger circuit board + battery, stuffed in a case.
