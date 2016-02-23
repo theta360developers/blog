@@ -49,6 +49,7 @@ just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 1 battery charger circuit board + battery, stuffed in a case.
 
 ## Related Information
+Information below added by Craig.
 
 * [RICOH THETA S Simple Remote Controller ESP8266 GitHub source code and information](https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler)
 * [RICOH THETA S Full Remote Controller](https://github.com/katsuya-san/ESP8266-THETA-S-FullRemoteControler)
@@ -63,3 +64,11 @@ Pictures from
 ![](/blog/img/2016-02/remote_2.png)
 
 ![](/blog/img/2016-02/simple_remote.png)
+
+## General ESP8266 Information
+
+* [ESP8266 Community Wiki](http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family)
+* [SparkFun WiFi Module ESP8266](https://www.sparkfun.com/products/13678) $6.95
+* [Adafruit HUZZAH ESP8266 Breakout](https://www.adafruit.com/products/2471) $9.95 - currently sold out
+* [Adafruit Feather HUZZAH with ESP8266 WiFi](https://www.adafruit.com/products/2821) $15.95 - currently sold out
+* [SparkFun esp8266 Thing Dev Board](https://www.sparkfun.com/products/13711) $15.95
