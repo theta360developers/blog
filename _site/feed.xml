@@ -6,22 +6,45 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Feb 2016 20:30:28 -0800</pubDate>
-    <lastBuildDate>Mon, 22 Feb 2016 20:30:28 -0800</lastBuildDate>
+    <pubDate>Tue, 23 Feb 2016 06:31:19 -0800</pubDate>
+    <lastBuildDate>Tue, 23 Feb 2016 06:31:19 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Remote Shutter for THETA S Using ESP8266</title>
-        <description>&lt;p&gt;This post
+        <description>&lt;p&gt;The main idea for this post
 &lt;a href=&quot;https://developers.theta360.com/en/forums/viewtopic.php?f=4&amp;amp;t=120&amp;amp;p=1408#p1389&quot;&gt;originally appeared&lt;/a&gt;
- in the RICOH Developers Forum.&lt;/p&gt;
+in the RICOH Developers Forum. Thanks to Rune Kyndal for building his awesome remote control and posting
+it in the forum. Rune was also kind enough to point us to the original code from
+Katsuya-san, which opened up a range of possibilities for the community to
+hack ESP8266 boards to control the THETA S 360 camera. I have extended Rune’s post with general information
+on ESP8266 boards and more information on the projects from Katsuya-san,
+the original author of the code for the ESP8266 project.&lt;/p&gt;
 
-&lt;p&gt;Thanks to Rune Kyndal for building this awesome remote control and posting
-it in the forum.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-an-esp8266-and-why-should-i-care&quot;&gt;What is an ESP8266 and Why Should I Care?&lt;/h2&gt;
+&lt;p&gt;If you search on the Internet, you’ll quickly learn that the ESP8266 is a small WiFi module that cost between $6 and $15, with a typical price of $10 for the module with
+accessories built on the dev board such as breadboard breakout pins, LED monitoring
+lights, and flash. Most of the easrly excitement around the ESP8266 dealt
+with adding WiFi support to Arduino boards. However, as $10 (and cheaper)
+ESP8266 boards have a MCU, flash, and bootloader, people have been running
+the $10 boards standalone with a battery.&lt;/p&gt;
 
-&lt;p&gt;Hi Guys..
-I just finished building a handy little remote shutter for my Theta S
-thought i would share&lt;/p&gt;
+&lt;p&gt;For projects with the THETA S, the ESP8266 can connect to the THETA S
+using WiFi, then send HTTP commands directly to the THETA to take
+pictures and control the camera.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/remote_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s quite a cool little project and quite gratifying to press a remote button
+and hear the THETA S shutter chirp. :-)&lt;/p&gt;
+
+&lt;p&gt;Join in and share your THETA project.&lt;/p&gt;
+
+&lt;h2 id=&quot;rune-kyndals-completed-controller-for-the-theta-s&quot;&gt;Rune Kyndal’s Completed Controller for the THETA S&lt;/h2&gt;
+&lt;p&gt;From Rune Kyndal
+Hi Guys..
+I just finished building a handy little remote shutter for my THETA S camera and
+thought I would share&lt;/p&gt;
 
 &lt;p&gt;I’m using
 &lt;a href=&quot;https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler&quot;&gt;Katsuya Yamamoto’s ESP8266 “simple remote” code&lt;/a&gt;&lt;/p&gt;
@@ -34,7 +57,7 @@ const int led2Pin = 2;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;i used a small Lipo battery and charger circuit. built the required ESP-01 circuit straight on to the 2x4 header.
+&lt;p&gt;I used a small Lipo battery and charger circuit. built the required ESP-01 circuit straight on to the 2x4 header.
 and stuffed inside a cheap 9v battery case
 (patent pending ugly hotglue birds-nest style)&lt;/p&gt;
 
@@ -56,7 +79,20 @@ Maybe I will draw up a quick “Pseudo” schematic.. not much to it though.
 just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 1 battery charger circuit board + battery, stuffed in a case.&lt;/p&gt;
 
-&lt;h2 id=&quot;related-information&quot;&gt;Related Information&lt;/h2&gt;
+&lt;h2 id=&quot;katsuya-sans-esp8266-theta-s-remote-controller&quot;&gt;Katsuya-san’s ESP8266 THETA S Remote Controller&lt;/h2&gt;
+&lt;p&gt;Information below added by Craig.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/katsuya-san&quot;&gt;Katsuya-san&lt;/a&gt; developed two remote control units
+for the THETA S. One verion has a single button control and one version has full
+controller features. Both versions are based on the
+&lt;a href=&quot;https://www.switch-science.com/catalog/2500/&quot;&gt;Switch Science ESP-WROOM-02&lt;/a&gt;
+ development board. Although it looks like this board may only be available in
+ Japan, other 8266 boards are available globally. People in the US
+ should be able to source parts from places like &lt;a href=&quot;https://www.adafruit.com/&quot;&gt;Adafruit&lt;/a&gt;
+ &lt;a href=&quot;https://www.sparkfun.com/&quot;&gt;SparkFun&lt;/a&gt;. Although I have not checked their
+ parts, the you may be able to find components at places like
+ &lt;a href=&quot;http://www.digikey.com/&quot;&gt;Digi-Key&lt;/a&gt; and
+ &lt;a href=&quot;http://www.mouser.com/&quot;&gt;Mouser Electronics&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler&quot;&gt;RICOH THETA S Simple Remote Controller ESP8266 GitHub source code and information&lt;/a&gt;&lt;/li&gt;
@@ -70,9 +106,17 @@ just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/remote_control_case.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/remote_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/simple_remote.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;general-esp8266-information&quot;&gt;General ESP8266 Information&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.esp8266.com/wiki/doku.php?id=esp8266-module-family&quot;&gt;ESP8266 Community Wiki&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/13678&quot;&gt;SparkFun WiFi Module ESP8266&lt;/a&gt; $6.95&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.adafruit.com/products/2471&quot;&gt;Adafruit HUZZAH ESP8266 Breakout&lt;/a&gt; $9.95 - currently sold out&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.adafruit.com/products/2821&quot;&gt;Adafruit Feather HUZZAH with ESP8266 WiFi&lt;/a&gt; $15.95 - currently sold out&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/13711&quot;&gt;SparkFun esp8266 Thing Dev Board&lt;/a&gt; $15.95&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Mon, 22 Feb 2016 00:00:00 -0800</pubDate>
         <link>http://theta360developers.github.io/blog/applications/2016/02/22/remote-shutter.html</link>
