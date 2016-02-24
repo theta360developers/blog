@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "List of RICOH THETA Apps"
 date:   2016-1-20
 author: "Craig Oda"

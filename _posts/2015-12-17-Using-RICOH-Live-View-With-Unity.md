@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Using RICOH THETA Live View With Unity"
 date:   2015-12-17
 author: "Jesse Casman"

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Using Node.js with the RICOH THETA S"
 date:   2015-12-17
 author: "Craig Oda"
@@ -11,7 +12,7 @@ node.js](http://qiita.com/FePlus/items/aaeca40468d49786e2f5).
 
 Since I've been trying to test the THETA API with JavaScript,
 I spent a few minutes to translate his main points into
-English. 
+English.
 
 I'll start off Satoru's code snippet. The rest of the text
 is also from him, including the summary, which includes an

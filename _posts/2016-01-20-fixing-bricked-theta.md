@@ -1,11 +1,12 @@
 ---
 layout: post
+comments: true
 title:  "RICOH THETA S Won't Boot - FIXED"
 date:   2016-1-20
 author: "Jesse Casman"
 categories: Camera
 ---
-I was able to unbrick my RICOH THETA S, and I’m sharing some of my results here. 
+I was able to unbrick my RICOH THETA S, and I’m sharing some of my results here.
 
 Background
 ----------
@@ -27,7 +28,7 @@ Press and hold wifi button on the side and the shutter button on the front. Whil
 
 ### Second step
 
-Press and hold the wifi and shutter buttons, and DO NOT press power. Attach to the Mac while holding the two buttons down. (Yes, this is cumbersome.) I then connected to my MacOS X Macbook Air via USB and made sure I could see it as an attached device. 
+Press and hold the wifi and shutter buttons, and DO NOT press power. Attach to the Mac while holding the two buttons down. (Yes, this is cumbersome.) I then connected to my MacOS X Macbook Air via USB and made sure I could see it as an attached device.
 
 If Photos comes up automatically, that may be an issue. Go into Photos, under the Import tab, unclick Open Photos for this device. Then unplug and plug back in.
 
@@ -41,7 +42,7 @@ At some point here, under RICOH THETA please check for newest version and update
 
 ### Final step
 
-Now, in the RICOH THETA app, under File, run Firmware Update. Here’s the interesting part. I went through the firmware update. If the camera is not connected (or not connected properly) you will get an error message. I was nicely connected at this point. 
+Now, in the RICOH THETA app, under File, run Firmware Update. Here’s the interesting part. I went through the firmware update. If the camera is not connected (or not connected properly) you will get an error message. I was nicely connected at this point.
 
 The updater told me I was already running 1.21 and the newest version is the same version, 1.21, therefore no need to update. This felt like a dead end. But try ignoring this. I thought it would not upgrade or reinstall the firmware, but… after unplugging and restarting, my RICOH THETA S is healthy. Attaches to iPhone, takes pictures, everything.
 
