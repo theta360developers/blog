@@ -31,6 +31,7 @@ same time from inside of the VM (using NAT)
 * extensive Python examples to access THETA from Linux, including downloading
 media
 * JavaScript examples to access THETA from Linux with NodeJS
+* [HoloBuilder](https://www.holobuilder.com/welcome) for editing 360 image spheres and connecting them (cloud-based)
 
 The following does not work in a Linux VM (as of 2/28/2016). If you get
 it to work, send me a note.
@@ -41,3 +42,9 @@ it to work, send me a note.
 
 Based on the VMware advantages with 3D acceleration, it looks like VMware is a
 better choice than VirtualBox for THETA development as of Feb 2016.
+
+The following has not been tested on Linux in a VM, but should work:
+
+* [Pano2VR](http://ggnome.com/pano2vr) - Editing 360 image spheres. Can export
+JavaScript and other format. This software is covered in the
+[Unofficial Media Guide](http://theta360developers.github.io/community-document/community.html)
