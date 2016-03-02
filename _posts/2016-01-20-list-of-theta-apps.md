@@ -84,6 +84,12 @@ Online Programs
 * [Android Option 2](https://play.google.com/store/apps/details?id=com.teapps.thetahdr)
 * [iOS](https://itunes.apple.com/us/app/hdr-360-bracket-pro-for-ricoh/id987157511?mt=8)
 
+## Simple HDR by Built Light (to take HDR pictures)
+Community review: Nicely affordable Theta HDR app. Drop the files into something like Photomatix on the desktop
+and you have a nice HDR for CG work. A really good looking app. Clean.
+
+* [iOS](https://itunes.apple.com/us/app/simple-hdr/id1035541353)
+
 ## Theta Action + (Motion pictures)
 
 * [Android](https://play.google.com/store/apps/details?id=jp.sciencecow.thetaactionplus)
