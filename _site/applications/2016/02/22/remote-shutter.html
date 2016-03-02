@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Remote Shutter for THETA S Using ESP8266</title>
-  <meta name="description" content="The main idea for this postoriginally appearedin the RICOH Developers Forum. Thanks to Rune Kyndal for building his awesome remote control and postingit in t...">
+  <meta name="description" content="The main idea for this postoriginally appearedin the RICOH Developers Forum. Thanks to Rune Kyndal for building his awesome remote control and postinginforma...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
   <link rel="canonical" href="http://theta360developers.github.io/blog/applications/2016/02/22/remote-shutter.html">
@@ -82,16 +82,18 @@
     <p>The main idea for this post
 <a href="https://developers.theta360.com/en/forums/viewtopic.php?f=4&amp;t=120&amp;p=1408#p1389">originally appeared</a>
 in the RICOH Developers Forum. Thanks to Rune Kyndal for building his awesome remote control and posting
-it in the forum. Rune was also kind enough to point us to the original code from
+information on it in the forum. Rune was also kind enough to point us to the original code from
 Katsuya-san, which opened up a range of possibilities for the community to
-hack ESP8266 boards to control the THETA S 360 camera. I have extended Rune’s post with general information
-on ESP8266 boards and more information on the projects from Katsuya-san,
-the original author of the code for the ESP8266 project.</p>
+hack ESP8266 boards to control the THETA S 360 camera. I extended Rune’s post to include
+general information on ESP8266 boards and added information on the projects from Katsuya-san,
+the original author of the code for the ESP8266 THETA remote shutter project.</p>
 
 <h2 id="what-is-an-esp8266-and-why-should-i-care">What is an ESP8266 and Why Should I Care?</h2>
-<p>If you search on the Internet, you’ll quickly learn that the ESP8266 is a small WiFi module that cost between $6 and $15, with a typical price of $10 for the module with
+<p>If you search on the Internet, you’ll quickly learn that the ESP8266
+is a small WiFi module that cost between $6 and $15, with a typical price
+of $10 for the module with
 accessories built on the dev board such as breadboard breakout pins, LED monitoring
-lights, and flash. Most of the easrly excitement around the ESP8266 dealt
+lights, and flash. Most of the early excitement around the ESP8266 dealt
 with adding WiFi support to Arduino boards. However, as $10 (and cheaper)
 ESP8266 boards have a MCU, flash, and bootloader, people have been running
 the $10 boards standalone with a battery.</p>
@@ -102,7 +104,7 @@ pictures and control the camera.</p>
 
 <p><img src="/blog/img/2016-02/remote_2.png" alt="" /></p>
 
-<p>It’s quite a cool little project and quite gratifying to press a remote button
+<p>It’s a cool little project and very gratifying to press a remote button
 and hear the THETA S shutter chirp. :-)</p>
 
 <p>Join in and share your THETA project.</p>
@@ -111,12 +113,12 @@ and hear the THETA S shutter chirp. :-)</p>
 <p>From Rune Kyndal
 Hi Guys..
 I just finished building a handy little remote shutter for my THETA S camera and
-thought I would share</p>
+thought I would share it.</p>
 
 <p>I’m using
 <a href="https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler">Katsuya Yamamoto’s ESP8266 “simple remote” code</a></p>
 
-<p>the only change i did to the code was to swap the I/O around to make it work with the
+<p>The only change I made to the code was to swap the I/O around to make it work with the
 I/O available on the smaller ESP-01 board</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>const int buttonPin = 0;
@@ -124,11 +126,12 @@ const int led2Pin = 2;
 </code></pre>
 </div>
 
-<p>I used a small Lipo battery and charger circuit. built the required ESP-01 circuit straight on to the 2x4 header.
-and stuffed inside a cheap 9v battery case
-(patent pending ugly hotglue birds-nest style)</p>
+<p>I used a small Lipo battery and charger circuit and built the
+required ESP-01 circuit straight onto the 2x4 header.
+Everything is stuffed inside of a cheap 9v battery case
+(patent pending ugly hot glue birds-nest style)</p>
 
-<p>but she works</p>
+<p>But, she works.</p>
 
 <p><img src="https://dl.dropboxusercontent.com/u/1644351/theta-remote/IMG_3581.JPG" alt="" /></p>
 
@@ -136,10 +139,11 @@ and stuffed inside a cheap 9v battery case
 
 <p><img src="https://dl.dropboxusercontent.com/u/1644351/theta-remote/IMG_3591.JPG" alt="" /></p>
 
-<p>thoughts. I’m using a AMS1117 3.3v LDO between the ESP and the li-po cell. not sure how well
+<p>Additional thoughts, I’m using a AMS1117 3.3v LDO between the ESP and the li-po cell. not sure how well
 that will work when the voltage drops..</p>
 
-<p>oh.. and get a nicer shutter button.. 20 cent one.. not quite up to par ;)</p>
+<p>oh.. and I need to get a nicer shutter button. The 20 cent one I am using is
+not quite up to par ;)</p>
 
 <p>Update:
 Maybe I will draw up a quick “Pseudo” schematic.. not much to it though.
@@ -150,14 +154,14 @@ just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 <p>Information below added by Craig.</p>
 
 <p><a href="https://github.com/katsuya-san">Katsuya-san</a> developed two remote control units
-for the THETA S. One verion has a single button control and one version has full
-controller features. Both versions are based on the
+for the THETA S. One version has a single button control and the other
+version has full controller features. Both versions are based on the
 <a href="https://www.switch-science.com/catalog/2500/">Switch Science ESP-WROOM-02</a>
- development board. Although it looks like this board may only be available in
+ development board. Although it looks like this board is only available in
  Japan, other 8266 boards are available globally. People in the US
  should be able to source parts from places like <a href="https://www.adafruit.com/">Adafruit</a>
  <a href="https://www.sparkfun.com/">SparkFun</a>. Although I have not checked their
- parts, the you may be able to find components at places like
+ parts inventory, you may be able to find components at places like
  <a href="http://www.digikey.com/">Digi-Key</a> and
  <a href="http://www.mouser.com/">Mouser Electronics</a>.</p>
 
@@ -186,6 +190,29 @@ controller features. Both versions are based on the
 </ul>
 
   </div>
+
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+       */
+
+      var disqus_config = function () {
+          this.page.url = /applications/2016/02/22/remote-shutter.html;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = /applications/2016/02/22/remote-shutter; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+
+      (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+          var d = document, s = d.createElement('script');
+
+          s.src = '//thetadevelopers.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 </article>
 

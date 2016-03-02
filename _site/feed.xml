@@ -6,25 +6,130 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Feb 2016 06:31:19 -0800</pubDate>
-    <lastBuildDate>Tue, 23 Feb 2016 06:31:19 -0800</lastBuildDate>
+    <pubDate>Tue, 01 Mar 2016 16:06:04 -0800</pubDate>
+    <lastBuildDate>Tue, 01 Mar 2016 16:06:04 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>YouTube 360 Videos and 360 Images on Linux in VM (VMware vs VirtualBox)</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/ubuntu-vmware.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When using Linux in a VM as a development environment for the THETA,
+people often encounter
+problems testing 360 video and images. Here is what works:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Linux in VMware Player VM with 3D hardware acceleration on Firefox. YouTube 360
+works with navigation.
+&lt;a href=&quot;https://github.com/theta360developers/ThetaViewer&quot;&gt;Akokubo JavaScript Viewer code&lt;/a&gt;
+works on FireFox.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Linux in VirtualBox VM with 3D hardware acceleration disabled.
+YouTube 360 video works in VM, but things are generally slow.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following also works in a Linux VM (both VirtualBox and VMware)
+and is covered in the
+&lt;a href=&quot;http://codetricity.github.io/theta-s/&quot;&gt;Unofficial API Guide&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;dual network interfaces to connect to the THETA and the Internet at the
+same time from inside of the VM (using NAT)&lt;/li&gt;
+  &lt;li&gt;command line access to THETA from bash shell with curl&lt;/li&gt;
+  &lt;li&gt;extensive Python examples to access THETA from Linux, including downloading
+media&lt;/li&gt;
+  &lt;li&gt;JavaScript examples to access THETA from Linux with NodeJS&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.holobuilder.com/welcome&quot;&gt;HoloBuilder&lt;/a&gt; for editing 360 image spheres and connecting them (cloud-based)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following does not work in a Linux VM (as of 2/28/2016). If you get
+it to work, send me a note.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;YouTube or other 360 image navigation with Chrome&lt;/li&gt;
+  &lt;li&gt;Stitching videos into equirectangular mode on Linux&lt;/li&gt;
+  &lt;li&gt;Viewing 360 videos on Linux from local media, not on YouTube&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Based on the VMware advantages with 3D acceleration, it looks like VMware is a
+better choice than VirtualBox for THETA development as of Feb 2016.&lt;/p&gt;
+
+&lt;p&gt;The following has not been tested on Linux in a VM, but should work:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ggnome.com/pano2vr&quot;&gt;Pano2VR&lt;/a&gt; - Editing 360 image spheres. Can export
+JavaScript and other format. This software is covered in the
+&lt;a href=&quot;http://theta360developers.github.io/community-document/community.html&quot;&gt;Unofficial Media Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 28 Feb 2016 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/applications/2016/02/28/linux-theta-dev-in-vm.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/02/28/linux-theta-dev-in-vm.html</guid>
+        
+        
+        <category>Applications</category>
+        
+      </item>
+    
+      <item>
+        <title>Silicon Valley THETA S Meetup and Workshop Planned</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://gallery.mailchimp.com/92f3f97f3eb55d52507b08fe1/images/2d679ee6-b18b-4ab6-8696-9ac4dfd52b8a.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In response to massive requests for THETA demos and developer
+information after the
+recent DeveloperWeek Hackathon in San Francisco, we’ve decided to
+extend the hacking excitement to Silicon Valley.&lt;/p&gt;
+
+&lt;p&gt;We’re planning an educational workshop and onsite hacking meetup with
+loaner cameras.&lt;/p&gt;
+
+&lt;h2 id=&quot;theta-360-camera-hacking-continues&quot;&gt;THETA 360 Camera Hacking Continues&lt;/h2&gt;
+
+&lt;p&gt;We’ve made the
+&lt;a href=&quot;http://theta360developers.github.io/&quot;&gt;THETA Unofficial Guides&lt;/a&gt;
+hackathon documentation available online. However, we realize you may not
+have a camera handy. If you’re interested in attending a free THETA SF Bay
+Area meetup where you can hack on the camera onsite, please send an email
+to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#114;&amp;#105;&amp;#099;&amp;#111;&amp;#104;&amp;#116;&amp;#104;&amp;#101;&amp;#116;&amp;#097;&amp;#051;&amp;#054;&amp;#048;&amp;#064;&amp;#111;&amp;#112;&amp;#112;&amp;#107;&amp;#101;&amp;#121;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#114;&amp;#105;&amp;#099;&amp;#111;&amp;#104;&amp;#116;&amp;#104;&amp;#101;&amp;#116;&amp;#097;&amp;#051;&amp;#054;&amp;#048;&amp;#064;&amp;#111;&amp;#112;&amp;#112;&amp;#107;&amp;#101;&amp;#121;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; and we’ll add you to the invite list.&lt;/p&gt;
+
+&lt;p&gt;We’ll cover the basics of the API and provide application templates to get
+you going in less than 30 minutes. For rapid prototyping, we’ll cover
+Python and JavaScript, but you can use any language to control the camera
+with the HTTP API. Stay and build your application.&lt;/p&gt;
+
+&lt;p&gt;Once we have critical mass, we’ll schedule the day and place.
+Join THETA Developers to take part in the fast-growing 360
+image and video movement!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 24 Feb 2016 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/applications/2016/02/24/silicon-valley-theta-meetup.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/02/24/silicon-valley-theta-meetup.html</guid>
+        
+        
+        <category>Applications</category>
+        
+      </item>
     
       <item>
         <title>Remote Shutter for THETA S Using ESP8266</title>
         <description>&lt;p&gt;The main idea for this post
 &lt;a href=&quot;https://developers.theta360.com/en/forums/viewtopic.php?f=4&amp;amp;t=120&amp;amp;p=1408#p1389&quot;&gt;originally appeared&lt;/a&gt;
 in the RICOH Developers Forum. Thanks to Rune Kyndal for building his awesome remote control and posting
-it in the forum. Rune was also kind enough to point us to the original code from
+information on it in the forum. Rune was also kind enough to point us to the original code from
 Katsuya-san, which opened up a range of possibilities for the community to
-hack ESP8266 boards to control the THETA S 360 camera. I have extended Rune’s post with general information
-on ESP8266 boards and more information on the projects from Katsuya-san,
-the original author of the code for the ESP8266 project.&lt;/p&gt;
+hack ESP8266 boards to control the THETA S 360 camera. I extended Rune’s post to include
+general information on ESP8266 boards and added information on the projects from Katsuya-san,
+the original author of the code for the ESP8266 THETA remote shutter project.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-an-esp8266-and-why-should-i-care&quot;&gt;What is an ESP8266 and Why Should I Care?&lt;/h2&gt;
-&lt;p&gt;If you search on the Internet, you’ll quickly learn that the ESP8266 is a small WiFi module that cost between $6 and $15, with a typical price of $10 for the module with
+&lt;p&gt;If you search on the Internet, you’ll quickly learn that the ESP8266
+is a small WiFi module that cost between $6 and $15, with a typical price
+of $10 for the module with
 accessories built on the dev board such as breadboard breakout pins, LED monitoring
-lights, and flash. Most of the easrly excitement around the ESP8266 dealt
+lights, and flash. Most of the early excitement around the ESP8266 dealt
 with adding WiFi support to Arduino boards. However, as $10 (and cheaper)
 ESP8266 boards have a MCU, flash, and bootloader, people have been running
 the $10 boards standalone with a battery.&lt;/p&gt;
@@ -35,7 +140,7 @@ pictures and control the camera.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-02/remote_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s quite a cool little project and quite gratifying to press a remote button
+&lt;p&gt;It’s a cool little project and very gratifying to press a remote button
 and hear the THETA S shutter chirp. :-)&lt;/p&gt;
 
 &lt;p&gt;Join in and share your THETA project.&lt;/p&gt;
@@ -44,12 +149,12 @@ and hear the THETA S shutter chirp. :-)&lt;/p&gt;
 &lt;p&gt;From Rune Kyndal
 Hi Guys..
 I just finished building a handy little remote shutter for my THETA S camera and
-thought I would share&lt;/p&gt;
+thought I would share it.&lt;/p&gt;
 
 &lt;p&gt;I’m using
 &lt;a href=&quot;https://github.com/katsuya-san/ESP8266-THETA-S-SimpleRemoteControler&quot;&gt;Katsuya Yamamoto’s ESP8266 “simple remote” code&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;the only change i did to the code was to swap the I/O around to make it work with the
+&lt;p&gt;The only change I made to the code was to swap the I/O around to make it work with the
 I/O available on the smaller ESP-01 board&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const int buttonPin = 0;
@@ -57,11 +162,12 @@ const int led2Pin = 2;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;I used a small Lipo battery and charger circuit. built the required ESP-01 circuit straight on to the 2x4 header.
-and stuffed inside a cheap 9v battery case
-(patent pending ugly hotglue birds-nest style)&lt;/p&gt;
+&lt;p&gt;I used a small Lipo battery and charger circuit and built the
+required ESP-01 circuit straight onto the 2x4 header.
+Everything is stuffed inside of a cheap 9v battery case
+(patent pending ugly hot glue birds-nest style)&lt;/p&gt;
 
-&lt;p&gt;but she works&lt;/p&gt;
+&lt;p&gt;But, she works.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/1644351/theta-remote/IMG_3581.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -69,10 +175,11 @@ and stuffed inside a cheap 9v battery case
 
 &lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/1644351/theta-remote/IMG_3591.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;thoughts. I’m using a AMS1117 3.3v LDO between the ESP and the li-po cell. not sure how well
+&lt;p&gt;Additional thoughts, I’m using a AMS1117 3.3v LDO between the ESP and the li-po cell. not sure how well
 that will work when the voltage drops..&lt;/p&gt;
 
-&lt;p&gt;oh.. and get a nicer shutter button.. 20 cent one.. not quite up to par ;)&lt;/p&gt;
+&lt;p&gt;oh.. and I need to get a nicer shutter button. The 20 cent one I am using is
+not quite up to par ;)&lt;/p&gt;
 
 &lt;p&gt;Update:
 Maybe I will draw up a quick “Pseudo” schematic.. not much to it though.
@@ -83,14 +190,14 @@ just an ESP-01 board a 3.3v LDO, 3 resistors. 2 leds. 1 button,
 &lt;p&gt;Information below added by Craig.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/katsuya-san&quot;&gt;Katsuya-san&lt;/a&gt; developed two remote control units
-for the THETA S. One verion has a single button control and one version has full
-controller features. Both versions are based on the
+for the THETA S. One version has a single button control and the other
+version has full controller features. Both versions are based on the
 &lt;a href=&quot;https://www.switch-science.com/catalog/2500/&quot;&gt;Switch Science ESP-WROOM-02&lt;/a&gt;
- development board. Although it looks like this board may only be available in
+ development board. Although it looks like this board is only available in
  Japan, other 8266 boards are available globally. People in the US
  should be able to source parts from places like &lt;a href=&quot;https://www.adafruit.com/&quot;&gt;Adafruit&lt;/a&gt;
  &lt;a href=&quot;https://www.sparkfun.com/&quot;&gt;SparkFun&lt;/a&gt;. Although I have not checked their
- parts, the you may be able to find components at places like
+ parts inventory, you may be able to find components at places like
  &lt;a href=&quot;http://www.digikey.com/&quot;&gt;Digi-Key&lt;/a&gt; and
  &lt;a href=&quot;http://www.mouser.com/&quot;&gt;Mouser Electronics&lt;/a&gt;.&lt;/p&gt;
 
@@ -227,6 +334,14 @@ PanoVR also is great for things like tripod removal or fixing images. You can se
   &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=air.de.pl.ThetaHDRApp&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.teapps.thetahdr&quot;&gt;Android Option 2&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/hdr-360-bracket-pro-for-ricoh/id987157511?mt=8&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;simple-hdr-by-built-light-to-take-hdr-pictures&quot;&gt;Simple HDR by Built Light (to take HDR pictures)&lt;/h2&gt;
+&lt;p&gt;Community review: Nicely affordable Theta HDR app. Drop the files into something like Photomatix on the desktop
+and you have a nice HDR for CG work. A really good looking app. Clean.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/simple-hdr/id1035541353&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;theta-action--motion-pictures&quot;&gt;Theta Action + (Motion pictures)&lt;/h2&gt;

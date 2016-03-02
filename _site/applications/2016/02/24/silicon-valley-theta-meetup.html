@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>RICOH THETA S Won't Boot - FIXED</title>
-  <meta name="description" content="I was able to unbrick my RICOH THETA S, and I’m sharing some of my results here.">
+  <title>Silicon Valley THETA S Meetup and Workshop Planned</title>
+  <meta name="description" content="">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360developers.github.io/blog/camera/2016/01/20/fixing-bricked-theta.html">
+  <link rel="canonical" href="http://theta360developers.github.io/blog/applications/2016/02/24/silicon-valley-theta-meetup.html">
   <link rel="alternate" type="application/rss+xml" title="THETA 360 Developers Unofficial Blog" href="http://theta360developers.github.io/blog/feed.xml">
 
 </head>
@@ -73,51 +73,39 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">RICOH THETA S Won't Boot - FIXED</h1>
+    <h1 class="post-title" itemprop="name headline">Silicon Valley THETA S Meetup and Workshop Planned</h1>
     <p class="post-meta">
-	<time datetime="2016-01-20T00:00:00-08:00" itemprop="datePublished">Jan 20, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jesse Casman</span></span></p>
+	<time datetime="2016-02-24T00:00:00-08:00" itemprop="datePublished">Feb 24, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>I was able to unbrick my RICOH THETA S, and I’m sharing some of my results here.</p>
+    <p><img src="https://gallery.mailchimp.com/92f3f97f3eb55d52507b08fe1/images/2d679ee6-b18b-4ab6-8696-9ac4dfd52b8a.png" alt="" /></p>
 
-<h2 id="background">Background</h2>
+<p>In response to massive requests for THETA demos and developer
+information after the
+recent DeveloperWeek Hackathon in San Francisco, we’ve decided to
+extend the hacking excitement to Silicon Valley.</p>
 
-<p>I was running the RICOH THETA app version 2.0.0. This version has a known bug with the firmware upgrade. Unfortunately, I was unaware of this. I updated my firmware through the MacOS X RICOH THETA app to 1.21. Soon thereafter, my RICOH THETA S would not boot up. All of the blue lights on the front would blink, then a red light would come on, and a triple bee-bee-beep would happen, and it would shut down in about 3-5 seconds. Over and over.</p>
+<p>We’re planning an educational workshop and onsite hacking meetup with
+loaner cameras.</p>
 
-<p><img src="/blog/img/2016-01/theta_blinking.jpg" alt="THETA with all lights blinking blue" /></p>
+<h2 id="theta-360-camera-hacking-continues">THETA 360 Camera Hacking Continues</h2>
 
-<p>First I thought it was not charged. I tried charging, but the red charging light would only stay on for about 20 seconds, maybe a little longer.</p>
+<p>We’ve made the
+<a href="http://theta360developers.github.io/">THETA Unofficial Guides</a>
+hackathon documentation available online. However, we realize you may not
+have a camera handy. If you’re interested in attending a free THETA SF Bay
+Area meetup where you can hack on the camera onsite, please send an email
+to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#114;&#105;&#099;&#111;&#104;&#116;&#104;&#101;&#116;&#097;&#051;&#054;&#048;&#064;&#111;&#112;&#112;&#107;&#101;&#121;&#046;&#099;&#111;&#109;">&#114;&#105;&#099;&#111;&#104;&#116;&#104;&#101;&#116;&#097;&#051;&#054;&#048;&#064;&#111;&#112;&#112;&#107;&#101;&#121;&#046;&#099;&#111;&#109;</a> and we’ll add you to the invite list.</p>
 
-<p>Then I began imagining I had dropped it or something, maybe it was actually broken. But seeing these posts here and talking with codetricity, I realized it was bricked. If I could update the firmware, maybe we could get it to boot up again.</p>
+<p>We’ll cover the basics of the API and provide application templates to get
+you going in less than 30 minutes. For rapid prototyping, we’ll cover
+Python and JavaScript, but you can use any language to control the camera
+with the HTTP API. Stay and build your application.</p>
 
-<h2 id="steps-to-fix">Steps to fix</h2>
-
-<h3 id="first-step">First step</h3>
-
-<p>Press and hold wifi button on the side and the shutter button on the front. While holding them, press the power button. Mine booted, with a front red light coming on (I think), and with the front wifi, video and LIVE blue lights blinking continuously.</p>
-
-<h3 id="second-step">Second step</h3>
-
-<p>Press and hold the wifi and shutter buttons, and DO NOT press power. Attach to the Mac while holding the two buttons down. (Yes, this is cumbersome.) I then connected to my MacOS X Macbook Air via USB and made sure I could see it as an attached device.</p>
-
-<p>If Photos comes up automatically, that may be an issue. Go into Photos, under the Import tab, unclick Open Photos for this device. Then unplug and plug back in.</p>
-
-<p>If you see the RICOH THETA as a device, it’ll show up in Finder as RICODCX. Also, the front red light on the camera stays on continuously at this point (I think). Double click to open RICODCX. There should be two files, DCIM and MISC. Delete both. I believe this gets rid of a corrupted file. I do not know this for a fact, though.</p>
-
-<h3 id="third-step">Third Step</h3>
-
-<p>Unplug, turn off, and then reattach to the Mac while holding the wifi and shutter buttons down at the same time.</p>
-
-<p>At some point here, under RICOH THETA please check for newest version and update the RICOH THETA app to 2.0.1.</p>
-
-<h3 id="final-step">Final step</h3>
-
-<p>Now, in the RICOH THETA app, under File, run Firmware Update. Here’s the interesting part. I went through the firmware update. If the camera is not connected (or not connected properly) you will get an error message. I was nicely connected at this point.</p>
-
-<p>The updater told me I was already running 1.21 and the newest version is the same version, 1.21, therefore no need to update. This felt like a dead end. But try ignoring this. I thought it would not upgrade or reinstall the firmware, but… after unplugging and restarting, my RICOH THETA S is healthy. Attaches to iPhone, takes pictures, everything.</p>
-
-<p>Good luck!</p>
+<p>Once we have critical mass, we’ll schedule the day and place.
+Join THETA Developers to take part in the fast-growing 360
+image and video movement!</p>
 
   </div>
 
@@ -129,8 +117,8 @@
        */
 
       var disqus_config = function () {
-          this.page.url = /camera/2016/01/20/fixing-bricked-theta.html;  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = /camera/2016/01/20/fixing-bricked-theta; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          this.page.url = /applications/2016/02/24/silicon-valley-theta-meetup.html;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = /applications/2016/02/24/silicon-valley-theta-meetup; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
 
       (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
