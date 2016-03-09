@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Mar 2016 16:55:48 -0800</pubDate>
-    <lastBuildDate>Tue, 08 Mar 2016 16:55:48 -0800</lastBuildDate>
+    <pubDate>Wed, 09 Mar 2016 06:32:23 -0800</pubDate>
+    <lastBuildDate>Wed, 09 Mar 2016 06:32:23 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -51,35 +51,48 @@ Japanese.&lt;/p&gt;
 &lt;p&gt;With the email, you will get a username and password. Here’s the translation
 of the email.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Things to note
+&lt;blockquote&gt;
+  &lt;p&gt;Things to note&lt;/p&gt;
 
-Page views are limited to 500 per month for the Free Plan.
+  &lt;p&gt;Page views are limited to 500 per month for the Free Plan.&lt;/p&gt;
 
-Each time a 360 degree image is displayed on your website, that equals one page view.
+  &lt;p&gt;Each time a 360 degree image is displayed on your website, that equals one page view.&lt;/p&gt;
 
-If you surpass 500 page views, an “Under Construction” message will appear, and the images will not be displayed for the rest of that month.
+  &lt;p&gt;If you surpass 500 page views, an “Under Construction” message will appear, and the images will not be displayed for the rest of that month.&lt;/p&gt;
 
-When auto refresh is set to ON and embedded tags in your webpage are pasted directly, it’s possible it will not display after several days.
+  &lt;p&gt;When auto refresh is set to ON and embedded tags in your webpage are pasted directly, it’s possible it will not display after several days.&lt;/p&gt;
 
-If auto refresh is OFF and the embedded tag doesn’t fit the design of the webpage, please consider using thumbnails from elsewhere and using a new window or a pop-up window.
+  &lt;p&gt;If auto refresh is OFF and the embedded tag doesn’t fit the design of the webpage, please consider using thumbnails from elsewhere and using a new window or a pop-up &amp;gt;window.&lt;/p&gt;
 
-For example, if you follow the order of the steps below, you can display a new window, and it’s possible that until you click the thumbnail the 360 degree image will not display.
+  &lt;p&gt;For example, if you follow the order of the steps below, you can display a new window, and it’s possible that until you click the thumbnail the 360 degree image will not &amp;gt;display.&lt;/p&gt;
 
-1. Please get embedded tags while auto refresh is on.
-2. Please use thumbnails.
-3. Please embed the link into the thumbnails.
-4. Please prepare the page that’s being linked to.
-5. Please embed the theta360.biz tag in the page that’s being linked to.
+  &lt;ol&gt;
+    &lt;li&gt;Please get embedded tags while auto refresh is on.&lt;/li&gt;
+    &lt;li&gt;Please use thumbnails.&lt;/li&gt;
+    &lt;li&gt;Please embed the link into the thumbnails.&lt;/li&gt;
+    &lt;li&gt;Please prepare the page that’s being linked to.&lt;/li&gt;
+    &lt;li&gt;Please embed the theta360.biz tag in the page that’s being linked to.&lt;/li&gt;
+  &lt;/ol&gt;
 
-In order to change the limit of page views, you need to change your contract to a Lite or Standard Plan.
+  &lt;p&gt;In order to change the limit of page views, you need to change your contract to a Lite or Standard Plan.&lt;/p&gt;
 
-Please note, changing your plan will take time due to processing payment information, so plan ahead with enough time.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+  &lt;p&gt;Please note, changing your plan will take time due to processing payment information, so plan ahead with enough time.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Once you log into the system, you’ll need to go to the tour creation section.&lt;/p&gt;
 
+&lt;p&gt;Click on the link indicated in the graphic below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/360biz-dashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will lead you to the tour creation tool below.&lt;/p&gt;
+
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/tour.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The top portion of the tool is used to upload your map. This is a static 2D flat
+image of around 200px wide or less. The bottom portion is to upload your 360
+images from your RICOH THETA. Once the spheres are loaded into the bottom
+portion, you can drag them into the map in the top portion.&lt;/p&gt;
 
 &lt;p&gt;Here’s the tour creation tool in use.&lt;/p&gt;
 
@@ -805,6 +818,17 @@ and you have a nice HDR for CG work. A really good looking app. Clean.&lt;/p&gt;
 &lt;p&gt;Conclusion&lt;/p&gt;
 
 &lt;p&gt;It looks like there’s the possibility of multiple fun topics here like spherical AR and Stabilization. After the THETA S goes on sale, I would love to play with it more.&lt;/p&gt;
+
+&lt;p&gt;Update March 9, 2016&lt;/p&gt;
+
+&lt;h2 id=&quot;maya-planar-uv-mapping-instruction&quot;&gt;Maya Planar UV Mapping Instruction&lt;/h2&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;https://twitter.com/hecomi&quot;&gt;@hecomi&lt;/a&gt; for providing this video that shows how to tweak
+the UV mapping. He produced it to help Flex van Geuns who was trying to use the
+UV mapping with webgl.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/FfhZltDqJ2U&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 </description>
         <pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate>
         <link>http://theta360developers.github.io/blog/unity/2015/12/17/Using-RICOH-Live-View-With-Unity.html</link>

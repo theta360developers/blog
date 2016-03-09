@@ -270,3 +270,13 @@ Because polygon did not fit, there is a blank space in the corner. This could ha
 Conclusion
 
 It looks like there’s the possibility of multiple fun topics here like spherical AR and Stabilization. After the THETA S goes on sale, I would love to play with it more.
+
+Update March 9, 2016
+
+## Maya Planar UV Mapping Instruction
+
+Thanks to [@hecomi](https://twitter.com/hecomi) for providing this video that shows how to tweak
+the UV mapping. He produced it to help Flex van Geuns who was trying to use the
+UV mapping with webgl.
+
+{% include youtubePlayer.html id="FfhZltDqJ2U" %}
