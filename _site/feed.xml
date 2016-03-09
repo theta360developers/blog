@@ -6,9 +6,93 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Mar 2016 16:06:04 -0800</pubDate>
-    <lastBuildDate>Tue, 01 Mar 2016 16:06:04 -0800</lastBuildDate>
+    <pubDate>Tue, 08 Mar 2016 16:55:48 -0800</pubDate>
+    <lastBuildDate>Tue, 08 Mar 2016 16:55:48 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Using the Japanese Site THETA 360.biz for Prototyping</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/drivereye-shot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a number of ways to display 360 images on your business site.
+Tools like &lt;a href=&quot;https://www.holobuilder.com/&quot;&gt;HoloBuilder&lt;/a&gt;
+and
+&lt;a href=&quot;http://ggnome.com/pano2vr&quot;&gt;Pano2VR&lt;/a&gt; are popular. There are also open source
+JavaScript viewers like &lt;a href=&quot;https://github.com/theta360developers/ThetaViewer&quot;&gt;Akokubo JavaScript Viewer code&lt;/a&gt;
+and &lt;a href=&quot;https://github.com/JeremyHeleine/Photo-Sphere-Viewer&quot;&gt;Jeremy Heleine Photo Sphere Viewer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve recently been experimenting with
+&lt;a href=&quot;https://theta360.biz/ja/&quot;&gt;THETA 360.biz&lt;/a&gt;, a service offered by RICOH
+Japan and not available in the US. At this stage, I can only use
+the free service, which is limited to 50 photospheres and 500 pageviews a
+month. This is really only for prototyping.&lt;/p&gt;
+
+&lt;p&gt;In Japan, there is also a light version at 5,000 yen (approximately $45) per
+month with additional costs for pageviews. This may change if the service
+comes to the US. There is also a standard service that is based on
+customized enterprise pricing.&lt;/p&gt;
+
+&lt;p&gt;Right now, the only use of THETA 360.biz in the US is to build a
+concept platform and then either move another viewer or contact
+the management of THETA 360.biz and attempt to negotiate a custom
+contract.&lt;/p&gt;
+
+&lt;p&gt;As the site is only in Japanese, you’ll need to fill in the form.
+I provided information in English and used by Silicon Valley
+information. After about four business days I received an email in
+Japanese.&lt;/p&gt;
+
+&lt;p&gt;My colleague Jesse Casman translated the screen below to help you register.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/top.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/bottom.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With the email, you will get a username and password. Here’s the translation
+of the email.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Things to note
+
+Page views are limited to 500 per month for the Free Plan.
+
+Each time a 360 degree image is displayed on your website, that equals one page view.
+
+If you surpass 500 page views, an “Under Construction” message will appear, and the images will not be displayed for the rest of that month.
+
+When auto refresh is set to ON and embedded tags in your webpage are pasted directly, it’s possible it will not display after several days.
+
+If auto refresh is OFF and the embedded tag doesn’t fit the design of the webpage, please consider using thumbnails from elsewhere and using a new window or a pop-up window.
+
+For example, if you follow the order of the steps below, you can display a new window, and it’s possible that until you click the thumbnail the 360 degree image will not display.
+
+1. Please get embedded tags while auto refresh is on.
+2. Please use thumbnails.
+3. Please embed the link into the thumbnails.
+4. Please prepare the page that’s being linked to.
+5. Please embed the theta360.biz tag in the page that’s being linked to.
+
+In order to change the limit of page views, you need to change your contract to a Lite or Standard Plan.
+
+Please note, changing your plan will take time due to processing payment information, so plan ahead with enough time.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once you log into the system, you’ll need to go to the tour creation section.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/tour.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s the tour creation tool in use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/theta360-editing.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
+        <link>http://theta360developers.github.io/blog/applications/2016/03/08/theta360-business-site.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/03/08/theta360-business-site.html</guid>
+        
+        
+        <category>Applications</category>
+        
+      </item>
     
       <item>
         <title>YouTube 360 Videos and 360 Images on Linux in VM (VMware vs VirtualBox)</title>
