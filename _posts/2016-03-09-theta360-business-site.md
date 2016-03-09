@@ -46,29 +46,29 @@ My colleague Jesse Casman translated the screen below to help you register.
 With the email, you will get a username and password. Here's the translation
 of the email.
 
-    Things to note
-
-    Page views are limited to 500 per month for the Free Plan.
-
-    Each time a 360 degree image is displayed on your website, that equals one page view.
-
-    If you surpass 500 page views, an “Under Construction” message will appear, and the images will not be displayed for the rest of that month.
-
-    When auto refresh is set to ON and embedded tags in your webpage are pasted directly, it’s possible it will not display after several days.
-
-    If auto refresh is OFF and the embedded tag doesn’t fit the design of the webpage, please consider using thumbnails from elsewhere and using a new window or a pop-up window.
-
-    For example, if you follow the order of the steps below, you can display a new window, and it’s possible that until you click the thumbnail the 360 degree image will not display.
-
-    1. Please get embedded tags while auto refresh is on.
-    2. Please use thumbnails.
-    3. Please embed the link into the thumbnails.
-    4. Please prepare the page that’s being linked to.
-    5. Please embed the theta360.biz tag in the page that’s being linked to.
-
-    In order to change the limit of page views, you need to change your contract to a Lite or Standard Plan.
-
-    Please note, changing your plan will take time due to processing payment information, so plan ahead with enough time.
+>Things to note
+>
+>Page views are limited to 500 per month for the Free Plan.
+>
+>Each time a 360 degree image is displayed on your website, that equals one page view.
+>
+>If you surpass 500 page views, an “Under Construction” message will appear, and the images will not be displayed for the rest of that month.
+>
+>When auto refresh is set to ON and embedded tags in your webpage are pasted directly, it’s possible it will not display after several days.
+>
+>If auto refresh is OFF and the embedded tag doesn’t fit the design of the webpage, please consider using thumbnails from elsewhere and using a new window or a pop-up >window.
+>
+>For example, if you follow the order of the steps below, you can display a new window, and it’s possible that until you click the thumbnail the 360 degree image will not >display.
+>
+>1. Please get embedded tags while auto refresh is on.
+>2. Please use thumbnails.
+>3. Please embed the link into the thumbnails.
+>4. Please prepare the page that’s being linked to.
+>5. Please embed the theta360.biz tag in the page that’s being linked to.
+>
+>In order to change the limit of page views, you need to change your contract to a Lite or Standard Plan.
+>
+>Please note, changing your plan will take time due to processing payment information, so plan ahead with enough time.
 
 
 Once you log into the system, you'll need to go to the tour creation section.
