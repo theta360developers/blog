@@ -73,7 +73,18 @@ of the email.
 
 Once you log into the system, you'll need to go to the tour creation section.
 
+Click on the link indicated in the graphic below.
+
+![](/blog/img/2016-03/360biz-dashboard.png)
+
+This will lead you to the tour creation tool below.
+
 ![](/blog/img/2016-03/tour.png)
+
+The top portion of the tool is used to upload your map. This is a static 2D flat
+image of around 200px wide or less. The bottom portion is to upload your 360
+images from your RICOH THETA. Once the spheres are loaded into the bottom
+portion, you can drag them into the map in the top portion.
 
 Here's the tour creation tool in use.
 
