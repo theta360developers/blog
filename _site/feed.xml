@@ -6,9 +6,68 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Mar 2016 06:32:23 -0800</pubDate>
-    <lastBuildDate>Wed, 09 Mar 2016 06:32:23 -0800</lastBuildDate>
+    <pubDate>Thu, 24 Mar 2016 18:26:47 -0700</pubDate>
+    <lastBuildDate>Thu, 24 Mar 2016 18:26:47 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Upgrading Firmware in RICOH THETA S</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/firmware-upgrade.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I upgraded to firmware 1.42 today using the RICOH desktop application on
+Windows. As usual, the upgrade went smoothly. I’ve been upgrading the firmware
+since before the camera was launched and I’ve never experienced a problem.
+However, I know people do encounter problems, sometimes to the extent that
+their camera is bricked.&lt;/p&gt;
+
+&lt;p&gt;The main source of the problem is that the camera is not fully charged.
+If the camera is under 30% charge, your chance of a firmware upgrade
+failure is increased.&lt;/p&gt;
+
+&lt;p&gt;Although there are many ways to check your battery level, I find it
+convenient to connect to the camera with WiFi and send it an &lt;code class=&quot;highlighter-rouge&quot;&gt;osc/state&lt;/code&gt;
+command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://192.168.1.1/osc/state
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From here, I can easily see the battery level.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/battery-level.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The ‘batteryLevel’ will be one of &lt;code class=&quot;highlighter-rouge&quot;&gt;0.0, 0.33, 0.67, 1.0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I have a full charge. :-)&lt;/p&gt;
+
+&lt;p&gt;I have my THETA S plugged directly into the rear panel of my computer,
+not a hub. I haven’t had any problems using a hub, but I do have a
+powered USB hub of good quality. I suggest you plug the camera
+directly into the rear panel of the computer.&lt;/p&gt;
+
+&lt;p&gt;Then, I &lt;a href=&quot;https://helpx.adobe.com/air/kb/determine-version-air-runtime.html&quot;&gt;verify that I have the newest version of Adobe Air&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/adobe-air.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I then upgrade my THETA desktop application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/ricoh-app.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point, I should have everything nicely upgraded and I can upgrade
+the firmware from within the application. The camera should be off when you
+plug it into the USB cable. After the firmware is transferred, leave the
+camera off and unplug it. Then, when the camera is unplugged, you can
+turn it on to start the upgrade process. The blue mode light will stop flashing
+and you’ll be upgraded.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Mar 2016 00:00:00 -0700</pubDate>
+        <link>http://theta360developers.github.io/blog/camera/2016/03/24/firmware-upgrade.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/03/24/firmware-upgrade.html</guid>
+        
+        
+        <category>Camera</category>
+        
+      </item>
     
       <item>
         <title>Using the Japanese Site THETA 360.biz for Prototyping</title>
