@@ -9,7 +9,7 @@ categories: Camera
 
 Within a week of forming our
 [meetup group for THETA developers](http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/events/230383770/),
-88 people joined us. We've changed the format to provide help to win some of the
+89 people joined us. We've changed the format to provide help to win some of the
 $45,000 in prizes for the
 [RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/).
 
