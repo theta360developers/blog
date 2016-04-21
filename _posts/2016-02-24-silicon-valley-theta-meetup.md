@@ -22,8 +22,9 @@ We've made the
 [THETA Unofficial Guides](http://theta360developers.github.io/)
 hackathon documentation available online. However, we realize you may not
 have a camera handy. If you're interested in attending a free THETA SF Bay
-Area meetup where you can hack on the camera onsite, please send an email
-to [ricohtheta360@oppkey.com](mailto:ricohtheta360@oppkey.com) and we'll add you to the invite list.
+Area meetup where you can hack on the camera onsite, please go to
+to [http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/](http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/)
+and sign up.
 
 We'll cover the basics of the API and provide application templates to get
 you going in less than 30 minutes. For rapid prototyping, we'll cover
