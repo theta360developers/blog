@@ -6,9 +6,170 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Mar 2016 12:03:15 -0700</pubDate>
-    <lastBuildDate>Fri, 25 Mar 2016 12:03:15 -0700</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Tue, 10 May 2016 10:43:09 -0700</pubDate>
+    <lastBuildDate>Tue, 10 May 2016 10:43:09 -0700</lastBuildDate>
+    <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>THETA Live Streaming on YouTube</title>
+        <description>&lt;p&gt;The main content for this article was originally written by
+&lt;a href=&quot;https://medium.com/@tanigox&quot;&gt;Motoaki Tanigo&lt;/a&gt;
+ on his blog in Japanese
+ I’ve made a few changes for clarity. For example, I changed the links to go to the English versions and added screenshots.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/theta-logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;theta-uvc-blender-setup&quot;&gt;THETA UVC Blender Setup&lt;/h1&gt;
+
+&lt;p&gt;Download the live streaming application from the RICOH site and install it on your PC or Mac desktop computer.
+Download&lt;/p&gt;
+
+&lt;p&gt;driver-download&lt;/p&gt;
+
+&lt;p&gt;Update from Craig: I have a detailed tutorial on installing THETA UVC Blender live-streaming app.&lt;/p&gt;
+
+&lt;p&gt;Setup the Live Streaming Encoder&lt;/p&gt;
+
+&lt;p&gt;Download any of the live streaming applications recommended by YouTube, and do the set up. I’m using Wirecast Play.&lt;/p&gt;
+
+&lt;p&gt;Update 4/26 (from Craig): I’ve also tested Open Broadcaster Software (OBS) Studio 64 bit. It’s free and open source. Works great.&lt;/p&gt;
+
+&lt;p&gt;Create a Live Streaming Event on YouTube&lt;/p&gt;
+
+&lt;p&gt;1 Log into YouTube. Click  on the “Upload” button. Click the “start” button on the live streaming.&lt;/p&gt;
+
+&lt;p&gt;youtube-livestream-upload&lt;/p&gt;
+
+&lt;p&gt;2 On the live streaming menu, you’ll see “immediate delivery” and “event.” Select “event.”&lt;/p&gt;
+
+&lt;p&gt;event-live-streamingPNG&lt;/p&gt;
+
+&lt;p&gt;3 Click on the “New live event” button. Add the title. Set the start time in the “basic information” tab description.&lt;/p&gt;
+
+&lt;p&gt;New Event&lt;/p&gt;
+
+&lt;p&gt;4 Click on the “Advanced Settings” tab. Click the checkbox for “This live stream is 360°” under the new 360° video section.&lt;/p&gt;
+
+&lt;p&gt;livestream-checkbox&lt;/p&gt;
+
+&lt;p&gt;After completing these steps, click the “Create Event” button.&lt;/p&gt;
+
+&lt;p&gt;Start THETA S in Live Streaming Mode&lt;/p&gt;
+
+&lt;p&gt;thetas_livestreaming
+THETA S in live streaming mode. The blue lights in the red circle flash. The word “Live” appears.
+Hold down the “camera” button of THETA S while pressing the “Power” button. The THETA will start in live streaming mode. If the setup is successful, the “Live” mark will light up on the front of the THETA S.&lt;/p&gt;
+
+&lt;p&gt;Deliver the Live Streaming Encoder to YouTube&lt;/p&gt;
+
+&lt;p&gt;Connect the THETA S to set up the encoder. Add “THETA UVC Blender” as the camera.&lt;/p&gt;
+
+&lt;p&gt;In Wirecast Play, click on the “stream” button, to authenticate the YouTube account, to start the live streaming.&lt;/p&gt;
+
+&lt;p&gt;Update from Craig: For OBS, copy the Stream key into the box below. Settings =&amp;gt; Stream =&amp;gt; Stream key&lt;/p&gt;
+
+&lt;p&gt;streamkey-youtube&lt;/p&gt;
+
+&lt;p&gt;Here’s my Video resolution settings. As of 5/5/16, the THETA S can only output 1920 x 720 through the USB UVC Blender driver.&lt;/p&gt;
+
+&lt;p&gt;obs-resolution-settings.png&lt;/p&gt;
+
+&lt;p&gt;360 Degree Live Streaming Example&lt;/p&gt;
+
+&lt;p&gt;This video will give you a feeling for what it looks like when it’s streaming:&lt;/p&gt;
+
+&lt;p&gt;Update 4/25&lt;/p&gt;
+
+&lt;p&gt;Found this cool and awesome video tutorial by Jeremy Sciarappa.&lt;/p&gt;
+
+&lt;p&gt;Update 4/25 from Craig&lt;/p&gt;
+
+&lt;p&gt;screenshot-stream&lt;/p&gt;
+
+&lt;p&gt;I was able to successfully to get live streaming to YouTube using Open Broadcaster Software (OBS) Studio. Although the process took me a few days to figure out, you should be able to get everything set up in 15 minutes. The documentation from YouTube was pretty thin when they first announced support of 360 streaming. Thanks to the wonderful magic of the community, there is now wealth of documentation on this process, only a week after the announcement. It will be easy for you to get set up and stream 360 videos.:-)  Let’s dive in!&lt;/p&gt;
+
+&lt;p&gt;You should follow the video tutorial above by Jeremy Sciarappa. If you’re having problems installing the software, refer to this article on streaming with equirectangular output.&lt;/p&gt;
+
+&lt;p&gt;I’ve documented some of the problems I encountered in the hope that it’ll help other people avoid these pitfalls.&lt;/p&gt;
+
+&lt;p&gt;First, I needed to delete my existing webcam from the “Camera” list in Live Control Room. Then, I realized that I was having bandwidth problems, which resulted in a blurry image.&lt;/p&gt;
+
+&lt;p&gt;capture_blurry&lt;/p&gt;
+
+&lt;p&gt;I decided to use Custom settings instead of Quick. I’m not sure if this is needed, but it worked for me.&lt;/p&gt;
+
+&lt;p&gt;livestream-custom-encoding&lt;/p&gt;
+
+&lt;p&gt;I also realized that the Stream Name is different per event.&lt;/p&gt;
+
+&lt;p&gt;stream-name&lt;/p&gt;
+
+&lt;p&gt;When I first started using OBS, I didn’t have the screen sized properly. Right click on the UVC THETA source (or whatever you named the camera source) and select Transform =&amp;gt; Stretch to screen.&lt;/p&gt;
+
+&lt;p&gt;obs-setting-stretch-to-screen&lt;/p&gt;
+
+&lt;p&gt;I then hit Start Streaming from my Windows 10 computer in Palo Alto.&lt;/p&gt;
+
+&lt;p&gt;Take a break and celebrate with your friends around the world. My colleague Tyler was able to see the 360 stream in San Francisco with full navigation. He wants to buy a headset now.&lt;/p&gt;
+
+&lt;p&gt;streaming-test-san-francisco
+Live stream configuration test using my Palo Alto home Internet for upstream. Image is clearer when I have more bandwidth
+I’ll update the blurry image above when I bring my laptop to a place with more bandwidth. The actual bitrate at my house is under 1Mbps, too low for a good test.&lt;/p&gt;
+
+&lt;p&gt;Ready for more?&lt;/p&gt;
+
+&lt;p&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/p&gt;
+
+&lt;p&gt;Within a week of forming our
+&lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/events/230383770/&quot;&gt;meetup group for THETA developers&lt;/a&gt;,
+89 people joined us. We’ve changed the format to provide help to win some of the
+$45,000 in prizes for the
+&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;RICOH THETA x IoT Developers Contest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In addition to the RICOH API to control the camera, participants can
+access a number of pre-release technologies from the
+&lt;a href=&quot;http://docs.ricohapi.com/&quot;&gt;RICOH Cloud API (Beta)&lt;/a&gt; group.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ricohapi/media-storage-rest&quot;&gt;Cloud-based media storage REST API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ricohapi/video-streaming-sample-app&quot;&gt;Video streaming sample application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
+        <link>http://theta360developers.github.io/blog/camera/2016/05/10/youtube-streaming.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/05/10/youtube-streaming.html</guid>
+        
+        
+        <category>Camera</category>
+        
+      </item>
+    
+      <item>
+        <title>Silicon Valley MeetUp Planned at RICOH Innovations in Cupertino</title>
+        <description>&lt;p&gt;Within a week of forming our
+&lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/events/230383770/&quot;&gt;meetup group for THETA developers&lt;/a&gt;,
+89 people joined us. We’ve changed the format to provide help to win some of the
+$45,000 in prizes for the
+&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;RICOH THETA x IoT Developers Contest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In addition to the RICOH API to control the camera, participants can
+access a number of pre-release technologies from the
+&lt;a href=&quot;http://docs.ricohapi.com/&quot;&gt;RICOH Cloud API (Beta)&lt;/a&gt; group.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ricohapi/media-storage-rest&quot;&gt;Cloud-based media storage REST API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ricohapi/video-streaming-sample-app&quot;&gt;Video streaming sample application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 21 Apr 2016 00:00:00 -0700</pubDate>
+        <link>http://theta360developers.github.io/blog/camera/2016/04/21/meetup-group.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/04/21/meetup-group.html</guid>
+        
+        
+        <category>Camera</category>
+        
+      </item>
     
       <item>
         <title>Upgrading Firmware in RICOH THETA S</title>
@@ -253,8 +414,9 @@ loaner cameras.&lt;/p&gt;
 &lt;a href=&quot;http://theta360developers.github.io/&quot;&gt;THETA Unofficial Guides&lt;/a&gt;
 hackathon documentation available online. However, we realize you may not
 have a camera handy. If you’re interested in attending a free THETA SF Bay
-Area meetup where you can hack on the camera onsite, please send an email
-to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#114;&amp;#105;&amp;#099;&amp;#111;&amp;#104;&amp;#116;&amp;#104;&amp;#101;&amp;#116;&amp;#097;&amp;#051;&amp;#054;&amp;#048;&amp;#064;&amp;#111;&amp;#112;&amp;#112;&amp;#107;&amp;#101;&amp;#121;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#114;&amp;#105;&amp;#099;&amp;#111;&amp;#104;&amp;#116;&amp;#104;&amp;#101;&amp;#116;&amp;#097;&amp;#051;&amp;#054;&amp;#048;&amp;#064;&amp;#111;&amp;#112;&amp;#112;&amp;#107;&amp;#101;&amp;#121;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; and we’ll add you to the invite list.&lt;/p&gt;
+Area meetup where you can hack on the camera onsite, please go to
+to &lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/&quot;&gt;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/&lt;/a&gt;
+and sign up.&lt;/p&gt;
 
 &lt;p&gt;We’ll cover the basics of the API and provide application templates to get
 you going in less than 30 minutes. For rapid prototyping, we’ll cover
@@ -900,163 +1062,6 @@ UV mapping with webgl.&lt;/p&gt;
         
         
         <category>Unity</category>
-        
-      </item>
-    
-      <item>
-        <title>Using Node.js with the RICOH THETA S</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://qiita.com/FePlus&quot;&gt;Satoru Yamada&lt;/a&gt; recently wrote a
-&lt;a href=&quot;http://qiita.com/FePlus/items/aaeca40468d49786e2f5&quot;&gt;blog post describing how to access the RICOH THETA S with
-node.js&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Since I’ve been trying to test the THETA API with JavaScript,
-I spent a few minutes to translate his main points into
-English.&lt;/p&gt;
-
-&lt;p&gt;I’ll start off Satoru’s code snippet. The rest of the text
-is also from him, including the summary, which includes an
-interesting idea about NFC tags to help with automation.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var fs = require(&#39;fs&#39;);
-var OscClientClass = require(&#39;osc-client&#39;).OscClient;
-
-var domain = &#39;192.168.1.1&#39;;
-var port = &#39;80&#39;;
-var client = new OscClientClass(domain, port);
-var sessionId;
-var filename;
-
-client.startSession().then(function(res){
-  sessionId = res.body.results.sessionId;
-  return client.takePicture(sessionId);
-  })
-
-.then(function (res) {
-  var pictureUri = res.body.results.fileUri;
-  console.log(&#39;pictureUri :%s&#39;,pictureUri);
-
-  var path = pictureUri.split(&#39;/&#39;);
-  filename = path.pop();
-  return client.getImage(pictureUri);
-})
-.then(function(res){
-  var imgData = res.body;
-  fs.writeFile(filename,imgData);
-  return client.closeSession(sessionId);
-});
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;By running the &lt;code class=&quot;highlighter-rouge&quot;&gt;node theta.js&lt;/code&gt;, you can view the &lt;code class=&quot;highlighter-rouge&quot;&gt;fileUri&lt;/code&gt;
-of the picture that you previously took.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node theta.js
-pictureUri :100RICOH/R0010009.JPG
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The file will be created in the directory where you executed
-the command.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/directory_screenshot.png&quot; alt=&quot;Directory with file&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The IP address and port are described in the &lt;a href=&quot;https://developers.theta360.com/en/docs/v2/api_reference/&quot;&gt;API reference&lt;/a&gt;.
-With a P2P connection, only one client can connect.&lt;/p&gt;
-
-&lt;p&gt;An overview of the process is shown below:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;set up a new session with &lt;code class=&quot;highlighter-rouge&quot;&gt;startSession()&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;takePicture&lt;/code&gt; using the &lt;code class=&quot;highlighter-rouge&quot;&gt;sessionId&lt;/code&gt; you just got from the new session&lt;/li&gt;
-  &lt;li&gt;use the &lt;code class=&quot;highlighter-rouge&quot;&gt;fileUri&lt;/code&gt; you got from &lt;code class=&quot;highlighter-rouge&quot;&gt;takePicture&lt;/code&gt; to download the image with &lt;code class=&quot;highlighter-rouge&quot;&gt;getImage()&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;close the session with &lt;code class=&quot;highlighter-rouge&quot;&gt;closeSession()&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
-&lt;p&gt;Since the new THETA S supports Open Spherical Camera API, it’s now possible
-to easily build applications. As sales and thus the popularity of the
-camera appear to be going quite well, it seems likely that we’ll see
-many interesting uses in the future.&lt;/p&gt;
-
-&lt;p&gt;Personally, I’ve been thinking that since it may be difficult to turn the
-WiFi on and off, start THETA applications, and perform repetitive tasks,
-using a NFC tag might help with the automation. If I finish that,
-I’ll write another post.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/javascript/2015/12/17/theta-s-nodejs.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/javascript/2015/12/17/theta-s-nodejs.html</guid>
-        
-        
-        <category>javascript</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH THETA Developer Community Services</title>
-        <description>&lt;p&gt;The RICOH THETA S is an extremely exciting product. We’re at the beginning
-of a larger movement for the general public to use 360 images and 360 videos.
-Every week, I learn new things about what major companies are doing
-with 360 images and videos. Facebook, YouTube, Google, The New York Times, are
-just a few of many organizations that are now supporting 360 media.&lt;/p&gt;
-
-&lt;p&gt;My colleague, Jesse Casman, and I are helping RICOH with technical
-marketing activities in the US. Although, we are outside consultants,
-we feel like we’re part of a much larger community that includes RICOH,
-independent developers, enthusiasts, companies, and frankly, anyone
-that thinks that 360 pictures and videos are cool.&lt;/p&gt;
-
-&lt;p&gt;Although we are technical marketers, we’re super enthusiastic about
-developers and even though we have limited resources, we’re are trying
-to figure out what we can do to help. Feedback from developers is important. The services
-are for you.&lt;/p&gt;
-
-&lt;p&gt;Here is our plan to provide basic help to you with our limited resources and
-limited technical knowledge.&lt;/p&gt;
-
-&lt;h2 id=&quot;forumhttpsdeveloperstheta360comenforums&quot;&gt;&lt;a href=&quot;https://developers.theta360.com/en/forums/&quot;&gt;Forum&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Jesse and I will go into the forum and answer questions when  we can. For the
-questions that we can’t answer, we’ll rely on the community. If the question
-relates to a broad group of people, we will try and replicate the problem
-and then report back to RICOH engineers. An example of a problem we’ll
-escalate is a problem with an application due to changes in Adobe Air.&lt;/p&gt;
-
-&lt;p&gt;There are certain requests for information that RICOH can’t provide. For example,
-RICOH can’t release lens parameter information or stitching library algorithms.
-For these questions, we will respond that RICOH can’t provide the information
-and organize the requests so that RICOH managers have an understanding of
-what the community is requesting.&lt;/p&gt;
-
-&lt;h2 id=&quot;github-repository-managementhttpsgithubcomtheta360developers&quot;&gt;&lt;a href=&quot;https://github.com/theta360developers&quot;&gt;GitHub Repository Management&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;We will organize code examples from the community. The examples cover both
-the control of the camera as well as basic functionality such as viewing a
-equirectangular image.&lt;/p&gt;
-
-&lt;p&gt;Over time, we will either test the code ourselves or get help from the community
-in testing the code. If the listing becomes too large, we will organize the
-repositories into sub-directories and categories.&lt;/p&gt;
-
-&lt;h2 id=&quot;bloghttptheta360developersgithubioblog&quot;&gt;&lt;a href=&quot;http://theta360developers.github.io/blog/&quot;&gt;Blog&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;There’s a lot of great content out there about using the RICOH THETA S.
-Some of it is in Japanese and a lot of it is in English.
-The developer community in Japan is very active. Jesse can
-read Japanese quickly and
-I can struggle through it. We’ll combine content from Japan with
-English content and provide articles in English about viewing and
-streaming content, controlling the camera with the API and using
-THETA products and media with other tools or services from companies
-like Google, Facebook, Oculus, and Unity.&lt;/p&gt;
-
-&lt;h2 id=&quot;community-guidehttptheta360developersgithubiocommunity-documentcommunityhtml&quot;&gt;&lt;a href=&quot;http://theta360developers.github.io/community-document/community.html&quot;&gt;Community Guide&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;We’re building a community guide based on questions and responses about the
-most common topics. Hopefully, we’ll be able to pull popular topics from the blog.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Dec 2015 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/community/2015/12/15/theta-s-community-assistance.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/community/2015/12/15/theta-s-community-assistance.html</guid>
-        
-        
-        <category>community</category>
         
       </item>
     
