@@ -18,7 +18,7 @@ The main content for this article was originally written by
 
 Download the live streaming application from the RICOH site and install it on your PC or Mac desktop computer.
 
-[Download](https://theta360.com/en/support/download/)
+## [Download](https://theta360.com/en/support/download/)
 
 ![](/blog/img/2016-05/driver-download.png)
 
