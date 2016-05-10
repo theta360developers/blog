@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 May 2016 12:21:08 -0700</pubDate>
-    <lastBuildDate>Tue, 10 May 2016 12:21:08 -0700</lastBuildDate>
+    <pubDate>Tue, 10 May 2016 12:23:31 -0700</pubDate>
+    <lastBuildDate>Tue, 10 May 2016 12:23:31 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -174,7 +174,7 @@ I’ll update the blurry image above when I bring my laptop to a place with more
   &lt;p&gt;Hopefully this helps out anybody that is trying to do tethered capture.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;#Resources&lt;/p&gt;
+&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
 
 &lt;p&gt;These are untested.&lt;/p&gt;
 

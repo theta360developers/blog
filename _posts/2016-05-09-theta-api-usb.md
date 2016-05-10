@@ -26,7 +26,8 @@ On the RICOH developer forum,
 >
 > Hopefully this helps out anybody that is trying to do tethered capture.
 
-#Resources
+
+# Resources
 
 These are untested.
 
