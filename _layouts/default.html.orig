@@ -10,9 +10,6 @@
 
     <div class="page-content">
       <div class="wrapper">
-          <a href="http://theta360.guide">Unofficial Guides</a> |
-          <a href="http://theta360.guide/contest/">$45K THETA Dev Contest</a>
-          <hr>
         {{ content }}
       </div>
     </div>

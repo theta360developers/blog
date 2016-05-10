@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stuff From RICOH
+title: Official RICOH Information
 permalink: /official/
 ---
 
