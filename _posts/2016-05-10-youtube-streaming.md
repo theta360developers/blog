@@ -17,9 +17,11 @@ The main content for this article was originally written by
 # THETA UVC Blender Setup
 
 Download the live streaming application from the RICOH site and install it on your PC or Mac desktop computer.
-Download
 
-driver-download
+[Download](https://theta360.com/en/support/download/)
+
+![](/blog/img/2016-05/driver-download.png)
+
 
 Update from Craig: I have a detailed tutorial on installing THETA UVC Blender live-streaming app.
 
