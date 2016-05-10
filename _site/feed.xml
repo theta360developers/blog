@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 May 2016 10:49:31 -0700</pubDate>
-    <lastBuildDate>Tue, 10 May 2016 10:49:31 -0700</lastBuildDate>
+    <pubDate>Tue, 10 May 2016 11:53:45 -0700</pubDate>
+    <lastBuildDate>Tue, 10 May 2016 11:53:45 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -27,114 +27,115 @@
 
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/driver-download.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Update from Craig: I have a detailed tutorial on installing THETA UVC Blender live-streaming app.&lt;/p&gt;
+&lt;p&gt;Update from Craig: I have a detailed
+&lt;a href=&quot;http://theta360.guide/community-document/uvc-theta.html&quot;&gt;tutorial on installing THETA UVC Blender live-streaming app&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Setup the Live Streaming Encoder&lt;/p&gt;
+&lt;h1 id=&quot;setup-the-live-streaming-encoder&quot;&gt;Setup the Live Streaming Encoder&lt;/h1&gt;
 
-&lt;p&gt;Download any of the live streaming applications recommended by YouTube, and do the set up. I’m using Wirecast Play.&lt;/p&gt;
+&lt;p&gt;Download any of the
+&lt;a href=&quot;https://support.google.com/youtube/answer/2907883?hl=en&quot;&gt;live streaming applications recommended by YouTube&lt;/a&gt;,
+and do the set up. I’m using
+&lt;a href=&quot;http://www.telestream.net/controls/wirecast-play/download-wirecast-play.htm&quot;&gt;Wirecast Play&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Update 4/26 (from Craig): I’ve also tested Open Broadcaster Software (OBS) Studio 64 bit. It’s free and open source. Works great.&lt;/p&gt;
+&lt;p&gt;Update from Craig: I’ve also tested
+&lt;a href=&quot;https://obsproject.com/&quot;&gt;Open Broadcaster Software (OBS) Studio&lt;/a&gt;
+64 bit. It’s free and open source. Works great.&lt;/p&gt;
 
-&lt;p&gt;Create a Live Streaming Event on YouTube&lt;/p&gt;
+&lt;h1 id=&quot;create-a-live-streaming-event-on-youtube&quot;&gt;Create a Live Streaming Event on YouTube&lt;/h1&gt;
 
 &lt;p&gt;1 Log into YouTube. Click  on the “Upload” button. Click the “start” button on the live streaming.&lt;/p&gt;
 
-&lt;p&gt;youtube-livestream-upload&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/youtube-event-setup.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;2 On the live streaming menu, you’ll see “immediate delivery” and “event.” Select “event.”&lt;/p&gt;
 
-&lt;p&gt;event-live-streamingPNG&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/youtube-event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;3 Click on the “New live event” button. Add the title. Set the start time in the “basic information” tab description.&lt;/p&gt;
 
-&lt;p&gt;New Event&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/new-event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;4 Click on the “Advanced Settings” tab. Click the checkbox for “This live stream is 360°” under the new 360° video section.&lt;/p&gt;
 
-&lt;p&gt;livestream-checkbox&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/livestream-checkbox.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After completing these steps, click the “Create Event” button.&lt;/p&gt;
 
-&lt;p&gt;Start THETA S in Live Streaming Mode&lt;/p&gt;
+&lt;h1 id=&quot;start-theta-s-in-live-streaming-mode&quot;&gt;Start THETA S in Live Streaming Mode&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/thetas_livestreaming.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;thetas_livestreaming
-THETA S in live streaming mode. The blue lights in the red circle flash. The word “Live” appears.
+&lt;p&gt;THETA S in live streaming mode. The blue lights in the red circle flash. The word “Live” appears.
 Hold down the “camera” button of THETA S while pressing the “Power” button. The THETA will start in live streaming mode. If the setup is successful, the “Live” mark will light up on the front of the THETA S.&lt;/p&gt;
 
-&lt;p&gt;Deliver the Live Streaming Encoder to YouTube&lt;/p&gt;
+&lt;h1 id=&quot;deliver-the-live-streaming-encoder-to-youtube&quot;&gt;Deliver the Live Streaming Encoder to YouTube&lt;/h1&gt;
 
 &lt;p&gt;Connect the THETA S to set up the encoder. Add “THETA UVC Blender” as the camera.&lt;/p&gt;
 
 &lt;p&gt;In Wirecast Play, click on the “stream” button, to authenticate the YouTube account, to start the live streaming.&lt;/p&gt;
 
-&lt;p&gt;Update from Craig: For OBS, copy the Stream key into the box below. Settings =&amp;gt; Stream =&amp;gt; Stream key&lt;/p&gt;
+&lt;p&gt;Update from Craig: For OBS, copy the Stream key into the box below.&lt;/p&gt;
 
-&lt;p&gt;streamkey-youtube&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Settings =&amp;gt; Stream =&amp;gt; Stream key
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/streamkey-youtube.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here’s my Video resolution settings. As of 5/5/16, the THETA S can only output 1920 x 720 through the USB UVC Blender driver.&lt;/p&gt;
 
-&lt;p&gt;obs-resolution-settings.png&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/obs-resolution-settings.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;360 Degree Live Streaming Example&lt;/p&gt;
+&lt;h1 id=&quot;degree-live-streaming-example&quot;&gt;360 Degree Live Streaming Example&lt;/h1&gt;
 
-&lt;p&gt;This video will give you a feeling for what it looks like when it’s streaming:&lt;/p&gt;
+&lt;p&gt;This
+&lt;a href=&quot;https://youtu.be/lkUI7vH8BYs&quot;&gt;video&lt;/a&gt;
+will give you a feeling for what it looks like when it’s streaming:&lt;/p&gt;
 
-&lt;p&gt;Update 4/25&lt;/p&gt;
+&lt;p&gt;Update from Craig.&lt;/p&gt;
 
-&lt;p&gt;Found this cool and awesome video tutorial by Jeremy Sciarappa.&lt;/p&gt;
+&lt;p&gt;Found this cool and awesome
+&lt;a href=&quot;https://youtu.be/1HrmtE8j5o8&quot;&gt;video tutorial on live streaming to YouTube with the THETA S&lt;/a&gt;
+by Jeremy Sciarappa.&lt;/p&gt;
 
-&lt;p&gt;Update 4/25 from Craig&lt;/p&gt;
-
-&lt;p&gt;screenshot-stream&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/screenshot-stream.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was able to successfully to get live streaming to YouTube using Open Broadcaster Software (OBS) Studio. Although the process took me a few days to figure out, you should be able to get everything set up in 15 minutes. The documentation from YouTube was pretty thin when they first announced support of 360 streaming. Thanks to the wonderful magic of the community, there is now wealth of documentation on this process, only a week after the announcement. It will be easy for you to get set up and stream 360 videos.:-)  Let’s dive in!&lt;/p&gt;
 
-&lt;p&gt;You should follow the video tutorial above by Jeremy Sciarappa. If you’re having problems installing the software, refer to this article on streaming with equirectangular output.&lt;/p&gt;
+&lt;p&gt;You should follow the
+&lt;a href=&quot;https://youtu.be/1HrmtE8j5o8&quot;&gt;video tutorial above by Jeremy Sciarappa&lt;/a&gt;.
+If you’re having problems installing the software, refer to this article on
+&lt;a href=&quot;http://theta360.guide/community-document/uvc-theta.html&quot;&gt;THETA live streaming with equirectangular output&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I’ve documented some of the problems I encountered in the hope that it’ll help other people avoid these pitfalls.&lt;/p&gt;
 
 &lt;p&gt;First, I needed to delete my existing webcam from the “Camera” list in Live Control Room. Then, I realized that I was having bandwidth problems, which resulted in a blurry image.&lt;/p&gt;
 
-&lt;p&gt;capture_blurry&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/capture_blurry.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I decided to use Custom settings instead of Quick. I’m not sure if this is needed, but it worked for me.&lt;/p&gt;
 
-&lt;p&gt;livestream-custom-encoding&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/livestream-custom-encoding.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I also realized that the Stream Name is different per event.&lt;/p&gt;
 
-&lt;p&gt;stream-name&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/stream-name.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;When I first started using OBS, I didn’t have the screen sized properly. Right click on the UVC THETA source (or whatever you named the camera source) and select Transform =&amp;gt; Stretch to screen.&lt;/p&gt;
 
-&lt;p&gt;obs-setting-stretch-to-screen&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/obs-setting-stretch-to-screen.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I then hit Start Streaming from my Windows 10 computer in Palo Alto.&lt;/p&gt;
 
 &lt;p&gt;Take a break and celebrate with your friends around the world. My colleague Tyler was able to see the 360 stream in San Francisco with full navigation. He wants to buy a headset now.&lt;/p&gt;
 
-&lt;p&gt;streaming-test-san-francisco
-Live stream configuration test using my Palo Alto home Internet for upstream. Image is clearer when I have more bandwidth
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/streaming-test-san-francisco.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live stream configuration test using my Palo Alto home Internet for upstream. Image is clearer when I have more bandwidth
 I’ll update the blurry image above when I bring my laptop to a place with more bandwidth. The actual bitrate at my house is under 1Mbps, too low for a good test.&lt;/p&gt;
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;p&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/p&gt;
-
-&lt;p&gt;Within a week of forming our
-&lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/events/230383770/&quot;&gt;meetup group for THETA developers&lt;/a&gt;,
-89 people joined us. We’ve changed the format to provide help to win some of the
-$45,000 in prizes for the
-&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;RICOH THETA x IoT Developers Contest&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In addition to the RICOH API to control the camera, participants can
-access a number of pre-release technologies from the
-&lt;a href=&quot;http://docs.ricohapi.com/&quot;&gt;RICOH Cloud API (Beta)&lt;/a&gt; group.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ricohapi/media-storage-rest&quot;&gt;Cloud-based media storage REST API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ricohapi/video-streaming-sample-app&quot;&gt;Video streaming sample application&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
         <link>http://theta360developers.github.io/blog/camera/2016/05/10/youtube-streaming.html</link>
