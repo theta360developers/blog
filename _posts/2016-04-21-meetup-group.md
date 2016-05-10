@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Silicon Valley MeetUp Planned at RICOH Innovations in Cupertino"
+title:  "Silicon Valley MeetUp May 21 at Hanna Haus in Palo Alto"
 date:   2016-04-21
 author: "Craig Oda"
 categories: Camera
@@ -19,4 +19,7 @@ access a number of pre-release technologies from the
 
 * [Cloud-based media storage REST API](https://github.com/ricohapi/media-storage-rest)
 * [Video streaming sample application](https://github.com/ricohapi/video-streaming-sample-app)
- 
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

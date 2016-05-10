@@ -48,3 +48,7 @@ The following has not been tested on Linux in a VM, but should work:
 * [Pano2VR](http://ggnome.com/pano2vr) - Editing 360 image spheres. Can export
 JavaScript and other format. This software is covered in the
 [Unofficial Media Guide](http://theta360developers.github.io/community-document/community.html)
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

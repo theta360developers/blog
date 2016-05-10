@@ -57,3 +57,7 @@ plug it into the USB cable. After the firmware is transferred, leave the
 camera off and unplug it. Then, when the camera is unplugged, you can
 turn it on to start the upgrade process. The blue mode light will stop flashing
 and you'll be upgraded.
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

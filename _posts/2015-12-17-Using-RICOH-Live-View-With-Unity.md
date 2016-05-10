@@ -280,3 +280,7 @@ the UV mapping. He produced it to help Flex van Geuns who was trying to use the
 UV mapping with webgl.
 
 {% include youtubePlayer.html id="FfhZltDqJ2U" %}
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

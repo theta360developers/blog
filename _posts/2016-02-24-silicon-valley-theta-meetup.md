@@ -34,3 +34,7 @@ with the HTTP API. Stay and build your application.
 Once we have critical mass, we'll schedule the day and place.
 Join THETA Developers to take part in the fast-growing 360
 image and video movement!
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

@@ -77,3 +77,7 @@ Personally, I've been thinking that since it may be difficult to turn the
 WiFi on and off, start THETA applications, and perform repetitive tasks,
 using a NFC tag might help with the automation. If I finish that,
 I'll write another post.
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

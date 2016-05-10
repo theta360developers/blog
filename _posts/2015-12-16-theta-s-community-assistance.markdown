@@ -61,3 +61,7 @@ like Google, Facebook, Oculus, and Unity.
 ## [Community Guide](http://theta360developers.github.io/community-document/community.html)
 We're building a community guide based on questions and responses about the
 most common topics. Hopefully, we'll be able to pull popular topics from the blog.
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

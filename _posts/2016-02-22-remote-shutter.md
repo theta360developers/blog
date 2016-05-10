@@ -110,3 +110,7 @@ Pictures from
 * [Adafruit HUZZAH ESP8266 Breakout](https://www.adafruit.com/products/2471) $9.95 - currently sold out
 * [Adafruit Feather HUZZAH with ESP8266 WiFi](https://www.adafruit.com/products/2821) $15.95 - currently sold out
 * [SparkFun esp8266 Thing Dev Board](https://www.sparkfun.com/products/13711) $15.95
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

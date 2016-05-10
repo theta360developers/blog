@@ -120,3 +120,7 @@ and you have a nice HDR for CG work. A really good looking app. Clean.
 ## Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)
 
 * [Android](https://play.google.com/store/apps/details?id=com.bitstars.panouploader)
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)

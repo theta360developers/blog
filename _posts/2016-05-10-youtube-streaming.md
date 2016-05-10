@@ -93,6 +93,8 @@ Found this cool and awesome
 [video tutorial on live streaming to YouTube with the THETA S](https://youtu.be/1HrmtE8j5o8)
 by Jeremy Sciarappa.
 
+{% include youtubePlayer.html id="1HrmtE8j5o8" %}
+
 ![](/blog/img/2016-05/screenshot-stream.png)
 
 I was able to successfully to get live streaming to YouTube using Open Broadcaster Software (OBS) Studio. Although the process took me a few days to figure out, you should be able to get everything set up in 15 minutes. The documentation from YouTube was pretty thin when they first announced support of 360 streaming. Thanks to the wonderful magic of the community, there is now wealth of documentation on this process, only a week after the announcement. It will be easy for you to get set up and stream 360 videos.:-)  Let’s dive in!

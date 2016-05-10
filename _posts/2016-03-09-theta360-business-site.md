@@ -89,3 +89,7 @@ portion, you can drag them into the map in the top portion.
 Here's the tour creation tool in use.
 
 ![](/blog/img/2016-03/theta360-editing.png)
+
+Ready for more?
+
+# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
