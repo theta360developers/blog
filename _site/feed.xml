@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 May 2016 11:56:50 -0700</pubDate>
-    <lastBuildDate>Tue, 10 May 2016 11:56:50 -0700</lastBuildDate>
+    <pubDate>Tue, 10 May 2016 12:21:08 -0700</pubDate>
+    <lastBuildDate>Tue, 10 May 2016 12:21:08 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -140,6 +140,93 @@ I’ll update the blurry image above when I bring my laptop to a place with more
         <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
         <link>http://theta360developers.github.io/blog/camera/2016/05/10/youtube-streaming.html</link>
         <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/05/10/youtube-streaming.html</guid>
+        
+        
+        <category>Camera</category>
+        
+      </item>
+    
+      <item>
+        <title>RICOH THETA S API Over USB Cable</title>
+        <description>&lt;p&gt;The RICOH THETA S 360 camera can be controlled with an API that is accessible using WiFi. Version 2 of the API is compliant with Google Open Spherical Camera API specification.&lt;/p&gt;
+
+&lt;p&gt;An alternative to using the RICOH THETA S API over WiFi exists that works over an USB cable. This is a different API and requires firmware version 01.42 or later.  v2 USB API uses extended PTP, or Picture Transfer Protocol, as the communications protocol.&lt;/p&gt;
+
+&lt;p&gt;To use v2 USB API, go to:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.theta360.com/en/docs/v2/usb_reference/&quot;&gt;Official RICOH THETA USB Reference v2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On the RICOH developer forum,
+&lt;a href=&quot;https://developers.theta360.com/en/forums/viewtopic.php?f=4&amp;amp;t=626&quot;&gt;MattWymore posted&lt;/a&gt; this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I figured out how to make this work. This feature does work correctly, you just have to issue “raw” MTP/PTP commands to get it to work. So if anybody else is using the Windows Portable Devices API to control the Theta S, keep this in mind:&lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;p&gt;It looks like you can’t use the WPD command WPD_COMMAND_STILL_IMAGE_CAPTURE_INITIATE to initiate capture. If you use this command the driver returns an error to you.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;The correct way to do this is to use WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITHOUT_DATA_PHASE and set up all the  parameters and Op Code for image capture and then send that command. Take a look at this example from Microsoft for setting things up. Basically you just need to change the Op Code to 0x100E (for initiate capture) and change the StorageID to 0x0 (as documented in the Theta v2 USB API) and you are ready to go.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;Hopefully this helps out anybody that is trying to do tethered capture.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;#Resources&lt;/p&gt;
+
+&lt;p&gt;These are untested.&lt;/p&gt;
+
+&lt;h2 id=&quot;c-c&quot;&gt;C, C++&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/windows/desktop/ff384848(v=vs.85).aspx&quot;&gt;Windows Dev Center, Supporting MTP Extensions (C, C++)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pypi.python.org/pypi/PyMTP&quot;&gt;PyMTP&lt;/a&gt; (Python bindings to LibMTP)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/emdete/python-mtp&quot;&gt;python-mtp&lt;/a&gt; (another libmtp Python wrapper)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mtp-specification&quot;&gt;MTP Specification&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theta360blog.files.wordpress.com/2016/04/mtpforusb-ifv1-1.pdf&quot;&gt;MTPforUSB-IFv1.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;libmtp&quot;&gt;libmtp&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://libmtp.sourceforge.net/&quot;&gt;libmtp&lt;/a&gt; on SourceForge&lt;/li&gt;
+  &lt;li&gt;installing &lt;a href=&quot;http://askubuntu.com/questions/611054/where-is-libmtp&quot;&gt;libmtp on Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On my system, Xenial Xerus, Ubuntu 16.04, I already had libmtp installed. I think it may be installed with Calibre ebook reader.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Documents/community-document$ dpkg -l *libmtp*
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name Version Architecture Description
++++-==============-============-============-=================================
+ii libmtp-common 1.1.10-2ubun all Media Transfer Protocol (MTP) com
+ii libmtp-runtime 1.1.10-2ubun amd64 Media Transfer Protocol (MTP) run
+un libmtp8 &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; (no description available)
+ii libmtp9:amd64 1.1.10-2ubun amd64 Media Transfer Protocol (MTP) lib
+ricoh@xerus:~/Documents/community-document$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ready for more?&lt;/p&gt;
+
+&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Mon, 09 May 2016 00:00:00 -0700</pubDate>
+        <link>http://theta360developers.github.io/blog/camera/2016/05/09/theta-api-usb.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/05/09/theta-api-usb.html</guid>
         
         
         <category>Camera</category>
@@ -771,299 +858,6 @@ and you have a nice HDR for CG work. A really good looking app. Clean.&lt;/p&gt;
         
         
         <category>Camera</category>
-        
-      </item>
-    
-      <item>
-        <title>Using RICOH THETA Live View With Unity</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://tips.hecomi.com/about&quot;&gt;hecomi&lt;/a&gt; recently wrote an &lt;a href=&quot;http://tips.hecomi.com/entry/2015/10/11/211456&quot;&gt;interesting blog post&lt;/a&gt; using Unity to view realtime 360 degree video streaming. I personally have very little experience with Unity, but the content and pictures were useful, so I translated the blog post for others to use. This is not an exact translation, but it should be much more clear than doing Google translate.&lt;/p&gt;
-
-&lt;p&gt;I noticed GOROman (&lt;a href=&quot;https://twitter.com/GOROman&quot;&gt;@GOROman&lt;/a&gt;) tweeting about the info below, so I decided to try it myself right then and there.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/GOROman/status/645896791469068288?ref_src=twsrc%5Etfw&quot;&gt;@GOROman tweet&lt;/a&gt;: You should be able to easily build a live VR stream from this. Stitching might be an issue… For the time being, it might be fine to just connect the sphere to the UV texture.&lt;/p&gt;
-
-&lt;p&gt;The THETA S is a 360 degree camera that will be going on sale October 23rd, and it includes features that were not included in the m15 like Dual-Eye Fisheye streaming over USB (1280x720 15fps) and HDMI streaming (1920x1080 30fps). In order to view this using Unity, I made a an appropriately UV developed sphere and a shader appropriate to AlphaBlend border. Ultimately, for the purpose of making a full sphere with the THETA S, it would be much higher quality and more convenient (can use Skybox too!) to use the fragment shader, made by Nora (&lt;a href=&quot;https://twitter.com/stereoarts&quot;&gt;@Stereoarts&lt;/a&gt;, which directly writes Equirectangular onto a plane.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://stereoarts.jp/&quot;&gt;Stereoarts Homepage&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/Stereoarts/status/647737666520248321?ref_src=twsrc%5Etfw&quot;&gt;@Stereoarts tweet&lt;/a&gt;: I’ve released a Theta Shader Pack. A shader for converting THETA / THETA S full sphere video to Enquirectangular in Unity and supporting scripts. &lt;a href=&quot;stereoarts.jp/ThetaShaderPack_20150926.zip&quot;&gt;stereoarts.jp/ThetaShaderPack_20150926.zip&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;For this article, I wanted to jot down my techniques as well.&lt;/p&gt;
-
-&lt;p&gt;Sample&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/7131835/Programs/ThetaS_LiveView_Sample.unitypackage&quot;&gt;ThetaS_LiveView_Sample.unitypackage @ Dropbox&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Example of taking a video with THETA&lt;/p&gt;
-
-&lt;p&gt;When taking a video with m15, the circles overlapped. The THETA S gives beautifully separated spheres. The angle covered in one sphere is slightly larger than 180 degrees.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/dual-fish-eye.jpg&quot; alt=&quot;dual fish eye image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/dual-fisheye-tripod.jpg&quot; alt=&quot;dual fish eye image with tripod&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In doing this, I’ve made an adjustment using sample texture, which Goroman filmed using WebCamTexture.&lt;/p&gt;
-
-&lt;p&gt;Making a sphere with good UV setting&lt;/p&gt;
-
-&lt;p&gt;Working with Maya LT, the UV comes out like this, if you make a normal sphere.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/MayaLT-UV-mapping.png&quot; alt=&quot;Maya LT UV Mapping&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It would look like below, if you make a plane with the UV.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/MayaLT-UV-mapping-2.png&quot; alt=&quot;Maya LT UV Mapping 2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;All it needs is to be cut in half and be moved appropriately.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/MayaLT-UV-mapping-3.png&quot; alt=&quot;Maya LT UV Mapping 3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/MayaLT-UV-mapping-4.png&quot; alt=&quot;Maya LT UV Mapping 4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It looks like this. (I did not adjust it, so it might be slightly off.)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/crescent-moon.png&quot; alt=&quot;Crescent Moon image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Actually, I wanted to use alphablend for the border, so I used 2 overlapping half spheres instead of one sphere. The UV border is adequately stretched manually.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/overlapping.png&quot; alt=&quot;Overlapping&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Incidentally, surface is set to face inward, by reversing all normal vectors. UV position and size are fine to adjust later with shader.&lt;/p&gt;
-
-&lt;p&gt;Setting with Unity&lt;/p&gt;
-
-&lt;p&gt;Import the Maya LT built model with Unity, and put the camera in the center. Write a shader, so the model’s UV position can be adjusted or can alphablend. In order to control the drawing order and to prevent the border from changing at certain orientations, each half sphere has a different shader.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Shader &quot;Theta/Sphere1&quot; {
-    Properties {
-        _MainTex (&quot;Base (RGB)&quot;, 2D) = &quot;white&quot; {}
-        _AlphaBlendTex (&quot;Alpha Blend (RGBA)&quot;, 2D) = &quot;white&quot; {}
-        _OffsetU (&quot;Offset U&quot;, Range(-0.5, 0.5)) = 0
-        _OffsetV (&quot;Offset V&quot;, Range(-0.5, 0.5)) = 0
-        _ScaleU (&quot;Scale U&quot;, Range(0.8, 1.2)) = 1
-        _ScaleV (&quot;Scale V&quot;, Range(0.8, 1.2)) = 1
-        _ScaleCenterU (&quot;Scale Center U&quot;, Range(0.0, 1.0)) = 0
-        _ScaleCenterV (&quot;Scale Center V&quot;, Range(0.0, 1.0)) = 0
-    }
-    SubShader {
-        Tags { &quot;RenderType&quot; = &quot;Transparent&quot; &quot;Queue&quot; = &quot;Background&quot; }
-        Pass {
-            Name &quot;BASE&quot;
-
-            Blend SrcAlpha OneMinusSrcAlpha
-            Lighting Off
-            ZWrite Off
-
-            CGPROGRAM
-            #pragma vertex vert_img
-            #pragma fragment frag
-
-            #include &quot;UnityCG.cginc&quot;
-
-            uniform sampler2D _MainTex;
-            uniform sampler2D _AlphaBlendTex;
-            uniform float _OffsetU;
-            uniform float _OffsetV;
-            uniform float _ScaleU;
-            uniform float _ScaleV;
-            uniform float _ScaleCenterU;
-            uniform float _ScaleCenterV;
-
-            float4 frag(v2f_img i) : COLOR {
-                // 中心位置や大きさを微調整
-                float2 uvCenter = float2(_ScaleCenterU, _ScaleCenterV);
-                float2 uvOffset = float2(_OffsetU, _OffsetV);
-                float2 uvScale = float2(_ScaleU, _ScaleV);
-                float2 uv =  (i.uv - uvCenter) * uvScale + uvCenter + uvOffset;
-                // アルファブレンド用のテクスチャを参照してアルファを調整
-                float4 tex = tex2D(_MainTex, uv);
-                tex.a *= pow(1.0 - tex2D(_AlphaBlendTex, i.uv).a, 2);
-                return tex;
-            }
-            ENDCG
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Here’s a second section of code.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	Shader &quot;Theta/Sphere2&quot; {
-	    Properties {
-	        _MainTex (&quot;Base (RGB)&quot;, 2D) = &quot;white&quot; {}
-	        _AlphaBlendTex (&quot;Alpha Blend (RGBA)&quot;, 2D) = &quot;white&quot; {}
-	        _OffsetU (&quot;Offset U&quot;, Range(-0.5, 0.5)) = 0
-	        _OffsetV (&quot;Offset V&quot;, Range(-0.5, 0.5)) = 0
-	        _ScaleU (&quot;Scale U&quot;, Range(0.8, 1.2)) = 1
-	        _ScaleV (&quot;Scale V&quot;, Range(0.8, 1.2)) = 1
-	        _ScaleCenterU (&quot;Scale Center U&quot;, Range(0.0, 1.0)) = 0
-	        _ScaleCenterV (&quot;Scale Center V&quot;, Range(0.0, 1.0)) = 0
-	    }
-	    SubShader {
-	        Tags { &quot;RenderType&quot; = &quot;Transparent&quot; &quot;Queue&quot; = &quot;Background+1&quot; }
-	        UsePass &quot;Theta/Sphere1/BASE&quot;
-	    }
-	}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;As below, for alphablend, have a texture made, that is alpha adjusted to UV. I made adjustment for perfectly fit, by exporting UV with postscript and reading with illustrator (white circle inside is alpha=1; around the circle, from inside to outside, changes from 1 to 0; outside will not be used so whatever fits.)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/two-circles.png&quot; alt=&quot;Two Circles&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then, adjust the parameters and you’ve got a whole sphere.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/parameters.png&quot; alt=&quot;Parameters&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/sphere-unity.png&quot; alt=&quot;Unity Sphere&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/realtime-stitching.png&quot; alt=&quot;Realtime Stitching&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Changing into Equirectangular&lt;/p&gt;
-
-&lt;p&gt;I tried it with a modified vertex shader.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Shader &quot;Theta/Equirectangular1&quot; {
-    Properties {
-        _MainTex (&quot;Base (RGB)&quot;, 2D) = &quot;white&quot; {}
-        _AlphaBlendTex (&quot;Alpha Blend (RGBA)&quot;, 2D) = &quot;white&quot; {}
-        _OffsetU (&quot;Offset U&quot;, Range(-0.5, 0.5)) = 0
-        _OffsetV (&quot;Offset V&quot;, Range(-0.5, 0.5)) = 0
-        _ScaleU (&quot;Scale U&quot;, Range(0.8, 1.2)) = 1
-        _ScaleV (&quot;Scale V&quot;, Range(0.8, 1.2)) = 1
-        _ScaleCenterU (&quot;Scale Center U&quot;, Range(0.0, 1.0)) = 0
-        _ScaleCenterV (&quot;Scale Center V&quot;, Range(0.0, 1.0)) = 0
-        _Aspect (&quot;Aspect&quot;, Float) = 1.777777777
-    }
-    SubShader {
-        Tags { &quot;RenderType&quot; = &quot;Transparent&quot; &quot;Queue&quot; = &quot;Background&quot; }
-        Pass {
-            Name &quot;BASE&quot;
-
-            Blend SrcAlpha OneMinusSrcAlpha
-            Lighting Off
-            ZWrite Off
-
-            CGPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            #define PI 3.1415925358979
-
-            #include &quot;UnityCG.cginc&quot;
-
-            uniform sampler2D _MainTex;
-            uniform sampler2D _AlphaBlendTex;
-            uniform float _OffsetU;
-            uniform float _OffsetV;
-            uniform float _ScaleU;
-            uniform float _ScaleV;
-            uniform float _ScaleCenterU;
-            uniform float _ScaleCenterV;
-            uniform float _Aspect;
-
-            struct v2f {
-                float4 position : SV_POSITION;
-                float2 uv       : TEXCOORD0;
-            };
-
-            v2f vert(appdata_base v) {
-                float4 modelBase = mul(_Object2World, float4(0, 0, 0, 1));
-                float4 modelVert = mul(_Object2World, v.vertex);
-
-                float x = modelVert.x;
-                float y = modelVert.y;
-                float z = modelVert.z;
-
-                float r = sqrt(x*x + y*y + z*z);
-                x /= 2 * r;
-                y /= 2 * r;
-                z /= 2 * r;
-
-                float latitude  = atan2(0.5, -y);
-                float longitude = atan2(x, z);  
-
-                float ex = longitude / (2 * PI);
-                float ey = (latitude - PI / 2) / PI * 2;
-                float ez = 0;
-
-                ex *= _Aspect;
-
-                modelVert = float4(float3(ex, ey, ez) * 2 * r, 1);
-
-                v2f o;
-                o.position = mul(UNITY_MATRIX_VP, modelVert);
-                o.uv       = MultiplyUV(UNITY_MATRIX_TEXTURE0, v.texcoord);
-                return o;
-            }    
-
-            float4 frag(v2f i) : COLOR {
-                float2 uvCenter = float2(_ScaleCenterU, _ScaleCenterV);
-                float2 uvOffset = float2(_OffsetU, _OffsetV);
-                float2 uvScale = float2(_ScaleU, _ScaleV);
-                float2 uv =  (i.uv - uvCenter) * uvScale + uvCenter + uvOffset;
-                float4 tex = tex2D(_MainTex, uv);
-                tex.a *= pow(1.0 - tex2D(_AlphaBlendTex, i.uv).a, 2);
-                return tex;
-            }
-            ENDCG
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Here’s a second section of code.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Shader &quot;Theta/Equirectangular2&quot; {
-    Properties {
-        _MainTex (&quot;Base (RGB)&quot;, 2D) = &quot;white&quot; {}
-        _AlphaBlendTex (&quot;Alpha Blend (RGBA)&quot;, 2D) = &quot;white&quot; {}
-        _OffsetU (&quot;Offset U&quot;, Range(-0.5, 0.5)) = 0
-        _OffsetV (&quot;Offset V&quot;, Range(-0.5, 0.5)) = 0
-        _ScaleU (&quot;Scale U&quot;, Range(0.8, 1.2)) = 1
-        _ScaleV (&quot;Scale V&quot;, Range(0.8, 1.2)) = 1
-        _ScaleCenterU (&quot;Scale Center U&quot;, Range(0.0, 1.0)) = 0
-        _ScaleCenterV (&quot;Scale Center V&quot;, Range(0.0, 1.0)) = 0
-        _Aspect (&quot;Aspect&quot;, Float) = 1.777777777
-    }
-    SubShader {
-        Tags { &quot;RenderType&quot; = &quot;Transparent&quot; &quot;Queue&quot; = &quot;Background+1&quot; }
-        UsePass &quot;Theta/Equirectangular1/BASE&quot;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/results.png&quot; alt=&quot;Results&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When taking a look at the mesh, it moves around like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2015-12/results-mesh.png&quot; alt=&quot;Results Mesh&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Because polygon did not fit, there is a blank space in the corner. This could have been avoided if we have used a direct fragment shader like Nora.&lt;/p&gt;
-
-&lt;p&gt;Conclusion&lt;/p&gt;
-
-&lt;p&gt;It looks like there’s the possibility of multiple fun topics here like spherical AR and Stabilization. After the THETA S goes on sale, I would love to play with it more.&lt;/p&gt;
-
-&lt;p&gt;Update March 9, 2016&lt;/p&gt;
-
-&lt;h2 id=&quot;maya-planar-uv-mapping-instruction&quot;&gt;Maya Planar UV Mapping Instruction&lt;/h2&gt;
-
-&lt;p&gt;Thanks to &lt;a href=&quot;https://twitter.com/hecomi&quot;&gt;@hecomi&lt;/a&gt; for providing this video that shows how to tweak
-the UV mapping. He produced it to help Flex van Geuns who was trying to use the
-UV mapping with webgl.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/FfhZltDqJ2U&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-</description>
-        <pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/unity/2015/12/17/Using-RICOH-Live-View-With-Unity.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/unity/2015/12/17/Using-RICOH-Live-View-With-Unity.html</guid>
-        
-        
-        <category>Unity</category>
         
       </item>
     
