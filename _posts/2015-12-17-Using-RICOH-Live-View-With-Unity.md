@@ -280,3 +280,5 @@ the UV mapping. He produced it to help Flex van Geuns who was trying to use the
 UV mapping with webgl.
 
 {% include youtubePlayer.html id="FfhZltDqJ2U" %}
+
+# [Check out the $45,000 THETA Developer Contest](http://theta360.com/contest)
