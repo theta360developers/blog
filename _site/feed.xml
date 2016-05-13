@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>THETA 360 Developers Unofficial Blog</title>
-    <description>Tips and technical for developers on using the RICOH THETA S 360 degree camera. Code examples and guides are available.
+    <title>THETA 360 Unofficial Blog</title>
+    <description>Community information for developers of applications for the RICOH THETA camera. Go to theta360.guide for more information.
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 May 2016 13:19:59 -0700</pubDate>
-    <lastBuildDate>Tue, 10 May 2016 13:19:59 -0700</lastBuildDate>
+    <pubDate>Fri, 13 May 2016 16:22:38 -0700</pubDate>
+    <lastBuildDate>Fri, 13 May 2016 16:22:38 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>First Days with THETA in San Francisco - Personal experiences</title>
+        <description>&lt;p&gt;I started using the THETA S pretty recently, and figured I would document what the first few days were like for me.  I took the camera for a test drive in my girlfriend’s apartment and it turns out one of her cats is pretty interested in 360 cameras.  If you have a VR headset, you can get up close and personal with her cat Zeus toward the end…&lt;/p&gt;
+
+&lt;p&gt;Video of Zeus in Lauren’s apartment&lt;/p&gt;
+
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;If you haven&amp;#x27;t met Zeus... #theta360 - &lt;a href=&quot;https://theta360.com/m/c1HrSITIehd7URx9PXQHsebMO&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;I tried to edit that video down, but couldn’t find desktop applications that worked (I could trim it, but not re-convert into the THETA 360 viewer), and the THETA+ Video app is only for iOS…so you might want to be careful with your video length if you’re on Android.  But, it turns out that when you upload to theta360.com there’s a size limit, so they have an option to trim the video during the upload, which works just as well for my purposes.
+The next day we decided to take the ferry to Tiburon, so I brought the THETA S with us.  If you look hard enough you can see the Bay Bridge, Golden Gate Bridge, and Alcatraz (Tiburon is a peninsula just behind Alcatraz).&lt;/p&gt;
+
+&lt;p&gt;Image of the ferry to Tiburon&lt;/p&gt;
+
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/hx6U5jOFBMviPesYkN4gfaMLY&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The image quality is great, but it seems like that quality degrades a little bit in the video I took.  You can see the line where the two half-spheres of video get stitched together, and when you zoom in on Alcatraz it gets pretty blurry, but overall it’s a pretty cool video.&lt;/p&gt;
+
+&lt;p&gt;Video of the ferry to Tiburon&lt;/p&gt;
+
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/rdjOCXujyUXNsFX3W2LnTLjvs&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;That night we went to the Hatsune Miku concert at the Warfield back in San Francisco, and of course we took the THETA along with us.  It seemed to have trouble with the lowlight environment, but it still gives you a pretty good idea of what the space was like.  Here’s what the quality is like during a well-lit moment:&lt;/p&gt;
+
+&lt;p&gt;Image of Hatsune Miku highlight&lt;/p&gt;
+
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/o7w2O93ht7Cts6sr000aI0Mro&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And here’s what it’s like in dim-lit moments:&lt;/p&gt;
+
+&lt;p&gt;Image of Hastune Miku lowlight&lt;/p&gt;
+
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/rU9VfmKnjz0G7oiu3LsHzbpSa&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The video handled movement pretty well, even with all the glow sticks flying around.  Here’s what it’s like with slow glow stick movement:&lt;/p&gt;
+
+&lt;p&gt;Video of slow glow sticks&lt;/p&gt;
+
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/gNFDjrkMBHUBjSoQmOYwktIAa&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And here’s what it’s like with fast glow sticks:&lt;/p&gt;
+
+&lt;p&gt;Video of fast glow sticks&lt;/p&gt;
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/fZbC6wdewQWlyXQBVSAPBcB96&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The next day we went to Berkeley for some beer at Rare Barrel and I decided to take a picture because I knew my brother had a cheap VR headset.  We took this picture and threw it into the headset with the help of the Tao360 app on my phone:&lt;/p&gt;
+
+&lt;p&gt;Image of us at Rare Barrel&lt;/p&gt;
+&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/3r2sUq7Yw57WJ97jr2ze9IBFo&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;So if you want to know what Rare Barrel’s like (look at all the colorful beer!), try to get that image into a headset and you’ll get the basic idea.  The Tao360 app is pretty minimal, but fine for throwing an image into a cheap headset.&lt;/p&gt;
+
+&lt;p&gt;After I left Berkeley I realized that I could use the THETA S app to view the image in VR, so I took a look without a headset.  It seems to do a good job, just be sure you have a way back (it took me a little while to figure out how to swipe to get to my home screen).&lt;/p&gt;
+
+&lt;p&gt;Back at the office I decided to try my hand at livestreaming in 360 with the THETA on YouTube.  It takes some effort, but I felt pretty accomplished by the end, even though I only got a few seconds of successful streaming in.&lt;/p&gt;
+
+&lt;p&gt;The first problem I ran into was that my Norton software rejected the UVC Blender that Ricoh recommends to download.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 May 2016 00:00:00 -0700</pubDate>
+        <link>http://theta360developers.github.io/blog/culture/2016/05/13/first-days-personal-experiences.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/culture/2016/05/13/first-days-personal-experiences.html</guid>
+        
+        
+        <category>Culture</category>
+        
+      </item>
     
       <item>
         <title>THETA Live Streaming on YouTube</title>
@@ -836,61 +926,6 @@ and you have a nice HDR for CG work. A really good looking app. Clean.&lt;/p&gt;
         
         
         <category>Applications</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH THETA S Won&#39;t Boot - FIXED</title>
-        <description>&lt;p&gt;I was able to unbrick my RICOH THETA S, and I’m sharing some of my results here.&lt;/p&gt;
-
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
-
-&lt;p&gt;I was running the RICOH THETA app version 2.0.0. This version has a known bug with the firmware upgrade. Unfortunately, I was unaware of this. I updated my firmware through the MacOS X RICOH THETA app to 1.21. Soon thereafter, my RICOH THETA S would not boot up. All of the blue lights on the front would blink, then a red light would come on, and a triple bee-bee-beep would happen, and it would shut down in about 3-5 seconds. Over and over.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-01/theta_blinking.jpg&quot; alt=&quot;THETA with all lights blinking blue&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First I thought it was not charged. I tried charging, but the red charging light would only stay on for about 20 seconds, maybe a little longer.&lt;/p&gt;
-
-&lt;p&gt;Then I began imagining I had dropped it or something, maybe it was actually broken. But seeing these posts here and talking with codetricity, I realized it was bricked. If I could update the firmware, maybe we could get it to boot up again.&lt;/p&gt;
-
-&lt;h2 id=&quot;steps-to-fix&quot;&gt;Steps to fix&lt;/h2&gt;
-
-&lt;h3 id=&quot;first-step&quot;&gt;First step&lt;/h3&gt;
-
-&lt;p&gt;Press and hold wifi button on the side and the shutter button on the front. While holding them, press the power button. Mine booted, with a front red light coming on (I think), and with the front wifi, video and LIVE blue lights blinking continuously.&lt;/p&gt;
-
-&lt;h3 id=&quot;second-step&quot;&gt;Second step&lt;/h3&gt;
-
-&lt;p&gt;Press and hold the wifi and shutter buttons, and DO NOT press power. Attach to the Mac while holding the two buttons down. (Yes, this is cumbersome.) I then connected to my MacOS X Macbook Air via USB and made sure I could see it as an attached device.&lt;/p&gt;
-
-&lt;p&gt;If Photos comes up automatically, that may be an issue. Go into Photos, under the Import tab, unclick Open Photos for this device. Then unplug and plug back in.&lt;/p&gt;
-
-&lt;p&gt;If you see the RICOH THETA as a device, it’ll show up in Finder as RICODCX. Also, the front red light on the camera stays on continuously at this point (I think). Double click to open RICODCX. There should be two files, DCIM and MISC. Delete both. I believe this gets rid of a corrupted file. I do not know this for a fact, though.&lt;/p&gt;
-
-&lt;h3 id=&quot;third-step&quot;&gt;Third Step&lt;/h3&gt;
-
-&lt;p&gt;Unplug, turn off, and then reattach to the Mac while holding the wifi and shutter buttons down at the same time.&lt;/p&gt;
-
-&lt;p&gt;At some point here, under RICOH THETA please check for newest version and update the RICOH THETA app to 2.0.1.&lt;/p&gt;
-
-&lt;h3 id=&quot;final-step&quot;&gt;Final step&lt;/h3&gt;
-
-&lt;p&gt;Now, in the RICOH THETA app, under File, run Firmware Update. Here’s the interesting part. I went through the firmware update. If the camera is not connected (or not connected properly) you will get an error message. I was nicely connected at this point.&lt;/p&gt;
-
-&lt;p&gt;The updater told me I was already running 1.21 and the newest version is the same version, 1.21, therefore no need to update. This felt like a dead end. But try ignoring this. I thought it would not upgrade or reinstall the firmware, but… after unplugging and restarting, my RICOH THETA S is healthy. Attaches to iPhone, takes pictures, everything.&lt;/p&gt;
-
-&lt;p&gt;Good luck!&lt;/p&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/camera/2016/01/20/fixing-bricked-theta.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/01/20/fixing-bricked-theta.html</guid>
-        
-        
-        <category>Camera</category>
         
       </item>
     
