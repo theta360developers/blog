@@ -93,3 +93,21 @@ After I left Berkeley I realized that I could use the THETA S app to view the im
 Back at the office I decided to try my hand at livestreaming in 360 with the THETA on YouTube.  It takes some effort, but I felt pretty accomplished by the end, even though I only got a few seconds of successful streaming in.  
 
 The first problem I ran into was that my Norton software rejected the UVC Blender that Ricoh recommends to download.  
+
+![](/blog/img/2016-05/file-insight.png)
+
+I circumvented this by disabling my Norton for an hour (just right click the icon and hit “disable auto-protect”).  Then I downloaded OBS and had to deal with its smushed interface.
+
+ ![](/blog/img/2016-05/profile.png)
+
+It’s navigable, but requires more effort than it should.  After fumbling around with choosing between OBS’s YouTube or Custom options (custom worked much better for me), I was ready to start streaming.
+
+ ![](/blog/img/2016-05/livestream.png)
+
+That’s about the best quality I could get, and I could only get the stream to work for a few seconds at a time, but I’m counting it as a win and am looking forward to tweaking it to boost the quality.  For a much more in depth guide to livestreaming, check out Craig’s detailed blog post on how to
+[livestream the THETA on YouTube](/blog/camera/2016/05/10/youtube-streaming.html).
+
+If you’re looking for ways to challenge yourself and experiment with your THETA, Ricoh’s hosting a
+[contest](/contest) that runs until the end of August.  You can also join the SF Bay Area Ricoh THETA Developer’s
+[Meetup](http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/)
+for information on how to jumpstart your development for the contest.
