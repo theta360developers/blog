@@ -184,7 +184,10 @@ filesystem for quick viewing.
 
 There is a mockup of a mobile camera controller as part of the real estate
 demo. You could fairly easily modify it to store the images in the cloud
-and have a cooler demo. I may try this myself if I have some spare time.
+and have a cooler demo. I may try this myself if I have some spare time. We were supposed to get this working with the Cloud API for the meetup. I don't
+think we'll have time, but who knows?
+
+![](/blog/img/2016-05/phoneApp.png)
 
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
 
