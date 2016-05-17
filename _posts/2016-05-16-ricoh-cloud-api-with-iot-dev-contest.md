@@ -12,11 +12,15 @@ Wow, in the last few weeks, we've seen a huge surge in
 around development for the RICOH THETA. We have 122
 members in our
 [Silicon Valley THETA Dev meetup](http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/)
-group. More than 1,000 people have visited our [contest signup
-site](http://theta360.guide/contest/).
+group. More than 1,000 people have visited our unofficial guide to [contest signup](http://theta360.guide/contest/), hoping to win some of the $45,000
+in prizes, learn, and have fun.
 
-People are using a variety of devices to connect to the THETA. Many are
-interested in storing content in the cloud. RICOH is making
+People are using a variety of devices to connect to the THETA.
+Many developers are
+interested in storing content in the cloud and using devices
+like the
+[Raspberry Pi](http://codetricity.github.io/theta-s/index.html#_raspberry_pi) to control the camera and transfer 360 media
+to cloud-based servers for management. RICOH is making
 [free cloud storage](http://docs.ricohapi.com/)
 available to contest participants. Here's
 how to use it with their API.
@@ -136,14 +140,19 @@ Run it.
 
 # Have fun
 
-You can now move 360 media back and forth between the a small device running
-JavaScript and a cloud server. Of course, you'll want to test it for a mock
-usage with navigation.
+You can now move 360 media back and forth between a small device running
+JavaScript and a cloud server. Now, have some fun and spend
+a few minutes playing around with the 360 image in a sample
+web site you can build from scratch, including open source
+viewer code.
 
 My son built a sample real estate demo to help web designers experiment
-with 360 image viewing.
+with 360 image viewing. His code is forked from
+[ThetaViewer](https://github.com/theta360developers/ThetaViewer) by
+[Atsushi Kokubo](https://github.com/akokubo). My son only
+did the web design. You can easily design something too.
 
-You can grab it here:
+You can grab the code for the demo site here:
 
     $ git clone https://github.com/KaiyoteSoft/realEstate.git
 
@@ -172,6 +181,10 @@ older file. If you set the image name in `theta-viewer` to
 `mainbanner.png`, you can easily move data from the camera and store it
 in the cloud for management, then download specific files from the cloud to a local
 filesystem for quick viewing.
+
+There is a mockup of a mobile camera controller as part of the real estate
+demo. You could fairly easily modify it to store the images in the cloud
+and have a cooler demo. I may try this myself if I have some spare time.
 
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
 
