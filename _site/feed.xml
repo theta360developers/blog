@@ -6,15 +6,220 @@
 </description>
     <link>http://theta360developers.github.io/blog/</link>
     <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 May 2016 16:55:31 -0700</pubDate>
-    <lastBuildDate>Fri, 13 May 2016 16:55:31 -0700</lastBuildDate>
+    <pubDate>Mon, 16 May 2016 17:14:30 -0700</pubDate>
+    <lastBuildDate>Mon, 16 May 2016 17:14:30 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Using RICOH Cloud API with IoT Dev Contest</title>
+        <description>&lt;p&gt;Wow, in the last few weeks, we’ve seen a huge surge in
+&lt;a href=&quot;http://theta360.guide/&quot;&gt;community activity&lt;/a&gt;
+around development for the RICOH THETA. We have 122
+members in our
+&lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/&quot;&gt;Silicon Valley THETA Dev meetup&lt;/a&gt;
+group. More than 1,000 people have visited our &lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;contest signup
+site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;People are using a variety of devices to connect to the THETA. Many are
+interested in storing content in the cloud. RICOH is making
+&lt;a href=&quot;http://docs.ricohapi.com/&quot;&gt;free cloud storage&lt;/a&gt;
+available to contest participants. Here’s
+how to use it with their API.&lt;/p&gt;
+
+&lt;h1 id=&quot;ricoh-cloud-api-keys&quot;&gt;RICOH Cloud API Keys&lt;/h1&gt;
+
+&lt;p&gt;First, you’ll need RICOH API Client Credentials. To help you grab
+the API credentials, we created a
+&lt;a href=&quot;http://theta360.guide/contest/signup_cloudapi.html&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once you complete the process and log into RICOH’s notes server,
+you’ll get a &lt;code class=&quot;highlighter-rouge&quot;&gt;client_id&lt;/code&gt; and a &lt;code class=&quot;highlighter-rouge&quot;&gt;client_secret&lt;/code&gt;. The keys will be
+look like this &lt;code class=&quot;highlighter-rouge&quot;&gt;5xm7jIvlPk4&lt;/code&gt;, only longer. Be careful. The username
+and password in get in your email is for the RICOH notes server
+to download your keys. The email does not contain the actual
+keys. The &lt;code class=&quot;highlighter-rouge&quot;&gt;client_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;client_secret&lt;/code&gt; both look like
+a string of random characters.&lt;/p&gt;
+
+&lt;h1 id=&quot;unified-communications-system-user-id-and-password&quot;&gt;Unified Communications System User ID and password&lt;/h1&gt;
+
+&lt;p&gt;In addition to the Cloud API &lt;code class=&quot;highlighter-rouge&quot;&gt;client_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;client_secret&lt;/code&gt;
+you will also need &lt;code class=&quot;highlighter-rouge&quot;&gt;user_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;password&lt;/code&gt; from the
+Unified Communications System. The &lt;code class=&quot;highlighter-rouge&quot;&gt;user_id&lt;/code&gt; looks like
+an email address like &lt;code class=&quot;highlighter-rouge&quot;&gt;user@oppkey.com&lt;/code&gt;. The password is
+a user-defined password.&lt;/p&gt;
+
+&lt;p&gt;Please refer to the
+&lt;a href=&quot;http://theta360.guide/contest/signup_cloudapi.html&quot;&gt;Cloud API Signup guide&lt;/a&gt;
+ for more
+information on what you need, where to get it, and
+what each credential looks like.&lt;/p&gt;
+
+&lt;h1 id=&quot;testing-ricoh-cloud-api-with-nodejs&quot;&gt;Testing RICOH Cloud API with Node.js&lt;/h1&gt;
+
+&lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt; to install &lt;code class=&quot;highlighter-rouge&quot;&gt;ricohapi-mstorage&lt;/code&gt;. I am using Ubuntu 16.04 with
+node v6.1.0 installed from the
+&lt;a href=&quot;https://nodejs.org/en/download/current/&quot;&gt;Node.js&lt;/a&gt; site. You should be able to
+use node v4.4 despite the warnings. However, I did most of my tests
+with node v6.1.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install ricohapi-mstorage
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I get minor warnings. Ignore them.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development$ npm install ricohapi-mstorage
+/home/ricoh
+└── ricohapi-mstorage@1.0.0
+
+npm WARN enoent ENOENT: no such file or directory, open &#39;/home/ricoh/package.json&#39;
+npm WARN ricoh No description
+npm WARN ricoh No repository field.
+npm WARN ricoh No README data
+npm WARN ricoh No license field.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We finally get to the fun part. Open up an editor and drop in some code.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const MStorage = require(&#39;ricohapi-mstorage&#39;).MStorage;
+const AuthClient = require(&#39;ricohapi-mstorage&#39;).AuthClient;
+
+const client = new AuthClient(&#39;clientId&#39;, &#39;clientSecret&#39;);
+client.setResourceOwnerCreds(&#39;userID&#39;, &#39;password&#39;);
+
+const mstorage = new MStorage(client);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Run the code. Hopefully, there are no error messages.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node cloudtest2.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Grab an image and save it into the same directory as your test code.
+In my example, my test code is called &lt;code class=&quot;highlighter-rouge&quot;&gt;cloudtest2.js&lt;/code&gt;. My test image
+is a 360 equirectangular image called &lt;code class=&quot;highlighter-rouge&quot;&gt;beach.jpg&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The big moment of of connecting to the RICOH Cloud server and
+uploading a 360 image has arrived! Drop the code below onto the
+end of your program and run it.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mstorage.connect()
+.then(() =&amp;gt; mstorage.upload(&#39;./beach.jpg&#39;))
+.then(() =&amp;gt; console.log(&#39;uploaded&#39;)
+.catch(e =&amp;gt; console.log(e)));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Boom. it works!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
+uploaded
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Grab a listing of your images. Add the code below to the end of your
+test program.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mstorage.connect()
+.then(() =&amp;gt; mstorage.list())
+.then(list =&amp;gt; console.log(list));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Run it and verify the file was upload. I have multiple files in my test account. Your output may be slightly different.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
+{&quot;media&quot;:[{&quot;id&quot;:&quot;c516ccd5-db40-438c-8f8b-e306a1c618d5&quot;},{&quot;id&quot;:&quot;258f43a9-4d7a-4d4e-b625-f3a149fc7240&quot;},{&quot;id&quot;:&quot;b2046fcf-1c86-47bc-a1ff-1922ecd8859a&quot;}],&quot;paging&quot;:{&quot;previous&quot;:&quot;http://mss.ricohapi.com/v1/media?before=c516ccd5-db40-438c-8f8b-e306a1c618d5\u0026limit=10&quot;}}
+uploaded
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Grab the ID for one of your media assets in the RICOH Cloud server. Replace the ID below with your own ID.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mstorage.connect()
+.then(() =&amp;gt; mstorage.downloadTo(&#39;258f43a9-4d7a-4d4e-b625-f3a149fc7240&#39;, &#39;./img/downloadbeach.jpg&#39; )
+.then(() =&amp;gt; console.log(&#39;downloaded&#39;)));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Run it.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
+{&quot;media&quot;:[{&quot;id&quot;:&quot;9d0f457e-a969-4247-81dc-3f430c2cb06d&quot;},{&quot;id&quot;:&quot;c516ccd5-db40-438c-8f8b-e306a1c618d5&quot;},{&quot;id&quot;:&quot;258f43a9-4d7a-4d4e-b625-f3a149fc7240&quot;},{&quot;id&quot;:&quot;b2046fcf-1c86-47bc-a1ff-1922ecd8859a&quot;}],&quot;paging&quot;:{&quot;previous&quot;:&quot;http://mss.ricohapi.com/v1/media?before=9d0f457e-a969-4247-81dc-3f430c2cb06d\u0026limit=10&quot;}}
+downloaded
+ricoh@xerus:~/Development/ricoh-cloud-api$ ll img/
+total 4064
+drwxrwxr-x 2 ricoh ricoh    4096 May 16 15:32 ./
+drwxrwxr-x 4 ricoh ricoh    4096 May 16 16:34 ../
+-rw-rw-r-- 1 ricoh ricoh 4151640 May 16 16:45 downloadbeach.jpg
+ricoh@xerus:~/Development/ricoh-cloud-api$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;have-fun&quot;&gt;Have fun&lt;/h1&gt;
+
+&lt;p&gt;You can now move 360 media back and forth between the a small device running
+JavaScript and a cloud server. Of course, you’ll want to test it for a mock
+usage with navigation.&lt;/p&gt;
+
+&lt;p&gt;My son built a sample real estate demo to help web designers experiment
+with 360 image viewing.&lt;/p&gt;
+
+&lt;p&gt;You can grab it here:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/KaiyoteSoft/realEstate.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Copy your image file into &lt;code class=&quot;highlighter-rouge&quot;&gt;./images&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;dynamic.html&lt;/code&gt; and change the top image to the image
+you just downloaded. Search for the div id &lt;code class=&quot;highlighter-rouge&quot;&gt;theta-viewer&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div id=&quot;theta-viewer&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;script&amp;gt;
+/*global jQuery */
+(function ($) {
+  &#39;use strict&#39;;
+  // #theta-viewerにパノラマ画像img/R0010035.JPGを表示
+  $(&quot;#theta-viewer&quot;).createThetaViewer(&#39;images/downloadbeach.jpg&#39;);
+}(jQuery));
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;dynamic.html&lt;/code&gt; in browser. Click and drag the image to navigate it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/cloudapi-demo-beach.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The fun part of this demo is that you can use the RICOH Cloud API to
+download a file to something like &lt;code class=&quot;highlighter-rouge&quot;&gt;mainbanner.png&lt;/code&gt; and overwrite the
+older file. If you set the image name in &lt;code class=&quot;highlighter-rouge&quot;&gt;theta-viewer&lt;/code&gt; to
+&lt;code class=&quot;highlighter-rouge&quot;&gt;mainbanner.png&lt;/code&gt;, you can easily move data from the camera and store it
+in the cloud for management, then download specific files from the cloud to a local
+filesystem for quick viewing.&lt;/p&gt;
+
+&lt;p&gt;Just a few quick ideas to get your imagination going. If you build something, I’d love to hear about it.&lt;/p&gt;
+
+&lt;p&gt;Ready for more?&lt;/p&gt;
+
+&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Mon, 16 May 2016 00:00:00 -0700</pubDate>
+        <link>http://theta360developers.github.io/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</link>
+        <guid isPermaLink="true">http://theta360developers.github.io/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</guid>
+        
+        
+        <category>Contest</category>
+        
+      </item>
     
       <item>
         <title>First Days with THETA in San Francisco - Personal experiences</title>
         <description>&lt;p&gt;I started using the THETA S pretty recently, and figured I would document what the first few days were like for me.  I took the camera for a test drive in my girlfriend’s apartment and it turns out one of her cats is pretty interested in 360 cameras.  If you have a VR headset, you can get up close and personal with her cat Zeus toward the end…&lt;/p&gt;
-
-&lt;p&gt;Video of Zeus in Lauren’s apartment&lt;/p&gt;
 
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;If you haven&amp;#x27;t met Zeus... #theta360 - &lt;a href=&quot;https://theta360.com/m/c1HrSITIehd7URx9PXQHsebMO&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
@@ -24,16 +229,12 @@
 &lt;p&gt;I tried to edit that video down, but couldn’t find desktop applications that worked (I could trim it, but not re-convert into the THETA 360 viewer), and the THETA+ Video app is only for iOS…so you might want to be careful with your video length if you’re on Android.  But, it turns out that when you upload to theta360.com there’s a size limit, so they have an option to trim the video during the upload, which works just as well for my purposes.
 The next day we decided to take the ferry to Tiburon, so I brought the THETA S with us.  If you look hard enough you can see the Bay Bridge, Golden Gate Bridge, and Alcatraz (Tiburon is a peninsula just behind Alcatraz).&lt;/p&gt;
 
-&lt;p&gt;Image of the ferry to Tiburon&lt;/p&gt;
-
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/hx6U5jOFBMviPesYkN4gfaMLY&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
 
 &lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;The image quality is great, but it seems like that quality degrades a little bit in the video I took.  You can see the line where the two half-spheres of video get stitched together, and when you zoom in on Alcatraz it gets pretty blurry, but overall it’s a pretty cool video.&lt;/p&gt;
-
-&lt;p&gt;Video of the ferry to Tiburon&lt;/p&gt;
 
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/rdjOCXujyUXNsFX3W2LnTLjvs&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
@@ -42,16 +243,12 @@ The next day we decided to take the ferry to Tiburon, so I brought the THETA S w
 
 &lt;p&gt;That night we went to the Hatsune Miku concert at the Warfield back in San Francisco, and of course we took the THETA along with us.  It seemed to have trouble with the lowlight environment, but it still gives you a pretty good idea of what the space was like.  Here’s what the quality is like during a well-lit moment:&lt;/p&gt;
 
-&lt;p&gt;Image of Hatsune Miku highlight&lt;/p&gt;
-
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/o7w2O93ht7Cts6sr000aI0Mro&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
 
 &lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;And here’s what it’s like in dim-lit moments:&lt;/p&gt;
-
-&lt;p&gt;Image of Hastune Miku lowlight&lt;/p&gt;
 
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/rU9VfmKnjz0G7oiu3LsHzbpSa&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
@@ -60,8 +257,6 @@ The next day we decided to take the ferry to Tiburon, so I brought the THETA S w
 
 &lt;p&gt;The video handled movement pretty well, even with all the glow sticks flying around.  Here’s what it’s like with slow glow stick movement:&lt;/p&gt;
 
-&lt;p&gt;Video of slow glow sticks&lt;/p&gt;
-
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/gNFDjrkMBHUBjSoQmOYwktIAa&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
 
@@ -69,7 +264,6 @@ The next day we decided to take the ferry to Tiburon, so I brought the THETA S w
 
 &lt;p&gt;And here’s what it’s like with fast glow sticks:&lt;/p&gt;
 
-&lt;p&gt;Video of fast glow sticks&lt;/p&gt;
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/fZbC6wdewQWlyXQBVSAPBcB96&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
 
@@ -77,7 +271,6 @@ The next day we decided to take the ferry to Tiburon, so I brought the THETA S w
 
 &lt;p&gt;The next day we went to Berkeley for some beer at Rare Barrel and I decided to take a picture because I knew my brother had a cheap VR headset.  We took this picture and threw it into the headset with the help of the Tao360 app on my phone:&lt;/p&gt;
 
-&lt;p&gt;Image of us at Rare Barrel&lt;/p&gt;
 &lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/3r2sUq7Yw57WJ97jr2ze9IBFo&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
 &lt;/blockquote&gt;
 
@@ -108,6 +301,10 @@ The next day we decided to take the ferry to Tiburon, so I brought the THETA S w
 &lt;a href=&quot;/contest&quot;&gt;contest&lt;/a&gt; that runs until the end of August.  You can also join the SF Bay Area Ricoh THETA Developer’s
 &lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/&quot;&gt;Meetup&lt;/a&gt;
 for information on how to jumpstart your development for the contest.&lt;/p&gt;
+
+&lt;p&gt;Ready for more?&lt;/p&gt;
+
+&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Fri, 13 May 2016 00:00:00 -0700</pubDate>
         <link>http://theta360developers.github.io/blog/culture/2016/05/13/first-days-personal-experiences.html</link>
@@ -773,174 +970,6 @@ version has full controller features. Both versions are based on the
         <pubDate>Mon, 22 Feb 2016 00:00:00 -0800</pubDate>
         <link>http://theta360developers.github.io/blog/applications/2016/02/22/remote-shutter.html</link>
         <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/02/22/remote-shutter.html</guid>
-        
-        
-        <category>Applications</category>
-        
-      </item>
-    
-      <item>
-        <title>List of RICOH THETA Apps</title>
-        <description>&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
-
-  ga(&#39;create&#39;, &#39;UA-73311422-1&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-
-&lt;/script&gt;
-
-&lt;p&gt;This list was produced by &lt;a href=&quot;https://www.facebook.com/groups/RicohTHETAUsers/&quot;&gt;RICOH THETA Facebook Group&lt;/a&gt; community member Fabio Penna.&lt;/p&gt;
-
-&lt;h1 id=&quot;desktop-computer-programs&quot;&gt;Desktop Computer programs&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://theta360.com/en/support/download/&quot;&gt;Theta Official&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://hugin.sourceforge.net/&quot;&gt;Hugin&lt;/a&gt;
-for straightening images on a computer - See Carl Bennett turorial in the &lt;a href=&quot;https://www.facebook.com/notes/ricoh-theta-users-on-facebook/straightening-360-images-using-hugin/1616917718526418&quot;&gt;documents area&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.krpano.com/&quot;&gt;KR Pano&lt;/a&gt; tool for pictures and vídeos&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.kolor.com/panotour/&quot;&gt;Kolor panotour&lt;/a&gt; to create tours&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.easypano.com/&quot;&gt;EasyPano&lt;/a&gt; Similar to Kolor&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.ptgui.com&quot;&gt;PTGui&lt;/a&gt; tool for straightening panos and posting panos&lt;br /&gt;
- Dennis Mabrey says, “While PTGui is a great tool it’s primary purpose is for stitching multiple images into a pano.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://ggnome.com&quot;&gt;Pano2VR&lt;/a&gt; tool for straightening panos and creating tour&lt;br /&gt;
-Dennis Mabrey says, “PanoVR (at least beta ver 5) will perform automatic straightening of Theta/Theta S images. You don’t have to run the stills through the Ricoh software.&lt;br /&gt;
-PanoVR also is great for things like tripod removal or fixing images. You can select a portion of the image and edit in Photoshop and perform functions like content aware fill. Really makes getting rid of the tripod or the ‘giant hand’ very useful.”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.tshsoft.com/en/panostudio_index&quot;&gt;PanoramaStudio 3&lt;/a&gt; Photo stitching and pano postwork. Save to flash or HTML5&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;online-programs&quot;&gt;Online Programs&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.holobuilder.com/index.html&quot;&gt;HoloBuilder&lt;/a&gt; Complete tour tool and totally FREE - From our friend Fabian Fabian&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.spinattic.com/&quot;&gt;Spinattic&lt;/a&gt; Free tour creation tool, with social network integrated&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.youvisit.com/&quot;&gt;You Visit&lt;/a&gt; Similar to HoloBuilder, with free and paid plans&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://round.me/&quot;&gt;Round.me&lt;/a&gt; Free tour creation tool, with social network integrated&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.mapillary.com/map&quot;&gt;Mapillary&lt;/a&gt; Free street tour creation tool, with social network integrated - Wiff IOS and Android Apps&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.marzipano.net/tool/&quot;&gt;Marzipano&lt;/a&gt; For self panorama host&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;mobile-applications&quot;&gt;Mobile Applications&lt;/h1&gt;
-
-&lt;h2 id=&quot;ricoh-theta-for-cameras-before-s&quot;&gt;Ricoh Theta (For cameras before S)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.theta&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ricoh-theta-s&quot;&gt;Ricoh Theta S&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.theta360&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/ricoh-theta-s/id102325474&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;theta-theta-editor-post-on-instagram---developed-by-ricoh&quot;&gt;Theta+ (Theta editor, post on Instagram - Developed by Ricoh)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/theta+/id1021526610?mt=8&quot;&gt;iOs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;theta-hdr-to-take-hdr-pictures&quot;&gt;Theta HDR (To take HDR Pictures)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=air.de.pl.ThetaHDRApp&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.teapps.thetahdr&quot;&gt;Android Option 2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/hdr-360-bracket-pro-for-ricoh/id987157511?mt=8&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;simple-hdr-by-built-light-to-take-hdr-pictures&quot;&gt;Simple HDR by Built Light (to take HDR pictures)&lt;/h2&gt;
-&lt;p&gt;Community review: Nicely affordable Theta HDR app. Drop the files into something like Photomatix on the desktop
-and you have a nice HDR for CG work. A really good looking app. Clean.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/simple-hdr/id1035541353&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;theta-action--motion-pictures&quot;&gt;Theta Action + (Motion pictures)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=jp.sciencecow.thetaactionplus&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;vr-panorama-viewer-to-see-panos-in-google-cardboard-vr---from-our-friend-shawn-ames&quot;&gt;VR Panorama Viewer (To see panos in Google Cardboard VR - From our friend Shawn Ames)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.Viral3D.VRPanoViewer&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;tao360-another-cardboard-viewer&quot;&gt;Tao360 another cardboard viewer&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=jp.co.taosoftware.android.sphericalviewer&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;spherecamhttpsitunesapplecomusappspherecamid973550273mt8&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/spherecam/id973550273?mt=8&quot;&gt;SphereCam&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;(Remote controller for Ricoh THETA m15/Ricoh THETA S, has tvOS version can let user view image/Video on Apple TV. Apple watch support)&lt;/p&gt;
-
-&lt;h2 id=&quot;koloreyes-for-viewing-360-video-withwithout-cardboard&quot;&gt;kolorEyes for viewing 360 video with/without cardboard&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=fi.finwe.koloreyesandroid&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;theta-transfer-for-copying-the-full-size-images&quot;&gt;Theta Transfer for copying the full size images&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.hirota41.thetatransfer&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;theta-converter-for-straightening-images&quot;&gt;Theta Converter for straightening images&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.hirota41.thetaconverter&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;holo360uploader-app-to-upload-and-share-theta-shots-works-with-holobuilder---see-it-on-the-online-programs-section&quot;&gt;Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.bitstars.panouploader&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/applications/2016/01/20/list-of-theta-apps.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/01/20/list-of-theta-apps.html</guid>
         
         
         <category>Applications</category>
