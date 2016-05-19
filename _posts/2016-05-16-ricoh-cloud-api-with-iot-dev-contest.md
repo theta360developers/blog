@@ -172,7 +172,6 @@ Build it with the path for
 
 Run gulp
 
-    ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ^C
     ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ./node_modules/.bin/gulp run
     (node:23840) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
     [13:06:44] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
@@ -182,7 +181,15 @@ Run gulp
 
 It will automatically open up a browser.
 
+Select RICOH THETA S as the device.
+
+![](/blog/img/2016-05/select-device.png)
+
 Log in with your RICOH username and ID.
+
+![](/blog/img/2016-05/cloud-streaming-app-login.png)
+
+
 
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
 
