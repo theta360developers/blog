@@ -146,6 +146,31 @@ Grab the [live streaming code from GitHub](https://github.com/ricohapi/video-str
 
 Follow the steps and get going.
 
+If you try running
+
+    $ gulp build
+
+and your system can't find `gulp`, then do this:
+
+    $ npm bin
+
+It will return your path, probably something like this:
+
+    /home/ricoh/Development/livestream/video-streaming-sample-app/node_modules/.bin
+
+Build it with the path for
+[gulp](https://www.npmjs.com/package/gulp).
+
+    video-streaming-sample-app$ ./node_modules/.bin/gulp build
+    (node:23673) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+    [12:57:33] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
+    [12:57:33] Starting 'build'...
+    [12:57:53] Version: webpack 1.13.0
+                Asset    Size  Chunks             Chunk Names
+    ./build/bundle.js  354 kB       0  [emitted]  main
+    [12:57:53] Finished 'build' after 20 s
+
+
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
 
 Ready for more?
