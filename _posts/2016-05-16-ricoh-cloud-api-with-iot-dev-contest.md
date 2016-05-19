@@ -146,6 +146,15 @@ Grab the [live streaming code from GitHub](https://github.com/ricohapi/video-str
 
 Follow the steps and get going.
 
+    $ git clone https://github.com/ricohapi/video-streaming-sample-app.git
+    $ cd video-streaming-sample-app
+    $ cp samples/config_template.js samples/config.js
+
+put your credentials into the config.js
+
+    $ npm install
+    $ gulp build
+
 If you try running
 
     $ gulp build
