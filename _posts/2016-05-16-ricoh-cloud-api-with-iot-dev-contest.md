@@ -170,6 +170,19 @@ Build it with the path for
     ./build/bundle.js  354 kB       0  [emitted]  main
     [12:57:53] Finished 'build' after 20 s
 
+Run gulp
+
+    ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ^C
+    ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ./node_modules/.bin/gulp run
+    (node:23840) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+    [13:06:44] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
+    [13:06:44] Starting 'run'...
+    [13:06:44] Webserver started at http://localhost:8034
+    [13:06:44] Finished 'run' after 23 ms
+
+It will automatically open up a browser.
+
+Log in with your RICOH username and ID.
 
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
 
