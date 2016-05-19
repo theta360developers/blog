@@ -138,56 +138,13 @@ Run it.
     -rw-rw-r-- 1 ricoh ricoh 4151640 May 16 16:45 downloadbeach.jpg
     ricoh@xerus:~/Development/ricoh-cloud-api$
 
-# Have fun
+# Live Stream Video
+With your RICOH API credentials and RICOH ID, you can now live stream
+inside of your browser.
 
-You can now move 360 media back and forth between a small device running
-JavaScript and a cloud server. Now, have some fun and spend
-a few minutes playing around with the 360 image in a sample
-web site you can build from scratch, including open source
-viewer code.
+Grab the [live streaming code from GitHub](https://github.com/ricohapi/video-streaming-sample-app).
 
-My son built a sample real estate demo to help web designers experiment
-with 360 image viewing. His code is forked from
-[ThetaViewer](https://github.com/theta360developers/ThetaViewer) by
-[Atsushi Kokubo](https://github.com/akokubo). My son only
-did the web design. You can easily design something too.
-
-You can grab the code for the demo site here:
-
-    $ git clone https://github.com/KaiyoteSoft/realEstate.git
-
-Copy your image file into `./images`
-
-Open the file `dynamic.html` and change the top image to the image
-you just downloaded. Search for the div id `theta-viewer`.
-
-    <div id="theta-viewer"></div>
-    <script>
-    /*global jQuery */
-    (function ($) {
-      'use strict';
-      // #theta-viewerにパノラマ画像img/R0010035.JPGを表示
-      $("#theta-viewer").createThetaViewer('images/downloadbeach.jpg');
-    }(jQuery));
-    </script>
-
-Open `dynamic.html` in browser. Click and drag the image to navigate it.
-
-![](/blog/img/2016-05/cloudapi-demo-beach.png)
-
-The fun part of this demo is that you can use the RICOH Cloud API to
-download a file to something like `mainbanner.png` and overwrite the
-older file. If you set the image name in `theta-viewer` to
-`mainbanner.png`, you can easily move data from the camera and store it
-in the cloud for management, then download specific files from the cloud to a local
-filesystem for quick viewing.
-
-There is a mockup of a mobile camera controller as part of the real estate
-demo. You could fairly easily modify it to store the images in the cloud
-and have a cooler demo. I may try this myself if I have some spare time. We were hoping to get this working with the Cloud API for the meetup. I don't
-think we'll have time, but who knows?
-
-![](/blog/img/2016-05/phoneApp.png)
+Follow the steps and get going.
 
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
 
