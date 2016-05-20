@@ -203,6 +203,9 @@ The live streaming sample app accepts dual fish-eye video and using WebRTC
 2 computers. Only video is supported.
 ![](/blog/img/2016-05/live-streaming-sample.png)
 
+We have a full slide deck about the RICOH Cloud API as well as a space to ask
+questions on our
+[THETA x IoT Developers Contest email list archive system](http://lists.theta360.guide/t/theta-x-iot-developers-contest/16).
 
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
 
