@@ -198,6 +198,10 @@ Log in with your RICOH username and ID.
 
 ![](/blog/img/2016-05/cloud-streaming-app-login.png)
 
+The live streaming sample app accepts dual fish-eye video and using WebRTC
+(browser functionality) can establish a 360 video stream chat-like session between
+2 computers. Only video is supported.
+![](/blog/img/2016-05/live-streaming-sample.png)
 
 
 Just a few quick ideas to get your imagination going. If you build something, I'd love to hear about it.
