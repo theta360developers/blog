@@ -4,10 +4,10 @@
     <title>THETA 360 Unofficial Blog</title>
     <description>Community information for developers of applications for the RICOH THETA camera. Go to theta360.guide for more information.
 </description>
-    <link>http://theta360developers.github.io/blog/</link>
-    <atom:link href="http://theta360developers.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 May 2016 17:42:15 -0700</pubDate>
-    <lastBuildDate>Mon, 16 May 2016 17:42:15 -0700</lastBuildDate>
+    <link>http://theta360.guide/blog/</link>
+    <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 19 May 2016 17:41:12 -0700</pubDate>
+    <lastBuildDate>Thu, 19 May 2016 17:41:12 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -163,60 +163,79 @@ ricoh@xerus:~/Development/ricoh-cloud-api$
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h1 id=&quot;have-fun&quot;&gt;Have fun&lt;/h1&gt;
+&lt;h1 id=&quot;live-stream-video&quot;&gt;Live Stream Video&lt;/h1&gt;
+&lt;p&gt;With your RICOH API credentials and RICOH ID, you can now live stream
+inside of your browser.&lt;/p&gt;
 
-&lt;p&gt;You can now move 360 media back and forth between a small device running
-JavaScript and a cloud server. Now, have some fun and spend
-a few minutes playing around with the 360 image in a sample
-web site you can build from scratch, including open source
-viewer code.&lt;/p&gt;
+&lt;p&gt;Grab the &lt;a href=&quot;https://github.com/ricohapi/video-streaming-sample-app&quot;&gt;live streaming code from GitHub&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;My son built a sample real estate demo to help web designers experiment
-with 360 image viewing. His code is forked from
-&lt;a href=&quot;https://github.com/theta360developers/ThetaViewer&quot;&gt;ThetaViewer&lt;/a&gt; by
-&lt;a href=&quot;https://github.com/akokubo&quot;&gt;Atsushi Kokubo&lt;/a&gt;. My son only
-did the web design. You can easily design something too.&lt;/p&gt;
+&lt;p&gt;Follow the steps and get going.&lt;/p&gt;
 
-&lt;p&gt;You can grab the code for the demo site here:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/KaiyoteSoft/realEstate.git
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/ricohapi/video-streaming-sample-app.git
+$ cd video-streaming-sample-app
+$ cp samples/config_template.js samples/config.js
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Copy your image file into &lt;code class=&quot;highlighter-rouge&quot;&gt;./images&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;put your credentials into the config.js&lt;/p&gt;
 
-&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;dynamic.html&lt;/code&gt; and change the top image to the image
-you just downloaded. Search for the div id &lt;code class=&quot;highlighter-rouge&quot;&gt;theta-viewer&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div id=&quot;theta-viewer&quot;&amp;gt;&amp;lt;/div&amp;gt;
-&amp;lt;script&amp;gt;
-/*global jQuery */
-(function ($) {
-  &#39;use strict&#39;;
-  // #theta-viewerにパノラマ画像img/R0010035.JPGを表示
-  $(&quot;#theta-viewer&quot;).createThetaViewer(&#39;images/downloadbeach.jpg&#39;);
-}(jQuery));
-&amp;lt;/script&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install
+$ gulp build
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;dynamic.html&lt;/code&gt; in browser. Click and drag the image to navigate it.&lt;/p&gt;
+&lt;p&gt;If you try running&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/cloudapi-demo-beach.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gulp build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;The fun part of this demo is that you can use the RICOH Cloud API to
-download a file to something like &lt;code class=&quot;highlighter-rouge&quot;&gt;mainbanner.png&lt;/code&gt; and overwrite the
-older file. If you set the image name in &lt;code class=&quot;highlighter-rouge&quot;&gt;theta-viewer&lt;/code&gt; to
-&lt;code class=&quot;highlighter-rouge&quot;&gt;mainbanner.png&lt;/code&gt;, you can easily move data from the camera and store it
-in the cloud for management, then download specific files from the cloud to a local
-filesystem for quick viewing.&lt;/p&gt;
+&lt;p&gt;and your system can’t find &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, then do this:&lt;/p&gt;
 
-&lt;p&gt;There is a mockup of a mobile camera controller as part of the real estate
-demo. You could fairly easily modify it to store the images in the cloud
-and have a cooler demo. I may try this myself if I have some spare time. We were hoping to get this working with the Cloud API for the meetup. I don’t
-think we’ll have time, but who knows?&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/phoneApp.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It will return your path, probably something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/home/ricoh/Development/livestream/video-streaming-sample-app/node_modules/.bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Build it with the path for
+&lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;gulp&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;video-streaming-sample-app$ ./node_modules/.bin/gulp build
+(node:23673) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+[12:57:33] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
+[12:57:33] Starting &#39;build&#39;...
+[12:57:53] Version: webpack 1.13.0
+            Asset    Size  Chunks             Chunk Names
+./build/bundle.js  354 kB       0  [emitted]  main
+[12:57:53] Finished &#39;build&#39; after 20 s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Run gulp&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ./node_modules/.bin/gulp run
+(node:23840) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+[13:06:44] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
+[13:06:44] Starting &#39;run&#39;...
+[13:06:44] Webserver started at http://localhost:8034
+[13:06:44] Finished &#39;run&#39; after 23 ms
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It will automatically open up a browser.&lt;/p&gt;
+
+&lt;p&gt;Select RICOH THETA S as the device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/select-device.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Log in with your RICOH username and ID.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/cloud-streaming-app-login.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Just a few quick ideas to get your imagination going. If you build something, I’d love to hear about it.&lt;/p&gt;
 
@@ -225,8 +244,8 @@ think we’ll have time, but who knows?&lt;/p&gt;
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Mon, 16 May 2016 00:00:00 -0700</pubDate>
-        <link>http://theta360developers.github.io/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</guid>
+        <link>http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</guid>
         
         
         <category>Contest</category>
@@ -323,8 +342,8 @@ for information on how to jumpstart your development for the contest.&lt;/p&gt;
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Fri, 13 May 2016 00:00:00 -0700</pubDate>
-        <link>http://theta360developers.github.io/blog/culture/2016/05/13/first-days-personal-experiences.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/culture/2016/05/13/first-days-personal-experiences.html</guid>
+        <link>http://theta360.guide/blog/culture/2016/05/13/first-days-personal-experiences.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/culture/2016/05/13/first-days-personal-experiences.html</guid>
         
         
         <category>Culture</category>
@@ -461,8 +480,8 @@ I’ll update the blurry image above when I bring my laptop to a place with more
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
-        <link>http://theta360developers.github.io/blog/camera/2016/05/10/youtube-streaming.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/05/10/youtube-streaming.html</guid>
+        <link>http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</guid>
         
         
         <category>Camera</category>
@@ -548,8 +567,8 @@ ricoh@xerus:~/Documents/community-document$
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Mon, 09 May 2016 00:00:00 -0700</pubDate>
-        <link>http://theta360developers.github.io/blog/camera/2016/05/09/theta-api-usb.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/05/09/theta-api-usb.html</guid>
+        <link>http://theta360.guide/blog/camera/2016/05/09/theta-api-usb.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/05/09/theta-api-usb.html</guid>
         
         
         <category>Camera</category>
@@ -578,8 +597,8 @@ access a number of pre-release technologies from the
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Thu, 21 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://theta360developers.github.io/blog/camera/2016/04/21/meetup-group.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/04/21/meetup-group.html</guid>
+        <link>http://theta360.guide/blog/camera/2016/04/21/meetup-group.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/04/21/meetup-group.html</guid>
         
         
         <category>Camera</category>
@@ -646,8 +665,8 @@ and you’ll be upgraded.&lt;/p&gt;
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Thu, 24 Mar 2016 00:00:00 -0700</pubDate>
-        <link>http://theta360developers.github.io/blog/camera/2016/03/24/firmware-upgrade.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/camera/2016/03/24/firmware-upgrade.html</guid>
+        <link>http://theta360.guide/blog/camera/2016/03/24/firmware-upgrade.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/03/24/firmware-upgrade.html</guid>
         
         
         <category>Camera</category>
@@ -747,8 +766,8 @@ portion, you can drag them into the map in the top portion.&lt;/p&gt;
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/applications/2016/03/08/theta360-business-site.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/03/08/theta360-business-site.html</guid>
+        <link>http://theta360.guide/blog/applications/2016/03/08/theta360-business-site.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/applications/2016/03/08/theta360-business-site.html</guid>
         
         
         <category>Applications</category>
@@ -815,8 +834,8 @@ JavaScript and other format. This software is covered in the
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Sun, 28 Feb 2016 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/applications/2016/02/28/linux-theta-dev-in-vm.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/02/28/linux-theta-dev-in-vm.html</guid>
+        <link>http://theta360.guide/blog/applications/2016/02/28/linux-theta-dev-in-vm.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/applications/2016/02/28/linux-theta-dev-in-vm.html</guid>
         
         
         <category>Applications</category>
@@ -859,8 +878,8 @@ image and video movement!&lt;/p&gt;
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Wed, 24 Feb 2016 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/applications/2016/02/24/silicon-valley-theta-meetup.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/02/24/silicon-valley-theta-meetup.html</guid>
+        <link>http://theta360.guide/blog/applications/2016/02/24/silicon-valley-theta-meetup.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/applications/2016/02/24/silicon-valley-theta-meetup.html</guid>
         
         
         <category>Applications</category>
@@ -984,8 +1003,8 @@ version has full controller features. Both versions are based on the
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Mon, 22 Feb 2016 00:00:00 -0800</pubDate>
-        <link>http://theta360developers.github.io/blog/applications/2016/02/22/remote-shutter.html</link>
-        <guid isPermaLink="true">http://theta360developers.github.io/blog/applications/2016/02/22/remote-shutter.html</guid>
+        <link>http://theta360.guide/blog/applications/2016/02/22/remote-shutter.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/applications/2016/02/22/remote-shutter.html</guid>
         
         
         <category>Applications</category>
