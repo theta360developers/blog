@@ -198,10 +198,11 @@ Log in with your RICOH username and ID.
 
 ![](/blog/img/2016-05/cloud-streaming-app-login.png)
 
-The live streaming sample app accepts dual fish-eye video and using WebRTC
-(browser functionality) can establish a 360 video stream chat-like session between
-2 computers. Only video is supported.
-![](/blog/img/2016-05/live-streaming-sample.png)
+Here's an diagram of the streaming functionality of the application.
+![](http://lists.theta360.guide/uploads/default/optimized/1X/c31047aa8a7bc5c85b1498592c96ba5fbbd23319_1_690x475.png)
+
+Here's a diagram with some of the technology used.
+![](http://lists.theta360.guide/uploads/default/optimized/1X/a45c78ac30c85ca8c893aae3091c862876838f87_1_690x471.png)
 
 We have a full slide deck about the RICOH Cloud API as well as a space to ask
 questions on our
