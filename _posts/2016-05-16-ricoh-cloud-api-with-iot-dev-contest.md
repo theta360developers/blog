@@ -204,7 +204,7 @@ string after it. For example, `craig@oppkey.com+01` or `craig@oppkey.com+theta`.
 
 ![](/blog/img/2016-05/streaming-p2p.png)
 
-Here's an diagram of the streaming functionality of the application.
+Here's a diagram of the streaming functionality of the application.
 ![](http://lists.theta360.guide/uploads/default/optimized/1X/c31047aa8a7bc5c85b1498592c96ba5fbbd23319_1_690x475.png)
 
 Here's a diagram with some of the technology used.
