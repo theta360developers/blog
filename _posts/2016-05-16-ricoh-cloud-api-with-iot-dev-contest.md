@@ -142,7 +142,9 @@ Run it.
 With your RICOH API credentials and RICOH ID, you can now live stream
 inside of your browser.
 
-Grab the [live streaming code from GitHub](https://github.com/ricohapi/video-streaming-sample-app).
+![](/blog/img/2016-05/ricoh-cloud-api-video-stream.png)
+
+## Download [live streaming code from GitHub](https://github.com/ricohapi/video-streaming-sample-app).
 
 Follow the steps and get going.
 
@@ -203,6 +205,26 @@ To set up a peer-to-peer connection, use a Ricoh user ID with a plus sign and
 string after it. For example, `craig@oppkey.com+01` or `craig@oppkey.com+theta`.
 
 ![](/blog/img/2016-05/streaming-p2p.png)
+
+In this example, I am using Chrome in two different tabs on the same computer.
+In the screenshot at the top of this section, the THETA is connected
+to one USB port of my Windows computer and another webcam (not a THETA) is
+connected to another USB port on the same computer. The only reason I am only using one THETA is
+because I only have one THETA at my house.
+
+I am using the THETA S driver, not UVC Blender. The preview window in the
+right of the browser is in dual fisheye.
+
+![](/blog/img/2016-05/livestream-preview.png)
+
+Press the _THETA View Mode_ green
+button to convert the incoming dual-fisheye video stream into a
+equirectangular view with the JavaScript in your browser. So cool!
+The view has full navigation.
+
+![](/blog/img/2016-05/theta-view-mode.png)
+
+
 
 Here's a diagram of the streaming functionality of the application.
 ![](http://lists.theta360.guide/uploads/default/optimized/1X/c31047aa8a7bc5c85b1498592c96ba5fbbd23319_1_690x475.png)
