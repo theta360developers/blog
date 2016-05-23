@@ -197,7 +197,7 @@ Select RICOH THETA S as the device.
 
 ![](/blog/img/2016-05/select-device.png)
 
-Log in with your RICOH username and ID.
+Log in with your modified RICOH username and password. For ea
 
 ![](/blog/img/2016-05/cloud-streaming-app-login.png)
 
@@ -219,18 +219,37 @@ right of the browser is in dual fisheye.
 
 Press the _THETA View Mode_ green
 button to convert the incoming dual-fisheye video stream into a
-equirectangular view with the JavaScript in your browser. So cool!
-The view has full navigation.
+equirectangular view with the JavaScript in your browser.
 
 ![](/blog/img/2016-05/theta-view-mode.png)
 
+So cool!
+The view has full navigation.
 
+![](/blog/img/2016-05/ricoh-cloud-api-navigation.png)
+
+
+## Network Architecture
 
 Here's a diagram of the streaming functionality of the application.
 ![](http://lists.theta360.guide/uploads/default/optimized/1X/c31047aa8a7bc5c85b1498592c96ba5fbbd23319_1_690x475.png)
 
 Here's a diagram with some of the technology used.
 ![](http://lists.theta360.guide/uploads/default/optimized/1X/a45c78ac30c85ca8c893aae3091c862876838f87_1_690x471.png)
+
+## Using WebRTC Between Two Computers
+
+To view the two 360 streams between two different computers, you'll need to
+assign each computer a static IP address on the Internet (not NAT on an internal network) or use NAT traversal.
+
+I have not tried NAT Traversal yet.
+
+You can check out two untested services for STUN / TURN for NAT traversal here:
+
+- Untested [Eyeball](http://www.eyeball.com/standards/stun-turn-ice/)
+- Untested [Twilio](https://www.twilio.com/stun-turn/pricing)
+
+Article on [WebRTC](http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/)
 
 We have a
 [full slide deck about the RICOH Cloud API](http://lists.theta360.guide/t/cloud-api-seminar-presentation-useful/22)
