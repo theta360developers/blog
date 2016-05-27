@@ -197,7 +197,7 @@ Select RICOH THETA S as the device.
 
 ![](/blog/img/2016-05/select-device.png)
 
-Log in with your modified RICOH username and password. For ea
+Log in with your modified RICOH username and password.
 
 ![](/blog/img/2016-05/cloud-streaming-app-login.png)
 
