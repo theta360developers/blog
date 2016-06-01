@@ -273,6 +273,8 @@ To view the two 360 streams between two different computers on two
 separate networks (example: San Francisco and Palo Alto), you'll need to
 assign each computer a static IP address on the Internet (not NAT on an internal network) or use NAT traversal.
 
+![](/blog/img/2016-05/stun-turn.png)
+
 I have not tried NAT Traversal yet.
 
 You can check out two untested services for STUN / TURN for NAT traversal here:
