@@ -237,9 +237,40 @@ Here's a diagram of the streaming functionality of the application.
 Here's a diagram with some of the technology used.
 ![](http://lists.theta360.guide/uploads/default/optimized/1X/a45c78ac30c85ca8c893aae3091c862876838f87_1_690x471.png)
 
-## Using WebRTC Between Two Computers
+## Streaming 360 Video Directly Between Two computers
 
-To view the two 360 streams between two different computers, you'll need to
+To stream 360 between two computers on the same network, run the samples
+code on each computer. Open up a Chrome browser (Firefox didn't work in my
+tests) on each computer. The sample application will look for a webcam
+on each computer. If you only have one THETA, use your standard webcam,
+such as the one built into your laptop.
+
+In my test network, I have the THETA connected to my Linux computer
+with a USB cable. My Linux computer is connected to my home router
+with WiFi on a private IP address in subnet 192.168.1.0. The router
+is connected to the Internet. Remember, Firefox on Linux did not work
+for me, only Chrome.
+
+![](/blog/img/2016-05/360-streaming-dual-fisheye.png)
+
+I have a second Windows 10 computer on the same subnet connected with
+Ethernet.
+
+![](/blog/img/2016-05/360-streaming-image-2.png)
+
+Here's how the network looks.
+
+![](/blog/img/2016-05/nat-demo-private-network.png)
+
+Here's what your screen may look like.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gnZ9IcqHruA" frameborder="0" allowfullscreen></iframe>
+
+## Using WebRTC Between Two Computers on Separate Networks
+
+To view the two 360 streams between two different computers on two
+separate networks (example: San Francisco and Palo Alto), you'll need to
 assign each computer a static IP address on the Internet (not NAT on an internal network) or use NAT traversal.
 
 I have not tried NAT Traversal yet.
