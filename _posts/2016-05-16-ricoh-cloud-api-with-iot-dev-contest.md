@@ -229,14 +229,6 @@ The view has full navigation.
 ![](/blog/img/2016-05/ricoh-cloud-api-navigation.png)
 
 
-## Network Architecture
-
-Here's a diagram of the streaming functionality of the application.
-![](http://lists.theta360.guide/uploads/default/optimized/1X/c31047aa8a7bc5c85b1498592c96ba5fbbd23319_1_690x475.png)
-
-Here's a diagram with some of the technology used.
-![](http://lists.theta360.guide/uploads/default/optimized/1X/a45c78ac30c85ca8c893aae3091c862876838f87_1_690x471.png)
-
 ## Streaming 360 Video Directly Between Two computers
 
 To stream 360 between two computers on the same network, run the samples
@@ -266,6 +258,14 @@ Here's what your screen may look like.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gnZ9IcqHruA" frameborder="0" allowfullscreen></iframe>
+
+Here's a diagram of the streaming functionality of the application.
+![](http://lists.theta360.guide/uploads/default/optimized/1X/c31047aa8a7bc5c85b1498592c96ba5fbbd23319_1_690x475.png)
+
+Here's a diagram with some of the technology used.
+![](http://lists.theta360.guide/uploads/default/optimized/1X/a45c78ac30c85ca8c893aae3091c862876838f87_1_690x471.png)
+
+
 
 ## Using WebRTC Between Two Computers on Separate Networks
 
