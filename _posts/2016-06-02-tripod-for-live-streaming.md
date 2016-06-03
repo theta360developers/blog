@@ -6,7 +6,7 @@ date:   2016-06-02
 author: "Craig Oda"
 categories: Camera
 ---
-![](/blog/img/2016-05/select-device.png)
+![](/blog/img/2016-06/usb-tripod.png)
 
 With $3 and 10 minutes of build time you can modify any tripod to work with the THETA S in live
 streaming mode with a USB cable plugged in.
@@ -21,7 +21,7 @@ plugged in while the THETA is mounted to a tripod.
 - 1 pc 1/4" by 20 pitch threaded rod, 3 inches long
 - 2 pcs 1/4" by 20 pitch hex jam nut
 
-![](/blog/img/2016-05/usb-hardware.png)
+![](/blog/img/2016-06/usb-hardware.png)
 
 Use one hex jam nut to lock the rod coupling nut in place. Use the other
 hex jam nut to lock the THETA in place.
