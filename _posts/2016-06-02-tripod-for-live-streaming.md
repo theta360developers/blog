@@ -29,4 +29,5 @@ hex jam nut to lock the THETA in place.
 You can now start [360 video live streaming](http://theta360.guide/community-document/community.html#_video_live_streaming).
 
 and build an app for fun, knowledge and fortune.
+
 # [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
