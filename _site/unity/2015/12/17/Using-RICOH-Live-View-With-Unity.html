@@ -47,13 +47,13 @@
       <div class="trigger">
         
           
-        
-          
-        
-          
-        
-          
           <a class="page-link" href="/blog/official/">Official RICOH Information</a>
+          
+        
+          
+        
+          
+        
           
         
       </div>
@@ -136,7 +136,7 @@
 
 <p>Import the Maya LT built model with Unity, and put the camera in the center. Write a shader, so the model’s UV position can be adjusted or can alphablend. In order to control the drawing order and to prevent the border from changing at certain orientations, each half sphere has a different shader.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Shader "Theta/Sphere1" {
+<pre><code>Shader "Theta/Sphere1" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -187,11 +187,10 @@
     }
 }
 </code></pre>
-</div>
 
 <p>Here’s a second section of code.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>	Shader "Theta/Sphere2" {
+<pre><code>	Shader "Theta/Sphere2" {
 	    Properties {
 	        _MainTex ("Base (RGB)", 2D) = "white" {}
 	        _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -208,7 +207,6 @@
 	    }
 	}
 </code></pre>
-</div>
 
 <p>As below, for alphablend, have a texture made, that is alpha adjusted to UV. I made adjustment for perfectly fit, by exporting UV with postscript and reading with illustrator (white circle inside is alpha=1; around the circle, from inside to outside, changes from 1 to 0; outside will not be used so whatever fits.)</p>
 
@@ -226,7 +224,7 @@
 
 <p>I tried it with a modified vertex shader.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Shader "Theta/Equirectangular1" {
+<pre><code>Shader "Theta/Equirectangular1" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -313,11 +311,10 @@
     }
 }
 </code></pre>
-</div>
 
 <p>Here’s a second section of code.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Shader "Theta/Equirectangular2" {
+<pre><code>Shader "Theta/Equirectangular2" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -335,7 +332,6 @@
     }
 }
 </code></pre>
-</div>
 
 <p><img src="/blog/img/2015-12/results.png" alt="Results" /></p>
 
