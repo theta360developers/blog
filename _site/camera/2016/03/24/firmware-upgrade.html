@@ -47,13 +47,13 @@
       <div class="trigger">
         
           
+        
+          
+        
+          
+        
+          
           <a class="page-link" href="/blog/official/">Official RICOH Information</a>
-          
-        
-          
-        
-          
-        
           
         
       </div>
@@ -96,17 +96,18 @@ If the camera is under 30% charge, your chance of a firmware upgrade
 failure is increased.</p>
 
 <p>Although there are many ways to check your battery level, I find it
-convenient to connect to the camera with WiFi and send it an <code>osc/state</code>
+convenient to connect to the camera with WiFi and send it an <code class="highlighter-rouge">osc/state</code>
 command.</p>
 
-<pre><code>http://192.168.1.1/osc/state
+<div class="highlighter-rouge"><pre class="highlight"><code>http://192.168.1.1/osc/state
 </code></pre>
+</div>
 
 <p>From here, I can easily see the battery level.</p>
 
 <p><img src="/blog/img/2016-03/battery-level.png" alt="" /></p>
 
-<p>The ‘batteryLevel’ will be one of <code>0.0, 0.33, 0.67, 1.0</code></p>
+<p>The ‘batteryLevel’ will be one of <code class="highlighter-rouge">0.0, 0.33, 0.67, 1.0</code></p>
 
 <p>I have a full charge. :-)</p>
 

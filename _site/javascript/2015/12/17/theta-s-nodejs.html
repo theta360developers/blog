@@ -47,13 +47,13 @@
       <div class="trigger">
         
           
+        
+          
+        
+          
+        
+          
           <a class="page-link" href="/blog/official/">Official RICOH Information</a>
-          
-        
-          
-        
-          
-        
           
         
       </div>
@@ -90,7 +90,7 @@ English.</p>
 is also from him, including the summary, which includes an
 interesting idea about NFC tags to help with automation.</p>
 
-<pre><code>var fs = require('fs');
+<div class="highlighter-rouge"><pre class="highlight"><code>var fs = require('fs');
 var OscClientClass = require('osc-client').OscClient;
 
 var domain = '192.168.1.1';
@@ -118,13 +118,15 @@ client.startSession().then(function(res){
   return client.closeSession(sessionId);
 });
 </code></pre>
+</div>
 
-<p>By running the <code>node theta.js</code>, you can view the <code>fileUri</code>
+<p>By running the <code class="highlighter-rouge">node theta.js</code>, you can view the <code class="highlighter-rouge">fileUri</code>
 of the picture that you previously took.</p>
 
-<pre><code>node theta.js
+<div class="highlighter-rouge"><pre class="highlight"><code>node theta.js
 pictureUri :100RICOH/R0010009.JPG
 </code></pre>
+</div>
 
 <p>The file will be created in the directory where you executed
 the command.</p>
@@ -137,10 +139,10 @@ With a P2P connection, only one client can connect.</p>
 <p>An overview of the process is shown below:</p>
 
 <ol>
-  <li>set up a new session with <code>startSession()</code></li>
-  <li><code>takePicture</code> using the <code>sessionId</code> you just got from the new session</li>
-  <li>use the <code>fileUri</code> you got from <code>takePicture</code> to download the image with <code>getImage()</code></li>
-  <li>close the session with <code>closeSession()</code></li>
+  <li>set up a new session with <code class="highlighter-rouge">startSession()</code></li>
+  <li><code class="highlighter-rouge">takePicture</code> using the <code class="highlighter-rouge">sessionId</code> you just got from the new session</li>
+  <li>use the <code class="highlighter-rouge">fileUri</code> you got from <code class="highlighter-rouge">takePicture</code> to download the image with <code class="highlighter-rouge">getImage()</code></li>
+  <li>close the session with <code class="highlighter-rouge">closeSession()</code></li>
 </ol>
 
 <h1 id="summary">Summary</h1>
