@@ -38,7 +38,11 @@ Thuong assesses his skills as follows.
 
 ![](/blog/img/2016-06/thuong-skills.png)
 
-Contact us at info@theta360.guide if you would like to get in touch with Thuong and propose to work with him on a project for the contest. He is currently in the ideation phase.
+Contact us at info@theta360.guide if you would like to get in touch with Thuong and propose to work with him on a project for the contest. He is currently in the ideation phase. We'll send you
+his email so you can communicate with him directly. Thuong is also willing to respond
+to questions about setup for his application or libraries.
+He's interested in exchanging information
+with other people that share his technology interests.
 
 ## Additional information on JavaScript technology
 A JavaScript browser application can't access the THETA camera directly.  You
