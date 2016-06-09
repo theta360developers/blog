@@ -17,10 +17,11 @@ categories: Applications
 
 </script>
 
-This list was produced by [RICOH THETA Facebook Group](https://www.facebook.com/groups/RicohTHETAUsers/) community member Fabio Penna.
+# [Updated List Available](http://lists.theta360.guide/t/list-of-theta-apps/48)
 
-Desktop Computer programs
-=========================
+---
+
+## Desktop Computer programs
 
 * [Theta Official](https://theta360.com/en/support/download/)
 
@@ -45,8 +46,7 @@ PanoVR also is great for things like tripod removal or fixing images. You can se
 * [PanoramaStudio 3](http://www.tshsoft.com/en/panostudio_index) Photo stitching and pano postwork. Save to flash or HTML5
 
 
-Online Programs
-===============
+## Online Programs
 
 * [HoloBuilder](https://www.holobuilder.com/index.html) Complete tour tool and totally FREE - From our friend Fabian Fabian
 
@@ -61,63 +61,63 @@ Online Programs
 * [Marzipano](http://www.marzipano.net/tool/) For self panorama host
 
 
-# Mobile Applications
+## Mobile Applications
 
-## Ricoh Theta (For cameras before S)
+### Ricoh Theta (For cameras before S)
 
 * [Android](https://play.google.com/store/apps/details?id=com.theta)
 * [iOS](https://itunes.apple.com/us/app/ricoh-theta/id667238484?mt=8)
 
-## Ricoh Theta S
+### Ricoh Theta S
 
 * [Android](https://play.google.com/store/apps/details?id=com.theta360)
 * [iOS](https://itunes.apple.com/us/app/ricoh-theta-s/id102325474)
 
-## Theta+ (Theta editor, post on Instagram - Developed by Ricoh)
+### Theta+ (Theta editor, post on Instagram - Developed by Ricoh)
 
 * [Android](https://play.google.com/store/apps/details)
 * [iOs](https://itunes.apple.com/us/app/theta+/id1021526610?mt=8)
 
-## Theta HDR (To take HDR Pictures)
+### Theta HDR (To take HDR Pictures)
 
 * [Android](https://play.google.com/store/apps/details?id=air.de.pl.ThetaHDRApp)
 * [Android Option 2](https://play.google.com/store/apps/details?id=com.teapps.thetahdr)
 * [iOS](https://itunes.apple.com/us/app/hdr-360-bracket-pro-for-ricoh/id987157511?mt=8)
 
-## Simple HDR by Built Light (to take HDR pictures)
+### Simple HDR by Built Light (to take HDR pictures)
 Community review: Nicely affordable Theta HDR app. Drop the files into something like Photomatix on the desktop
 and you have a nice HDR for CG work. A really good looking app. Clean.
 
 * [iOS](https://itunes.apple.com/us/app/simple-hdr/id1035541353)
 
-## Theta Action + (Motion pictures)
+### Theta Action + (Motion pictures)
 
 * [Android](https://play.google.com/store/apps/details?id=jp.sciencecow.thetaactionplus)
 
-## VR Panorama Viewer (To see panos in Google Cardboard VR - From our friend Shawn Ames)
+### VR Panorama Viewer (To see panos in Google Cardboard VR - From our friend Shawn Ames)
 
 * [Android](https://play.google.com/store/apps/details?id=com.Viral3D.VRPanoViewer)
 
-## Tao360 another cardboard viewer
+### Tao360 another cardboard viewer
 
 * [Android](https://play.google.com/store/apps/details?id=jp.co.taosoftware.android.sphericalviewer)
 
-## [SphereCam](https://itunes.apple.com/us/app/spherecam/id973550273?mt=8)
+### [SphereCam](https://itunes.apple.com/us/app/spherecam/id973550273?mt=8)
 (Remote controller for Ricoh THETA m15/Ricoh THETA S, has tvOS version can let user view image/Video on Apple TV. Apple watch support)
 
-## kolorEyes for viewing 360 video with/without cardboard
+### kolorEyes for viewing 360 video with/without cardboard
 
 * [Android](https://play.google.com/store/apps/details?id=fi.finwe.koloreyesandroid)
 
-## Theta Transfer for copying the full size images
+### Theta Transfer for copying the full size images
 
 * [Android](https://play.google.com/store/apps/details?id=com.hirota41.thetatransfer)
 
-## Theta Converter for straightening images
+### Theta Converter for straightening images
 
 * [Android](https://play.google.com/store/apps/details?id=com.hirota41.thetaconverter)
 
-## Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)
+### Holo360Uploader (App to upload and share Theta shots, Works with HoloBuilder - See it on the online programs section)
 
 * [Android](https://play.google.com/store/apps/details?id=com.bitstars.panouploader)
 
