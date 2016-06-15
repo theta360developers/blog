@@ -6,92 +6,34 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Jun 2016 07:50:59 -0700</pubDate>
-    <lastBuildDate>Thu, 09 Jun 2016 07:50:59 -0700</lastBuildDate>
+    <pubDate>Wed, 15 Jun 2016 05:38:38 -0700</pubDate>
+    <lastBuildDate>Wed, 15 Jun 2016 05:38:38 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Contest Participant: JavaScript and RICOH THETA Development</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-06/thuong-ho.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <title>Taking Pictures Silently</title>
+        <description>&lt;p&gt;This blog post is a translation
+&lt;a href=&quot;http://hima-zinn.hatenablog.com/entry/2015/12/13/000000&quot;&gt;from the original Japanese post&lt;/a&gt; by
+&lt;a href=&quot;http://hima-zinn.hatenablog.com/about&quot;&gt;hima_zinn&lt;/a&gt; from his
+&lt;a href=&quot;http://hima-zinn.hatenablog.com/&quot;&gt;Lazy Game Programmer Diary&lt;/a&gt; on the Hatena Blog,
+a famous blogging service in Japan like Word Press. It was originally published December 13, 2015. But I wanted to translate it since I think the details for quickly using the RICOH THETA API to get rid of the shutter sound is pretty cool and easy to implement.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Who:&lt;/strong&gt; Thuong Ho&lt;/p&gt;
+&lt;p&gt;Also, the functionality has since been added to the main THETA S app. So if you’re looking for a quicker fix, check Settings –&amp;gt; Camera shutter volume.
+Introduction&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Vocation:&lt;/strong&gt; Software engineer&lt;/p&gt;
+&lt;p&gt;I’m a Theta fan that has all three generations of models. From left to right it’s the THETA S, the THETA m15, and the THETA.
+&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/9e004e06ccae11efc6545df349e84ef98117eca3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Where:&lt;/strong&gt; San Jose, California&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Skills:&lt;/strong&gt; JavaScript/jQuery, Angular/Ionic, Express, MongoDB, Ruby on Rails, SQL&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Interested in Forming Contest Team:&lt;/strong&gt; Yes&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Web Site:&lt;/strong&gt; &lt;a href=&quot;http://www.thuongho.com/&quot;&gt;http://www.thuongho.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Thuong first encountered the RICOH THETA at the DeveloperWeek Hackathon in San Francisco. His team came in second for the RICOH prize. His hack was called 360 Cruise Experience. It used the RICOH THETA to provide 360/VR experiences to cruise ship guests and allowed passengers to share adventures after docking for the day. Thuong chose to expand his skills with JavaScript and built the camera controller using NodeJS and the
-&lt;a href=&quot;http://ionicframework.com/&quot;&gt;Ionic Framework&lt;/a&gt;, based on
-&lt;a href=&quot;https://cordova.apache.org/&quot;&gt;Cordova&lt;/a&gt;. He used &lt;a href=&quot;http://browserify.org/&quot;&gt;Browserify&lt;/a&gt; to allow
-&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; ‘required’ modules to be accessed in Ionic.&lt;/p&gt;
-
-&lt;p&gt;To access the THETA, Thuong used the node
-&lt;a href=&quot;http://theta360.guide/blog/javascript/2015/12/17/theta-s-nodejs.html&quot;&gt;osc-client&lt;/a&gt; module written by Satoru Yamada.&lt;/p&gt;
-
-&lt;p&gt;After the hackathon, Thuong continued development with
-&lt;a href=&quot;http://threejs.org/&quot;&gt;Three.js&lt;/a&gt; and built
-&lt;a href=&quot;http://www.thuongho.com/holo-challenge/#/&quot;&gt;ThreeJS Dimension&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-06/threejs-dimensions.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Thuong assesses his skills as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-06/thuong-skills.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Contact us at info@theta360.guide if you would like to get in touch with Thuong and propose to work with him on a project for the contest. He is currently in the ideation phase. We’ll send you
-his email so you can communicate with him directly. Thuong is also willing to respond
-to questions about setup for his application or libraries.
-He’s interested in exchanging information
-with other people that share his technology interests.&lt;/p&gt;
-
-&lt;h2 id=&quot;additional-information-on-javascript-technology&quot;&gt;Additional information on JavaScript technology&lt;/h2&gt;
-&lt;p&gt;A JavaScript browser application can’t access the THETA camera directly.  You
-will need to use node.js.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/osc-client&quot;&gt;osc-client&lt;/a&gt; by turbobeast&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gitlab.com/horihiro/osc-client-theta_s#README&quot;&gt;osc-client-theta_s&lt;/a&gt; by HoriHiro-san&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you want to display a 360 image in a browser, here are two open source libraries.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/JeremyHeleine/Photo-Sphere-Viewer&quot;&gt;Photo Sphere Viewer&lt;/a&gt; by Jeremy Heleine&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/akokubo/ThetaViewer&quot;&gt;ThetaViewer&lt;/a&gt; by Atsushi Kokubo&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you want to stitch a streaming dual-fisheye 360 video, here is some sample code:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ricohapi/video-streaming-sample-app/tree/master/samples&quot;&gt;thetaview.js&lt;/a&gt; from video streaming sample app developed by RICOH Cloud API.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Detailed directions on running thetaview.js is &lt;a href=&quot;http://lists.theta360.guide/t/360-video-conferencing-with-the-ricoh-theta-s/38&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;other-tips-on-development&quot;&gt;Other tips on Development&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;install dual network interfaces to connect to the THETA and the Internet at the same time&lt;/li&gt;
-  &lt;li&gt;Use a HTTP testing tool like &lt;a href=&quot;https://chrome.google.com/webstore/detail/dhc-rest-client/aejoelaoggembcahagimdiliamlcdmfm?hl=en&quot;&gt;DHC REST Client&lt;/a&gt; to save HTTP tests&lt;/li&gt;
-  &lt;li&gt;If you’re not using a library to access the THETA, the &lt;a href=&quot;https://github.com/request/request&quot;&gt;Request&lt;/a&gt; - Simplified HTTP client is easy to use&lt;/li&gt;
-  &lt;li&gt;If you’re building a mobile app, people in the forum have been using Appcelerator Titanium
-and Cordova&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://lists.theta360.guide/t/taking-pictures-silently/52&quot;&gt;More…&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Tue, 07 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://theta360.guide/blog/contest/2016/06/07/contest-participant-thuong-ho.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/contest/2016/06/07/contest-participant-thuong-ho.html</guid>
+        <pubDate>Wed, 15 Jun 2016 00:00:00 -0700</pubDate>
+        <link>http://theta360.guide/blog/api/2016/06/15/contest-participant-thuong-ho.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/api/2016/06/15/contest-participant-thuong-ho.html</guid>
         
         
-        <category>Contest</category>
+        <category>API</category>
         
       </item>
     
