@@ -7,6 +7,8 @@ author: "Craig Oda"
 categories: Camera
 ---
 
+# The discussion on this topic moved to [lists.theta360.guide](http://lists.theta360.guide/t/ricoh-theta-s-api-over-usb-cable/65?u=codetricity)
+
 The RICOH THETA S 360 camera can be controlled with an API that is accessible using WiFi. Version 2 of the API is compliant with Google Open Spherical Camera API specification.
 
 An alternative to using the RICOH THETA S API over WiFi exists that works over an USB cable. This is a different API and requires firmware version 01.42 or later.  v2 USB API uses extended PTP, or Picture Transfer Protocol, as the communications protocol.
@@ -65,4 +67,4 @@ On my system, Xenial Xerus, Ubuntu 16.04, I already had libmtp installed. I thin
 
 Ready for more?
 
-# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
+# [Unofficial THETA Developer Ecosystem Registration](http://theta360.guide/ecosystem/)
