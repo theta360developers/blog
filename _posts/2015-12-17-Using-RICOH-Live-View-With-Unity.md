@@ -283,4 +283,4 @@ UV mapping with webgl.
 
 Ready for more?
 
-# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
+# [Unofficial THETA Developer Ecosystem Registration](http://theta360.guide/ecosystem/)
