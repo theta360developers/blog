@@ -45,7 +45,7 @@ I'm going to set
 Before we set it, take a look at the
 [documentation](https://developers.theta360.com/en/docs/v2/usb_reference/property/audio_volume.html).
 
-![](/blog/img/2016-09/usb-audio-volume.png)
+![](/blog/img/2016-09/usb-audio.png)
 
 The documentation is sparse, but it has everything you need. Grab the *Device Prop Code*
 and focus in on the *502c* code.
@@ -163,6 +163,7 @@ Test it
     Enjoy!
 
 -------
+
 ## Remove gvfs-gphoto2-volume-monitor
 
 As I do not plan to mount the THETA as a storage device from the Raspberry Pi, I removed gvfs virtual filesystem.
