@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 16:08:59 +0000</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 16:08:59 +0000</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 16:26:18 +0000</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 16:26:18 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -141,6 +141,117 @@
         <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/api/2016/09/14/ricoh-theta-api-update.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/api/2016/09/14/ricoh-theta-api-update.html</guid>
+        
+        
+        <category>API</category>
+        
+      </item>
+    
+      <item>
+        <title>RICOH THETA GitHub Repository</title>
+        <description>&lt;p&gt;Community Applications on GitHub&lt;/p&gt;
+
+&lt;h1 id=&quot;image-viewing&quot;&gt;Image Viewing&lt;/h1&gt;
+
+&lt;p&gt;To display and navigate 360 images.&lt;/p&gt;
+
+&lt;h2 id=&quot;javascript-360-image-viewers&quot;&gt;JavaScript 360 Image Viewers&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/Photo-Sphere-Viewer&quot;&gt;Photo Sphere Viewer&lt;/a&gt; by Jeremy Heleine
+    &lt;ul&gt;
+      &lt;li&gt;good and popular viewer. Uses &lt;a href=&quot;http://threejs.org/&quot;&gt;Three.js&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/ThetaViewer&quot;&gt;ThetaViewer&lt;/a&gt; by Atsushi Kokubo
+    &lt;ul&gt;
+      &lt;li&gt;Viewer works great. Documentation is in Japanese.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/theta-viewer.js&quot;&gt;theta-viewer.js&lt;/a&gt; by Sho Hashimoto
+    &lt;ul&gt;
+      &lt;li&gt;Animate multiple-Photos taken by RICOH THETA.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/googlevr&quot;&gt;Google VR for Web&lt;/a&gt; by Google
+    &lt;ul&gt;
+      &lt;li&gt;Solid 360 image and video viewer that can be embedded in web site or mobile phone&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other-image-viewers&quot;&gt;Other Image Viewers&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kougaku/PanoramaViewer&quot;&gt;PanoramaViewer&lt;/a&gt; by Sunao Hashimoto
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;written-in-processing-language-no-documentation&quot;&gt;Written in Processing language. No documentation.&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;camera-control&quot;&gt;Camera Control&lt;/h1&gt;
+
+&lt;h2 id=&quot;javascript-control-of-camera&quot;&gt;JavaScript Control of Camera&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/node-ricoh-theta&quot;&gt;node-ricoh-theta&lt;/a&gt; by Sho Hashimoto&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/javascript-api-samples&quot;&gt;Simple JavaScript samples to use API&lt;/a&gt; by community&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other-camera-controllers&quot;&gt;Other Camera Controllers&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/OpenSphericalCamera&quot;&gt;OpenSphericalCamera Client&lt;/a&gt; by Duiker Research
+    &lt;ul&gt;
+      &lt;li&gt;A Python library for interfacing with cameras that implement the OpenSphericalCamera API&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/scala-ricoh&quot;&gt;scala-ricoh&lt;/a&gt; by Freddie Poser
+    &lt;ul&gt;
+      &lt;li&gt;Download photos from the RICOH THETA using scala or Java&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/python-download-rossgoderer&quot;&gt;python-download-rossgoderer&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Example Python script from community member Ulrich Rossgoderer. This was posted in the THETA Developer Forum. Uses the requests module, which you may need to install on your system.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;small-board-like-esp8266-camera-control&quot;&gt;Small Board (like ESP8266) Camera Control&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/ESP8266-THETA-S-FullRemoteControler&quot;&gt;RICOH THETA S Full Remote Controller&lt;/a&gt; by Katsuya-san :comet: (cool)
+    &lt;ul&gt;
+      &lt;li&gt;Uses ESP8266 and WiFi to control a THETA S. It would be great for @jcasman to translate. :japan:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/ESP8266-THETA-S-SimpleRemoteControler&quot;&gt;RICOH THETA S Simple Remote Controller&lt;/a&gt; by Katsuya-san
+    &lt;ul&gt;
+      &lt;li&gt;RICOH THETA S Remote Control Software (Single Button Edition) for Switch Science ESP-WROOM-02 Dev.board&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;# Video Streaming
+* &lt;a href=&quot;https://github.com/theta360developers/THETA_GL&quot;&gt;THETA_GL&lt;/a&gt; by mganeko
+  * THETA WebGL viewer using three.js This looks super interesting, but it’s in Japanese. This would be great for @jcasman to translate into English :japan:
+* &lt;a href=&quot;https://github.com/theta360developers/video-streaming-sample-app&quot;&gt;Ricoh Video Streaming Samples&lt;/a&gt; by RICOH :hotsprings:(hot)
+  * Sample applications written by RICOH engineers for live streaming of 360 video using WebRTC for browser to browser video chat or to use a Raspberry Pi to stream video to a browser. Includes JavaScript code to convert a dual-fisheye stream into equirectangular within the browser
+* &lt;a href=&quot;https://github.com/theta360developers/THETA-S-LiveViewer-P5&quot;&gt;THETA-S-LiveViewer-P5&lt;/a&gt; by Sunao Hashimoto
+  * Live streaming using the Processing language
+* &lt;a href=&quot;https://github.com/theta360developers/theta-s-quartz&quot;&gt;theta-s-quartz&lt;/a&gt; by Kieran Farr
+  * CamTwist Effect Plugin to Convert Theta-S Live Video from Fisheye to Equirectangular via Quartz. An experiment to use OS X Quartz Composer to transform Ricoh Theta S live feed dual fisheye to equirectangular.
+* &lt;a href=&quot;https://github.com/theta360developers/ThetaWifiStreaming&quot;&gt;ThetaWifiStreaming&lt;/a&gt; by Makoto
+    * THETA S WiFi streaming demo with Unity using PC/Mac&lt;/p&gt;
+
+&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/api/2016/08/30/ricoh-theta-github-repository.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/api/2016/08/30/ricoh-theta-github-repository.html</guid>
         
         
         <category>API</category>
@@ -911,74 +1022,6 @@ access a number of pre-release technologies from the
         <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/04/21/meetup-group.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/04/21/meetup-group.html</guid>
-        
-        
-        <category>Camera</category>
-        
-      </item>
-    
-      <item>
-        <title>Upgrading Firmware in RICOH THETA S</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/firmware-upgrade.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I upgraded to firmware 1.42 today using the RICOH desktop application on
-Windows. The big feature is a self-timer. Press the WiFi and the power button
-together to start the camera is timer mode. You will see a green light.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/green-timer.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As usual, the upgrade went smoothly. I’ve been upgrading the firmware
-since before the camera was launched and I’ve never experienced a problem.
-However, I know people do encounter problems, sometimes to the extent that
-their camera is bricked.&lt;/p&gt;
-
-&lt;p&gt;The main source of the problem is that the camera is not fully charged.
-If the camera is under 30% charge, your chance of a firmware upgrade
-failure is increased.&lt;/p&gt;
-
-&lt;p&gt;Although there are many ways to check your battery level, I find it
-convenient to connect to the camera with WiFi and send it an &lt;code class=&quot;highlighter-rouge&quot;&gt;osc/state&lt;/code&gt;
-command.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://192.168.1.1/osc/state
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;From here, I can easily see the battery level.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/battery-level.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The ‘batteryLevel’ will be one of &lt;code class=&quot;highlighter-rouge&quot;&gt;0.0, 0.33, 0.67, 1.0&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;I have a full charge. :-)&lt;/p&gt;
-
-&lt;p&gt;I have my THETA S plugged directly into the rear panel of my computer,
-not a hub. I haven’t had any problems using a hub, but I do have a
-powered USB hub of good quality. I suggest you plug the camera
-directly into the rear panel of the computer.&lt;/p&gt;
-
-&lt;p&gt;Then, I &lt;a href=&quot;https://helpx.adobe.com/air/kb/determine-version-air-runtime.html&quot;&gt;verify that I have the newest version of Adobe Air&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/adobe-air.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I then upgrade my THETA desktop application.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/ricoh-app.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;At this point, I should have everything nicely upgraded and I can upgrade
-the firmware from within the application. The camera should be off when you
-plug it into the USB cable. After the firmware is transferred, leave the
-camera off and unplug it. Then, when the camera is unplugged, you can
-turn it on to start the upgrade process. The blue mode light will stop flashing
-and you’ll be upgraded.&lt;/p&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/camera/2016/03/24/firmware-upgrade.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/03/24/firmware-upgrade.html</guid>
         
         
         <category>Camera</category>
