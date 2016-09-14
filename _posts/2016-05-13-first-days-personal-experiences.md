@@ -99,4 +99,4 @@ for information on how to jumpstart your development for the contest.
 
 Ready for more?
 
-# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
+# [Latest Community Tips at the THETA Unofficial Guide](http://theta360.guide/)
