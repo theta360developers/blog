@@ -20,4 +20,4 @@ I'm a Theta fan that has all three generations of models. From left to right it'
 
 [More...](http://lists.theta360.guide/t/taking-pictures-silently/52)
 
-# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
+# [Register for the THETA Developer Ecosystem](http://theta360.guide/ecosystem/)
