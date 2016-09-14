@@ -6,9 +6,9 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Jun 2016 10:32:13 -0700</pubDate>
-    <lastBuildDate>Fri, 17 Jun 2016 10:32:13 -0700</lastBuildDate>
-    <generator>Jekyll v3.1.3</generator>
+    <pubDate>Wed, 14 Sep 2016 13:23:23 +0000</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 13:23:23 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Taking Pictures Silently</title>
@@ -28,7 +28,7 @@ Introduction&lt;/p&gt;
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Wed, 15 Jun 2016 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/api/2016/06/15/contest-participant-thuong-ho.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/api/2016/06/15/contest-participant-thuong-ho.html</guid>
         
@@ -67,7 +67,7 @@ hex jam nut to lock the THETA in place.&lt;/p&gt;
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Thu, 02 Jun 2016 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 02 Jun 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/06/02/tripod-for-live-streaming.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/06/02/tripod-for-live-streaming.html</guid>
         
@@ -82,7 +82,7 @@ hex jam nut to lock the THETA in place.&lt;/p&gt;
 
 &lt;h1 id=&quot;read-morehttpliststheta360guidetcloud-api-seminar-presentation-useful22&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/cloud-api-seminar-presentation-useful/22&quot;&gt;Read More&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Fri, 20 May 2016 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/contest/2016/05/20/cloud-api-seminar.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/contest/2016/05/20/cloud-api-seminar.html</guid>
         
@@ -414,7 +414,7 @@ questions on our
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Mon, 16 May 2016 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</guid>
         
@@ -512,7 +512,7 @@ for information on how to jumpstart your development for the contest.&lt;/p&gt;
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Fri, 13 May 2016 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/culture/2016/05/13/first-days-personal-experiences.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/culture/2016/05/13/first-days-personal-experiences.html</guid>
         
@@ -650,7 +650,7 @@ I’ll update the blurry image above when I bring my laptop to a place with more
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</guid>
         
@@ -661,7 +661,9 @@ I’ll update the blurry image above when I bring my laptop to a place with more
     
       <item>
         <title>RICOH THETA S API Over USB Cable</title>
-        <description>&lt;p&gt;The RICOH THETA S 360 camera can be controlled with an API that is accessible using WiFi. Version 2 of the API is compliant with Google Open Spherical Camera API specification.&lt;/p&gt;
+        <description>&lt;h1 id=&quot;the-discussion-on-this-topic-moved-to-liststheta360guidehttpliststheta360guidetricoh-theta-s-api-over-usb-cable65ucodetricity&quot;&gt;The discussion on this topic moved to &lt;a href=&quot;http://lists.theta360.guide/t/ricoh-theta-s-api-over-usb-cable/65?u=codetricity&quot;&gt;lists.theta360.guide&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;The RICOH THETA S 360 camera can be controlled with an API that is accessible using WiFi. Version 2 of the API is compliant with Google Open Spherical Camera API specification.&lt;/p&gt;
 
 &lt;p&gt;An alternative to using the RICOH THETA S API over WiFi exists that works over an USB cable. This is a different API and requires firmware version 01.42 or later.  v2 USB API uses extended PTP, or Picture Transfer Protocol, as the communications protocol.&lt;/p&gt;
 
@@ -735,9 +737,9 @@ ricoh@xerus:~/Documents/community-document$
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;unofficial-theta-developer-ecosystem-registrationhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Unofficial THETA Developer Ecosystem Registration&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Mon, 09 May 2016 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/05/09/theta-api-usb.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/05/09/theta-api-usb.html</guid>
         
@@ -767,7 +769,7 @@ access a number of pre-release technologies from the
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Thu, 21 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/04/21/meetup-group.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/04/21/meetup-group.html</guid>
         
@@ -835,7 +837,7 @@ and you’ll be upgraded.&lt;/p&gt;
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Thu, 24 Mar 2016 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/03/24/firmware-upgrade.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/03/24/firmware-upgrade.html</guid>
         
@@ -936,7 +938,7 @@ portion, you can drag them into the map in the top portion.&lt;/p&gt;
 
 &lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Tue, 08 Mar 2016 00:00:00 -0800</pubDate>
+        <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/applications/2016/03/08/theta360-business-site.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/applications/2016/03/08/theta360-business-site.html</guid>
         
