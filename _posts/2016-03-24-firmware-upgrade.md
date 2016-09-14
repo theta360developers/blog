@@ -60,4 +60,4 @@ and you'll be upgraded.
 
 Ready for more?
 
-# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
+# [Register for the THETA Developer Ecosystem](http://theta360.guide/ecosystem/)

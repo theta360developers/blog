@@ -67,4 +67,4 @@ On my system, Xenial Xerus, Ubuntu 16.04, I already had libmtp installed. I thin
 
 Ready for more?
 
-# [Unofficial THETA Developer Ecosystem Registration](http://theta360.guide/ecosystem/)
+# [Register for the THETA Developer Ecosystem](http://theta360.guide/ecosystem/)

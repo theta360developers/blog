@@ -30,4 +30,4 @@ You can now start [360 video live streaming](http://theta360.guide/community-doc
 
 and build an app for fun, knowledge and fortune.
 
-# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
+# [Latest Community Tips at the THETA Unofficial Guide](http://theta360.guide/)

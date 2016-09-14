@@ -64,4 +64,4 @@ most common topics. Hopefully, we'll be able to pull popular topics from the blo
 
 Ready for more?
 
-# [$45,000 in prizes for the RICOH THETA x IoT Developers Contest](http://theta360.guide/contest/)
+# [Latest Community Tips at the THETA Unofficial Guide](http://theta360.guide/)
