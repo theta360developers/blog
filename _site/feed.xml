@@ -6,8 +6,8 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 22:14:26 +0000</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 22:14:26 +0000</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 22:31:56 +0000</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 22:31:56 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -102,7 +102,7 @@ I’m going to set
 Before we set it, take a look at the
 &lt;a href=&quot;https://developers.theta360.com/en/docs/v2/usb_reference/property/audio_volume.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/usb-audio-volume.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/usb-audio.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The documentation is sparse, but it has everything you need. Grab the &lt;em&gt;Device Prop Code&lt;/em&gt;
 and focus in on the &lt;em&gt;502c&lt;/em&gt; code.&lt;/p&gt;
@@ -235,7 +235,8 @@ Enjoy!
 &lt;/div&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;## Remove gvfs-gphoto2-volume-monitor&lt;/p&gt;
+
+&lt;h2 id=&quot;remove-gvfs-gphoto2-volume-monitor&quot;&gt;Remove gvfs-gphoto2-volume-monitor&lt;/h2&gt;
 
 &lt;p&gt;As I do not plan to mount the THETA as a storage device from the Raspberry Pi, I removed gvfs virtual filesystem.&lt;/p&gt;
 
