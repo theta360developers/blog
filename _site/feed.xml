@@ -6,9 +6,64 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 22:05:59 +0000</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 22:05:59 +0000</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 22:14:26 +0000</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 22:14:26 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Sept 27 RICOH THETA Meetup in SF</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/events/233546861/&quot;&gt;Sign up&lt;/a&gt; for the meetup!&lt;/p&gt;
+
+&lt;h2 id=&quot;integration-in-products-photosphere-navigation-and-360-video-on-drones&quot;&gt;360° Integration in Products, Photosphere Navigation, and 360° Video on Drones!&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;RICOH THETA Developers Meetup&lt;/strong&gt;
+&lt;strong&gt;Tues, Sept 27, 2016&lt;/strong&gt;
+&lt;strong&gt;Location: San Francisco SOMA (TBD)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Wow, we’ve got a great lineup of presenters to kick off the fall schedule of RICOH THETA meetups! Come join your fellow power users and 360 developers and find out more about integrating 360 video/VR/AR into products. Then spend some time thinking how you can navigate and connect photosphere content. And finally, who doesn’t want to stick a THETA on a drone? We’ll do it this coming Tues, Sept 27th.&lt;/p&gt;
+
+&lt;p&gt;Come ask your questions and share your own experiences in a friendly, relaxed environment. Whether you’re new to RICOH THETA, working on a project, or just want to meet people with similar interests, all are welcome.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Agenda&lt;/strong&gt;
+6:30 pm: Check-in, grab pizza and sodas, and say hi to other RICOH THETA users and developers
+7:00 pm: First talk: How to Integrate 360 Video/VR/AR Into Your Product, Kieran Farr, Brightcove
+7:45 pm: Break
+8:00 pm: Second talk: Better 360 Image Navigation Online, Christian Claus, Holobuilder
+8:30 pm: Break
+8:45 pm: Third talk and demo: RICOH THETA and Drones, Eddie Codel, eddie.com&lt;/p&gt;
+
+&lt;p&gt;Speakers:
+&lt;strong&gt;Kieran Farr&lt;/strong&gt; - Senior Director, Business Development, Brightcove (kfarr@brightcove.com)&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-integrate-360-videovrar-into-your-product&quot;&gt;&lt;strong&gt;How to Integrate 360 Video/VR/AR Into Your Product&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/b2b43836c722dc8c2ca1023de043bb236f79d9d6.png&quot; width=&quot;170&quot; height=&quot;170&quot; /&gt;
+Kieran has a long background in video platform development running companies like Vidlet and Vidcaster, and now overseeing ecosystem and partner program development at Brightcove. Let his pain be your gain! He will dive into the nuts and bolts of how to stream 360º video standalone or as part of a larger product. Topics include: how to plan for and build the infrastructure, tying in a database, integrating with a CDN and either transcoding all of your video projects content into individual resolutions (ouch!) or using a solution to have a server do it for you (ahhh!). Make your product handle 360º video easily!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Christian Claus&lt;/strong&gt; - Product Manager, Holobuilder (christian@holobuilder.com)&lt;/p&gt;
+
+&lt;h2 id=&quot;better-360-image-navigation-online&quot;&gt;&lt;strong&gt;Better 360º Image Navigation Online&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/4e114047c46dea0f822dea01fb8504d69e4e45f3.png&quot; width=&quot;170&quot; height=&quot;177&quot; /&gt;
+Christian will walk us through some of the challenges and issues that arise when building a 360º platform that lets users navigate through photospheres. How do you keep from going around in circles? Or worse, getting bored? Christian will touch on good storytelling and the implication for business applications based on his experience at Holobuilder, where he focuses on 360º construction content.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eddie Codel&lt;/strong&gt; - Founder, Eddie.com/Flying Robot International Film Festival&lt;/p&gt;
+
+&lt;h2 id=&quot;ricoh-theta-and-drones&quot;&gt;&lt;strong&gt;RICOH THETA and Drones!&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/d3c9c547e5eef3a6e83f5d739b8e84879008bd4d.png&quot; width=&quot;170&quot; height=&quot;170&quot; /&gt;
+Eddie will give us a “bird’s eye view” of video production using drones, including cutting-edge issues around mounting, stabilization, and avoiding curious birds. Eddie will also tell us about the Aerial Imaging Education Day he’s hosting in October and the Flying Robot International Film Festival and why THETA users in particular should participate.&lt;/p&gt;
+
+&lt;p&gt;Food and drinks will be provided by RICOH THETA. See you all there!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/api/2016/09/14/september-meetup.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/api/2016/09/14/september-meetup.html</guid>
+        
+        
+        <category>API</category>
+        
+      </item>
     
       <item>
         <title>360 Camera Control of a RICOH THETA With a USB Cable</title>
@@ -1235,95 +1290,6 @@ I’ll update the blurry image above when I bring my laptop to a place with more
         <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</guid>
-        
-        
-        <category>Camera</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH THETA S API Over USB Cable</title>
-        <description>&lt;h1 id=&quot;the-discussion-on-this-topic-moved-to-liststheta360guidehttpliststheta360guidetricoh-theta-s-api-over-usb-cable65ucodetricity&quot;&gt;The discussion on this topic moved to &lt;a href=&quot;http://lists.theta360.guide/t/ricoh-theta-s-api-over-usb-cable/65?u=codetricity&quot;&gt;lists.theta360.guide&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;The RICOH THETA S 360 camera can be controlled with an API that is accessible using WiFi. Version 2 of the API is compliant with Google Open Spherical Camera API specification.&lt;/p&gt;
-
-&lt;p&gt;An alternative to using the RICOH THETA S API over WiFi exists that works over an USB cable. This is a different API and requires firmware version 01.42 or later.  v2 USB API uses extended PTP, or Picture Transfer Protocol, as the communications protocol.&lt;/p&gt;
-
-&lt;p&gt;To use v2 USB API, go to:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.theta360.com/en/docs/v2/usb_reference/&quot;&gt;Official RICOH THETA USB Reference v2&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;On the RICOH developer forum,
-&lt;a href=&quot;https://developers.theta360.com/en/forums/viewtopic.php?f=4&amp;amp;t=626&quot;&gt;MattWymore posted&lt;/a&gt; this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I figured out how to make this work. This feature does work correctly, you just have to issue “raw” MTP/PTP commands to get it to work. So if anybody else is using the Windows Portable Devices API to control the Theta S, keep this in mind:&lt;/p&gt;
-
-  &lt;ol&gt;
-    &lt;li&gt;
-      &lt;p&gt;It looks like you can’t use the WPD command WPD_COMMAND_STILL_IMAGE_CAPTURE_INITIATE to initiate capture. If you use this command the driver returns an error to you.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p&gt;The correct way to do this is to use WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITHOUT_DATA_PHASE and set up all the  parameters and Op Code for image capture and then send that command. Take a look at this example from Microsoft for setting things up. Basically you just need to change the Op Code to 0x100E (for initiate capture) and change the StorageID to 0x0 (as documented in the Theta v2 USB API) and you are ready to go.&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-
-  &lt;p&gt;Hopefully this helps out anybody that is trying to do tethered capture.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
-
-&lt;p&gt;These are untested.&lt;/p&gt;
-
-&lt;h2 id=&quot;c-c&quot;&gt;C, C++&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/en-us/library/windows/desktop/ff384848(v=vs.85).aspx&quot;&gt;Windows Dev Center, Supporting MTP Extensions (C, C++)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pypi.python.org/pypi/PyMTP&quot;&gt;PyMTP&lt;/a&gt; (Python bindings to LibMTP)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/emdete/python-mtp&quot;&gt;python-mtp&lt;/a&gt; (another libmtp Python wrapper)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;mtp-specification&quot;&gt;MTP Specification&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://theta360blog.files.wordpress.com/2016/04/mtpforusb-ifv1-1.pdf&quot;&gt;MTPforUSB-IFv1.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;libmtp&quot;&gt;libmtp&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://libmtp.sourceforge.net/&quot;&gt;libmtp&lt;/a&gt; on SourceForge&lt;/li&gt;
-  &lt;li&gt;installing &lt;a href=&quot;http://askubuntu.com/questions/611054/where-is-libmtp&quot;&gt;libmtp on Ubuntu&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;On my system, Xenial Xerus, Ubuntu 16.04, I already had libmtp installed. I think it may be installed with Calibre ebook reader.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Documents/community-document$ dpkg -l *libmtp*
-Desired=Unknown/Install/Remove/Purge/Hold
-| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
-|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name Version Architecture Description
-+++-==============-============-============-=================================
-ii libmtp-common 1.1.10-2ubun all Media Transfer Protocol (MTP) com
-ii libmtp-runtime 1.1.10-2ubun amd64 Media Transfer Protocol (MTP) run
-un libmtp8 &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; (no description available)
-ii libmtp9:amd64 1.1.10-2ubun amd64 Media Transfer Protocol (MTP) lib
-ricoh@xerus:~/Documents/community-document$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/camera/2016/05/09/theta-api-usb.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/05/09/theta-api-usb.html</guid>
         
         
         <category>Camera</category>

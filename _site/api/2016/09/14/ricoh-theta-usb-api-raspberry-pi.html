@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>360 Camera Control of a RICOH THETA With a USB Cable</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/blog/css/main.css">
+  <link rel="canonical" href="http://theta360.guide/blog/api/2016/09/14/ricoh-theta-usb-api-raspberry-pi.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://theta360.guide/blog/feed.xml">
+
+</head>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73311422-1', 'auto');
+  ga('send', 'pageview');
+  ga('set', 'contentGroup1', 'All RICOH');
+</script>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a href="/blog/"><img src="/blog/img/main/blog_banner.png"></a>
+    <!-- <a class="site-title" href="/blog/">THETA 360 Unofficial Blog</a> -->
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/blog/official/">Official RICOH Information</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+
+          <a href="http://theta360.guide">Unofficial Guides</a>
+          <hr>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">360 Camera Control of a RICOH THETA With a USB Cable</h1>
+    <p class="post-meta">
+	<time datetime="2016-09-14T00:00:00+00:00" itemprop="datePublished">Sep 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/e0febd046a9aa1faf75e2a823fe36b67653a6084_1_374x500.png" alt="" /></p>
+
+<p>You can control your RICOH THETA with a USB cable. It’s a bit more difficult, but it’s
+great for projects that leave the THETA unattended in remote locations.
+Any computer can be used, but we focus on a Raspberry Pi due to low cost. Although
+a touchscreen is not needed, I built the demo using the official Raspberry Pi
+touchscreen as a control panel.</p>
+
+<p>To get started quickly, I simply installed <a href="http://gphoto.org/">gphoto2</a> using <code class="highlighter-rouge">apt</code>.
+gphoto2 turned out to be easier to use than ptpcam. So, start here if you’re
+just getting started.</p>
+
+<p>To program the Raspberry Pi, you’ll need to log into it either by serial cable,
+Ethernet or WiFi. In the picture below, the Raspberry Pi to the left is
+connected to my development workstation with a USB adapter connected directly
+to the GPIO pins. On the right, I’m using WiFi to program Raspberry Pi.
+Once the Pi is programmed, disconnect it from your development computer and
+it works standalone.</p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/8952596b12daa43f1a4533175f665b9664b012ab_1_645x500.png" alt="" /></p>
+
+<p>To start programming the Raspberry Pi to communicate over the THETA USB cable,
+use <code class="highlighter-rouge">gphoto -L</code> to list the filesystem on the THETA.</p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/cd9f158386a701e769a2df5996da17c16418d89e_1_690x360.png" width="690" height="360" /></p>
+
+<p>To set the configuration of individual camera settings, you’ll need to get the codes from
+<a href="https://developers.theta360.com/en/docs/v2/usb_reference/">RICOH THETA v2 USB Reference</a></p>
+
+<p>In the example below, I set the shutter <code class="highlighter-rouge">chirp</code> to 30% of sound volume and then verify that the setting in correct.
+I’m going to set
+<a href="https://developers.theta360.com/en/docs/v2/usb_reference/property/audio_volume.html">0x502c AudioVolume</a>.
+Before we set it, take a look at the
+<a href="https://developers.theta360.com/en/docs/v2/usb_reference/property/audio_volume.html">documentation</a>.</p>
+
+<p><img src="/blog/img/2016-09/usb-audio-volume.png" alt="" /></p>
+
+<p>The documentation is sparse, but it has everything you need. Grab the <em>Device Prop Code</em>
+and focus in on the <em>502c</em> code.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~/Development/libptp2-1.2.0 $ gphoto2 --set-config=502c=30
+pi@raspberrypi ~/Development/libptp2-1.2.0 $ gphoto2 --get-config=502c
+Label: PTP Property 0x502c
+Type: MENU
+Current: 30
+Choice: 0 0
+</code></pre>
+</div>
+
+<p>In the next example, we’ll use the command line options of gphoto2 to download three
+files from the camera to our local disk over the fast USB cable. The command
+line options of gphoto2 are easier to use than the Device Prop Codes, but the command
+line options don’t cover all the camera functions. Let’s run through a few easy
+examples of using gphoto2 command line options.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~/Development/gphoto2 $ gphoto2 --get-file 1-3
+Downloading 'R0011757.JPG' from folder '/store_00010001/DCIM/100RICOH'...
+Saving file as R0011757.JPG
+Downloading 'R0011758.JPG' from folder '/store_00010001/DCIM/100RICOH'...
+Saving file as R0011758.JPG
+Downloading 'R0011759.JPG' from folder '/store_00010001/DCIM/100RICOH'...
+Saving file as R0011759.JPG
+pi@raspberrypi ~/Development/gphoto2 $
+</code></pre>
+</div>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/8002276ff913b301f468783ecac80ad5f3e50b1b_1_690x414.png" width="690" height="414" /></p>
+
+<p>Download thumbnails</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~/Development/gphoto2 $ gphoto2 --get-thumbnail 4-6
+Downloading 'R0011761.JPG' from folder '/store_00010001/DCIM/100RICOH'...
+Saving file as thumb_R0011761.jpg
+Downloading 'R0011763.JPG' from folder '/store_00010001/DCIM/100RICOH'...
+Saving file as thumb_R0011763.jpg
+Downloading 'R0011764.JPG' from folder '/store_00010001/DCIM/100RICOH'...
+Saving file as thumb_R0011764.jpg
+pi@raspberrypi ~/Development/gphoto2 $
+</code></pre>
+</div>
+
+<h2 id="components-i-used">Components I Used</h2>
+
+<ul>
+  <li>Raspian Jessie</li>
+  <li>gphoto2</li>
+  <li>Raspberry Pi 2</li>
+  <li>THETA plugged into Raspberry Pi with USB cable</li>
+</ul>
+
+<h3 id="versions">Versions</h3>
+
+<h4 id="showing-installed-gphoto2-version-with-apt-cache">Showing installed gphoto2 version with apt-cache</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ apt-cache show gphoto2
+Package: gphoto2
+Version: 2.5.4-1
+Architecture: armhf
+Maintainer: Debian PhotoTools Maintainers &lt;pkg-phototools-devel@lists.alioth.debian.org&gt;
+Installed-Size: 802
+Depends: libaa1 (&gt;= 1.4p5), libc6 (&gt;= 2.4), libcdk5, libexif12, libgphoto2-6 (&gt;=2.5.2), libgphoto2-port10 (&gt;= 2.5.2), libjpeg8 (&gt;= 8c), libncurses5 (&gt;= 5.5-5~), libpopt0 (&gt;= 1.14), libreadline6 (&gt;= 6.0)
+Suggests: gtkam, gthumb
+Homepage: http://www.gphoto.org/proj/gphoto2/
+Priority: extra
+Section: utils
+Filename: pool/main/g/gphoto2/gphoto2_2.5.4-1_armhf.deb
+Size: 169204
+SHA256: 71baeac776e762229ad31c550a493a82a8fd5f2a435dd65a674d0030d14f8991
+SHA1: 7018ffe0a8432ffcfbb08887f27b2ae22224b2fd
+MD5sum: a522290cef04bf1cf7c6cdb4d0cf37d5
+Description: digital camera command-line client
+The gphoto2 library can be used by applications to access various
+digital camera models, via standard protocols such as USB Mass Storage
+and PTP, or vendor-specific protocols.
+
+This package provide the gphoto2 command-line frontend.
+</code></pre>
+</div>
+
+<h4 id="showing-installed-os-on-raspberry-pi">Showing installed OS on Raspberry Pi</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ cat /etc/os-release
+PRETTY_NAME="Raspbian GNU/Linux 8 (jessie)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="8"
+VERSION="8 (jessie)"
+ID=raspbian
+ID_LIKE=debian
+</code></pre>
+</div>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>Right now, I get this error when I first step the Raspberry Pi. I haven’t bothered to disable gvfs-gphoto2-volume-monitor at boot yet. I’ll figure this out in the future.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 --about
+
+*** Error ***
+An error occurred in the io-library ('Could not claim the USB device'): Could not claim interface 0 (Device or resource busy). Make sure no other program (gvfs-gphoto2-volume-monitor) or kernel module (such as sdc2xx, stv680, spca50x) is using the device and you have read/write access to the device.
+*** Error (-53: 'Could not claim the USB device') ***
+</code></pre>
+</div>
+
+<p>It looks like I can prevent the daemon in <code class="highlighter-rouge">/usr/lib/gvfs/gvfsd</code> to run. In the meantime, I’m going to kill the processes before I start the tests.</p>
+
+<p>You can find the process to kill with <code class="highlighter-rouge">ps aux |grep gvfs</code></p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/be8bb6db2e7c8e0e517f3f7e48c1547c19910548_1_690x184.png" width="690" height="184" /></p>
+
+<p>I also killed the spawner. In my test this morning, I needed to kill this in addition to <code class="highlighter-rouge">gvfs-gphoto2-volume-monitor</code></p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/155de4182e931337dafdaf8d95fb6aba406e3044_1_690x162.png" width="690" height="162" /></p>
+
+<p>Test it</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 --about
+About the camera driver:
+PTP2 driver
+(c) 2001-2005 by Mariusz Woloszyn &lt;emsi@ipartners.pl&gt;.
+(c) 2003-2014 by Marcus Meissner &lt;marcus@jet.franken.de&gt;.
+This driver supports cameras that support PTP or PictBridge(tm), and
+Media Players that support the Media Transfer Protocol (MTP).
+
+Enjoy!
+</code></pre>
+</div>
+
+<hr />
+<p>## Remove gvfs-gphoto2-volume-monitor</p>
+
+<p>As I do not plan to mount the THETA as a storage device from the Raspberry Pi, I removed gvfs virtual filesystem.</p>
+
+<p>Remove <code class="highlighter-rouge">gvfs-backends</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ sudo apt remove gvfs-backends
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be REMOVED:
+  gvfs-backends
+</code></pre>
+</div>
+
+<p>Test to make sure it still works.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 -l
+There is 1 folder in folder '/'.                                               
+ - store_00010001
+There is 1 folder in folder '/store_00010001'.
+</code></pre>
+</div>
+
+<p>Reboot</p>
+
+<p><code class="highlighter-rouge">gphoto2</code> now works after reboot without having to kill the processes.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 -l
+There is 1 folder in folder '/'.                                               
+ - store_00010001
+There is 1 folder in folder '/store_00010001'.
+ - DCIM
+There is 1 folder in folder '/store_00010001/DCIM'.
+ - 100RICOH
+There are 0 folders in folder '/store_00010001/DCIM/100RICOH'.
+</code></pre>
+</div>
+
+<h2 id="usb-programmer-for-the-raspberry-pi">USB Programmer for the Raspberry Pi</h2>
+
+<p>If you want to program the Raspberry Pi through your USB port of your
+development computer,
+<a href="https://www.amazon.com/dp/B00SL0U3RG/ref=cm_sw_su_dp">this</a> is what I’m using.</p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/442df612eb01853f6943c36ae2f9c8220ac838c7_1_666x500.png" alt="" /></p>
+
+<h2 id="preventing-camera-from-turning-off">Preventing Camera from Turning Off</h2>
+
+<p>You can leave the camera turned on indefinitely when connected to the USB
+cable as the cable powers the camera.</p>
+
+<p>Make sure you set the <em>offDelay</em> to 65535</p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/88e0ed1a6c8c6b2e36131ee2ecf522e416e423cb_1_690x273.PNG" alt="" /></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.setOptions"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w">
+	</span><span class="p">{</span><span class="w">
+    </span><span class="nt">"sessionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SID_0001"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+		</span><span class="nt">"offDelay"</span><span class="p">:</span><span class="w"> </span><span class="mi">65535</span><span class="w">
+    	</span><span class="p">}</span><span class="w">
+	</span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>You can check the offDelay parameter with this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.getOptions"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w">
+	</span><span class="p">{</span><span class="w">
+    	</span><span class="nt">"sessionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SID_0001"</span><span class="p">,</span><span class="w">
+    	</span><span class="nt">"optionNames"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"offDelay"</span><span class="w">
+    	</span><span class="p">]</span><span class="w">
+	</span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>I also set the <a href="https://developers.theta360.com/en/docs/v2.1/api_reference/options/sleep_delay.html">sleepDelay</a>
+to 65535.</p>
+
+<h2 id="mounting-your-camera">Mounting Your Camera</h2>
+
+<p>You need to use an extension to mount the camera on a tripod so that it
+doesn’t interfere with the USB cable.</p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/original/1X/43891bd93719fd60b6ed9a6233055833bb4c805a.png" alt="" /></p>
+
+<p>It’s 1/4” by 20 pitch.</p>
+
+<ul>
+  <li>1 pc 1/4” by 20 pitch rod coupling nut</li>
+  <li>1 pc 1/4” by 20 pitch threaded rod, 3 inches long</li>
+  <li>2 pcs 1/4” by 20 pitch hex jam nut</li>
+</ul>
+
+<p><img src="http://lists.theta360.guide/uploads/default/original/1X/6f769191bf21cbf76f8b47dfee6e29f8904f8726.jpg" alt="" /></p>
+
+<p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/0e7f5f93d80decb60bfbd2c80a9f5d7460c559c6_1_374x500.jpg" alt="" /></p>
+
+<h2 id="using-microsoft-windows">Using Microsoft Windows</h2>
+
+<p>Refer to the
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ff384848(v=vs.85).aspx">MTP Extensions</a>.</p>
+
+<p>See this note from Matt Wymore</p>
+
+<blockquote>
+  <p>I figured out how to make this work. This feature does work correctly, you just have to issue “raw”
+MTP/PTP commands to get it to work. So if anybody else is using the Windows Portable Devices API
+to control the Theta S, keep this in mind:</p>
+</blockquote>
+
+<blockquote>
+  <p>It looks like you can’t use the WPD command
+WPD_COMMAND_STILL_IMAGE_CAPTURE_INITIATE to initiate capture. If you use this
+command the driver returns an error to you.</p>
+</blockquote>
+
+<blockquote>
+  <p>The correct way to do this is to use
+WPD_COMMAND_MTP_EXT_EXECUTE_COMMAND_WITHOUT_DATA_PHASE and set up all
+the parameters and Op Code for image capture and then send that command. Take a look at this
+example from Microsoft for setting things up. Basically you just need to change the Op Code to
+0x100E (for initiate capture) and change the StorageID to 0x0 (as documented in the Theta v2
+USB API) and you are ready to go.</p>
+</blockquote>
+
+<p><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ff384842(v=vs.85).aspx">Example</a> Matt referred to.</p>
+
+<h1 id="register-for-the-theta-developer-ecosystemhttptheta360guideecosystem"><a href="http://theta360.guide/ecosystem/">Register for the THETA Developer Ecosystem</a></h1>
+
+  </div>
+
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+       */
+
+      var disqus_config = function () {
+          this.page.url = /api/2016/09/14/ricoh-theta-usb-api-raspberry-pi.html;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = /api/2016/09/14/ricoh-theta-usb-api-raspberry-pi; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+
+      (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+          var d = document, s = d.createElement('script');
+
+          s.src = '//thetablog.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">THETA 360 Unofficial Blog</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>THETA 360 Unofficial Blog</li>
+          <li><a href="mailto:info@theta360.guide">info@theta360.guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/theta360developers"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">theta360developers</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/theta360dev"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">theta360dev</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Community information for developers of applications for the RICOH THETA camera. Go to theta360.guide for more information.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
