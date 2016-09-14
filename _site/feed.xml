@@ -6,9 +6,146 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 13:32:51 +0000</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 13:32:51 +0000</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 16:08:59 +0000</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 16:08:59 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>RICOH THETA API Update to 2.1</title>
+        <description>&lt;p&gt;There is a new THETA API version &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/&quot;&gt;2.1&lt;/a&gt;. The &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/&quot;&gt;version 2.0&lt;/a&gt; API still works for now, but it is recommended that you update your apps to ensure future compatibility.&lt;/p&gt;
+
+&lt;p&gt;App developers: Be aware these changes may affect your previously-published app in the future and it is your responsibility to make corresponding changes to either handle both versions or remind camera owners to update their firmware.&lt;/p&gt;
+
+&lt;p&gt;If you want to compare the different documentation versions, you can toggle between the two different versions using the green rectangle on the main API reference page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/03486b89bf0ed7ea32523c36fd12afe02f4f08ae.png&quot; width=&quot;383&quot; height=&quot;286&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In your program, you can set the API version with &lt;code class=&quot;highlighter-rouge&quot;&gt;camera.setOptions&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;camera.setOptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;parameters&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;sessionId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;SID_0001&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;options&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;clientVersion&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One of the major changes is that you do not have to specify the &lt;code class=&quot;highlighter-rouge&quot;&gt;sessionId&lt;/code&gt; for command execution.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;version 2.0&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;camera.takePicture&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;parameters&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;sessionId&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;SID_0001&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;version 2.1&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;camera.takePicture&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;parameters&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;_listAll&lt;/code&gt; command of version 2.0 has been replaced with &lt;code class=&quot;highlighter-rouge&quot;&gt;listFiles&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Example (&lt;em&gt;version 2.1&lt;/em&gt;)
+&lt;img src=&quot;http://lists.theta360.guide/uploads/default/optimized/1X/09aae769ef0a9cede748ee03d4e5520e236c92cc_1_690x56.png&quot; width=&quot;690&quot; height=&quot;56&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;camera.listFiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;parameters&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;fileType&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;all&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;entryCount&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;maxThumbSize&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;640&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This means that that there are now four API versions in current use for the THETA, 3 for the THETA S and one for the THETA m15.&lt;/p&gt;
+
+&lt;p&gt;For the THETA S, the three APIs are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/&quot;&gt;API v2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/&quot;&gt;API v2.1&lt;/a&gt; - which is often referred to as API v2 reference (there doesn’t appear to be a clear difference between v2.0 and v2.1 in some of the reference documentation)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.theta360.com/en/docs/v2/usb_reference/&quot;&gt;v2 USB API&lt;/a&gt; - this is based off of the MTP 1.1 specification not the OSC specification&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You should use the API v2.1 (the WiFi) one for your applications. There is no reason to use v2.0. v2 USB API can be used if you application works better with a USB connection, which is probably only the case for an application with specialized hardware like a Raspberry Pi Zero controller.&lt;/p&gt;
+
+&lt;p&gt;THETA API v2.1 is compliant with Open Spherical Camera (OSC) API level 2. Here are the differences between OSC API level 1 and OSC API level 2&lt;/p&gt;
+
+&lt;h1 id=&quot;api-level-2-key-changes&quot;&gt;API level 2 key changes&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Deprecated sessionId and deprecated/modified related commands. API level 2 is designed for one client connection and camera manufacturer should make sure that only one client at any time is connected (for example via limiting only one wifi connection).
+    &lt;ul&gt;
+      &lt;li&gt;Deprecated commands &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.start_session.html&quot;&gt;startSession&lt;/a&gt; / &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.update_session.html&quot;&gt;updateSession&lt;/a&gt; / &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.close_session.html&quot;&gt;closeSession&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Deprecated sessionId from input of commands &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.take_picture.html&quot;&gt;takePicture&lt;/a&gt; / &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.get_options.html&quot;&gt;getOptions&lt;/a&gt; / &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.set_options.html&quot;&gt;setOptions&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Deprecated commands &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.get_image.html&quot;&gt;getImage&lt;/a&gt; / &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.get_metadata.html&quot;&gt;getMetadata&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;The absolute URL of a file is used to download directly from the HTTP server of the camera.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added/modified commands and options for video capture, interval image capture and live preview.
+    &lt;ul&gt;
+      &lt;li&gt;Added commands &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/commands/camera.start_capture.html&quot;&gt;startCapture&lt;/a&gt; / &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/commands/camera.stop_capture.html&quot;&gt;stopCapture&lt;/a&gt; / &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/commands/camera.get_live_preview.html&quot;&gt;getLivePreview&lt;/a&gt; /  &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/commands/camera.reset.html&quot;&gt;reset&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Renamed &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera.list_images.html&quot;&gt;listImages&lt;/a&gt; to &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/commands/camera.list_files.html&quot;&gt;listFiles&lt;/a&gt; and modified inputs/outputs to handle video type as well as image type.&lt;/li&gt;
+      &lt;li&gt;Added options &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/options/preview_format.html&quot;&gt;previewFormat&lt;/a&gt;, &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/options/capture_interval.html&quot;&gt;captureInterval&lt;/a&gt;, &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/options/capture_number.html&quot;&gt;captureNumber&lt;/a&gt;, &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/options/remaining_video_seconds.html&quot;&gt;remainingVideoSeconds&lt;/a&gt;, &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/options/client_version.html&quot;&gt;clientVersion&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://developers.google.com/streetview/open-spherical-camera/reference/header/video-xmp&quot;&gt;360 video XMP specification&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Added apiLevel field to &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/protocols/info.html&quot;&gt;/osc/info&lt;/a&gt; output.
+    &lt;ul&gt;
+      &lt;li&gt;apiLevel: Field was added in API level 2. It is considered to be API level 1 by default when this field is missing. It is developers’ responsibility to retrieve this information and implement differently based on the value.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Result of GET to http://192.168.1.1/osc/info&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/9b36867d6ba7601527bd06e280cbd0950f3f0167.png&quot; width=&quot;461&quot; height=&quot;344&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Result of POST to 192.168.1.1/osc/state&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/c2c218267745dda568aa6c9533973874dd65c63b.png&quot; width=&quot;343&quot; height=&quot;341&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/api/2016/09/14/ricoh-theta-api-update.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/api/2016/09/14/ricoh-theta-api-update.html</guid>
+        
+        
+        <category>API</category>
+        
+      </item>
     
       <item>
         <title>Taking Pictures Silently</title>
@@ -26,7 +163,7 @@ Introduction&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://lists.theta360.guide/t/taking-pictures-silently/52&quot;&gt;More…&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/api/2016/06/15/taking-pictures-silently.html</link>
@@ -65,7 +202,7 @@ hex jam nut to lock the THETA in place.&lt;/p&gt;
 
 &lt;p&gt;and build an app for fun, knowledge and fortune.&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Thu, 02 Jun 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/06/02/tripod-for-live-streaming.html</link>
@@ -81,6 +218,8 @@ hex jam nut to lock the THETA in place.&lt;/p&gt;
         <description>&lt;p&gt;We’ve just gotten hold of a presentation from a Cloud API Seminar held on May 18, 2016, in Tokyo. The presentation from the seminar has very specific steps and code samples on accessing and using the RICOH Cloud API. We’ve translated it and are making it available with the idea that it could help you with the RICOH THETA x IoT Developers Contest, and, heck, maybe even more.&lt;/p&gt;
 
 &lt;h1 id=&quot;read-morehttpliststheta360guidetcloud-api-seminar-presentation-useful22&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/cloud-api-seminar-presentation-useful/22&quot;&gt;Read More&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/contest/2016/05/20/cloud-api-seminar.html</link>
@@ -412,7 +551,7 @@ questions on our
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</link>
@@ -510,7 +649,7 @@ for information on how to jumpstart your development for the contest.&lt;/p&gt;
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/culture/2016/05/13/first-days-personal-experiences.html</link>
@@ -648,7 +787,7 @@ I’ll update the blurry image above when I bring my laptop to a place with more
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</link>
@@ -737,7 +876,7 @@ ricoh@xerus:~/Documents/community-document$
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;h1 id=&quot;unofficial-theta-developer-ecosystem-registrationhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Unofficial THETA Developer Ecosystem Registration&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Mon, 09 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/05/09/theta-api-usb.html</link>
@@ -767,7 +906,7 @@ access a number of pre-release technologies from the
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/04/21/meetup-group.html</link>
@@ -835,7 +974,7 @@ and you’ll be upgraded.&lt;/p&gt;
 
 &lt;p&gt;Ready for more?&lt;/p&gt;
 
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/camera/2016/03/24/firmware-upgrade.html</link>
@@ -843,107 +982,6 @@ and you’ll be upgraded.&lt;/p&gt;
         
         
         <category>Camera</category>
-        
-      </item>
-    
-      <item>
-        <title>Using the Japanese Site THETA 360.biz for Prototyping</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/drivereye-shot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There are a number of ways to display 360 images on your business site.
-Tools like &lt;a href=&quot;https://www.holobuilder.com/&quot;&gt;HoloBuilder&lt;/a&gt;
-and
-&lt;a href=&quot;http://ggnome.com/pano2vr&quot;&gt;Pano2VR&lt;/a&gt; are popular. There are also open source
-JavaScript viewers like &lt;a href=&quot;https://github.com/theta360developers/ThetaViewer&quot;&gt;Akokubo JavaScript Viewer code&lt;/a&gt;
-and &lt;a href=&quot;https://github.com/JeremyHeleine/Photo-Sphere-Viewer&quot;&gt;Jeremy Heleine Photo Sphere Viewer&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve recently been experimenting with
-&lt;a href=&quot;https://theta360.biz/ja/&quot;&gt;THETA 360.biz&lt;/a&gt;, a service offered by RICOH
-Japan and not available in the US. At this stage, I can only use
-the free service, which is limited to 50 photospheres and 500 pageviews a
-month. This is really only for prototyping.&lt;/p&gt;
-
-&lt;p&gt;In Japan, there is also a light version at 5,000 yen (approximately $45) per
-month with additional costs for pageviews. This may change if the service
-comes to the US. There is also a standard service that is based on
-customized enterprise pricing.&lt;/p&gt;
-
-&lt;p&gt;Right now, the only use of THETA 360.biz in the US is to build a
-concept platform and then either move another viewer or contact
-the management of THETA 360.biz and attempt to negotiate a custom
-contract.&lt;/p&gt;
-
-&lt;p&gt;As the site is only in Japanese, you’ll need to fill in the form.
-I provided information in English and used by Silicon Valley
-information. After about four business days I received an email in
-Japanese.&lt;/p&gt;
-
-&lt;p&gt;My colleague Jesse Casman translated the screen below to help you register.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/top.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/bottom.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With the email, you will get a username and password. Here’s the translation
-of the email.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Things to note&lt;/p&gt;
-
-  &lt;p&gt;Page views are limited to 500 per month for the Free Plan.&lt;/p&gt;
-
-  &lt;p&gt;Each time a 360 degree image is displayed on your website, that equals one page view.&lt;/p&gt;
-
-  &lt;p&gt;If you surpass 500 page views, an “Under Construction” message will appear, and the images will not be displayed for the rest of that month.&lt;/p&gt;
-
-  &lt;p&gt;When auto refresh is set to ON and embedded tags in your webpage are pasted directly, it’s possible it will not display after several days.&lt;/p&gt;
-
-  &lt;p&gt;If auto refresh is OFF and the embedded tag doesn’t fit the design of the webpage, please consider using thumbnails from elsewhere and using a new window or a pop-up &amp;gt;window.&lt;/p&gt;
-
-  &lt;p&gt;For example, if you follow the order of the steps below, you can display a new window, and it’s possible that until you click the thumbnail the 360 degree image will not &amp;gt;display.&lt;/p&gt;
-
-  &lt;ol&gt;
-    &lt;li&gt;Please get embedded tags while auto refresh is on.&lt;/li&gt;
-    &lt;li&gt;Please use thumbnails.&lt;/li&gt;
-    &lt;li&gt;Please embed the link into the thumbnails.&lt;/li&gt;
-    &lt;li&gt;Please prepare the page that’s being linked to.&lt;/li&gt;
-    &lt;li&gt;Please embed the theta360.biz tag in the page that’s being linked to.&lt;/li&gt;
-  &lt;/ol&gt;
-
-  &lt;p&gt;In order to change the limit of page views, you need to change your contract to a Lite or Standard Plan.&lt;/p&gt;
-
-  &lt;p&gt;Please note, changing your plan will take time due to processing payment information, so plan ahead with enough time.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Once you log into the system, you’ll need to go to the tour creation section.&lt;/p&gt;
-
-&lt;p&gt;Click on the link indicated in the graphic below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/360biz-dashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This will lead you to the tour creation tool below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/tour.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The top portion of the tool is used to upload your map. This is a static 2D flat
-image of around 200px wide or less. The bottom portion is to upload your 360
-images from your RICOH THETA. Once the spheres are loaded into the bottom
-portion, you can drag them into the map in the top portion.&lt;/p&gt;
-
-&lt;p&gt;Here’s the tour creation tool in use.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-03/theta360-editing.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;in-prizes-for-the-ricoh-theta-x-iot-developers-contesthttptheta360guidecontest&quot;&gt;&lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;$45,000 in prizes for the RICOH THETA x IoT Developers Contest&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/applications/2016/03/08/theta360-business-site.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/applications/2016/03/08/theta360-business-site.html</guid>
-        
-        
-        <category>Applications</category>
         
       </item>
     
