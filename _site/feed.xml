@@ -6,9 +6,121 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 22:31:56 +0000</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 22:31:56 +0000</lastBuildDate>
+    <pubDate>Fri, 30 Sep 2016 17:25:19 +0000</pubDate>
+    <lastBuildDate>Fri, 30 Sep 2016 17:25:19 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>RICOH THETA and WebVR - Quick HowTo</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/aframe-mobile.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The future of virtual reality and augmented reality is &lt;a href=&quot;http://venturebeat.com/2016/09/17/how-webvr-will-make-virtual-reality-massively-available/&quot;&gt;WebVR&lt;/a&gt;.
+It’s open source JavaScript, works with browsers and mobile phones today.
+THETA media works great with it. Support for Occulus Rift and HTC Vive
+headsets is available today in development builds and will be available
+to the general public by the end of 2016.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/occulus-rift.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s easy to get started and powerful enough to build amazing applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/web-vr-menu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s get started with a simple THETA VR site using
+&lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using your mobile phone, go to this sample link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codetricity.github.io/aframe-demo/scene1.html&quot;&gt;https://codetricity.github.io/aframe-demo/scene1.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Put the mobile phone in Cardboard and you’ll be able to navigate the image by moving your phone.&lt;/p&gt;
+
+&lt;p&gt;The image will look like this. Press the goggle icon to split the image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/meetup-image.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s nothing unusual here except that the main code is one line.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/code-sample.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/theta360developers/aframe-demo&quot;&gt;Fork the sample code&lt;/a&gt; on GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/github.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy your THETA pictures into the image sub-directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/image-directory.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;scene1.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;RICOH THETA MeetUp Test Scene 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Panorama — A-Frame&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dist/aframe.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a-scene&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a-sky&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/1.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rotation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0 -130 0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a-sky&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a-scene&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Change &lt;code class=&quot;highlighter-rouge&quot;&gt;src/1.jpg&lt;/code&gt; to the name of your file.&lt;/p&gt;
+
+&lt;p&gt;Push the file back up to GitHub Pages and view the URL in your browser. That’s
+it. You can now refer to the &lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;
+site to come up with ideas to build
+your interface.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
+
+&lt;p&gt;If you open the file on your local computer without uploading to
+GitHub Pages, you may see this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/console-error.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The error message in your JavaScript console will be:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Image from origin ‘file://’ has been blocked from loading by Cross-Origin
+Resource Sharing policy: Invalid response.
+Origin ‘null’ is therefore not allowed access.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The fastest way to sort this out is to simply to push to gh-pages.
+I’m assuming that you’re familiar with gh-pages or can figure it out
+with a quick web search. The super short version: &lt;code class=&quot;highlighter-rouge&quot;&gt;git add *&lt;/code&gt;, which will
+add all your files &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -a&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;. Make sure you push to
+the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch. Your site will be up at
+username.github.io/aframe-demo/scene1.html&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chrome://flags&lt;/code&gt;
+&lt;img src=&quot;/blog/img/2016-09/chrome-flags.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://webvr.info/&quot;&gt;WebVR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mozvr.com/&quot;&gt;MozVR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;RICOH THETA Community Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html</guid>
+        
+        
+        <category>WebVR</category>
+        
+      </item>
     
       <item>
         <title>Sept 27 RICOH THETA Meetup in SF</title>
@@ -1156,144 +1268,6 @@ for information on how to jumpstart your development for the contest.&lt;/p&gt;
         
         
         <category>Culture</category>
-        
-      </item>
-    
-      <item>
-        <title>THETA Live Streaming on YouTube</title>
-        <description>&lt;p&gt;The main content for this article was originally written by
-&lt;a href=&quot;https://medium.com/@tanigox&quot;&gt;Motoaki Tanigo&lt;/a&gt;
- on his blog in Japanese
- I’ve made a few changes for clarity. For example, I changed the links to go to the English versions and added screenshots.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/theta-logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;theta-uvc-blender-setup&quot;&gt;THETA UVC Blender Setup&lt;/h1&gt;
-
-&lt;p&gt;Download the live streaming application from the RICOH site and install it on your PC or Mac desktop computer.&lt;/p&gt;
-
-&lt;h2 id=&quot;downloadhttpstheta360comensupportdownload&quot;&gt;&lt;a href=&quot;https://theta360.com/en/support/download/&quot;&gt;Download&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/driver-download.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Update from Craig: I have a detailed
-&lt;a href=&quot;http://theta360.guide/community-document/uvc-theta.html&quot;&gt;tutorial on installing THETA UVC Blender live-streaming app&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;setup-the-live-streaming-encoder&quot;&gt;Setup the Live Streaming Encoder&lt;/h1&gt;
-
-&lt;p&gt;Download any of the
-&lt;a href=&quot;https://support.google.com/youtube/answer/2907883?hl=en&quot;&gt;live streaming applications recommended by YouTube&lt;/a&gt;,
-and do the set up. I’m using
-&lt;a href=&quot;http://www.telestream.net/controls/wirecast-play/download-wirecast-play.htm&quot;&gt;Wirecast Play&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Update from Craig: I’ve also tested
-&lt;a href=&quot;https://obsproject.com/&quot;&gt;Open Broadcaster Software (OBS) Studio&lt;/a&gt;
-64 bit. It’s free and open source. Works great.&lt;/p&gt;
-
-&lt;h1 id=&quot;create-a-live-streaming-event-on-youtube&quot;&gt;Create a Live Streaming Event on YouTube&lt;/h1&gt;
-
-&lt;p&gt;1 Log into YouTube. Click  on the “Upload” button. Click the “start” button on the live streaming.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/youtube-event-setup.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;2 On the live streaming menu, you’ll see “immediate delivery” and “event.” Select “event.”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/youtube-event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;3 Click on the “New live event” button. Add the title. Set the start time in the “basic information” tab description.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/new-event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;4 Click on the “Advanced Settings” tab. Click the checkbox for “This live stream is 360°” under the new 360° video section.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/livestream-checkbox.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After completing these steps, click the “Create Event” button.&lt;/p&gt;
-
-&lt;h1 id=&quot;start-theta-s-in-live-streaming-mode&quot;&gt;Start THETA S in Live Streaming Mode&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/thetas_livestreaming.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;THETA S in live streaming mode. The blue lights in the red circle flash. The word “Live” appears.
-Hold down the “camera” button of THETA S while pressing the “Power” button. The THETA will start in live streaming mode. If the setup is successful, the “Live” mark will light up on the front of the THETA S.&lt;/p&gt;
-
-&lt;h1 id=&quot;deliver-the-live-streaming-encoder-to-youtube&quot;&gt;Deliver the Live Streaming Encoder to YouTube&lt;/h1&gt;
-
-&lt;p&gt;Connect the THETA S to set up the encoder. Add “THETA UVC Blender” as the camera.&lt;/p&gt;
-
-&lt;p&gt;In Wirecast Play, click on the “stream” button, to authenticate the YouTube account, to start the live streaming.&lt;/p&gt;
-
-&lt;p&gt;Update from Craig: For OBS, copy the Stream key into the box below.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Settings =&amp;gt; Stream =&amp;gt; Stream key
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/streamkey-youtube.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s my Video resolution settings. As of 5/5/16, the THETA S can only output 1920 x 720 through the USB UVC Blender driver.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/obs-resolution-settings.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;degree-live-streaming-example&quot;&gt;360 Degree Live Streaming Example&lt;/h1&gt;
-
-&lt;p&gt;This
-&lt;a href=&quot;https://youtu.be/lkUI7vH8BYs&quot;&gt;video&lt;/a&gt;
-will give you a feeling for what it looks like when it’s streaming:&lt;/p&gt;
-
-&lt;p&gt;Update from Craig.&lt;/p&gt;
-
-&lt;p&gt;Found this cool and awesome
-&lt;a href=&quot;https://youtu.be/1HrmtE8j5o8&quot;&gt;video tutorial on live streaming to YouTube with the THETA S&lt;/a&gt;
-by Jeremy Sciarappa.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/1HrmtE8j5o8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/screenshot-stream.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I was able to successfully to get live streaming to YouTube using Open Broadcaster Software (OBS) Studio. Although the process took me a few days to figure out, you should be able to get everything set up in 15 minutes. The documentation from YouTube was pretty thin when they first announced support of 360 streaming. Thanks to the wonderful magic of the community, there is now wealth of documentation on this process, only a week after the announcement. It will be easy for you to get set up and stream 360 videos.:-)  Let’s dive in!&lt;/p&gt;
-
-&lt;p&gt;You should follow the
-&lt;a href=&quot;https://youtu.be/1HrmtE8j5o8&quot;&gt;video tutorial above by Jeremy Sciarappa&lt;/a&gt;.
-If you’re having problems installing the software, refer to this article on
-&lt;a href=&quot;http://theta360.guide/community-document/uvc-theta.html&quot;&gt;THETA live streaming with equirectangular output&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I’ve documented some of the problems I encountered in the hope that it’ll help other people avoid these pitfalls.&lt;/p&gt;
-
-&lt;p&gt;First, I needed to delete my existing webcam from the “Camera” list in Live Control Room. Then, I realized that I was having bandwidth problems, which resulted in a blurry image.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/capture_blurry.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I decided to use Custom settings instead of Quick. I’m not sure if this is needed, but it worked for me.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/livestream-custom-encoding.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I also realized that the Stream Name is different per event.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/stream-name.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;When I first started using OBS, I didn’t have the screen sized properly. Right click on the UVC THETA source (or whatever you named the camera source) and select Transform =&amp;gt; Stretch to screen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/obs-setting-stretch-to-screen.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I then hit Start Streaming from my Windows 10 computer in Palo Alto.&lt;/p&gt;
-
-&lt;p&gt;Take a break and celebrate with your friends around the world. My colleague Tyler was able to see the 360 stream in San Francisco with full navigation. He wants to buy a headset now.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/streaming-test-san-francisco.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Live stream configuration test using my Palo Alto home Internet for upstream. Image is clearer when I have more bandwidth
-I’ll update the blurry image above when I bring my laptop to a place with more bandwidth. The actual bitrate at my house is under 1Mbps, too low for a good test.&lt;/p&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Tue, 10 May 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/05/10/youtube-streaming.html</guid>
-        
-        
-        <category>Camera</category>
         
       </item>
     
