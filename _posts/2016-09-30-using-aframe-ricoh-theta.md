@@ -102,3 +102,10 @@ username.github.io/aframe-demo/scene1.html
 * [WebVR](https://webvr.info/)
 * [MozVR](https://mozvr.com/)
 * [RICOH THETA Community Forum](http://lists.theta360.guide/)
+
+Part 2 -
+[Easily Create a 360 Gallery For RICOH THETA with A-Frame](http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html)
+
+---
+
+## [Discuss](http://lists.theta360.guide/t/ricoh-theta-and-webvr-quick-howto/440?u=codetricity)
