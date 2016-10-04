@@ -6,9 +6,128 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Sep 2016 17:25:19 +0000</pubDate>
-    <lastBuildDate>Fri, 30 Sep 2016 17:25:19 +0000</lastBuildDate>
+    <pubDate>Tue, 04 Oct 2016 18:05:35 +0000</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 18:05:35 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Easily Create a 360 Gallery For RICOH THETA with A-Frame</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://codetricity.github.io/360gallery/&quot;&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/d11f4be895176ddeaa99851f66c8e2868c4adcc7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the open source &lt;a href=&quot;https://aframe.io/docs/0.3.0/introduction/&quot;&gt;A-Frame&lt;/a&gt;
+JavaScript library, you can
+&lt;a href=&quot;http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html&quot;&gt;write a few lines of code&lt;/a&gt;
+ and get THETA 360 images
+ &lt;a href=&quot;https://codetricity.github.io/aframe-demo/scene1.html&quot;&gt;working&lt;/a&gt;
+  in a headset or Cardboard with
+navigation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/aframe-navigation.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Headset navigation works by displaying a round cursor inside the headset view
+that corresponds to the focus of your attention. If you turn the headset so that the
+cursor is on a menu, you will jump to another sphere. In actual use, it feels natural. You
+just stare at a menu for a second and then the jump occurs. The delay for the stare is
+configurable within your code.&lt;/p&gt;
+
+&lt;p&gt;In this example, the menus are stuck to a location in the sphere.
+Moving your head causes the menus to move.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/aframe-menu-movement.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;creating-menus&quot;&gt;Creating Menus&lt;/h1&gt;
+
+&lt;h2 id=&quot;download-boilerplate-code-from-github&quot;&gt;Download Boilerplate Code from GitHub&lt;/h2&gt;
+&lt;p&gt;Fork the &lt;a href=&quot;https://github.com/theta360developers/360gallery&quot;&gt;demo on GitHub&lt;/a&gt;
+and clone to your local drive.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/aframe-files.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Drop your 360 images from the THETA into &lt;code class=&quot;highlighter-rouge&quot;&gt;img/&lt;/code&gt;.
+Open &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; in your editor.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-thumbnail-images&quot;&gt;Create Thumbnail Images&lt;/h2&gt;
+
+&lt;p&gt;Using an image editor like PhotoShop create thumbnail images that are
+240x240 pixels. For this example, I’m using bitmap image text menus.
+You can also
+drop in small images as the navigational menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/image-files.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;edit-file-names-and-id-links&quot;&gt;Edit File Names and ID Links&lt;/h2&gt;
+&lt;p&gt;In your editor, change the &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; to match your files. If you
+are new to programming, simply overwrite &lt;code class=&quot;highlighter-rouge&quot;&gt;1.jpg&lt;/code&gt; in your &lt;code class=&quot;highlighter-rouge&quot;&gt;/img&lt;/code&gt; folder
+with your own image file first for testing. If you use the same image file
+names, you do not need to edit the code at all.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/edit-files.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;body&amp;gt;
+  &amp;lt;a-scene&amp;gt;
+    &amp;lt;a-assets&amp;gt;
+      &amp;lt;img id=&quot;kieran&quot; src=&quot;img/1.jpg&quot;&amp;gt;
+      &amp;lt;img id=&quot;kieran-thumb&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/kieran-thumb.png&quot;&amp;gt;
+      &amp;lt;img id=&quot;christian-thumb&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/christian-thumb.png&quot;&amp;gt;
+      &amp;lt;img id=&quot;eddie-thumb&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/eddie-thumb.png&quot;&amp;gt;
+      &amp;lt;audio id=&quot;click-sound&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg&quot;&amp;gt;&amp;lt;/audio&amp;gt;
+      &amp;lt;img id=&quot;christian&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/2.jpg&quot;&amp;gt;
+      &amp;lt;img id=&quot;eddie&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/4.jpg&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Assuming you are changing the file names, then edit the code for the
+menu links.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/edit-file-menu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- 360-degree image. --&amp;gt;
+&amp;lt;a-sky id=&quot;image-360&quot; radius=&quot;10&quot; src=&quot;#kieran&quot;&amp;gt;&amp;lt;/a-sky&amp;gt;
+
+&amp;lt;!-- Image links. --&amp;gt;
+&amp;lt;a-entity id=&quot;links&quot; layout=&quot;type: line; margin: 1.5&quot; position=&quot;0 -1 -4&quot;&amp;gt;
+  &amp;lt;a-entity template=&quot;src: #link&quot; data-src=&quot;#christian&quot; data-thumb=&quot;#christian-thumb&quot;&amp;gt;&amp;lt;/a-entity&amp;gt;
+  &amp;lt;a-entity template=&quot;src: #link&quot; data-src=&quot;#kieran&quot; data-thumb=&quot;#kieran-thumb&quot;&amp;gt;&amp;lt;/a-entity&amp;gt;
+  &amp;lt;a-entity template=&quot;src: #link&quot; data-src=&quot;#eddie&quot; data-thumb=&quot;#eddie-thumb&quot;&amp;gt;&amp;lt;/a-entity&amp;gt;
+&amp;lt;/a-entity&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;push-to-github-pages&quot;&gt;Push to GitHub Pages&lt;/h2&gt;
+&lt;p&gt;That’s it. Add all your files to your local git repo, commit, and push to your forked repo, gh-pages branch.&lt;/p&gt;
+
+&lt;p&gt;You should then be able to view your app at username.github.io/360gallery/&lt;/p&gt;
+
+&lt;h2 id=&quot;running-an-http-server-locally-for-testing&quot;&gt;Running an HTTP Server Locally for Testing&lt;/h2&gt;
+
+&lt;p&gt;You won’t be able to open the &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; file locally for testing due to
+CORS security. For testing, I’m running the Apache2 web server on Ubuntu 16.04
+in Vagrant. I’m running Vagrant on Windows 10 Anniversary Edition. I then use
+Firefox or Chrome running on my Windows 10 host to view the 360 images in the
+Linux VM. I’m editing the files using Atom running natively on Windows 10. The
+files are inside of the Linux VM, but I can access them from Windows. The end
+result is that I can access http:localhost:8080/gallery and test my
+application locally.&lt;/p&gt;
+
+&lt;p&gt;If this sounds like too much hassle, just load the files up to GitHub Pages.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html&quot;&gt;Easier Intro to WebVR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://webvr.info/&quot;&gt;WebVR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mozvr.com/&quot;&gt;MozVR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;RICOH THETA Community Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html</guid>
+        
+        
+        <category>WebVR</category>
+        
+      </item>
     
       <item>
         <title>RICOH THETA and WebVR - Quick HowTo</title>
@@ -1170,104 +1289,6 @@ questions on our
         
         
         <category>Contest</category>
-        
-      </item>
-    
-      <item>
-        <title>First Days with THETA in San Francisco - Personal experiences</title>
-        <description>&lt;p&gt;I started using the THETA S pretty recently, and figured I would document what the first few days were like for me.  I took the camera for a test drive in my girlfriend’s apartment and it turns out one of her cats is pretty interested in 360 cameras.  If you have a VR headset, you can get up close and personal with her cat Zeus toward the end…&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;If you haven&amp;#x27;t met Zeus... #theta360 - &lt;a href=&quot;https://theta360.com/m/c1HrSITIehd7URx9PXQHsebMO&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;I tried to edit that video down, but couldn’t find desktop applications that worked (I could trim it, but not re-convert into the THETA 360 viewer), and the THETA+ Video app is only for iOS…so you might want to be careful with your video length if you’re on Android.  But, it turns out that when you upload to theta360.com there’s a size limit, so they have an option to trim the video during the upload, which works just as well for my purposes.
-The next day we decided to take the ferry to Tiburon, so I brought the THETA S with us.  If you look hard enough you can see the Bay Bridge, Golden Gate Bridge, and Alcatraz (Tiburon is a peninsula just behind Alcatraz).&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/hx6U5jOFBMviPesYkN4gfaMLY&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;The image quality is great, but it seems like that quality degrades a little bit in the video I took.  You can see the line where the two half-spheres of video get stitched together, and when you zoom in on Alcatraz it gets pretty blurry, but overall it’s a pretty cool video.&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/rdjOCXujyUXNsFX3W2LnTLjvs&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;That night we went to the Hatsune Miku concert at the Warfield back in San Francisco, and of course we took the THETA along with us.  It seemed to have trouble with the lowlight environment, but it still gives you a pretty good idea of what the space was like.  Here’s what the quality is like during a well-lit moment:&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/o7w2O93ht7Cts6sr000aI0Mro&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;And here’s what it’s like in dim-lit moments:&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/rU9VfmKnjz0G7oiu3LsHzbpSa&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;The video handled movement pretty well, even with all the glow sticks flying around.  Here’s what it’s like with slow glow stick movement:&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/gNFDjrkMBHUBjSoQmOYwktIAa&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;And here’s what it’s like with fast glow sticks:&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/m/fZbC6wdewQWlyXQBVSAPBcB96&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;The next day we went to Berkeley for some beer at Rare Barrel and I decided to take a picture because I knew my brother had a cheap VR headset.  We took this picture and threw it into the headset with the help of the Tao360 app on my phone:&lt;/p&gt;
-
-&lt;blockquote data-width=&quot;500&quot; data-height=&quot;375&quot; class=&quot;ricoh-theta-spherical-image&quot;&gt;Post from RICOH THETA. - &lt;a href=&quot;https://theta360.com/s/3r2sUq7Yw57WJ97jr2ze9IBFo&quot; target=&quot;_blank&quot;&gt;Spherical Image - RICOH THETA&lt;/a&gt;
-&lt;/blockquote&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://theta360.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;So if you want to know what Rare Barrel’s like (look at all the colorful beer!), try to get that image into a headset and you’ll get the basic idea.  The Tao360 app is pretty minimal, but fine for throwing an image into a cheap headset.&lt;/p&gt;
-
-&lt;p&gt;After I left Berkeley I realized that I could use the THETA S app to view the image in VR, so I took a look without a headset.  It seems to do a good job, just be sure you have a way back (it took me a little while to figure out how to swipe to get to my home screen).&lt;/p&gt;
-
-&lt;p&gt;Back at the office I decided to try my hand at livestreaming in 360 with the THETA on YouTube.  It takes some effort, but I felt pretty accomplished by the end, even though I only got a few seconds of successful streaming in.&lt;/p&gt;
-
-&lt;p&gt;The first problem I ran into was that my Norton software rejected the UVC Blender that Ricoh recommends to download.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/file-insight.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I circumvented this by disabling my Norton for an hour (just right click the icon and hit “disable auto-protect”).  Then I downloaded OBS and had to deal with its smushed interface.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/profile.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s navigable, but requires more effort than it should.  After fumbling around with choosing between OBS’s YouTube or Custom options (custom worked much better for me), I was ready to start streaming.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/livestream.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;That’s about the best quality I could get, and I could only get the stream to work for a few seconds at a time, but I’m counting it as a win and am looking forward to tweaking it to boost the quality.  For a much more in depth guide to livestreaming, check out Craig’s detailed blog post on how to
-&lt;a href=&quot;/blog/camera/2016/05/10/youtube-streaming.html&quot;&gt;livestream the THETA on YouTube&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you’re looking for ways to challenge yourself and experiment with your THETA, Ricoh’s hosting a
-&lt;a href=&quot;/contest&quot;&gt;contest&lt;/a&gt; that runs until the end of August.  You can also join the SF Bay Area Ricoh THETA Developer’s
-&lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/&quot;&gt;Meetup&lt;/a&gt;
-for information on how to jumpstart your development for the contest.&lt;/p&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/culture/2016/05/13/first-days-personal-experiences.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/culture/2016/05/13/first-days-personal-experiences.html</guid>
-        
-        
-        <category>Culture</category>
         
       </item>
     
