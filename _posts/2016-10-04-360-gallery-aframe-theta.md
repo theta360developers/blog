@@ -113,3 +113,5 @@ If this sounds like too much hassle, just load the files up to GitHub Pages.
 * [WebVR](https://webvr.info/)
 * [MozVR](https://mozvr.com/)
 * [RICOH THETA Community Forum](http://lists.theta360.guide/)
+
+# [Discuss](http://lists.theta360.guide/t/easily-create-a-360-gallery-for-ricoh-theta-with-a-frame/456)
