@@ -105,6 +105,7 @@ application locally.
 
 If this sounds like too much hassle, just load the files up to GitHub Pages.
 
+![](/blog/img/2016-10/localbrowser.png)
 
 ## Resources
 * [Easier Intro to WebVR](http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html)
