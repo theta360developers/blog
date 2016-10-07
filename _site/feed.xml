@@ -6,9 +6,36 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Oct 2016 18:05:35 +0000</pubDate>
-    <lastBuildDate>Tue, 04 Oct 2016 18:05:35 +0000</lastBuildDate>
+    <pubDate>Fri, 07 Oct 2016 23:29:24 +0000</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2016 23:29:24 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>RICOH THETA Button Quick Reference</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/button-guide.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Live Streaming: Press and hold mode. While continuing to hold mode, press power.&lt;/li&gt;
+  &lt;li&gt;Mass Storage: Press Wireless and Shutter. While continuing to hold these buttons,
+plug THETA into computer with USB cable. Camera will be powered off.&lt;/li&gt;
+  &lt;li&gt;Self-Timer: Press and hold wireless. While continuing to hold wireless, press power.
+LED will be green.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
+
+&lt;p&gt;Mass storage doesn’t work. Press and hold the power button for longer than
+8 seconds to reset camera USB, then press power button again. If using a Mac,
+try a different USB port.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/camera/2016/10/07/ricoh-theta-button-quick-reference.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/10/07/ricoh-theta-button-quick-reference.html</guid>
+        
+        
+        <category>Camera</category>
+        
+      </item>
     
       <item>
         <title>Easily Create a 360 Gallery For RICOH THETA with A-Frame</title>
@@ -111,6 +138,8 @@ application locally.&lt;/p&gt;
 
 &lt;p&gt;If this sounds like too much hassle, just load the files up to GitHub Pages.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/localbrowser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html&quot;&gt;Easier Intro to WebVR&lt;/a&gt;&lt;/li&gt;
@@ -119,6 +148,8 @@ application locally.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://mozvr.com/&quot;&gt;MozVR&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;RICOH THETA Community Forum&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h1 id=&quot;discusshttpliststheta360guideteasily-create-a-360-gallery-for-ricoh-theta-with-a-frame456&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/easily-create-a-360-gallery-for-ricoh-theta-with-a-frame/456&quot;&gt;Discuss&lt;/a&gt;&lt;/h1&gt;
 </description>
         <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html</link>
@@ -231,6 +262,13 @@ username.github.io/aframe-demo/scene1.html&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://mozvr.com/&quot;&gt;MozVR&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;RICOH THETA Community Forum&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Part 2 -
+&lt;a href=&quot;http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html&quot;&gt;Easily Create a 360 Gallery For RICOH THETA with A-Frame&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;discusshttpliststheta360guidetricoh-theta-and-webvr-quick-howto440ucodetricity&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/ricoh-theta-and-webvr-quick-howto/440?u=codetricity&quot;&gt;Discuss&lt;/a&gt;&lt;/h2&gt;
 </description>
         <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html</link>
@@ -954,338 +992,6 @@ hex jam nut to lock the THETA in place.&lt;/p&gt;
         <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/contest/2016/05/20/cloud-api-seminar.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/contest/2016/05/20/cloud-api-seminar.html</guid>
-        
-        
-        <category>Contest</category>
-        
-      </item>
-    
-      <item>
-        <title>Using RICOH Cloud API with IoT Dev Contest</title>
-        <description>&lt;p&gt;Wow, in the last few weeks, we’ve seen a huge surge in
-&lt;a href=&quot;http://theta360.guide/&quot;&gt;community activity&lt;/a&gt;
-around development for the RICOH THETA. We have 122
-members in our
-&lt;a href=&quot;http://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/&quot;&gt;Silicon Valley THETA Dev meetup&lt;/a&gt;
-group. More than 1,000 people have visited our unofficial guide to &lt;a href=&quot;http://theta360.guide/contest/&quot;&gt;contest signup&lt;/a&gt;, hoping to win some of the $45,000
-in prizes, learn, and have fun.&lt;/p&gt;
-
-&lt;p&gt;People are using a variety of devices to connect to the THETA.
-Many developers are
-interested in storing content in the cloud and using devices
-like the
-&lt;a href=&quot;http://codetricity.github.io/theta-s/index.html#_raspberry_pi&quot;&gt;Raspberry Pi&lt;/a&gt; to control the camera and transfer 360 media
-to cloud-based servers for management. RICOH is making
-&lt;a href=&quot;http://docs.ricohapi.com/&quot;&gt;free cloud storage&lt;/a&gt;
-available to contest participants. Here’s
-how to use it with their API.&lt;/p&gt;
-
-&lt;h1 id=&quot;ricoh-cloud-api-keys&quot;&gt;RICOH Cloud API Keys&lt;/h1&gt;
-
-&lt;p&gt;First, you’ll need RICOH API Client Credentials. To help you grab
-the API credentials, we created a
-&lt;a href=&quot;http://theta360.guide/contest/signup_cloudapi.html&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Once you complete the process and log into RICOH’s notes server,
-you’ll get a &lt;code class=&quot;highlighter-rouge&quot;&gt;client_id&lt;/code&gt; and a &lt;code class=&quot;highlighter-rouge&quot;&gt;client_secret&lt;/code&gt;. The keys will be
-look like this &lt;code class=&quot;highlighter-rouge&quot;&gt;5xm7jIvlPk4&lt;/code&gt;, only longer. Be careful. The username
-and password in get in your email is for the RICOH notes server
-to download your keys. The email does not contain the actual
-keys. The &lt;code class=&quot;highlighter-rouge&quot;&gt;client_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;client_secret&lt;/code&gt; both look like
-a string of random characters.&lt;/p&gt;
-
-&lt;h1 id=&quot;unified-communications-system-user-id-and-password&quot;&gt;Unified Communications System User ID and password&lt;/h1&gt;
-
-&lt;p&gt;In addition to the Cloud API &lt;code class=&quot;highlighter-rouge&quot;&gt;client_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;client_secret&lt;/code&gt;
-you will also need &lt;code class=&quot;highlighter-rouge&quot;&gt;user_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;password&lt;/code&gt; from the
-Unified Communications System. The &lt;code class=&quot;highlighter-rouge&quot;&gt;user_id&lt;/code&gt; looks like
-an email address like &lt;code class=&quot;highlighter-rouge&quot;&gt;user@oppkey.com&lt;/code&gt;. The password is
-a user-defined password.&lt;/p&gt;
-
-&lt;p&gt;Please refer to the
-&lt;a href=&quot;http://theta360.guide/contest/signup_cloudapi.html&quot;&gt;Cloud API Signup guide&lt;/a&gt;
- for more
-information on what you need, where to get it, and
-what each credential looks like.&lt;/p&gt;
-
-&lt;h1 id=&quot;testing-ricoh-cloud-api-with-nodejs&quot;&gt;Testing RICOH Cloud API with Node.js&lt;/h1&gt;
-
-&lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt; to install &lt;code class=&quot;highlighter-rouge&quot;&gt;ricohapi-mstorage&lt;/code&gt;. I am using Ubuntu 16.04 with
-node v6.1.0 installed from the
-&lt;a href=&quot;https://nodejs.org/en/download/current/&quot;&gt;Node.js&lt;/a&gt; site. You should be able to
-use node v4.4 despite the warnings. However, I did most of my tests
-with node v6.1.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install ricohapi-mstorage
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I get minor warnings. Ignore them.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development$ npm install ricohapi-mstorage
-/home/ricoh
-└── ricohapi-mstorage@1.0.0
-
-npm WARN enoent ENOENT: no such file or directory, open &#39;/home/ricoh/package.json&#39;
-npm WARN ricoh No description
-npm WARN ricoh No repository field.
-npm WARN ricoh No README data
-npm WARN ricoh No license field.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We finally get to the fun part. Open up an editor and drop in some code.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const MStorage = require(&#39;ricohapi-mstorage&#39;).MStorage;
-const AuthClient = require(&#39;ricohapi-mstorage&#39;).AuthClient;
-
-const client = new AuthClient(&#39;clientId&#39;, &#39;clientSecret&#39;);
-client.setResourceOwnerCreds(&#39;userID&#39;, &#39;password&#39;);
-
-const mstorage = new MStorage(client);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Run the code. Hopefully, there are no error messages.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node cloudtest2.js
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Grab an image and save it into the same directory as your test code.
-In my example, my test code is called &lt;code class=&quot;highlighter-rouge&quot;&gt;cloudtest2.js&lt;/code&gt;. My test image
-is a 360 equirectangular image called &lt;code class=&quot;highlighter-rouge&quot;&gt;beach.jpg&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The big moment of of connecting to the RICOH Cloud server and
-uploading a 360 image has arrived! Drop the code below onto the
-end of your program and run it.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mstorage.connect()
-.then(() =&amp;gt; mstorage.upload(&#39;./beach.jpg&#39;))
-.then(() =&amp;gt; console.log(&#39;uploaded&#39;)
-.catch(e =&amp;gt; console.log(e)));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Boom. it works!&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
-uploaded
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Grab a listing of your images. Add the code below to the end of your
-test program.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mstorage.connect()
-.then(() =&amp;gt; mstorage.list())
-.then(list =&amp;gt; console.log(list));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Run it and verify the file was upload. I have multiple files in my test account. Your output may be slightly different.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
-{&quot;media&quot;:[{&quot;id&quot;:&quot;c516ccd5-db40-438c-8f8b-e306a1c618d5&quot;},{&quot;id&quot;:&quot;258f43a9-4d7a-4d4e-b625-f3a149fc7240&quot;},{&quot;id&quot;:&quot;b2046fcf-1c86-47bc-a1ff-1922ecd8859a&quot;}],&quot;paging&quot;:{&quot;previous&quot;:&quot;http://mss.ricohapi.com/v1/media?before=c516ccd5-db40-438c-8f8b-e306a1c618d5\u0026limit=10&quot;}}
-uploaded
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Grab the ID for one of your media assets in the RICOH Cloud server. Replace the ID below with your own ID.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mstorage.connect()
-.then(() =&amp;gt; mstorage.downloadTo(&#39;258f43a9-4d7a-4d4e-b625-f3a149fc7240&#39;, &#39;./img/downloadbeach.jpg&#39; )
-.then(() =&amp;gt; console.log(&#39;downloaded&#39;)));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Run it.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
-{&quot;media&quot;:[{&quot;id&quot;:&quot;9d0f457e-a969-4247-81dc-3f430c2cb06d&quot;},{&quot;id&quot;:&quot;c516ccd5-db40-438c-8f8b-e306a1c618d5&quot;},{&quot;id&quot;:&quot;258f43a9-4d7a-4d4e-b625-f3a149fc7240&quot;},{&quot;id&quot;:&quot;b2046fcf-1c86-47bc-a1ff-1922ecd8859a&quot;}],&quot;paging&quot;:{&quot;previous&quot;:&quot;http://mss.ricohapi.com/v1/media?before=9d0f457e-a969-4247-81dc-3f430c2cb06d\u0026limit=10&quot;}}
-downloaded
-ricoh@xerus:~/Development/ricoh-cloud-api$ ll img/
-total 4064
-drwxrwxr-x 2 ricoh ricoh    4096 May 16 15:32 ./
-drwxrwxr-x 4 ricoh ricoh    4096 May 16 16:34 ../
--rw-rw-r-- 1 ricoh ricoh 4151640 May 16 16:45 downloadbeach.jpg
-ricoh@xerus:~/Development/ricoh-cloud-api$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;live-stream-video&quot;&gt;Live Stream Video&lt;/h1&gt;
-&lt;p&gt;With your RICOH API credentials and RICOH ID, you can now live stream
-inside of your browser.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/ricoh-cloud-api-video-stream.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;download-live-streaming-code-from-githubhttpsgithubcomricohapivideo-streaming-sample-app&quot;&gt;Download &lt;a href=&quot;https://github.com/ricohapi/video-streaming-sample-app&quot;&gt;live streaming code from GitHub&lt;/a&gt;.&lt;/h2&gt;
-
-&lt;p&gt;Follow the steps and get going.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone https://github.com/ricohapi/video-streaming-sample-app.git
-$ cd video-streaming-sample-app
-$ cp samples/config_template.js samples/config.js
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;put your credentials into the config.js&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm install
-$ gulp build
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you try running&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gulp build
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;and your system can’t find &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, then do this:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm bin
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;It will return your path, probably something like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/home/ricoh/Development/livestream/video-streaming-sample-app/node_modules/.bin
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Build it with the path for
-&lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;gulp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;video-streaming-sample-app$ ./node_modules/.bin/gulp build
-(node:23673) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
-[12:57:33] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
-[12:57:33] Starting &#39;build&#39;...
-[12:57:53] Version: webpack 1.13.0
-            Asset    Size  Chunks             Chunk Names
-./build/bundle.js  354 kB       0  [emitted]  main
-[12:57:53] Finished &#39;build&#39; after 20 s
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Run gulp&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ./node_modules/.bin/gulp run
-(node:23840) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
-[13:06:44] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
-[13:06:44] Starting &#39;run&#39;...
-[13:06:44] Webserver started at http://localhost:8034
-[13:06:44] Finished &#39;run&#39; after 23 ms
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;It will automatically open up a browser. RICOH recommends Google Chrome 49 or
-newer. I had problems logging in with Firefox on Linux.&lt;/p&gt;
-
-&lt;p&gt;Select RICOH THETA S as the device.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/select-device.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Log in with your modified RICOH username and password.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/cloud-streaming-app-login.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To set up a peer-to-peer connection, use a Ricoh user ID with a plus sign and
-string after it. For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;craig@oppkey.com+01&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;craig@oppkey.com+theta&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/streaming-p2p.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In this example, I am using Chrome in two different tabs on the same computer.
-In the screenshot at the top of this section, the THETA is connected
-to one USB port of my Windows computer and another webcam (not a THETA) is
-connected to another USB port on the same computer. The only reason I am only using one THETA is
-because I only have one THETA at my house.&lt;/p&gt;
-
-&lt;p&gt;I am using the THETA S driver, not UVC Blender. The preview window in the
-right of the browser is in dual fisheye.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/livestream-preview.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Press the &lt;em&gt;THETA View Mode&lt;/em&gt; green
-button to convert the incoming dual-fisheye video stream into a
-equirectangular view with the JavaScript in your browser.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/theta-view-mode.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So cool!
-The view has full navigation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/ricoh-cloud-api-navigation.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;streaming-360-video-directly-between-two-computers&quot;&gt;Streaming 360 Video Directly Between Two computers&lt;/h2&gt;
-
-&lt;p&gt;To stream 360 between two computers on the same network, run the samples
-code on each computer. Open up a Chrome browser (Firefox didn’t work in my
-tests) on each computer. The sample application will look for a webcam
-on each computer. If you only have one THETA, use your standard webcam,
-such as the one built into your laptop.&lt;/p&gt;
-
-&lt;p&gt;In my test network, I have the THETA connected to my Linux computer
-with a USB cable. My Linux computer is connected to my home router
-with WiFi on a private IP address in subnet 192.168.1.0. The router
-is connected to the Internet. Remember, Firefox on Linux did not work
-for me, only Chrome.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/360-streaming-dual-fisheye.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I have a second Windows 10 computer on the same subnet connected with
-Ethernet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/360-streaming-image-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s how the network looks.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/nat-demo-private-network.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s what your screen may look like.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/gnZ9IcqHruA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Here’s a diagram of the streaming functionality of the application.
-&lt;img src=&quot;http://lists.theta360.guide/uploads/default/optimized/1X/c31047aa8a7bc5c85b1498592c96ba5fbbd23319_1_690x475.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here’s a diagram with some of the technology used.
-&lt;img src=&quot;http://lists.theta360.guide/uploads/default/optimized/1X/a45c78ac30c85ca8c893aae3091c862876838f87_1_690x471.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;using-webrtc-between-two-computers-on-separate-networks&quot;&gt;Using WebRTC Between Two Computers on Separate Networks&lt;/h2&gt;
-
-&lt;p&gt;To view the two 360 streams between two different computers on two
-separate networks (example: San Francisco and Palo Alto), you’ll need to
-assign each computer a static IP address on the Internet (not NAT on an internal network) or use NAT traversal.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-05/stun-turn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I have not tried NAT Traversal yet.&lt;/p&gt;
-
-&lt;p&gt;You can check out two untested services for STUN / TURN for NAT traversal here:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Untested &lt;a href=&quot;http://www.eyeball.com/standards/stun-turn-ice/&quot;&gt;Eyeball&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Untested &lt;a href=&quot;https://www.twilio.com/stun-turn/pricing&quot;&gt;Twilio&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Article on &lt;a href=&quot;http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/&quot;&gt;WebRTC&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We have a
-&lt;a href=&quot;http://lists.theta360.guide/t/cloud-api-seminar-presentation-useful/22&quot;&gt;full slide deck about the RICOH Cloud API&lt;/a&gt;
-as well as a space to ask
-questions on our
-&lt;a href=&quot;http://lists.theta360.guide/t/theta-x-iot-developers-contest/16&quot;&gt;THETA x IoT Developers Contest email list archive system&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Just a few quick ideas to get your imagination going. If you build something, I’d love to hear about it.&lt;/p&gt;
-
-&lt;p&gt;Ready for more?&lt;/p&gt;
-
-&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html</guid>
         
         
         <category>Contest</category>
