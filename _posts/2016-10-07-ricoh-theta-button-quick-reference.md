@@ -18,5 +18,7 @@ LED will be green.
 ## Troubleshooting
 
 Mass storage doesn't work. Press and hold the power button for longer than
-8 seconds to reset camera USB, then press power button again. If using a Mac,
+8 seconds to reset camera, then press power button again. If using a Mac,
 try a different USB port.
+
+# [Discuss](http://lists.theta360.guide/t/ricoh-theta-button-quick-reference/478?u=codetricity)
