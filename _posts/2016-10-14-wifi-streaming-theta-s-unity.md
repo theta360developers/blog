@@ -11,9 +11,11 @@ CEO of [ViRD, Inc](http://vird.co.jp/).
 
 ![](/blog/img/2016-10/unity1.png)
 
+![](/blog/img/2016-10/unity-middle.png)
+
 ![](/blog/img/2016-10/unity2.png)
 
-![](/blog/img/2016-10/unity3.png)
+
 
 # About the RICOH THETA API
 
