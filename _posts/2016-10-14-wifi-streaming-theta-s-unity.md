@@ -3,11 +3,13 @@ layout: post
 comments: true
 title:  "WiFi Streaming THETA S in Unity"
 date:   2016-10-14
-author: "Craig"
+author: "Craig Oda"
 categories: Live Streaming
 ---
 This article was originally written by [@noshipu](https://twitter.com/noshipu),
-CEO of [ViRD, Inc](http://vird.co.jp/).
+CEO of [ViRD, Inc](http://vird.co.jp/) in Japanese. It was translated into English
+at the request of the THETA developer community in the US. All credit to this great
+article goes to Noshipu-san.
 
 ![](/blog/img/2016-10/unity1.png)
 
