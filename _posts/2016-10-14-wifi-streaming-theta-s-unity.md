@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "WiFi Streaming THETA S in Unity by "
+title:  "WiFi Streaming THETA S in Unity"
 date:   2016-10-14
 author: "Craig"
 categories: Live Streaming
