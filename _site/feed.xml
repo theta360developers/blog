@@ -6,9 +6,245 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Oct 2016 23:38:50 +0000</pubDate>
-    <lastBuildDate>Fri, 07 Oct 2016 23:38:50 +0000</lastBuildDate>
+    <pubDate>Sun, 16 Oct 2016 01:29:50 +0000</pubDate>
+    <lastBuildDate>Sun, 16 Oct 2016 01:29:50 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>First Impression of Unity for THETA Live Streaming</title>
+        <description>&lt;p&gt;I spent last night in Santa Cruz and was planning to go surfing this morning,
+but when I woke up, I saw that red tide had hit the coast and was I decided
+to stay on shore, install Unity on my laptop and get Makoto-san’s
+&lt;a href=&quot;https://github.com/theta360developers/ThetaWifiStreaming&quot;&gt;ThetaWifiStreaming&lt;/a&gt;
+app working.&lt;/p&gt;
+
+&lt;p&gt;Wow. I simply opened up the project in Unity, pressed &lt;em&gt;Play&lt;/em&gt;, and the WiFi
+360 streaming started to work.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/game-view-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Going to the &lt;em&gt;Scene&lt;/em&gt; tab, I was able to change the perspective.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-1-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the scroll wheel, I was able to zoom out on the sphere to see exterior
+of the 360 video.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-2-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Usually, when you watch a 360 video on YouTube, your perspective
+is from the center of the sphere. It’s cool to see the outside. It’s so
+cool that I zoomed out more and realized I could put the sphere on a plane.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-4-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I adjusted the Scene view to get a top-down perspective of the video sphere
+and see the stitching.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-3-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I then oriented the camera to face me directly to get a better view of the
+stitching.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/top-down-sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The stitching to equirectangular MotionJPEG is done inside of the THETA using
+RICOH’s proprietary ASIC chip. As you would expect, the stitching is great.
+The main downside is that the video stream
+is only 640x320 and streams over WiFi at 10fps.&lt;/p&gt;
+
+&lt;p&gt;In a
+&lt;a href=&quot;http://theta360.guide/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html&quot;&gt;previous blog post&lt;/a&gt;, I showed a picture from Makoto-san of his app working
+on a mobile phone.&lt;/p&gt;
+
+&lt;p&gt;The streaming is intended only to preview still images. However, it’s fun to
+play with and get a taste for what might be possible in the future with 360
+video streams.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Oct 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/live/streaming/2016/10/15/unity-first-experience.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/live/streaming/2016/10/15/unity-first-experience.html</guid>
+        
+        
+        <category>Live</category>
+        
+        <category>Streaming</category>
+        
+      </item>
+    
+      <item>
+        <title>WiFi Streaming THETA S in Unity</title>
+        <description>&lt;p&gt;This article was originally written by &lt;a href=&quot;https://twitter.com/noshipu&quot;&gt;@noshipu&lt;/a&gt;,
+CEO of &lt;a href=&quot;http://vird.co.jp/&quot;&gt;ViRD, Inc&lt;/a&gt; in Japanese. It was translated into English
+at the request of the THETA developer community in the US. All credit to this great
+article goes to Noshipu-san.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-middle.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;about-the-ricoh-theta-api&quot;&gt;About the RICOH THETA API&lt;/h1&gt;
+
+&lt;p&gt;In order to use Wifi live streaming, you must use the &lt;code class=&quot;highlighter-rouge&quot;&gt;_getLivePreview&lt;/code&gt; API.
+&lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera._get_live_preview.html&quot;&gt;Official Reference&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTE from Craig: This was replaced by &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/commands/camera.get_live_preview.html&quot;&gt;getLivePreview&lt;/a&gt; in version 2.1 of the API. This blog by Noshipu-san refers to the 2.0 API, which is still supported by
+the THETA S. Be aware of the differences in your code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unlike the other APIs, &lt;code class=&quot;highlighter-rouge&quot;&gt;_getLivePreview&lt;/code&gt; is different because the data is in a stream and keeps going. You will not be able to get a WWW class to wait until the request is complete (maybe).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;NOTE from Craig: This is the major problem developers have when working with &lt;code class=&quot;highlighter-rouge&quot;&gt;getLivePreview&lt;/code&gt;. As the data
+is a stream, you can’t want for the data to end before running your next command. For example, it’s
+different from downloading and displaying an image or video file because you know when the transfer is
+complete.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;processing-flow&quot;&gt;Processing Flow&lt;/h1&gt;
+
+&lt;h2 id=&quot;set-the-post-request-to-create-a-httpwebrequest-class&quot;&gt;Set the POST request to create a HttpWebRequest class&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;string url = &quot;Enter HTTP path of THETA here&quot;;
+var request = HttpWebRequest.Create (url);
+HttpWebResponse response = null;
+request.Method = &quot;POST&quot;;
+request.Timeout = (int) (30 * 10000f); // to ensure  no timeout
+request.ContentType = &quot;application/json; charset = utf-8&quot;;
+
+byte [] postBytes = Encoding.Default.GetBytes ( &quot;Put the JSON data here&quot;);
+request.ContentLength = postBytes.Length;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;generate-a-class-of-binaryreader-to-get-the-byte-data-you-get-the-bytes-one-by-one&quot;&gt;Generate a class of BinaryReader to get the byte data (you get the bytes one by one)&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// The start of transmission of the post data
+Stream reqStream = request.GetRequestStream ();
+reqStream.Write (postBytes, 0, postBytes.Length) ;
+reqStream.Close ();
+stream = request.GetResponse () .GetResponseStream ();
+
+BinaryReader reader = new BinaryReader (new BufferedStream (stream), new System.Text.ASCIIEncoding ());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;get-the-start-and-stop-bytes-of-1-frame-of-the-motionjpeg-and-cut-out-one-frame&quot;&gt;Get the start and stop bytes of 1 frame of the MotionJPEG and cut out one frame&lt;/h2&gt;
+
+&lt;p&gt;With the byte, check the partion value of the MotionJPEG.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...(http)
+0xFF 0xD8      --|
+[jpeg data]      |--1 frame of MotionJPEG
+0xFF 0xD9      --|
+...(http)
+0xFF 0xD8      --|
+[jpeg data]      |--1 frame of MotionJPEG
+0xFF 0xD9      --|
+...(http)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Please refer this answer on StackOverflow to
+&lt;a href=&quot;http://stackoverflow.com/questions/21702477/how-to-parse-mjpeg-http-stream-from-ip-camera&quot;&gt;How to Parse MJPEG HTTP stream from IP camera?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The starting 2 bytes are &lt;code class=&quot;highlighter-rouge&quot;&gt;0xFF, 0xD8&lt;/code&gt;. The end bye is &lt;code class=&quot;highlighter-rouge&quot;&gt;0xD9&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The code is shown below.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;List&amp;lt;byte&amp;gt; imageBytes = new List&amp;lt;byte&amp;gt; ();
+bool isLoadStart = false; // 画像の頭のバイナリとったかフラグ
+byte oldByte = 0; // 1つ前のByteデータを格納する
+while( true ) {
+    byte byteData = reader.ReadByte ();
+
+    if (!isLoadStart) {
+        if (oldByte == 0xFF){
+            // First binary image
+           imageBytes.Add(0xFF);
+        }
+        if (byteData == 0xD8){
+           // Second binary image
+           imageBytes.Add(0xD8);
+
+           // I took the head of the image up to the end binary
+           isLoadStart = true;
+        }
+    } else {
+        // Put the image binaries into an array
+        imageBytes.Add(byteData);
+
+        // if the byte was the end byte
+        // 0xFF -&amp;gt; 0xD9 case、end byte
+        if(oldByte == 0xFF &amp;amp;&amp;amp; byteData == 0xD9){
+            // As this is the end byte
+            // we&#39;ll generate the image from the data and can create the texture
+            // imageBytes are used to reflect the texture
+            // imageBytes are left empty
+            // the loop returns the binary image head
+            isLoadStart = false;
+        }
+    }
+    oldByte = byteData;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;texture-generation-separated-by-byte&quot;&gt;Texture Generation Separated by Byte&lt;/h2&gt;
+
+&lt;p&gt;This is the byte to reflect the texture.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mainTexture.LoadImage ((byte[])imageBytes.ToArray ());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Portion of Python code taken from &lt;a href=&quot;http://stackoverflow.com/questions/21702477/how-to-parse-mjpeg-http-stream-from-ip-camera&quot;&gt;StackOverflow answer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import cv2
+import urllib
+import numpy as np
+
+stream=urllib.urlopen(&#39;http://localhost:8080/frame.mjpg&#39;)
+bytes=&#39;&#39;
+while True:
+    bytes+=stream.read(1024)
+    a = bytes.find(&#39;\xff\xd8&#39;)
+    b = bytes.find(&#39;\xff\xd9&#39;)
+    if a!=-1 and b!=-1:
+        jpg = bytes[a:b+2]
+        bytes= bytes[b+2:]
+        i = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),cv2.CV_LOAD_IMAGE_COLOR)
+        cv2.imshow(&#39;i&#39;,i)
+        if cv2.waitKey(1) ==27:
+            exit(0) Mjpeg over http is multipart/x-mixed-replace with boundary frame info and jpeg data is just sent in binary. So you don&#39;t really need to care about http protocol headers. All jpeg frames start with marker 0xff 0xd8 and end with 0xff 0xd9. So the code above extracts such frames from the http stream and decodes them one by one. like below.
+
+...(http)
+0xff 0xd8      --|
+[jpeg data]      |--this part is extracted and decoded
+0xff 0xd9      --|
+...(http)
+0xff 0xd8      --|
+[jpeg data]      |--this part is extracted and decoded
+0xff 0xd9      --|
+...(http)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html</guid>
+        
+        
+        <category>Live</category>
+        
+        <category>Streaming</category>
+        
+      </item>
     
       <item>
         <title>RICOH THETA Button Quick Reference</title>
@@ -941,62 +1177,6 @@ Introduction&lt;/p&gt;
         
         
         <category>API</category>
-        
-      </item>
-    
-      <item>
-        <title>$3 Tripod Modification for THETA Live Streaming USB Cable</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-06/usb-tripod.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With $3 and 10 minutes of build time you can modify any tripod to work with the THETA S in live
-streaming mode with a USB cable plugged in.&lt;/p&gt;
-
-&lt;p&gt;At my local hardware store, &lt;a href=&quot;http://www.osh.com/&quot;&gt;OSH&lt;/a&gt;, I found all the
-pieces I needed to build an adapter that allows the micro USB cable to be
-plugged in while the THETA is mounted to a tripod.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-06/hardware.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;1 pc 1/4” by 20 pitch rod coupling nut&lt;/li&gt;
-  &lt;li&gt;1 pc 1/4” by 20 pitch threaded rod, 3 inches long&lt;/li&gt;
-  &lt;li&gt;2 pcs 1/4” by 20 pitch hex jam nut&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-06/usb-hardware.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Use one hex jam nut to lock the rod coupling nut in place. Use the other
-hex jam nut to lock the THETA in place.&lt;/p&gt;
-
-&lt;p&gt;You can now start &lt;a href=&quot;http://theta360.guide/community-document/community.html#_video_live_streaming&quot;&gt;360 video live streaming&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;and build an app for fun, knowledge and fortune.&lt;/p&gt;
-
-&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Thu, 02 Jun 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/camera/2016/06/02/tripod-for-live-streaming.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/06/02/tripod-for-live-streaming.html</guid>
-        
-        
-        <category>Camera</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH Cloud API Seminar Presentation</title>
-        <description>&lt;p&gt;We’ve just gotten hold of a presentation from a Cloud API Seminar held on May 18, 2016, in Tokyo. The presentation from the seminar has very specific steps and code samples on accessing and using the RICOH Cloud API. We’ve translated it and are making it available with the idea that it could help you with the RICOH THETA x IoT Developers Contest, and, heck, maybe even more.&lt;/p&gt;
-
-&lt;h1 id=&quot;read-morehttpliststheta360guidetcloud-api-seminar-presentation-useful22&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/cloud-api-seminar-presentation-useful/22&quot;&gt;Read More&lt;/a&gt;&lt;/h1&gt;
-
-&lt;h1 id=&quot;latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide&quot;&gt;&lt;a href=&quot;http://theta360.guide/&quot;&gt;Latest Community Tips at the THETA Unofficial Guide&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/contest/2016/05/20/cloud-api-seminar.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/contest/2016/05/20/cloud-api-seminar.html</guid>
-        
-        
-        <category>Contest</category>
         
       </item>
     
