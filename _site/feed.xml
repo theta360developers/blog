@@ -6,9 +6,171 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Oct 2016 01:29:50 +0000</pubDate>
-    <lastBuildDate>Sun, 16 Oct 2016 01:29:50 +0000</lastBuildDate>
+    <pubDate>Mon, 17 Oct 2016 01:32:00 +0000</pubDate>
+    <lastBuildDate>Mon, 17 Oct 2016 01:32:00 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>RICOH THETA 360 Video (From File) Unity Tutorial</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fiucH5q_4VE&quot;&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/video-tutorial.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fiucH5q_4VE&quot;&gt;Video tutorial&lt;/a&gt; available.&lt;/p&gt;
+
+&lt;h2 id=&quot;prepare-theta-videos-in-equirectangular-format&quot;&gt;Prepare THETA Videos in Equirectangular Format&lt;/h2&gt;
+&lt;p&gt;Use the official THETA desktop application to convert the dual-fisheye
+video into equirectangular.
+&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/video-convert.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;create-new-unity-project&quot;&gt;Create New Unity Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/unity-new-project.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Save Scene as 360video&lt;/li&gt;
+  &lt;li&gt;Position Main Camera in center at 0, 0, 0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;create-sphere&quot;&gt;Create Sphere&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Position at 0, 0, 0&lt;/li&gt;
+  &lt;li&gt;Scale Sphere to 10, 10, 10&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;create-materials&quot;&gt;Create Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create new folder called &lt;em&gt;Materials&lt;/em&gt; under &lt;em&gt;Assets&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;In &lt;em&gt;Materials&lt;/em&gt; create material called 360Video&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;add-material-to-sphere&quot;&gt;Add Material to Sphere&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/add-material-sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;create-shader&quot;&gt;Create Shader&lt;/h2&gt;
+&lt;p&gt;In &lt;em&gt;Assets&lt;/em&gt; create new folder, &lt;em&gt;Shaders&lt;/em&gt;. Create new Unlit Shader in the folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/unlit-shader.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rename shader. I called mine, &lt;em&gt;ViewInside&lt;/em&gt; Double-click on the new Shader.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/shader-icon.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Drop in the code below from community member &lt;a href=&quot;http://tengshanyuan.com/&quot;&gt;Shanyuan Teng&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Shader &quot;ThetaInsideShader&quot; {
+	Properties{
+		_MainTex(&quot;Base (RGB)&quot;, 2D) = &quot;white&quot; {}
+	}
+
+		SubShader{
+		Tags{ &quot;RenderType&quot; = &quot;Opaque&quot; }
+		Cull front    //  FLIP THE SURFACES
+		LOD 100
+
+		Pass{
+		CGPROGRAM
+#pragma vertex vert
+#pragma fragment frag
+
+#include &quot;UnityCG.cginc&quot;
+
+		struct appdata_t {
+		float4 vertex : POSITION;
+		float2 texcoord : TEXCOORD0;
+	};
+
+	struct v2f {
+		float4 vertex : SV_POSITION;
+		half2 texcoord : TEXCOORD0;
+	};
+
+	sampler2D _MainTex;
+	float4 _MainTex_ST;
+
+	v2f vert(appdata_t v)
+	{
+		v2f o;
+		o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+		v.texcoord.x = 1 - v.texcoord.x;
+		o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
+		return o;
+	}
+
+	fixed4 frag(v2f i) : SV_Target
+	{
+		fixed4 col = tex2D(_MainTex, i.texcoord);
+	return col;
+	}
+		ENDCG
+	}
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;add-shader-to-sphere&quot;&gt;Add Shader to Sphere&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/shader-sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;add-360-video-asset&quot;&gt;Add 360 Video Asset&lt;/h2&gt;
+
+&lt;p&gt;In &lt;em&gt;Assets&lt;/em&gt;, create a new folder &lt;em&gt;Videos&lt;/em&gt;. Drop you THETA equirectangular video
+into the folder. Any resolution is fine.  Import may take several minutes.
+If you’re on Windows, Unity needs QuickTime for the import.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-empty-game-object&quot;&gt;Create Empty Game Object&lt;/h2&gt;
+&lt;p&gt;I called mine &lt;em&gt;VideoPlayback&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;add-playback-script&quot;&gt;Add Playback Script&lt;/h2&gt;
+&lt;p&gt;Connect a video playback script to the new game object, &lt;em&gt;VideoPlayback&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the code from community member &lt;a href=&quot;http://tengshanyuan.com/&quot;&gt;Shanyuan Teng&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;using UnityEngine;
+using System.Collections;
+
+public class VideoPlayback : MonoBehaviour {
+
+    public GameObject Sphere;
+
+	// Use this for initialization
+	void Start () {
+
+        MovieTexture video360 = (MovieTexture)Sphere.GetComponent&amp;lt;Renderer&amp;gt;().material.mainTexture;
+        video360.loop = true;
+        video360.Play();
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;add-texture-to-video-sphere&quot;&gt;Add Texture to Video Sphere&lt;/h2&gt;
+
+&lt;p&gt;Drop your video onto the texture box in 360Video. Your video file is the
+texture.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/video-texture.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;play-it&quot;&gt;Play It!&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/play-video.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</guid>
+        
+        
+        <category>Video,</category>
+        
+        <category>Unity</category>
+        
+      </item>
     
       <item>
         <title>First Impression of Unity for THETA Live Streaming</title>
@@ -1147,33 +1309,6 @@ USB API) and you are ready to go.&lt;/p&gt;
         <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/api/2016/08/30/ricoh-theta-github-repository.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/api/2016/08/30/ricoh-theta-github-repository.html</guid>
-        
-        
-        <category>API</category>
-        
-      </item>
-    
-      <item>
-        <title>Taking Pictures Silently</title>
-        <description>&lt;p&gt;This blog post is a translation
-&lt;a href=&quot;http://hima-zinn.hatenablog.com/entry/2015/12/13/000000&quot;&gt;from the original Japanese post&lt;/a&gt; by
-&lt;a href=&quot;http://hima-zinn.hatenablog.com/about&quot;&gt;hima_zinn&lt;/a&gt; from his
-&lt;a href=&quot;http://hima-zinn.hatenablog.com/&quot;&gt;Lazy Game Programmer Diary&lt;/a&gt; on the Hatena Blog,
-a famous blogging service in Japan like Word Press. It was originally published December 13, 2015. But I wanted to translate it since I think the details for quickly using the RICOH THETA API to get rid of the shutter sound is pretty cool and easy to implement.&lt;/p&gt;
-
-&lt;p&gt;Also, the functionality has since been added to the main THETA S app. So if you’re looking for a quicker fix, check Settings –&amp;gt; Camera shutter volume.
-Introduction&lt;/p&gt;
-
-&lt;p&gt;I’m a Theta fan that has all three generations of models. From left to right it’s the THETA S, the THETA m15, and the THETA.
-&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/9e004e06ccae11efc6545df349e84ef98117eca3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://lists.theta360.guide/t/taking-pictures-silently/52&quot;&gt;More…&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/api/2016/06/15/taking-pictures-silently.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/api/2016/06/15/taking-pictures-silently.html</guid>
         
         
         <category>API</category>
