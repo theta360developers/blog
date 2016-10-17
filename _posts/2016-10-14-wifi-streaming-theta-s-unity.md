@@ -6,11 +6,14 @@ date:   2016-10-14
 author: "Craig Oda"
 categories: Live Streaming
 ---
-Code is [here](https://github.com/theta360developers/ThetaWifiStreaming). 
+
 This article was originally written by [@noshipu](https://twitter.com/noshipu),
 CEO of [ViRD, Inc](http://vird.co.jp/) in Japanese. It was translated into English
 at the request of the THETA developer community in the US. All credit to this great
 article goes to Noshipu-san.
+
+Makoto-san produced a finished app.
+Code is [here](https://github.com/theta360developers/ThetaWifiStreaming). 
 
 ![](/blog/img/2016-10/unity1.png)
 
