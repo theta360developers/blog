@@ -6,9 +6,56 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Oct 2016 01:32:00 +0000</pubDate>
-    <lastBuildDate>Mon, 17 Oct 2016 01:32:00 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Oct 2016 03:23:32 +0000</pubDate>
+    <lastBuildDate>Sun, 23 Oct 2016 03:23:32 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Beginner Tutorial: RICOH THETA 360 Images in Unity</title>
+        <description>&lt;p&gt;There’s a new video tutorial on &lt;a href=&quot;https://www.youtube.com/watch?v=c-MoLjcYmi8&quot;&gt;using 360 images in Unity for augmented reality&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/c-MoLjcYmi8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Unity can be used to quickly create 3D worlds for augmented reality
+ games and other experiences such as tours.&lt;/p&gt;
+
+&lt;p&gt;The editor allows 3D objects to be placed on the screen with a mouse.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/scene-background.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Images can be converted into cubemaps for placement inside of a 3D world as the
+background.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/cubemap-view.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once in the world, the image view can be navigated.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/up-view.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The application can be saved as a binary and run natively on Windows, Mac, and
+Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/windows-icon.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The application can run in full-screen or windowed mode. You can use the
+mouse, arrow or WASD to walk or run around the environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/native-windowed.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also run the application in a web browser such as Firefox or Chrome.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/browser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;watch-the-video-nowhttpswwwyoutubecomwatchvc-moljcymi8&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=c-MoLjcYmi8&quot;&gt;Watch The Video Now&lt;/a&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Sat, 22 Oct 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</guid>
+        
+        
+        <category>Unity</category>
+        
+      </item>
     
       <item>
         <title>RICOH THETA 360 Video (From File) Unity Tutorial</title>
@@ -240,6 +287,9 @@ video streams.&lt;/p&gt;
 CEO of &lt;a href=&quot;http://vird.co.jp/&quot;&gt;ViRD, Inc&lt;/a&gt; in Japanese. It was translated into English
 at the request of the THETA developer community in the US. All credit to this great
 article goes to Noshipu-san.&lt;/p&gt;
+
+&lt;p&gt;Makoto-san produced a finished app.
+Code is &lt;a href=&quot;https://github.com/theta360developers/ThetaWifiStreaming&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -1181,134 +1231,6 @@ USB API) and you are ready to go.&lt;/p&gt;
         <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/api/2016/09/14/ricoh-theta-api-update.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/api/2016/09/14/ricoh-theta-api-update.html</guid>
-        
-        
-        <category>API</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH THETA GitHub Repository</title>
-        <description>&lt;p&gt;Community Applications on GitHub&lt;/p&gt;
-
-&lt;h1 id=&quot;image-viewing&quot;&gt;Image Viewing&lt;/h1&gt;
-
-&lt;p&gt;To display and navigate 360 images.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;JavaScript 360 Image Viewers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/Photo-Sphere-Viewer&quot;&gt;Photo Sphere Viewer&lt;/a&gt; by Jeremy Heleine
-    &lt;ul&gt;
-      &lt;li&gt;good and popular viewer. Uses &lt;a href=&quot;http://threejs.org/&quot;&gt;Three.js&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/ThetaViewer&quot;&gt;ThetaViewer&lt;/a&gt; by Atsushi Kokubo
-    &lt;ul&gt;
-      &lt;li&gt;Viewer works great. Documentation is in Japanese.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/theta-viewer.js&quot;&gt;theta-viewer.js&lt;/a&gt; by Sho Hashimoto
-    &lt;ul&gt;
-      &lt;li&gt;Animate multiple-Photos taken by RICOH THETA.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/googlevr&quot;&gt;Google VR for Web&lt;/a&gt; by Google
-    &lt;ul&gt;
-      &lt;li&gt;Solid 360 image and video viewer that can be embedded in web site or mobile phone&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Other Image Viewers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kougaku/PanoramaViewer&quot;&gt;PanoramaViewer&lt;/a&gt; by Sunao Hashimoto - Written in Processing language. No documentation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;camera-control&quot;&gt;Camera Control&lt;/h1&gt;
-
-&lt;p&gt;&lt;strong&gt;JavaScript Control of Camera&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/node-ricoh-theta&quot;&gt;node-ricoh-theta&lt;/a&gt; by Sho Hashimoto&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/javascript-api-samples&quot;&gt;Simple JavaScript samples to use API&lt;/a&gt; by community&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Other Camera Controllers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/OpenSphericalCamera&quot;&gt;OpenSphericalCamera Client&lt;/a&gt; by Duiker Research
-    &lt;ul&gt;
-      &lt;li&gt;A Python library for interfacing with cameras that implement the OpenSphericalCamera API&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/scala-ricoh&quot;&gt;scala-ricoh&lt;/a&gt; by Freddie Poser
-    &lt;ul&gt;
-      &lt;li&gt;Download photos from the RICOH THETA using scala or Java&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/python-download-rossgoderer&quot;&gt;python-download-rossgoderer&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Example Python script from community member Ulrich Rossgoderer. This was posted in the THETA Developer Forum. Uses the requests module, which you may need to install on your system.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Small Board (like ESP8266) Camera Control&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/ESP8266-THETA-S-FullRemoteControler&quot;&gt;RICOH THETA S Full Remote Controller&lt;/a&gt; by Katsuya-san :comet: (cool)
-    &lt;ul&gt;
-      &lt;li&gt;Uses ESP8266 and WiFi to control a THETA S. It would be great for @jcasman to translate. :japan:&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/ESP8266-THETA-S-SimpleRemoteControler&quot;&gt;RICOH THETA S Simple Remote Controller&lt;/a&gt; by Katsuya-san
-    &lt;ul&gt;
-      &lt;li&gt;RICOH THETA S Remote Control Software (Single Button Edition) for Switch Science ESP-WROOM-02 Dev.board&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;video-streaming&quot;&gt;Video Streaming&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/THETA_GL&quot;&gt;THETA_GL&lt;/a&gt; by mganeko
-    &lt;ul&gt;
-      &lt;li&gt;THETA WebGL viewer using three.js This looks super interesting, but it’s in Japanese. This would be great for @jcasman to translate into English :japan:&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/video-streaming-sample-app&quot;&gt;Ricoh Video Streaming Samples&lt;/a&gt; by RICOH :hotsprings:(hot)
-    &lt;ul&gt;
-      &lt;li&gt;Sample applications written by RICOH engineers for live streaming of 360 video using WebRTC for browser to browser video chat or to use a Raspberry Pi to stream video to a browser. Includes JavaScript code to convert a dual-fisheye stream into equirectangular within the browser&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/THETA-S-LiveViewer-P5&quot;&gt;THETA-S-LiveViewer-P5&lt;/a&gt; by Sunao Hashimoto
-    &lt;ul&gt;
-      &lt;li&gt;Live streaming using the Processing language&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/theta-s-quartz&quot;&gt;theta-s-quartz&lt;/a&gt; by Kieran Farr
-    &lt;ul&gt;
-      &lt;li&gt;CamTwist Effect Plugin to Convert Theta-S Live Video from Fisheye to Equirectangular via Quartz. An experiment to use OS X Quartz Composer to transform Ricoh Theta S live feed dual fisheye to equirectangular.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/ThetaWifiStreaming&quot;&gt;ThetaWifiStreaming&lt;/a&gt; by Makoto
-    &lt;ul&gt;
-      &lt;li&gt;THETA S WiFi streaming demo with Unity using PC/Mac&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;register-for-the-theta-developer-ecosystemhttptheta360guideecosystem&quot;&gt;&lt;a href=&quot;http://theta360.guide/ecosystem/&quot;&gt;Register for the THETA Developer Ecosystem&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Tue, 30 Aug 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/api/2016/08/30/ricoh-theta-github-repository.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/api/2016/08/30/ricoh-theta-github-repository.html</guid>
         
         
         <category>API</category>
