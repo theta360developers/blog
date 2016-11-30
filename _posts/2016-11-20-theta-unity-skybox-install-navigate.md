@@ -39,3 +39,7 @@ In the top *Scene* view, click and hold the right mouse button.
 <img src="http://lists.theta360.guide/uploads/default/original/2X/9/99e4d0f4de334ae680dca6b8d11016cfb5f61b01.png" width="468" height="500">
 
 Use the mouse to move the camera.  Mouse the WASD keys to move the player.
+
+---
+
+## [Next Pt 3: Import images from camera to Unity]

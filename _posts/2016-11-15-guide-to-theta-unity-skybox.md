@@ -40,4 +40,5 @@ Unity is free. You can download it from [here](https://unity3d.com/get-unity/dow
 The Unity project file is [here](https://drive.google.com/file/d/0B3V9jzGQTmyBS3FjTHo3Q2V1Q28/view?usp=sharing). (151MB download)
 
 ---
-##[Next Pt 2: Install Files and Navigate in Unity](http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html)
+
+## [Next Pt 2: Install Files and Navigate in Unity](http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html)
