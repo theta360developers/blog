@@ -6,7 +6,7 @@ date:   2016-11-25
 author: "Craig Oda"
 categories: Unity
 ---
-[Pt 1](http://theta360.guide/blog/unity/2016/11/29/guide-to-theta-unity-skybox.html)
+[Pt 1](http://theta360.guide/blog/unity/2016/11/29/guide-to-theta-unity-skybox.html),
 [Pt 2](http://theta360.guide/blog/unity/2016/11/29/theta-unity-skybox-install-navigate.html)
 Drag the THETA image into the *Images* folder of Unity.
 
@@ -41,3 +41,7 @@ Here are two additional examples using THETA images.
 <img src="http://lists.theta360.guide/uploads/default/original/2X/d/d6f9b4131e185c56d4c08f3de764d128ab26771b.png" width="690" height="319">
 
 <img src="http://lists.theta360.guide/uploads/default/original/2X/d/d38a216e975b28f2aed3bd70157a2c5d4d460377.png" width="690" height="316">
+
+---
+
+[Next Pt 4: Unity Export to Web](http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html)
