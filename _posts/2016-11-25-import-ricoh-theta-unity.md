@@ -6,8 +6,8 @@ date:   2016-11-25
 author: "Craig Oda"
 categories: Unity
 ---
-[Pt 1](http://theta360.guide/blog/unity/2016/11/29/guide-to-theta-unity-skybox.html),
-[Pt 2](http://theta360.guide/blog/unity/2016/11/29/theta-unity-skybox-install-navigate.html)
+[Pt 1](http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html),
+[Pt 2](http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html)
 Drag the THETA image into the *Images* folder of Unity.
 
 <img src="http://lists.theta360.guide/uploads/default/original/2X/d/d7d62f1e2be411773f7ce320502cc3eb1febb13d.png" width="560" height="357">

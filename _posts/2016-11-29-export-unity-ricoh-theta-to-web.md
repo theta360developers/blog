@@ -6,8 +6,8 @@ date:   2016-11-29
 author: "Craig Oda"
 categories: Unity
 ---
-[Pt 1](http://theta360.guide/blog/unity/2016/11/29/guide-to-theta-unity-skybox.html),
-[Pt 2](http://theta360.guide/blog/unity/2016/11/29/theta-unity-skybox-install-navigate.html),
+[Pt 1](http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html),
+[Pt 2](http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html),
 [Pt 3](http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html)
 
 Test the web export experience.
