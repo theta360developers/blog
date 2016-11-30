@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Using RICOH THETA With Unity - Install and Navigate Pt 2/4"
-date:   2016-11-29
+date:   2016-11-20
 author: "Craig Oda"
 categories: Unity
 ---
