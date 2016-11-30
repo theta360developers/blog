@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Guide to Using THETA Images With Unity Background Skybox Pt 1"
+title:  "Guide to Using THETA Images With Unity Background Skybox Pt 1/4"
 date:   2016-11-29
 author: "Craig Oda"
 categories: Unity
