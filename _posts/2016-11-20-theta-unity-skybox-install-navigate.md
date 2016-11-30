@@ -8,7 +8,7 @@ categories: Unity
 ---
 
 This is intended for people that want to experiment with THETA images and
-Unity and have no experience. [Part 1] explains what your scenes will look
+Unity and have no experience. [Part 1](http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html) explains what your scenes will look
 like.
 
 ## Installation
@@ -42,4 +42,4 @@ Use the mouse to move the camera.  Mouse the WASD keys to move the player.
 
 ---
 
-## [Next Pt 3: Import images from camera to Unity]
+[Next Pt 3: Import images from camera to Unity](http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html)
