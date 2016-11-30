@@ -14,7 +14,7 @@ Test the web export experience.
 
 Click on the link below in Firefox or Safari (not Chrome). Navigate with arrow or WASD keys plus your mouse.
 
-https://codetricity.github.io/theta360aurora/
+[https://codetricity.github.io/theta360aurora/](https://codetricity.github.io/theta360aurora/)
 
 [<img src="http://lists.theta360.guide/uploads/default/original/2X/a/afaca783e001d76e70bd8d6ce75a394312694aab.png" width="690" height="449">](https://codetricity.github.io/theta360aurora/)
 
