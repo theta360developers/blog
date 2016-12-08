@@ -6,12 +6,284 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Nov 2016 01:09:34 +0000</pubDate>
-    <lastBuildDate>Wed, 30 Nov 2016 01:09:34 +0000</lastBuildDate>
+    <pubDate>Thu, 08 Dec 2016 01:37:22 +0000</pubDate>
+    <lastBuildDate>Thu, 08 Dec 2016 01:37:22 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>Guide to Using THETA Images With Unity Background Skybox Pt 1</title>
+        <title>RICOH THETA 360 Video (From File) Unity Tutorial</title>
+        <description>&lt;p&gt;At the end of November, RICOH released
+a free upgrade to the THETA firmware, mobile app, and UVC Blender.
+The most important upgrade was 1080 full HD live streaming using USB at 30 fps.
+This increase in resolution from 720 is a game changer for live streaming.
+Previously, live streaming with USB was limited to 1280x720 at 15fps.
+It’s a lot clearer now. I confirmed RICOH’s announcement with my own
+tests showed 1920x1080 at 30fps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/90a770d1558d734994b9e14dcd4616d2ff0e8566.png&quot; width=&quot;690&quot; height=&quot;446&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mobile app updates include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;interval composite shots&lt;/li&gt;
+  &lt;li&gt;color temperature specification shots&lt;/li&gt;
+  &lt;li&gt;register shooting conditions as &lt;em&gt;My Setting&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can upgrade your THETA firmware with the desktop application.&lt;/p&gt;
+
+&lt;p&gt;You need to be running firmware version 1.82 or above. This &lt;a href=&quot;http://lists.theta360.guide/t/upgrading-firmware-in-ricoh-theta-s/66/2?u=codetricity&quot;&gt;discussion thread covers upgrading your firmware&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Official RICOH Announcements:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theta360.com/en/info/news/2016-11-24-1/&quot;&gt;Mobile App and UVC Blender&lt;/a&gt; (Nov 24)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theta360.com/en/info/news/2016-11-24-2/&quot;&gt;Firmware 01.82&lt;/a&gt; (Nov 24)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;official-ricoh-uvc-blender-live-streaming-app-and-mobile-app-download-sitehttpstheta360comensupportdownload&quot;&gt;&lt;a href=&quot;https://theta360.com/en/support/download/&quot;&gt;Official RICOH UVC Blender (Live Streaming App) and Mobile App Download Site&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/bd29d4a969553fdd5f07fde03237d0c394f2046e.png&quot; width=&quot;109&quot; height=&quot;141&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/4f20f0c89db450a612f4f16d6a263b5afa0ec2ed.png&quot; width=&quot;375&quot; height=&quot;265&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/a0302c6c657d53d07ba393d99e8d2b48ece74ee9.png&quot; width=&quot;400&quot; height=&quot;156&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ready for more?&lt;/p&gt;
+
+&lt;p&gt;Give live streaming to YouTube a try. Instructions are in the &lt;a href=&quot;http://lists.theta360.guide/t/360-live-streaming-guide-for-ricoh-theta/621&quot;&gt;live streaming guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Have more questions?&lt;/p&gt;
+
+&lt;p&gt;Here’s a quick QA.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q: What do I need to stream to YouTube or other video site&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A: You need to install UVC Blender (also called live streaming app) which will convert the USB video stream into equirectangular format. The THETA will appear to your system as a webcam. With UVC Blender installed there will be multiple THETA &lt;em&gt;webcams&lt;/em&gt;. Select &lt;em&gt;THETA UVC FullHD Blender&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q: Will UVC Blender work with HDMI?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A: No. You need to use third-party software or hardware solutions. See the live streaming guide for more information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q: Can I Stream with WiFi?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A: No. UVC Blender only works with a USB cable. The THETA S only supports streaming over WiFi with live preview which is intended to preview a scene before you take a still image. The live preview mode is 640x320 at 10fps. The output is equirectangular.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q: Can I save the output of UVC Blender to a file to get around the storage limitations of the THETA?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A: Yes. Free software like OBS can save the output of UVC Blender to a file.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/a6949673a9b5ad442b7ff0402d0062390ba3088b.png&quot; width=&quot;196&quot; height=&quot;184&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The file will be in equirectangular format.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/e9d7f8bf22aab6ac66b3fd2bf5c75dae02c40490.jpg&quot; width=&quot;690&quot; height=&quot;424&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can load the file directly up to YouTube. &lt;a href=&quot;https://www.youtube.com/watch?v=KTKgASgUF8g&quot;&gt;Sample video&lt;/a&gt;. When I first loaded the video up, it did not have the navigation icon. After I let it sit on YouTube for a while, the 360 navigation icon was automatically added.&lt;/p&gt;
+
+&lt;p&gt;The next section explains how to edit the file with Premiere Pro VR mode and share it on YouTube 360.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q: How do I edit the file I saved to disk from UVC Blender with Adobe Premiere Pro VR mode?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A: You can import the clip into Premiere Pro, adjust the VR projection data and then edit it in VR mode.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/ab922fb18c37aaa9f17c55d86754292ac073161f.png&quot; width=&quot;690&quot; height=&quot;419&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Right click on the clip. Select Modify -&amp;gt; Interpret Footage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/72894e41bfa95fadbaadefd641d13debcd4f896f.png&quot; width=&quot;423&quot; height=&quot;237&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Set the Projection to &lt;em&gt;Equirectangular&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/5bcd48982bf903eb418328d3531052054f0be094.png&quot; width=&quot;612&quot; height=&quot;233&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select your sequence. On the top menu, select Sequence -&amp;gt; Sequence Setting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/246b083f9d017a8005f3c7b897e81958d7b161c0.png&quot; width=&quot;393&quot; height=&quot;219&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the VR Properties section, select Projection: Equirectangular.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/d701ede0cd5a8fa389f4cdb503f3b97220184dfb.png&quot; width=&quot;633&quot; height=&quot;214&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Your clip properties will now look like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/f1ababce9910beedb502b26f7623234e48c361df.png&quot; width=&quot;298&quot; height=&quot;196&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Right-click on the video, select VR Video -&amp;gt; Enable.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/457ecf77bea306d749cde3c3eb03cbff3bfd39f7.png&quot; width=&quot;567&quot; height=&quot;369&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You will now be able to use the VR controls in Premiere Pro and view the video as if you were watching it on YouTube 360 or a headset.&lt;/p&gt;
+
+&lt;p&gt;Export the video, inject metadata, then upload to YouTube. You will have 360 navigation in a headset or browser.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/5be59575b0069cc2a7d84552158808a6e0dc6ef0.jpg&quot; width=&quot;690&quot; height=&quot;379&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Q: How can I view the saved 360 files on my desktop?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A: many desktop software can view 360 videos. For example, I used the open source vlc 3.0 to view the files I saved from THETA UVC FullHD Blender. I needed to &lt;a href=&quot;https://github.com/google/spatial-media/releases&quot;&gt;inject the metadata&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a screenshot of the THETA UVC FullHD Blender file playing in VLC media player 3.0.0.  Navigation works in 360.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/e/eee339314958300068c1883d2c04ff7cab25f14d.png&quot; width=&quot;400&quot; height=&quot;250&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure you’re using the VLC version 3.0.0 or above.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/7/7dd76414c1632890274c340b31afedaf6a29c56a.png&quot; width=&quot;450&quot; height=&quot;247&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Dec 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</guid>
+        
+        
+        <category>Video,</category>
+        
+        <category>Unity</category>
+        
+      </item>
+    
+      <item>
+        <title>Using RICOH THETA With Unity - Export to Web  Pt 4/4</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html&quot;&gt;Pt 1&lt;/a&gt;,
+&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html&quot;&gt;Pt 2&lt;/a&gt;,
+&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html&quot;&gt;Pt 3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Test the web export experience.&lt;/p&gt;
+
+&lt;p&gt;Click on the link below in Firefox or Safari (not Chrome). Navigate with arrow or WASD keys plus your mouse.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codetricity.github.io/theta360aurora/&quot;&gt;https://codetricity.github.io/theta360aurora/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://codetricity.github.io/theta360aurora/&quot;&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/a/afaca783e001d76e70bd8d6ce75a394312694aab.png&quot; width=&quot;690&quot; height=&quot;449&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/f/fd4e1f32aa517914777add3dc0e0c042504c5053.png&quot; width=&quot;246&quot; height=&quot;306&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select WebGL as the Platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/7/7a7dbe6d58b27e51cb5085a838b317601533559a.png&quot; width=&quot;515&quot; height=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open the index.html file in Firefox. You can also upload it to a web server. In my &lt;a href=&quot;https://codetricity.github.io/theta360aurora/&quot;&gt;demo&lt;/a&gt;, I used GitHub Pages.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is the original image before importing it into Unity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/0/0981257716e74b46d97218e1bab8925c170ab50e.jpg&quot; width=&quot;690&quot; height=&quot;385&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</guid>
+        
+        
+        <category>Unity</category>
+        
+      </item>
+    
+      <item>
+        <title>Using RICOH THETA With Unity - Import Images  Pt 3/4</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html&quot;&gt;Pt 1&lt;/a&gt;,
+&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html&quot;&gt;Pt 2&lt;/a&gt;
+Drag the THETA image into the &lt;em&gt;Images&lt;/em&gt; folder of Unity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/d/d7d62f1e2be411773f7ce320502cc3eb1febb13d.png&quot; width=&quot;560&quot; height=&quot;357&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on the THETA image in Unity. Go to the &lt;em&gt;Texture Type&lt;/em&gt; in the Inspector.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/b/b77e3cde22bc288cd07e106268f6337205a6d107.jpg&quot; width=&quot;510&quot; height=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select &lt;em&gt;Cubemap&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/a/afb79de06844c777ec00722488ad9a8b541f09e2.png&quot; width=&quot;402&quot; height=&quot;312&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click &lt;em&gt;Apply&lt;/em&gt; to transform into Cubemap texture.&lt;/p&gt;
+
+&lt;p&gt;Create a new &lt;em&gt;Material&lt;/em&gt; in the &lt;em&gt;Materials&lt;/em&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/c/ca2db61d969dd5c9c7c566f2a877a8c8902845d8.png&quot; width=&quot;398&quot; height=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select the new material.&lt;/p&gt;
+
+&lt;p&gt;In the Inspector for the material, select &lt;em&gt;Shader -&amp;gt; Skybox -&amp;gt; Cubemap&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/e/edb4f3aa2ee34841189ecad4d49cd6ef2816430e.png&quot; width=&quot;486&quot; height=&quot;444&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Drag the material onto the sky in your scene.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/b/b80ba383dfa22a681f863c8b3a154b96e47face6.png&quot; width=&quot;690&quot; height=&quot;374&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are two additional examples using THETA images.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/d/d6f9b4131e185c56d4c08f3de764d128ab26771b.png&quot; width=&quot;690&quot; height=&quot;319&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/d/d38a216e975b28f2aed3bd70157a2c5d4d460377.png&quot; width=&quot;690&quot; height=&quot;316&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html&quot;&gt;Next Pt 4: Unity Export to Web&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Nov 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html</guid>
+        
+        
+        <category>Unity</category>
+        
+      </item>
+    
+      <item>
+        <title>Using RICOH THETA With Unity - Install and Navigate Pt 2/4</title>
+        <description>&lt;p&gt;This is intended for people that want to experiment with THETA images and
+Unity and have no experience. &lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html&quot;&gt;Part 1&lt;/a&gt; explains what your scenes will look
+like.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://unity3d.com/get-unity/download&quot;&gt;Download&lt;/a&gt; and install Unity&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/0B3V9jzGQTmyBS3FjTHo3Q2V1Q28/view?usp=sharing&quot;&gt;Download&lt;/a&gt; project files&lt;/p&gt;
+
+&lt;p&gt;Unzip project folder. It is called &lt;em&gt;Pusheen World&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;open-downloaded-project&quot;&gt;Open Downloaded Project&lt;/h2&gt;
+&lt;p&gt;Open project folder in Unity&lt;/p&gt;
+
+&lt;p&gt;Go to the &lt;em&gt;Project&lt;/em&gt; panel and select &lt;em&gt;Scenes&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/0/0f4c530b09543e0d6bbd3bef106d62ee2e8a209b.png&quot; width=&quot;185&quot; height=&quot;251&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Double click on one of the &lt;em&gt;Scenes&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/8/8ef0d2f490aa38851316f2a260cdb75110b07038.png&quot; width=&quot;204&quot; height=&quot;114&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this example, I am using &lt;em&gt;art_museum&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;navigation-in-unity&quot;&gt;Navigation in Unity&lt;/h2&gt;
+
+&lt;p&gt;In the top &lt;em&gt;Scene&lt;/em&gt; view, click and hold the right mouse button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/9/99e4d0f4de334ae680dca6b8d11016cfb5f61b01.png&quot; width=&quot;468&quot; height=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Use the mouse to move the camera.  Mouse the WASD keys to move the player.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html&quot;&gt;Next Pt 3: Import images from camera to Unity&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</guid>
+        
+        
+        <category>Unity</category>
+        
+      </item>
+    
+      <item>
+        <title>Guide to Using RICOH THETA Images With Unity Background Skybox Pt 1/4</title>
         <description>&lt;p&gt;In order to help developers use THETA images in their projects, Jesse Casman and I have been working on a demonstration of THETA images in Unity Skybox. This &lt;a href=&quot;https://youtu.be/c-MoLjcYmi8&quot;&gt;video tutorial covers the steps&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We’ve prepared four scenes. Each scene only takes a few minutes to build. It would be better if @jcasman had supplied me with images of scenery without people. It’s better if the scene is taken outside. For example night sky, mountain view, canyon, agricultural field, city landscape.&lt;/p&gt;
@@ -43,10 +315,14 @@
 &lt;p&gt;Unity is free. You can download it from &lt;a href=&quot;https://unity3d.com/get-unity/download&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The Unity project file is &lt;a href=&quot;https://drive.google.com/file/d/0B3V9jzGQTmyBS3FjTHo3Q2V1Q28/view?usp=sharing&quot;&gt;here&lt;/a&gt;. (151MB download)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html&quot;&gt;Next Pt 2: Install Files and Navigate in Unity&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/unity/2016/11/29/guide-to-theta-unity-skybox.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/29/guide-to-theta-unity-skybox.html</guid>
+        <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</guid>
         
         
         <category>Unity</category>
@@ -295,6 +571,10 @@ texture.&lt;/p&gt;
 &lt;h2 id=&quot;play-it&quot;&gt;Play It!&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/play-video.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://lists.theta360.guide/uploads/default/original/2X/7/7416b3ee83c80c59f4167fa99d1ba2095cee7ca4.unitypackage&quot;&gt;Download Unity Package File&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</link>
@@ -543,332 +823,6 @@ while True:
         <category>Live</category>
         
         <category>Streaming</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH THETA Button Quick Reference</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/button-guide.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Live Streaming: Press and hold mode. While continuing to hold mode, press power.&lt;/li&gt;
-  &lt;li&gt;Mass Storage: Press Wireless and Shutter. While continuing to hold these buttons,
-plug THETA into computer with USB cable. Camera will be powered off.&lt;/li&gt;
-  &lt;li&gt;Self-Timer: Press and hold wireless. While continuing to hold wireless, press power.
-LED will be green.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
-
-&lt;p&gt;Mass storage doesn’t work. Press and hold the power button for longer than
-8 seconds to reset camera, then press power button again. If using a Mac,
-try a different USB port.&lt;/p&gt;
-
-&lt;h1 id=&quot;discusshttpliststheta360guidetricoh-theta-button-quick-reference478ucodetricity&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/ricoh-theta-button-quick-reference/478?u=codetricity&quot;&gt;Discuss&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/camera/2016/10/07/ricoh-theta-button-quick-reference.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/camera/2016/10/07/ricoh-theta-button-quick-reference.html</guid>
-        
-        
-        <category>Camera</category>
-        
-      </item>
-    
-      <item>
-        <title>Easily Create a 360 Gallery For RICOH THETA with A-Frame</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://codetricity.github.io/360gallery/&quot;&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/d11f4be895176ddeaa99851f66c8e2868c4adcc7.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Using the open source &lt;a href=&quot;https://aframe.io/docs/0.3.0/introduction/&quot;&gt;A-Frame&lt;/a&gt;
-JavaScript library, you can
-&lt;a href=&quot;http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html&quot;&gt;write a few lines of code&lt;/a&gt;
- and get THETA 360 images
- &lt;a href=&quot;https://codetricity.github.io/aframe-demo/scene1.html&quot;&gt;working&lt;/a&gt;
-  in a headset or Cardboard with
-navigation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/aframe-navigation.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Headset navigation works by displaying a round cursor inside the headset view
-that corresponds to the focus of your attention. If you turn the headset so that the
-cursor is on a menu, you will jump to another sphere. In actual use, it feels natural. You
-just stare at a menu for a second and then the jump occurs. The delay for the stare is
-configurable within your code.&lt;/p&gt;
-
-&lt;p&gt;In this example, the menus are stuck to a location in the sphere.
-Moving your head causes the menus to move.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/aframe-menu-movement.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;creating-menus&quot;&gt;Creating Menus&lt;/h1&gt;
-
-&lt;h2 id=&quot;download-boilerplate-code-from-github&quot;&gt;Download Boilerplate Code from GitHub&lt;/h2&gt;
-&lt;p&gt;Fork the &lt;a href=&quot;https://github.com/theta360developers/360gallery&quot;&gt;demo on GitHub&lt;/a&gt;
-and clone to your local drive.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/aframe-files.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Drop your 360 images from the THETA into &lt;code class=&quot;highlighter-rouge&quot;&gt;img/&lt;/code&gt;.
-Open &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; in your editor.&lt;/p&gt;
-
-&lt;h2 id=&quot;create-thumbnail-images&quot;&gt;Create Thumbnail Images&lt;/h2&gt;
-
-&lt;p&gt;Using an image editor like PhotoShop create thumbnail images that are
-240x240 pixels. For this example, I’m using bitmap image text menus.
-You can also
-drop in small images as the navigational menu.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/image-files.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;edit-file-names-and-id-links&quot;&gt;Edit File Names and ID Links&lt;/h2&gt;
-&lt;p&gt;In your editor, change the &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; to match your files. If you
-are new to programming, simply overwrite &lt;code class=&quot;highlighter-rouge&quot;&gt;1.jpg&lt;/code&gt; in your &lt;code class=&quot;highlighter-rouge&quot;&gt;/img&lt;/code&gt; folder
-with your own image file first for testing. If you use the same image file
-names, you do not need to edit the code at all.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/edit-files.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;body&amp;gt;
-  &amp;lt;a-scene&amp;gt;
-    &amp;lt;a-assets&amp;gt;
-      &amp;lt;img id=&quot;kieran&quot; src=&quot;img/1.jpg&quot;&amp;gt;
-      &amp;lt;img id=&quot;kieran-thumb&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/kieran-thumb.png&quot;&amp;gt;
-      &amp;lt;img id=&quot;christian-thumb&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/christian-thumb.png&quot;&amp;gt;
-      &amp;lt;img id=&quot;eddie-thumb&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/eddie-thumb.png&quot;&amp;gt;
-      &amp;lt;audio id=&quot;click-sound&quot; crossorigin=&quot;anonymous&quot; src=&quot;https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg&quot;&amp;gt;&amp;lt;/audio&amp;gt;
-      &amp;lt;img id=&quot;christian&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/2.jpg&quot;&amp;gt;
-      &amp;lt;img id=&quot;eddie&quot; crossorigin=&quot;anonymous&quot; src=&quot;img/4.jpg&quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Assuming you are changing the file names, then edit the code for the
-menu links.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/edit-file-menu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- 360-degree image. --&amp;gt;
-&amp;lt;a-sky id=&quot;image-360&quot; radius=&quot;10&quot; src=&quot;#kieran&quot;&amp;gt;&amp;lt;/a-sky&amp;gt;
-
-&amp;lt;!-- Image links. --&amp;gt;
-&amp;lt;a-entity id=&quot;links&quot; layout=&quot;type: line; margin: 1.5&quot; position=&quot;0 -1 -4&quot;&amp;gt;
-  &amp;lt;a-entity template=&quot;src: #link&quot; data-src=&quot;#christian&quot; data-thumb=&quot;#christian-thumb&quot;&amp;gt;&amp;lt;/a-entity&amp;gt;
-  &amp;lt;a-entity template=&quot;src: #link&quot; data-src=&quot;#kieran&quot; data-thumb=&quot;#kieran-thumb&quot;&amp;gt;&amp;lt;/a-entity&amp;gt;
-  &amp;lt;a-entity template=&quot;src: #link&quot; data-src=&quot;#eddie&quot; data-thumb=&quot;#eddie-thumb&quot;&amp;gt;&amp;lt;/a-entity&amp;gt;
-&amp;lt;/a-entity&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;push-to-github-pages&quot;&gt;Push to GitHub Pages&lt;/h2&gt;
-&lt;p&gt;That’s it. Add all your files to your local git repo, commit, and push to your forked repo, gh-pages branch.&lt;/p&gt;
-
-&lt;p&gt;You should then be able to view your app at username.github.io/360gallery/&lt;/p&gt;
-
-&lt;h2 id=&quot;running-an-http-server-locally-for-testing&quot;&gt;Running an HTTP Server Locally for Testing&lt;/h2&gt;
-
-&lt;p&gt;You won’t be able to open the &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; file locally for testing due to
-CORS security. For testing, I’m running the Apache2 web server on Ubuntu 16.04
-in Vagrant. I’m running Vagrant on Windows 10 Anniversary Edition. I then use
-Firefox or Chrome running on my Windows 10 host to view the 360 images in the
-Linux VM. I’m editing the files using Atom running natively on Windows 10. The
-files are inside of the Linux VM, but I can access them from Windows. The end
-result is that I can access http:localhost:8080/gallery and test my
-application locally.&lt;/p&gt;
-
-&lt;p&gt;If this sounds like too much hassle, just load the files up to GitHub Pages.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/localbrowser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html&quot;&gt;Easier Intro to WebVR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webvr.info/&quot;&gt;WebVR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mozvr.com/&quot;&gt;MozVR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;RICOH THETA Community Forum&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;discusshttpliststheta360guideteasily-create-a-360-gallery-for-ricoh-theta-with-a-frame456&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/easily-create-a-360-gallery-for-ricoh-theta-with-a-frame/456&quot;&gt;Discuss&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html</guid>
-        
-        
-        <category>WebVR</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH THETA and WebVR - Quick HowTo</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/aframe-mobile.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The future of virtual reality and augmented reality is &lt;a href=&quot;http://venturebeat.com/2016/09/17/how-webvr-will-make-virtual-reality-massively-available/&quot;&gt;WebVR&lt;/a&gt;.
-It’s open source JavaScript, works with browsers and mobile phones today.
-THETA media works great with it. Support for Occulus Rift and HTC Vive
-headsets is available today in development builds and will be available
-to the general public by the end of 2016.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/occulus-rift.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s easy to get started and powerful enough to build amazing applications.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/web-vr-menu.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let’s get started with a simple THETA VR site using
-&lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Using your mobile phone, go to this sample link:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://codetricity.github.io/aframe-demo/scene1.html&quot;&gt;https://codetricity.github.io/aframe-demo/scene1.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Put the mobile phone in Cardboard and you’ll be able to navigate the image by moving your phone.&lt;/p&gt;
-
-&lt;p&gt;The image will look like this. Press the goggle icon to split the image.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/meetup-image.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There’s nothing unusual here except that the main code is one line.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/code-sample.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/theta360developers/aframe-demo&quot;&gt;Fork the sample code&lt;/a&gt; on GitHub.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/github.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Copy your THETA pictures into the image sub-directory.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/image-directory.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;scene1.html&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;RICOH THETA MeetUp Test Scene 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;description&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Panorama — A-Frame&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dist/aframe.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a-scene&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;a-sky&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/1.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rotation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0 -130 0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a-sky&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/a-scene&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Change &lt;code class=&quot;highlighter-rouge&quot;&gt;src/1.jpg&lt;/code&gt; to the name of your file.&lt;/p&gt;
-
-&lt;p&gt;Push the file back up to GitHub Pages and view the URL in your browser. That’s
-it. You can now refer to the &lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;
-site to come up with ideas to build
-your interface.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
-
-&lt;p&gt;If you open the file on your local computer without uploading to
-GitHub Pages, you may see this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-09/console-error.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The error message in your JavaScript console will be:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Image from origin ‘file://’ has been blocked from loading by Cross-Origin
-Resource Sharing policy: Invalid response.
-Origin ‘null’ is therefore not allowed access.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The fastest way to sort this out is to simply to push to gh-pages.
-I’m assuming that you’re familiar with gh-pages or can figure it out
-with a quick web search. The super short version: &lt;code class=&quot;highlighter-rouge&quot;&gt;git add *&lt;/code&gt;, which will
-add all your files &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -a&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;. Make sure you push to
-the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch. Your site will be up at
-username.github.io/aframe-demo/scene1.html&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chrome://flags&lt;/code&gt;
-&lt;img src=&quot;/blog/img/2016-09/chrome-flags.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://webvr.info/&quot;&gt;WebVR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mozvr.com/&quot;&gt;MozVR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;RICOH THETA Community Forum&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Part 2 -
-&lt;a href=&quot;http://theta360.guide/blog/webvr/2016/10/04/360-gallery-aframe-theta.html&quot;&gt;Easily Create a 360 Gallery For RICOH THETA with A-Frame&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;discusshttpliststheta360guidetricoh-theta-and-webvr-quick-howto440ucodetricity&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/ricoh-theta-and-webvr-quick-howto/440?u=codetricity&quot;&gt;Discuss&lt;/a&gt;&lt;/h2&gt;
-</description>
-        <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/webvr/2016/09/14/using-aframe-ricoh-theta.html</guid>
-        
-        
-        <category>WebVR</category>
-        
-      </item>
-    
-      <item>
-        <title>Sept 27 RICOH THETA Meetup in SF</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.meetup.com/RICOH-THETA-Developers-SF-Bay-Area/events/233546861/&quot;&gt;Sign up&lt;/a&gt; for the meetup!&lt;/p&gt;
-
-&lt;h2 id=&quot;integration-in-products-photosphere-navigation-and-360-video-on-drones&quot;&gt;360° Integration in Products, Photosphere Navigation, and 360° Video on Drones!&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;RICOH THETA Developers Meetup&lt;/strong&gt;
-&lt;strong&gt;Tues, Sept 27, 2016&lt;/strong&gt;
-&lt;strong&gt;Location: San Francisco SOMA (TBD)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Wow, we’ve got a great lineup of presenters to kick off the fall schedule of RICOH THETA meetups! Come join your fellow power users and 360 developers and find out more about integrating 360 video/VR/AR into products. Then spend some time thinking how you can navigate and connect photosphere content. And finally, who doesn’t want to stick a THETA on a drone? We’ll do it this coming Tues, Sept 27th.&lt;/p&gt;
-
-&lt;p&gt;Come ask your questions and share your own experiences in a friendly, relaxed environment. Whether you’re new to RICOH THETA, working on a project, or just want to meet people with similar interests, all are welcome.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Agenda&lt;/strong&gt;
-6:30 pm: Check-in, grab pizza and sodas, and say hi to other RICOH THETA users and developers
-7:00 pm: First talk: How to Integrate 360 Video/VR/AR Into Your Product, Kieran Farr, Brightcove
-7:45 pm: Break
-8:00 pm: Second talk: Better 360 Image Navigation Online, Christian Claus, Holobuilder
-8:30 pm: Break
-8:45 pm: Third talk and demo: RICOH THETA and Drones, Eddie Codel, eddie.com&lt;/p&gt;
-
-&lt;p&gt;Speakers:
-&lt;strong&gt;Kieran Farr&lt;/strong&gt; - Senior Director, Business Development, Brightcove (kfarr@brightcove.com)&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-integrate-360-videovrar-into-your-product&quot;&gt;&lt;strong&gt;How to Integrate 360 Video/VR/AR Into Your Product&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/b2b43836c722dc8c2ca1023de043bb236f79d9d6.png&quot; width=&quot;170&quot; height=&quot;170&quot; /&gt;
-Kieran has a long background in video platform development running companies like Vidlet and Vidcaster, and now overseeing ecosystem and partner program development at Brightcove. Let his pain be your gain! He will dive into the nuts and bolts of how to stream 360º video standalone or as part of a larger product. Topics include: how to plan for and build the infrastructure, tying in a database, integrating with a CDN and either transcoding all of your video projects content into individual resolutions (ouch!) or using a solution to have a server do it for you (ahhh!). Make your product handle 360º video easily!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Christian Claus&lt;/strong&gt; - Product Manager, Holobuilder (christian@holobuilder.com)&lt;/p&gt;
-
-&lt;h2 id=&quot;better-360-image-navigation-online&quot;&gt;&lt;strong&gt;Better 360º Image Navigation Online&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/4e114047c46dea0f822dea01fb8504d69e4e45f3.png&quot; width=&quot;170&quot; height=&quot;177&quot; /&gt;
-Christian will walk us through some of the challenges and issues that arise when building a 360º platform that lets users navigate through photospheres. How do you keep from going around in circles? Or worse, getting bored? Christian will touch on good storytelling and the implication for business applications based on his experience at Holobuilder, where he focuses on 360º construction content.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Eddie Codel&lt;/strong&gt; - Founder, Eddie.com/Flying Robot International Film Festival&lt;/p&gt;
-
-&lt;h2 id=&quot;ricoh-theta-and-drones&quot;&gt;&lt;strong&gt;RICOH THETA and Drones!&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/d3c9c547e5eef3a6e83f5d739b8e84879008bd4d.png&quot; width=&quot;170&quot; height=&quot;170&quot; /&gt;
-Eddie will give us a “bird’s eye view” of video production using drones, including cutting-edge issues around mounting, stabilization, and avoiding curious birds. Eddie will also tell us about the Aerial Imaging Education Day he’s hosting in October and the Flying Robot International Film Festival and why THETA users in particular should participate.&lt;/p&gt;
-
-&lt;p&gt;Food and drinks will be provided by RICOH THETA. See you all there!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/api/2016/09/14/september-meetup.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/api/2016/09/14/september-meetup.html</guid>
-        
-        
-        <category>API</category>
         
       </item>
     
