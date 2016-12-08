@@ -146,3 +146,7 @@ texture.
 ## Play It!
 
 ![](/blog/img/2016-10/unity-tutorial/play-video.png)
+
+---
+
+[Download Unity Package File](http://lists.theta360.guide/uploads/default/original/2X/7/7416b3ee83c80c59f4167fa99d1ba2095cee7ca4.unitypackage)
