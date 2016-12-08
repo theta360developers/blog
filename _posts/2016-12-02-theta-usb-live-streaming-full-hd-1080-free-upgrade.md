@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "RICOH THETA 360 Video (From File) Unity Tutorial"
+title:  "THETA USB Live Streaming Now in Full 1080 HD - Free Upgrade"
 date:   2016-12-02
 author: "Craig Oda"
 categories: Video, Unity
