@@ -8,12 +8,12 @@ categories: Video, Unity
 ---
 
 At the end of November, RICOH released
-a free upgrade to the THETA firmware, mobile app, and UVC Blender.
+free upgrades to the THETA firmware, mobile app, and UVC Blender.
 The most important upgrade was 1080 full HD live streaming using USB at 30 fps.
 This increase in resolution from 720 is a game changer for live streaming.
 Previously, live streaming with USB was limited to 1280x720 at 15fps.
 It's a lot clearer now. I confirmed RICOH's announcement with my own
-tests showed 1920x1080 at 30fps.
+tests showing 1920x1080 at 30fps.
 
 <img src="http://lists.theta360.guide/uploads/default/original/1X/90a770d1558d734994b9e14dcd4616d2ff0e8566.png" width="690" height="446">
 
