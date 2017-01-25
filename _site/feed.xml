@@ -6,19 +6,111 @@
 </description>
     <link>http://theta360.guide/blog/</link>
     <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Dec 2016 01:37:22 +0000</pubDate>
-    <lastBuildDate>Thu, 08 Dec 2016 01:37:22 +0000</lastBuildDate>
+    <pubDate>Wed, 25 Jan 2017 01:37:56 +0000</pubDate>
+    <lastBuildDate>Wed, 25 Jan 2017 01:37:56 +0000</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
-        <title>RICOH THETA 360 Video (From File) Unity Tutorial</title>
+        <title>THETA Live Streaming -- Convert Dual-Fisheye to Equirectangular </title>
+        <description>&lt;p&gt;The RICOH THETA S outputs a dual-fisheye video stream. To view and navigate the video
+stream, developers need to convert the video into equirectangular format.&lt;/p&gt;
+
+&lt;h2 id=&quot;your-app-sees-dual-fisheye&quot;&gt;Your App Sees Dual-Fisheye&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-01/dualfisheye.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;you-want-equirectangular&quot;&gt;You Want Equirectangular&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-01/equirectangular.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-available&quot;&gt;What’s Available&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/blog/video/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html&quot;&gt;THETA UVC FullHD Blender&lt;/a&gt; runs on Mac and Windows and will convert a
+dual-fisheye stream into equirectangular. You can then use your Mac or Windows machine to stream it to YouTube. There’s a
+&lt;a href=&quot;http://theta360.guide/community-document/live-streaming.html&quot;&gt;step-by-step guide&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://lists.theta360.guide/t/new-ricoh-r-development-kit-focuses-on-live-streaming/786?u=codetricity&quot;&gt;RICOH R Dev Kit&lt;/a&gt; will perform stitching
+inside of the camera and output an equirectangular stream from USB or HDMI. Available soon.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Devices like the &lt;a href=&quot;http://lists.theta360.guide/t/new-sony-playstation-vr-integration-with-ricoh-theta/691?u=codetricity&quot;&gt;Sony PlayStation VR Media Player&lt;/a&gt; can
+take equirectangular video files and stitch it in the media player. It can’t convert a stream in real-time right now.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;when-to-stitch-the-spheres-yourself&quot;&gt;When to Stitch the Spheres Yourself&lt;/h2&gt;
+
+&lt;p&gt;The three most common applications where people want to stitch the spheres together themselves.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Streaming from mobile phone to YouTube (or Periscope)&lt;/li&gt;
+  &lt;li&gt;Streaming directly into a headset or mobile phone&lt;/li&gt;
+  &lt;li&gt;Streaming from small device like a Raspberry Pi&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;open-source-community-applications&quot;&gt;Open Source Community Applications&lt;/h2&gt;
+
+&lt;p&gt;NOTE: The problems described below apply to these open source projects as well as your own applications.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/oF-thetaEquirectangular&quot;&gt;oF-thetaEquirectangular&lt;/a&gt; by Yasuhiro Hoshino&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/defisheye&quot;&gt;defisheye&lt;/a&gt; by @dinhnhat0401 - for GPUImage on iOS devices. Uses Hoshino-san’s shader program&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/theta-s-quartz&quot;&gt;theta-s-quartz&lt;/a&gt; by Kieran Farr&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/video-streaming-sample-app/blob/master/samples/common/thetaview.js&quot;&gt;thetaview.js&lt;/a&gt; in the &lt;a href=&quot;https://github.com/theta360developers/video-streaming-sample-app&quot;&gt;video streaming sample app&lt;/a&gt; repository. JavaScript sample code to stimulate ideas for THETA contest.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/unity-streaming&quot;&gt;Unity shader packs&lt;/a&gt; by goroman and stereoarts&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/theta360developers/THETA-S-LiveViewer-P5&quot;&gt;THETA-S-LiveViewer-P5&lt;/a&gt; by Kougaku. In Processing language.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;problems-stitching-yourself&quot;&gt;Problems Stitching Yourself&lt;/h2&gt;
+
+&lt;p&gt;You will not get a perfect stitch on the edges. To get a good stitch, you will need the lens distortion data from RICOH, which is not available right now. At this stage,
+it’s best to use an official solution or wait for the RICOH R Development Kit. People have achieved fairly good-looking stitches without the lens distortion data.&lt;/p&gt;
+
+&lt;h2 id=&quot;general-theory-of-stitching&quot;&gt;General Theory of Stitching&lt;/h2&gt;
+&lt;p&gt;Assuming that you’re a hobbyist and just want to quickly know what’s involved in stitching, here’s a quick overview.&lt;/p&gt;
+
+&lt;p&gt;The THETA camera is actually two cameras, one on each side of the camera body.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-01/theta-camera.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each lens takes an angle slightly greater than 180 degrees. The image of each lens is a fisheye that is
+radially symmetric in longitude and proportional in latitude from the center of the fisheye circle. The two fisheyes are combined together
+into one equirectangular image by either using geometry alone or by detecting features points in each sphere and blending the spheres together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-01/equirectangular-stitch.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;There is no one go-to solution that works to stitch a dual-fisheye stream into equirectangular. This problem may go away in the
+next few years as the in-camera stitching technology evolves. RICOH apps and in-camera technology use lens distortion information
+to align the edges of the spheres closely. Developers can only take a best-guess as to sphere alignment. Due to the quality of
+the stitch on the Sony PlayStation VR video files, I’m speculating that RICOH may work with some large partners closely. I’d love to see
+this technology trickle down to independent and boutique development partners in the future.&lt;/p&gt;
+
+&lt;p&gt;If someone builds a live-streaming application with an open source stitching library, please leave a comment in the
+&lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;Unofficial Guide community&lt;/a&gt; so that the
+information can help other people.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Jan 2017 00:00:00 +0000</pubDate>
+        <link>http://theta360.guide/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</link>
+        <guid isPermaLink="true">http://theta360.guide/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</guid>
+        
+        
+        <category>Video</category>
+        
+      </item>
+    
+      <item>
+        <title>THETA USB Live Streaming Now in Full 1080 HD - Free Upgrade</title>
         <description>&lt;p&gt;At the end of November, RICOH released
-a free upgrade to the THETA firmware, mobile app, and UVC Blender.
+free upgrades to the THETA firmware, mobile app, and UVC Blender.
 The most important upgrade was 1080 full HD live streaming using USB at 30 fps.
 This increase in resolution from 720 is a game changer for live streaming.
 Previously, live streaming with USB was limited to 1280x720 at 15fps.
 It’s a lot clearer now. I confirmed RICOH’s announcement with my own
-tests showed 1920x1080 at 30fps.&lt;/p&gt;
+tests showing 1920x1080 at 30fps.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/90a770d1558d734994b9e14dcd4616d2ff0e8566.png&quot; width=&quot;690&quot; height=&quot;446&quot; /&gt;&lt;/p&gt;
 
@@ -641,183 +733,6 @@ video streams.&lt;/p&gt;
         <pubDate>Sat, 15 Oct 2016 00:00:00 +0000</pubDate>
         <link>http://theta360.guide/blog/live/streaming/2016/10/15/unity-first-experience.html</link>
         <guid isPermaLink="true">http://theta360.guide/blog/live/streaming/2016/10/15/unity-first-experience.html</guid>
-        
-        
-        <category>Live</category>
-        
-        <category>Streaming</category>
-        
-      </item>
-    
-      <item>
-        <title>WiFi Streaming THETA S in Unity</title>
-        <description>&lt;p&gt;This article was originally written by &lt;a href=&quot;https://twitter.com/noshipu&quot;&gt;@noshipu&lt;/a&gt;,
-CEO of &lt;a href=&quot;http://vird.co.jp/&quot;&gt;ViRD, Inc&lt;/a&gt; in Japanese. It was translated into English
-at the request of the THETA developer community in the US. All credit to this great
-article goes to Noshipu-san.&lt;/p&gt;
-
-&lt;p&gt;Makoto-san produced a finished app.
-Code is &lt;a href=&quot;https://github.com/theta360developers/ThetaWifiStreaming&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-middle.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;about-the-ricoh-theta-api&quot;&gt;About the RICOH THETA API&lt;/h1&gt;
-
-&lt;p&gt;In order to use Wifi live streaming, you must use the &lt;code class=&quot;highlighter-rouge&quot;&gt;_getLivePreview&lt;/code&gt; API.
-&lt;a href=&quot;https://developers.theta360.com/en/docs/v2.0/api_reference/commands/camera._get_live_preview.html&quot;&gt;Official Reference&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE from Craig: This was replaced by &lt;a href=&quot;https://developers.theta360.com/en/docs/v2.1/api_reference/commands/camera.get_live_preview.html&quot;&gt;getLivePreview&lt;/a&gt; in version 2.1 of the API. This blog by Noshipu-san refers to the 2.0 API, which is still supported by
-the THETA S. Be aware of the differences in your code.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Unlike the other APIs, &lt;code class=&quot;highlighter-rouge&quot;&gt;_getLivePreview&lt;/code&gt; is different because the data is in a stream and keeps going. You will not be able to get a WWW class to wait until the request is complete (maybe).&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE from Craig: This is the major problem developers have when working with &lt;code class=&quot;highlighter-rouge&quot;&gt;getLivePreview&lt;/code&gt;. As the data
-is a stream, you can’t want for the data to end before running your next command. For example, it’s
-different from downloading and displaying an image or video file because you know when the transfer is
-complete.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;processing-flow&quot;&gt;Processing Flow&lt;/h1&gt;
-
-&lt;h2 id=&quot;set-the-post-request-to-create-a-httpwebrequest-class&quot;&gt;Set the POST request to create a HttpWebRequest class&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;string url = &quot;Enter HTTP path of THETA here&quot;;
-var request = HttpWebRequest.Create (url);
-HttpWebResponse response = null;
-request.Method = &quot;POST&quot;;
-request.Timeout = (int) (30 * 10000f); // to ensure  no timeout
-request.ContentType = &quot;application/json; charset = utf-8&quot;;
-
-byte [] postBytes = Encoding.Default.GetBytes ( &quot;Put the JSON data here&quot;);
-request.ContentLength = postBytes.Length;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;generate-a-class-of-binaryreader-to-get-the-byte-data-you-get-the-bytes-one-by-one&quot;&gt;Generate a class of BinaryReader to get the byte data (you get the bytes one by one)&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// The start of transmission of the post data
-Stream reqStream = request.GetRequestStream ();
-reqStream.Write (postBytes, 0, postBytes.Length) ;
-reqStream.Close ();
-stream = request.GetResponse () .GetResponseStream ();
-
-BinaryReader reader = new BinaryReader (new BufferedStream (stream), new System.Text.ASCIIEncoding ());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;get-the-start-and-stop-bytes-of-1-frame-of-the-motionjpeg-and-cut-out-one-frame&quot;&gt;Get the start and stop bytes of 1 frame of the MotionJPEG and cut out one frame&lt;/h2&gt;
-
-&lt;p&gt;With the byte, check the partion value of the MotionJPEG.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...(http)
-0xFF 0xD8      --|
-[jpeg data]      |--1 frame of MotionJPEG
-0xFF 0xD9      --|
-...(http)
-0xFF 0xD8      --|
-[jpeg data]      |--1 frame of MotionJPEG
-0xFF 0xD9      --|
-...(http)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Please refer this answer on StackOverflow to
-&lt;a href=&quot;http://stackoverflow.com/questions/21702477/how-to-parse-mjpeg-http-stream-from-ip-camera&quot;&gt;How to Parse MJPEG HTTP stream from IP camera?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The starting 2 bytes are &lt;code class=&quot;highlighter-rouge&quot;&gt;0xFF, 0xD8&lt;/code&gt;. The end bye is &lt;code class=&quot;highlighter-rouge&quot;&gt;0xD9&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The code is shown below.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;List&amp;lt;byte&amp;gt; imageBytes = new List&amp;lt;byte&amp;gt; ();
-bool isLoadStart = false; // 画像の頭のバイナリとったかフラグ
-byte oldByte = 0; // 1つ前のByteデータを格納する
-while( true ) {
-    byte byteData = reader.ReadByte ();
-
-    if (!isLoadStart) {
-        if (oldByte == 0xFF){
-            // First binary image
-           imageBytes.Add(0xFF);
-        }
-        if (byteData == 0xD8){
-           // Second binary image
-           imageBytes.Add(0xD8);
-
-           // I took the head of the image up to the end binary
-           isLoadStart = true;
-        }
-    } else {
-        // Put the image binaries into an array
-        imageBytes.Add(byteData);
-
-        // if the byte was the end byte
-        // 0xFF -&amp;gt; 0xD9 case、end byte
-        if(oldByte == 0xFF &amp;amp;&amp;amp; byteData == 0xD9){
-            // As this is the end byte
-            // we&#39;ll generate the image from the data and can create the texture
-            // imageBytes are used to reflect the texture
-            // imageBytes are left empty
-            // the loop returns the binary image head
-            isLoadStart = false;
-        }
-    }
-    oldByte = byteData;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;texture-generation-separated-by-byte&quot;&gt;Texture Generation Separated by Byte&lt;/h2&gt;
-
-&lt;p&gt;This is the byte to reflect the texture.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mainTexture.LoadImage ((byte[])imageBytes.ToArray ());
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Portion of Python code taken from &lt;a href=&quot;http://stackoverflow.com/questions/21702477/how-to-parse-mjpeg-http-stream-from-ip-camera&quot;&gt;StackOverflow answer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import cv2
-import urllib
-import numpy as np
-
-stream=urllib.urlopen(&#39;http://localhost:8080/frame.mjpg&#39;)
-bytes=&#39;&#39;
-while True:
-    bytes+=stream.read(1024)
-    a = bytes.find(&#39;\xff\xd8&#39;)
-    b = bytes.find(&#39;\xff\xd9&#39;)
-    if a!=-1 and b!=-1:
-        jpg = bytes[a:b+2]
-        bytes= bytes[b+2:]
-        i = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),cv2.CV_LOAD_IMAGE_COLOR)
-        cv2.imshow(&#39;i&#39;,i)
-        if cv2.waitKey(1) ==27:
-            exit(0) Mjpeg over http is multipart/x-mixed-replace with boundary frame info and jpeg data is just sent in binary. So you don&#39;t really need to care about http protocol headers. All jpeg frames start with marker 0xff 0xd8 and end with 0xff 0xd9. So the code above extracts such frames from the http stream and decodes them one by one. like below.
-
-...(http)
-0xff 0xd8      --|
-[jpeg data]      |--this part is extracted and decoded
-0xff 0xd9      --|
-...(http)
-0xff 0xd8      --|
-[jpeg data]      |--this part is extracted and decoded
-0xff 0xd9      --|
-...(http)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 14 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html</guid>
         
         
         <category>Live</category>
