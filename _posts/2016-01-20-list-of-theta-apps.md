@@ -17,7 +17,9 @@ categories: Applications
 
 </script>
 
-# [Updated List Available](http://lists.theta360.guide/t/list-of-theta-apps/48)
+# [Updated List Available](http://theta360.guide/showcase/)
+
+Scroll down to the bottom for a full list of RICOH THETA apps.
 
 ---
 
