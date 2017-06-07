@@ -10,8 +10,8 @@
   <meta name="description" content="This article was originally written by @noshipu,CEO of ViRD, Inc in Japanese. It was translated into Englishat the request of the THETA developer community i...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360.guide/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://theta360.guide/blog/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
 
 </head>
 
@@ -74,7 +74,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">WiFi Streaming THETA S in Unity</h1>
     <p class="post-meta">
-	<time datetime="2016-10-14T00:00:00+00:00" itemprop="datePublished">Oct 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
+	<time datetime="2016-10-14T00:00:00-07:00" itemprop="datePublished">Oct 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -115,7 +115,7 @@ complete.</p>
 
 <h2 id="set-the-post-request-to-create-a-httpwebrequest-class">Set the POST request to create a HttpWebRequest class</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>string url = "Enter HTTP path of THETA here";
+<div class="highlighter-rouge">string url = "Enter HTTP path of THETA here";
 var request = HttpWebRequest.Create (url);
 HttpWebResponse response = null;
 request.Method = "POST";
@@ -124,26 +124,24 @@ request.ContentType = "application/json; charset = utf-8";
 
 byte [] postBytes = Encoding.Default.GetBytes ( "Put the JSON data here");
 request.ContentLength = postBytes.Length;
-</code></pre>
 </div>
 
 <h2 id="generate-a-class-of-binaryreader-to-get-the-byte-data-you-get-the-bytes-one-by-one">Generate a class of BinaryReader to get the byte data (you get the bytes one by one)</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>// The start of transmission of the post data
+<div class="highlighter-rouge">// The start of transmission of the post data
 Stream reqStream = request.GetRequestStream ();
 reqStream.Write (postBytes, 0, postBytes.Length) ;
 reqStream.Close ();
 stream = request.GetResponse () .GetResponseStream ();
 
 BinaryReader reader = new BinaryReader (new BufferedStream (stream), new System.Text.ASCIIEncoding ());
-</code></pre>
 </div>
 
 <h2 id="get-the-start-and-stop-bytes-of-1-frame-of-the-motionjpeg-and-cut-out-one-frame">Get the start and stop bytes of 1 frame of the MotionJPEG and cut out one frame</h2>
 
 <p>With the byte, check the partion value of the MotionJPEG.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>...(http)
+<div class="highlighter-rouge">...(http)
 0xFF 0xD8      --|
 [jpeg data]      |--1 frame of MotionJPEG
 0xFF 0xD9      --|
@@ -152,7 +150,6 @@ BinaryReader reader = new BinaryReader (new BufferedStream (stream), new System.
 [jpeg data]      |--1 frame of MotionJPEG
 0xFF 0xD9      --|
 ...(http)
-</code></pre>
 </div>
 
 <p>Please refer this answer on StackOverflow to
@@ -162,7 +159,7 @@ BinaryReader reader = new BinaryReader (new BufferedStream (stream), new System.
 
 <p>The code is shown below.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>List&lt;byte&gt; imageBytes = new List&lt;byte&gt; ();
+<div class="highlighter-rouge">List&lt;byte&gt; imageBytes = new List&lt;byte&gt; ();
 bool isLoadStart = false; // 画像の頭のバイナリとったかフラグ
 byte oldByte = 0; // 1つ前のByteデータを格納する
 while( true ) {
@@ -197,22 +194,20 @@ while( true ) {
     }
     oldByte = byteData;
 }
-</code></pre>
 </div>
 
 <h2 id="texture-generation-separated-by-byte">Texture Generation Separated by Byte</h2>
 
 <p>This is the byte to reflect the texture.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mainTexture.LoadImage ((byte[])imageBytes.ToArray ());
-</code></pre>
+<div class="highlighter-rouge">mainTexture.LoadImage ((byte[])imageBytes.ToArray ());
 </div>
 
 <hr />
 
 <p>Portion of Python code taken from <a href="http://stackoverflow.com/questions/21702477/how-to-parse-mjpeg-http-stream-from-ip-camera">StackOverflow answer</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>import cv2
+<div class="highlighter-rouge">import cv2
 import urllib
 import numpy as np
 
@@ -239,7 +234,6 @@ while True:
 [jpeg data]      |--this part is extracted and decoded
 0xff 0xd9      --|
 ...(http)
-</code></pre>
 </div>
 
   </div>

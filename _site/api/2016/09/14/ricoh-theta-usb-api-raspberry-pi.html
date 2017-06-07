@@ -10,8 +10,8 @@
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360.guide/blog/api/2016/09/14/ricoh-theta-usb-api-raspberry-pi.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://theta360.guide/blog/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/blog/api/2016/09/14/ricoh-theta-usb-api-raspberry-pi.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
 
 </head>
 
@@ -74,7 +74,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">360 Camera Control of a RICOH THETA With a USB Cable</h1>
     <p class="post-meta">
-	<time datetime="2016-09-14T00:00:00+00:00" itemprop="datePublished">Sep 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig</span></span></p>
+	<time datetime="2016-09-14T00:00:00-07:00" itemprop="datePublished">Sep 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -118,13 +118,12 @@ Before we set it, take a look at the
 <p>The documentation is sparse, but it has everything you need. Grab the <em>Device Prop Code</em>
 and focus in on the <em>502c</em> code.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~/Development/libptp2-1.2.0 $ gphoto2 --set-config=502c=30
+<div class="highlighter-rouge">pi@raspberrypi ~/Development/libptp2-1.2.0 $ gphoto2 --set-config=502c=30
 pi@raspberrypi ~/Development/libptp2-1.2.0 $ gphoto2 --get-config=502c
 Label: PTP Property 0x502c
 Type: MENU
 Current: 30
 Choice: 0 0
-</code></pre>
 </div>
 
 <p>In the next example, we’ll use the command line options of gphoto2 to download three
@@ -133,7 +132,7 @@ line options of gphoto2 are easier to use than the Device Prop Codes, but the co
 line options don’t cover all the camera functions. Let’s run through a few easy
 examples of using gphoto2 command line options.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~/Development/gphoto2 $ gphoto2 --get-file 1-3
+<div class="highlighter-rouge">pi@raspberrypi ~/Development/gphoto2 $ gphoto2 --get-file 1-3
 Downloading 'R0011757.JPG' from folder '/store_00010001/DCIM/100RICOH'...
 Saving file as R0011757.JPG
 Downloading 'R0011758.JPG' from folder '/store_00010001/DCIM/100RICOH'...
@@ -141,14 +140,13 @@ Saving file as R0011758.JPG
 Downloading 'R0011759.JPG' from folder '/store_00010001/DCIM/100RICOH'...
 Saving file as R0011759.JPG
 pi@raspberrypi ~/Development/gphoto2 $
-</code></pre>
 </div>
 
 <p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/8002276ff913b301f468783ecac80ad5f3e50b1b_1_690x414.png" width="690" height="414" /></p>
 
 <p>Download thumbnails</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~/Development/gphoto2 $ gphoto2 --get-thumbnail 4-6
+<div class="highlighter-rouge">pi@raspberrypi ~/Development/gphoto2 $ gphoto2 --get-thumbnail 4-6
 Downloading 'R0011761.JPG' from folder '/store_00010001/DCIM/100RICOH'...
 Saving file as thumb_R0011761.jpg
 Downloading 'R0011763.JPG' from folder '/store_00010001/DCIM/100RICOH'...
@@ -156,7 +154,6 @@ Saving file as thumb_R0011763.jpg
 Downloading 'R0011764.JPG' from folder '/store_00010001/DCIM/100RICOH'...
 Saving file as thumb_R0011764.jpg
 pi@raspberrypi ~/Development/gphoto2 $
-</code></pre>
 </div>
 
 <h2 id="components-i-used">Components I Used</h2>
@@ -172,7 +169,7 @@ pi@raspberrypi ~/Development/gphoto2 $
 
 <h4 id="showing-installed-gphoto2-version-with-apt-cache">Showing installed gphoto2 version with apt-cache</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ apt-cache show gphoto2
+<div class="highlighter-rouge">pi@raspberrypi ~ $ apt-cache show gphoto2
 Package: gphoto2
 Version: 2.5.4-1
 Architecture: armhf
@@ -194,31 +191,28 @@ digital camera models, via standard protocols such as USB Mass Storage
 and PTP, or vendor-specific protocols.
 
 This package provide the gphoto2 command-line frontend.
-</code></pre>
 </div>
 
 <h4 id="showing-installed-os-on-raspberry-pi">Showing installed OS on Raspberry Pi</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ cat /etc/os-release
+<div class="highlighter-rouge">pi@raspberrypi ~ $ cat /etc/os-release
 PRETTY_NAME="Raspbian GNU/Linux 8 (jessie)"
 NAME="Raspbian GNU/Linux"
 VERSION_ID="8"
 VERSION="8 (jessie)"
 ID=raspbian
 ID_LIKE=debian
-</code></pre>
 </div>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <p>Right now, I get this error when I first step the Raspberry Pi. I haven’t bothered to disable gvfs-gphoto2-volume-monitor at boot yet. I’ll figure this out in the future.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 --about
+<div class="highlighter-rouge">pi@raspberrypi ~ $ gphoto2 --about
 
 *** Error ***
 An error occurred in the io-library ('Could not claim the USB device'): Could not claim interface 0 (Device or resource busy). Make sure no other program (gvfs-gphoto2-volume-monitor) or kernel module (such as sdc2xx, stv680, spca50x) is using the device and you have read/write access to the device.
 *** Error (-53: 'Could not claim the USB device') ***
-</code></pre>
 </div>
 
 <p>It looks like I can prevent the daemon in <code class="highlighter-rouge">/usr/lib/gvfs/gvfsd</code> to run. In the meantime, I’m going to kill the processes before I start the tests.</p>
@@ -233,7 +227,7 @@ An error occurred in the io-library ('Could not claim the USB device'): Could no
 
 <p>Test it</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 --about
+<div class="highlighter-rouge">pi@raspberrypi ~ $ gphoto2 --about
 About the camera driver:
 PTP2 driver
 (c) 2001-2005 by Mariusz Woloszyn &lt;emsi@ipartners.pl&gt;.
@@ -242,7 +236,6 @@ This driver supports cameras that support PTP or PictBridge(tm), and
 Media Players that support the Media Transfer Protocol (MTP).
 
 Enjoy!
-</code></pre>
 </div>
 
 <hr />
@@ -253,29 +246,27 @@ Enjoy!
 
 <p>Remove <code class="highlighter-rouge">gvfs-backends</code></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ sudo apt remove gvfs-backends
+<div class="highlighter-rouge">pi@raspberrypi ~ $ sudo apt remove gvfs-backends
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 The following packages will be REMOVED:
   gvfs-backends
-</code></pre>
 </div>
 
 <p>Test to make sure it still works.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 -l
+<div class="highlighter-rouge">pi@raspberrypi ~ $ gphoto2 -l
 There is 1 folder in folder '/'.                                               
  - store_00010001
 There is 1 folder in folder '/store_00010001'.
-</code></pre>
 </div>
 
 <p>Reboot</p>
 
 <p><code class="highlighter-rouge">gphoto2</code> now works after reboot without having to kill the processes.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pi@raspberrypi ~ $ gphoto2 -l
+<div class="highlighter-rouge">pi@raspberrypi ~ $ gphoto2 -l
 There is 1 folder in folder '/'.                                               
  - store_00010001
 There is 1 folder in folder '/store_00010001'.
@@ -283,7 +274,6 @@ There is 1 folder in folder '/store_00010001'.
 There is 1 folder in folder '/store_00010001/DCIM'.
  - 100RICOH
 There are 0 folders in folder '/store_00010001/DCIM/100RICOH'.
-</code></pre>
 </div>
 
 <h2 id="usb-programmer-for-the-raspberry-pi">USB Programmer for the Raspberry Pi</h2>
@@ -303,30 +293,28 @@ cable as the cable powers the camera.</p>
 
 <p><img src="http://lists.theta360.guide/uploads/default/optimized/1X/88e0ed1a6c8c6b2e36131ee2ecf522e416e423cb_1_690x273.PNG" alt="" /></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.setOptions"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w">
-	</span><span class="p">{</span><span class="w">
-    </span><span class="nt">"sessionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SID_0001"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-		</span><span class="nt">"offDelay"</span><span class="p">:</span><span class="w"> </span><span class="mi">65535</span><span class="w">
-    	</span><span class="p">}</span><span class="w">
-	</span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+<div class="highlighter-rouge">{"name": "camera.setOptions",
+    "parameters":
+	{
+    "sessionId": "SID_0001",
+    "options": {
+		"offDelay": 65535
+    	}
+	}
+}
 </div>
 
 <p>You can check the offDelay parameter with this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.getOptions"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w">
-	</span><span class="p">{</span><span class="w">
-    	</span><span class="nt">"sessionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SID_0001"</span><span class="p">,</span><span class="w">
-    	</span><span class="nt">"optionNames"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="s2">"offDelay"</span><span class="w">
-    	</span><span class="p">]</span><span class="w">
-	</span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+<div class="highlighter-rouge">{"name": "camera.getOptions",
+    "parameters":
+	{
+    	"sessionId": "SID_0001",
+    	"optionNames": [
+            "offDelay"
+    	]
+	}
+}
 </div>
 
 <p>I also set the <a href="https://developers.theta360.com/en/docs/v2.1/api_reference/options/sleep_delay.html">sleepDelay</a>
@@ -381,7 +369,7 @@ USB API) and you are ready to go.</p>
 
 <p><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ff384842(v=vs.85).aspx">Example</a> Matt referred to.</p>
 
-<h1 id="register-for-the-theta-developer-ecosystemhttptheta360guideecosystem"><a href="http://theta360.guide/ecosystem/">Register for the THETA Developer Ecosystem</a></h1>
+<h1 id="register-for-the-theta-developer-ecosystem"><a href="http://theta360.guide/ecosystem/">Register for the THETA Developer Ecosystem</a></h1>
 
   </div>
 

@@ -10,8 +10,8 @@
   <meta name="description" content="Video tutorial available.Prepare THETA Videos in Equirectangular FormatUse the official THETA desktop application to convert the dual-fisheyevideo into equir...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360.guide/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://theta360.guide/blog/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
 
 </head>
 
@@ -74,7 +74,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">RICOH THETA 360 Video (From File) Unity Tutorial</h1>
     <p class="post-meta">
-	<time datetime="2016-10-16T00:00:00+00:00" itemprop="datePublished">Oct 16, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
+	<time datetime="2016-10-16T00:00:00-07:00" itemprop="datePublished">Oct 16, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -127,7 +127,7 @@ video into equirectangular.
 
 <p>Drop in the code below from community member <a href="http://tengshanyuan.com/">Shanyuan Teng</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Shader "ThetaInsideShader" {
+<div class="highlighter-rouge">Shader "ThetaInsideShader" {
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {}
 	}
@@ -176,7 +176,6 @@ video into equirectangular.
 	}
 
 }
-</code></pre>
 </div>
 
 <h2 id="add-shader-to-sphere">Add Shader to Sphere</h2>
@@ -197,7 +196,7 @@ If you’re on Windows, Unity needs QuickTime for the import.</p>
 
 <p>This is the code from community member <a href="http://tengshanyuan.com/">Shanyuan Teng</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>using UnityEngine;
+<div class="highlighter-rouge">using UnityEngine;
 using System.Collections;
 
 public class VideoPlayback : MonoBehaviour {
@@ -213,7 +212,6 @@ public class VideoPlayback : MonoBehaviour {
 	}
 
 }
-</code></pre>
 </div>
 
 <h2 id="add-texture-to-video-sphere">Add Texture to Video Sphere</h2>

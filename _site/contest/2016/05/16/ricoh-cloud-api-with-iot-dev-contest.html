@@ -10,8 +10,8 @@
   <meta name="description" content="Wow, in the last few weeks, we’ve seen a huge surge incommunity activityaround development for the RICOH THETA. We have 122members in ourSilicon Valley THETA...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360.guide/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://theta360.guide/blog/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/blog/contest/2016/05/16/ricoh-cloud-api-with-iot-dev-contest.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
 
 </head>
 
@@ -74,7 +74,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Using RICOH Cloud API with IoT Dev Contest</h1>
     <p class="post-meta">
-	<time datetime="2016-05-16T00:00:00+00:00" itemprop="datePublished">May 16, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
+	<time datetime="2016-05-16T00:00:00-07:00" itemprop="datePublished">May 16, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig Oda</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -132,13 +132,12 @@ node v6.1.0 installed from the
 use node v4.4 despite the warnings. However, I did most of my tests
 with node v6.1.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install ricohapi-mstorage
-</code></pre>
+<div class="highlighter-rouge">$ npm install ricohapi-mstorage
 </div>
 
 <p>I get minor warnings. Ignore them.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ricoh@xerus:~/Development$ npm install ricohapi-mstorage
+<div class="highlighter-rouge">ricoh@xerus:~/Development$ npm install ricohapi-mstorage
 /home/ricoh
 └── ricohapi-mstorage@1.0.0
 
@@ -147,25 +146,22 @@ npm WARN ricoh No description
 npm WARN ricoh No repository field.
 npm WARN ricoh No README data
 npm WARN ricoh No license field.
-</code></pre>
 </div>
 
 <p>We finally get to the fun part. Open up an editor and drop in some code.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>const MStorage = require('ricohapi-mstorage').MStorage;
+<div class="highlighter-rouge">const MStorage = require('ricohapi-mstorage').MStorage;
 const AuthClient = require('ricohapi-mstorage').AuthClient;
 
 const client = new AuthClient('clientId', 'clientSecret');
 client.setResourceOwnerCreds('userID', 'password');
 
 const mstorage = new MStorage(client);
-</code></pre>
 </div>
 
 <p>Run the code. Hopefully, there are no error messages.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>node cloudtest2.js
-</code></pre>
+<div class="highlighter-rouge">node cloudtest2.js
 </div>
 
 <p>Grab an image and save it into the same directory as your test code.
@@ -176,48 +172,43 @@ is a 360 equirectangular image called <code class="highlighter-rouge">beach.jpg<
 uploading a 360 image has arrived! Drop the code below onto the
 end of your program and run it.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mstorage.connect()
+<div class="highlighter-rouge">mstorage.connect()
 .then(() =&gt; mstorage.upload('./beach.jpg'))
 .then(() =&gt; console.log('uploaded')
 .catch(e =&gt; console.log(e)));
-</code></pre>
 </div>
 
 <p>Boom. it works!</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
+<div class="highlighter-rouge">ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
 uploaded
-</code></pre>
 </div>
 
 <p>Grab a listing of your images. Add the code below to the end of your
 test program.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mstorage.connect()
+<div class="highlighter-rouge">mstorage.connect()
 .then(() =&gt; mstorage.list())
 .then(list =&gt; console.log(list));
-</code></pre>
 </div>
 
 <p>Run it and verify the file was upload. I have multiple files in my test account. Your output may be slightly different.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
+<div class="highlighter-rouge">ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
 {"media":[{"id":"c516ccd5-db40-438c-8f8b-e306a1c618d5"},{"id":"258f43a9-4d7a-4d4e-b625-f3a149fc7240"},{"id":"b2046fcf-1c86-47bc-a1ff-1922ecd8859a"}],"paging":{"previous":"http://mss.ricohapi.com/v1/media?before=c516ccd5-db40-438c-8f8b-e306a1c618d5\u0026limit=10"}}
 uploaded
-</code></pre>
 </div>
 
 <p>Grab the ID for one of your media assets in the RICOH Cloud server. Replace the ID below with your own ID.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>mstorage.connect()
+<div class="highlighter-rouge">mstorage.connect()
 .then(() =&gt; mstorage.downloadTo('258f43a9-4d7a-4d4e-b625-f3a149fc7240', './img/downloadbeach.jpg' )
 .then(() =&gt; console.log('downloaded')));
-</code></pre>
 </div>
 
 <p>Run it.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
+<div class="highlighter-rouge">ricoh@xerus:~/Development/ricoh-cloud-api$ node cloudtest2.js
 {"media":[{"id":"9d0f457e-a969-4247-81dc-3f430c2cb06d"},{"id":"c516ccd5-db40-438c-8f8b-e306a1c618d5"},{"id":"258f43a9-4d7a-4d4e-b625-f3a149fc7240"},{"id":"b2046fcf-1c86-47bc-a1ff-1922ecd8859a"}],"paging":{"previous":"http://mss.ricohapi.com/v1/media?before=9d0f457e-a969-4247-81dc-3f430c2cb06d\u0026limit=10"}}
 downloaded
 ricoh@xerus:~/Development/ricoh-cloud-api$ ll img/
@@ -226,7 +217,6 @@ drwxrwxr-x 2 ricoh ricoh    4096 May 16 15:32 ./
 drwxrwxr-x 4 ricoh ricoh    4096 May 16 16:34 ../
 -rw-rw-r-- 1 ricoh ricoh 4151640 May 16 16:45 downloadbeach.jpg
 ricoh@xerus:~/Development/ricoh-cloud-api$
-</code></pre>
 </div>
 
 <h1 id="live-stream-video">Live Stream Video</h1>
@@ -235,45 +225,40 @@ inside of your browser.</p>
 
 <p><img src="/blog/img/2016-05/ricoh-cloud-api-video-stream.png" alt="" /></p>
 
-<h2 id="download-live-streaming-code-from-githubhttpsgithubcomricohapivideo-streaming-sample-app">Download <a href="https://github.com/ricohapi/video-streaming-sample-app">live streaming code from GitHub</a>.</h2>
+<h2 id="download-live-streaming-code-from-github">Download <a href="https://github.com/ricohapi/video-streaming-sample-app">live streaming code from GitHub</a>.</h2>
 
 <p>Follow the steps and get going.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone https://github.com/ricohapi/video-streaming-sample-app.git
+<div class="highlighter-rouge">$ git clone https://github.com/ricohapi/video-streaming-sample-app.git
 $ cd video-streaming-sample-app
 $ cp samples/config_template.js samples/config.js
-</code></pre>
 </div>
 
 <p>put your credentials into the config.js</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install
+<div class="highlighter-rouge">$ npm install
 $ gulp build
-</code></pre>
 </div>
 
 <p>If you try running</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ gulp build
-</code></pre>
+<div class="highlighter-rouge">$ gulp build
 </div>
 
 <p>and your system can’t find <code class="highlighter-rouge">gulp</code>, then do this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ npm bin
-</code></pre>
+<div class="highlighter-rouge">$ npm bin
 </div>
 
 <p>It will return your path, probably something like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/home/ricoh/Development/livestream/video-streaming-sample-app/node_modules/.bin
-</code></pre>
+<div class="highlighter-rouge">/home/ricoh/Development/livestream/video-streaming-sample-app/node_modules/.bin
 </div>
 
 <p>Build it with the path for
 <a href="https://www.npmjs.com/package/gulp">gulp</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>video-streaming-sample-app$ ./node_modules/.bin/gulp build
+<div class="highlighter-rouge">video-streaming-sample-app$ ./node_modules/.bin/gulp build
 (node:23673) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
 [12:57:33] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
 [12:57:33] Starting 'build'...
@@ -281,18 +266,16 @@ $ gulp build
             Asset    Size  Chunks             Chunk Names
 ./build/bundle.js  354 kB       0  [emitted]  main
 [12:57:53] Finished 'build' after 20 s
-</code></pre>
 </div>
 
 <p>Run gulp</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ./node_modules/.bin/gulp run
+<div class="highlighter-rouge">ricoh@xerus:~/Development/livestream/video-streaming-sample-app$ ./node_modules/.bin/gulp run
 (node:23840) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
 [13:06:44] Using gulpfile ~/Development/livestream/video-streaming-sample-app/gulpfile.js
 [13:06:44] Starting 'run'...
 [13:06:44] Webserver started at http://localhost:8034
 [13:06:44] Finished 'run' after 23 ms
-</code></pre>
 </div>
 
 <p>It will automatically open up a browser. RICOH recommends Google Chrome 49 or
@@ -397,7 +380,7 @@ questions on our
 
 <p>Ready for more?</p>
 
-<h1 id="latest-community-tips-at-the-theta-unofficial-guidehttptheta360guide"><a href="http://theta360.guide/">Latest Community Tips at the THETA Unofficial Guide</a></h1>
+<h1 id="latest-community-tips-at-the-theta-unofficial-guide"><a href="http://theta360.guide/">Latest Community Tips at the THETA Unofficial Guide</a></h1>
 
   </div>
 

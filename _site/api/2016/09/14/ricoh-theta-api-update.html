@@ -10,8 +10,8 @@
   <meta name="description" content="There is a new THETA API version 2.1. The version 2.0 API still works for now, but it is recommended that you update your apps to ensure future compatibility.">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360.guide/blog/api/2016/09/14/ricoh-theta-api-update.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://theta360.guide/blog/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/blog/api/2016/09/14/ricoh-theta-api-update.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
 
 </head>
 
@@ -74,7 +74,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">RICOH THETA API Update to 2.1</h1>
     <p class="post-meta">
-	<time datetime="2016-09-14T00:00:00+00:00" itemprop="datePublished">Sep 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig</span></span></p>
+	<time datetime="2016-09-14T00:00:00-07:00" itemprop="datePublished">Sep 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Craig</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -88,16 +88,15 @@
 
 <p>In your program, you can set the API version with <code class="highlighter-rouge">camera.setOptions</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.setOptions"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"sessionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SID_0001"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"clientVersion"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+<div class="highlighter-rouge">{
+    "name": "camera.setOptions",
+    "parameters": {
+        "sessionId": "SID_0001",
+        "options": {
+            "clientVersion": 2
+        }
+    }
+}
 </div>
 
 <p>One of the major changes is that you do not have to specify the <code class="highlighter-rouge">sessionId</code> for command execution.</p>
@@ -106,25 +105,23 @@
 
 <p><em>version 2.0</em></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.takePicture"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    	</span><span class="nt">"sessionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SID_0001"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+<div class="highlighter-rouge">{
+    "name": "camera.takePicture",
+    "parameters": {
+    	"sessionId": "SID_0001"
+    }
+}
 </div>
 
 <hr />
 
 <p><em>version 2.1</em></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.takePicture"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+<div class="highlighter-rouge">{
+    "name": "camera.takePicture",
+    "parameters": {
+    }
+}
 </div>
 
 <hr />
@@ -134,15 +131,14 @@
 <p>Example (<em>version 2.1</em>)
 <img src="http://lists.theta360.guide/uploads/default/optimized/1X/09aae769ef0a9cede748ee03d4e5520e236c92cc_1_690x56.png" width="690" height="56" /></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"camera.listFiles"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"parameters"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    	</span><span class="nt">"fileType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
-    	</span><span class="nt">"entryCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"maxThumbSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">640</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+<div class="highlighter-rouge">{
+    "name": "camera.listFiles",
+    "parameters": {
+    	"fileType": "all",
+    	"entryCount": 3,
+        "maxThumbSize": 640
+    }
+}
 </div>
 
 <hr />
@@ -202,7 +198,7 @@
 
 <p><img src="http://lists.theta360.guide/uploads/default/original/1X/c2c218267745dda568aa6c9533973874dd65c63b.png" width="343" height="341" /></p>
 
-<h1 id="register-for-the-theta-developer-ecosystemhttptheta360guideecosystem"><a href="http://theta360.guide/ecosystem/">Register for the THETA Developer Ecosystem</a></h1>
+<h1 id="register-for-the-theta-developer-ecosystem"><a href="http://theta360.guide/ecosystem/">Register for the THETA Developer Ecosystem</a></h1>
 
   </div>
 

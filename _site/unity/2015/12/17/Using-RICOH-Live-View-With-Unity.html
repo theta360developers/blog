@@ -10,8 +10,8 @@
   <meta name="description" content="hecomi recently wrote an interesting blog post using Unity to view realtime 360 degree video streaming. I personally have very little experience with Unity, ...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://theta360.guide/blog/unity/2015/12/17/Using-RICOH-Live-View-With-Unity.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://theta360.guide/blog/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/blog/unity/2015/12/17/Using-RICOH-Live-View-With-Unity.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
 
 </head>
 
@@ -74,7 +74,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Using RICOH THETA Live View With Unity</h1>
     <p class="post-meta">
-	<time datetime="2015-12-17T00:00:00+00:00" itemprop="datePublished">Dec 17, 2015</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jesse Casman</span></span></p>
+	<time datetime="2015-12-17T00:00:00-08:00" itemprop="datePublished">Dec 17, 2015</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jesse Casman</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -136,7 +136,7 @@
 
 <p>Import the Maya LT built model with Unity, and put the camera in the center. Write a shader, so the model’s UV position can be adjusted or can alphablend. In order to control the drawing order and to prevent the border from changing at certain orientations, each half sphere has a different shader.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Shader "Theta/Sphere1" {
+<div class="highlighter-rouge">Shader "Theta/Sphere1" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -186,12 +186,11 @@
         }
     }
 }
-</code></pre>
 </div>
 
 <p>Here’s a second section of code.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>	Shader "Theta/Sphere2" {
+<div class="highlighter-rouge">	Shader "Theta/Sphere2" {
 	    Properties {
 	        _MainTex ("Base (RGB)", 2D) = "white" {}
 	        _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -207,7 +206,6 @@
 	        UsePass "Theta/Sphere1/BASE"
 	    }
 	}
-</code></pre>
 </div>
 
 <p>As below, for alphablend, have a texture made, that is alpha adjusted to UV. I made adjustment for perfectly fit, by exporting UV with postscript and reading with illustrator (white circle inside is alpha=1; around the circle, from inside to outside, changes from 1 to 0; outside will not be used so whatever fits.)</p>
@@ -226,7 +224,7 @@
 
 <p>I tried it with a modified vertex shader.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Shader "Theta/Equirectangular1" {
+<div class="highlighter-rouge">Shader "Theta/Equirectangular1" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -312,12 +310,11 @@
         }
     }
 }
-</code></pre>
 </div>
 
 <p>Here’s a second section of code.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Shader "Theta/Equirectangular2" {
+<div class="highlighter-rouge">Shader "Theta/Equirectangular2" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _AlphaBlendTex ("Alpha Blend (RGBA)", 2D) = "white" {}
@@ -334,7 +331,6 @@
         UsePass "Theta/Equirectangular1/BASE"
     }
 }
-</code></pre>
 </div>
 
 <p><img src="/blog/img/2015-12/results.png" alt="Results" /></p>
@@ -361,7 +357,7 @@ UV mapping with webgl.</p>
 
 <p>Ready for more?</p>
 
-<h1 id="unofficial-theta-developer-ecosystem-registrationhttptheta360guideecosystem"><a href="http://theta360.guide/ecosystem/">Unofficial THETA Developer Ecosystem Registration</a></h1>
+<h1 id="unofficial-theta-developer-ecosystem-registration"><a href="http://theta360.guide/ecosystem/">Unofficial THETA Developer Ecosystem Registration</a></h1>
 
   </div>
 

@@ -1,0 +1,116 @@
+---
+layout: post
+comments: true
+title:  "How To: Create a THETA Image VR Gallery with A-Frame"
+date:   2017-06-07
+author: "Craig Oda"
+categories: webvr
+---
+![](/blog/img/2017-06/vrgallery/topImage.png)
+
+A-Frame works on web, mobile, and headsets.
+
+## [Test It](https://kai360.glitch.me)
+
+The site works best with your phone in landscape mode.
+
+
+A-Frame is a leading
+open source frameworks for WebVR, an experimental specification
+for JavaScript APIs. For a status update on WebVR, go to
+[webvr.info](https://webvr.info/)
+
+
+![](/blog/img/2017-06/vrgallery/gallery1.png)
+
+![](/blog/img/2017-06/vrgallery/gallery2.png)
+
+
+This example uses Glitch, a collaboration platform for coding web applications.
+
+## 1. Organize 3 Images for gallery
+
+Copy 3 images from your camera to a folder on your computer.
+
+
+## 2. Remix Gallery Application on Glitch
+
+## [Start Coding Now](https://glitch.com/edit/#!/360gallery)
+
+Press _Remix_ to make your own copy of the files.
+
+![](/blog/img/2017-06/vrgallery/glitchRemix.png)
+
+After the remix, your site will have a new random name.
+
+![](/blog/img/2017-06/vrgallery/glitchRemixName.png)
+
+You can customize the name from the drop down menu.
+
+![](/blog/img/2017-06/vrgallery/NameChange.png)
+
+
+
+## 3. Upload THETA Images to Glitch
+
+Under the assets area, drag and drop your THETA images.
+
+
+![](/blog/img/2017-06/vrgallery/glitchAssets.png)
+
+
+## 4. Click on the image to get the URL
+
+![](/blog/img/2017-06/vrgallery/glitchUrl.png)
+
+
+## 5. Copy URL Into HTML File
+
+In the HTML, change the src of the first image, line 18.
+
+![](/blog/img/2017-06/vrgallery/glitchFirstImage.png)
+
+
+
+## 6. Copy URL for Next 2 Images
+
+Repeat the process above for the next 2 files on lines 23 and 24.
+
+![](/blog/img/2017-06/vrgallery/glitchUrl23.png)
+
+## 7. View Live Site
+
+Press _Show_ in the upper left corner
+
+![](/blog/img/2017-06/vrgallery/glitchShow.png)
+
+Glitch will open up a new browser.
+
+![](/blog/img/2017-06/vrgallery/glitchView.png)
+
+## 8. Share on Facebook
+
+Grab the link from your browser to share on Facebook.
+
+Example: https://ablaze-bike.glitch.me/
+
+![](/blog/img/2017-06/vrgallery/glitchFB.png)
+
+
+## 9. Modify Code
+
+A good next step is to upload menu pictures. The menus are 240x240 pixel images.
+
+![](/blog/img/2017-06/vrgallery/glitchModify.png)
+
+![](/blog/img/2017-06/vrgallery/glitchImage2.png)
+
+
+## 10. Use in Cardboard
+
+Put the URL into Google Chrome on your phone and put your phone into
+Google Cardboard.
+
+![](/blog/img/2017-06/vrgallery/vr.png)
+
+# [Discuss](http://lists.theta360.guide/t/easily-create-a-360-gallery-for-ricoh-theta-with-a-frame/456)

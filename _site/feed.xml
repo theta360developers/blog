@@ -4,11 +4,118 @@
     <title>THETA 360 Unofficial Blog</title>
     <description>Community information for developers of applications for the RICOH THETA camera. Go to theta360.guide for more information.
 </description>
-    <link>http://theta360.guide/blog/</link>
-    <atom:link href="http://theta360.guide/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Jan 2017 01:37:56 +0000</pubDate>
-    <lastBuildDate>Wed, 25 Jan 2017 01:37:56 +0000</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <link>http://localhost:4000/blog/</link>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 07 Jun 2017 08:32:04 -0700</pubDate>
+    <lastBuildDate>Wed, 07 Jun 2017 08:32:04 -0700</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>How To: Create a THETA Image VR Gallery with A-Frame</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/topImage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A-Frame works on web, mobile, and headsets.&lt;/p&gt;
+
+&lt;h2 id=&quot;test-it&quot;&gt;&lt;a href=&quot;https://kai360.glitch.me&quot;&gt;Test It&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;The site works best with your phone in landscape mode.&lt;/p&gt;
+
+&lt;p&gt;A-Frame is a leading
+open source frameworks for WebVR, an experimental specification
+for JavaScript APIs. For a status update on WebVR, go to
+&lt;a href=&quot;https://webvr.info/&quot;&gt;webvr.info&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/gallery1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/gallery2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This example uses Glitch, a collaboration platform for coding web applications.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-organize-3-images-for-gallery&quot;&gt;1. Organize 3 Images for gallery&lt;/h2&gt;
+
+&lt;p&gt;Copy 3 images from your camera to a folder on your computer.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-remix-gallery-application-on-glitch&quot;&gt;2. Remix Gallery Application on Glitch&lt;/h2&gt;
+
+&lt;h2 id=&quot;start-coding-now&quot;&gt;&lt;a href=&quot;https://glitch.com/edit/#!/360gallery&quot;&gt;Start Coding Now&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Press &lt;em&gt;Remix&lt;/em&gt; to make your own copy of the files.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchRemix.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After the remix, your site will have a new random name.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchRemixName.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can customize the name from the drop down menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/NameChange.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-upload-theta-images-to-glitch&quot;&gt;3. Upload THETA Images to Glitch&lt;/h2&gt;
+
+&lt;p&gt;Under the assets area, drag and drop your THETA images.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchAssets.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-click-on-the-image-to-get-the-url&quot;&gt;4. Click on the image to get the URL&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchUrl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-copy-url-into-html-file&quot;&gt;5. Copy URL Into HTML File&lt;/h2&gt;
+
+&lt;p&gt;In the HTML, change the src of the first image, line 18.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchFirstImage.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-copy-url-for-next-2-images&quot;&gt;6. Copy URL for Next 2 Images&lt;/h2&gt;
+
+&lt;p&gt;Repeat the process above for the next 2 files on lines 23 and 24.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchUrl23.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7-view-live-site&quot;&gt;7. View Live Site&lt;/h2&gt;
+
+&lt;p&gt;Press &lt;em&gt;Show&lt;/em&gt; in the upper left corner&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchShow.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Glitch will open up a new browser.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchView.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8-share-on-facebook&quot;&gt;8. Share on Facebook&lt;/h2&gt;
+
+&lt;p&gt;Grab the link from your browser to share on Facebook.&lt;/p&gt;
+
+&lt;p&gt;Example: https://ablaze-bike.glitch.me/&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchFB.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;9-modify-code&quot;&gt;9. Modify Code&lt;/h2&gt;
+
+&lt;p&gt;A good next step is to upload menu pictures. The menus are 240x240 pixel images.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchModify.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/glitchImage2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;10-use-in-cardboard&quot;&gt;10. Use in Cardboard&lt;/h2&gt;
+
+&lt;p&gt;Put the URL into Google Chrome on your phone and put your phone into
+Google Cardboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2017-06/vrgallery/vr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;discuss&quot;&gt;&lt;a href=&quot;http://lists.theta360.guide/t/easily-create-a-360-gallery-for-ricoh-theta-with-a-frame/456&quot;&gt;Discuss&lt;/a&gt;&lt;/h1&gt;
+</description>
+        <pubDate>Wed, 07 Jun 2017 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/blog/webvr/2017/06/07/tutorial-aframe-theta-image-gallery.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/webvr/2017/06/07/tutorial-aframe-theta-image-gallery.html</guid>
+        
+        
+        <category>webvr</category>
+        
+      </item>
     
       <item>
         <title>THETA Live Streaming -- Convert Dual-Fisheye to Equirectangular </title>
@@ -93,9 +200,9 @@ this technology trickle down to independent and boutique development partners in
 &lt;a href=&quot;http://lists.theta360.guide/&quot;&gt;Unofficial Guide community&lt;/a&gt; so that the
 information can help other people.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 Jan 2017 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</guid>
+        <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</guid>
         
         
         <category>Video</category>
@@ -133,7 +240,7 @@ tests showing 1920x1080 at 30fps.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://theta360.com/en/info/news/2016-11-24-2/&quot;&gt;Firmware 01.82&lt;/a&gt; (Nov 24)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;official-ricoh-uvc-blender-live-streaming-app-and-mobile-app-download-sitehttpstheta360comensupportdownload&quot;&gt;&lt;a href=&quot;https://theta360.com/en/support/download/&quot;&gt;Official RICOH UVC Blender (Live Streaming App) and Mobile App Download Site&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;official-ricoh-uvc-blender-live-streaming-app-and-mobile-app-download-site&quot;&gt;&lt;a href=&quot;https://theta360.com/en/support/download/&quot;&gt;Official RICOH UVC Blender (Live Streaming App) and Mobile App Download Site&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/1X/bd29d4a969553fdd5f07fde03237d0c394f2046e.png&quot; width=&quot;109&quot; height=&quot;141&quot; /&gt;&lt;/p&gt;
 
@@ -225,9 +332,9 @@ tests showing 1920x1080 at 30fps.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/7/7dd76414c1632890274c340b31afedaf6a29c56a.png&quot; width=&quot;450&quot; height=&quot;247&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 02 Dec 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</guid>
+        <pubDate>Fri, 02 Dec 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</guid>
         
         
         <category>Video,</category>
@@ -266,9 +373,9 @@ tests showing 1920x1080 at 30fps.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/0/0981257716e74b46d97218e1bab8925c170ab50e.jpg&quot; width=&quot;690&quot; height=&quot;385&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 29 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</guid>
+        <pubDate>Tue, 29 Nov 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</guid>
         
         
         <category>Unity</category>
@@ -317,9 +424,9 @@ Drag the THETA image into the &lt;em&gt;Images&lt;/em&gt; folder of Unity.&lt;/p
 
 &lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html&quot;&gt;Next Pt 4: Unity Export to Web&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 25 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html</guid>
+        <pubDate>Fri, 25 Nov 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</guid>
         
         
         <category>Unity</category>
@@ -365,9 +472,9 @@ like.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html&quot;&gt;Next Pt 3: Import images from camera to Unity&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 20 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</guid>
+        <pubDate>Sun, 20 Nov 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</guid>
         
         
         <category>Unity</category>
@@ -412,9 +519,9 @@ like.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html&quot;&gt;Next Pt 2: Install Files and Navigate in Unity&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</guid>
+        <pubDate>Tue, 15 Nov 2016 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</guid>
         
         
         <category>Unity</category>
@@ -457,9 +564,9 @@ and added free 3D assets from &lt;a href=&quot;http://archive3d.net/&quot;&gt;Ar
 
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/ar/dog.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/unity/2016/10/23/augmented-reality-image-example.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/10/23/augmented-reality-image-example.html</guid>
+        <pubDate>Sun, 23 Oct 2016 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/blog/unity/2016/10/23/augmented-reality-image-example.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/10/23/augmented-reality-image-example.html</guid>
         
         
         <category>Unity</category>
@@ -502,11 +609,11 @@ mouse, arrow or WASD to walk or run around the environment.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/browser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;watch-the-video-nowhttpswwwyoutubecomwatchvc-moljcymi8&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=c-MoLjcYmi8&quot;&gt;Watch The Video Now&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;watch-the-video-now&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=c-MoLjcYmi8&quot;&gt;Watch The Video Now&lt;/a&gt;&lt;/h1&gt;
 </description>
-        <pubDate>Sat, 22 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</guid>
+        <pubDate>Sat, 22 Oct 2016 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</guid>
         
         
         <category>Unity</category>
@@ -564,7 +671,7 @@ video into equirectangular.
 
 &lt;p&gt;Drop in the code below from community member &lt;a href=&quot;http://tengshanyuan.com/&quot;&gt;Shanyuan Teng&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Shader &quot;ThetaInsideShader&quot; {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;Shader &quot;ThetaInsideShader&quot; {
 	Properties{
 		_MainTex(&quot;Base (RGB)&quot;, 2D) = &quot;white&quot; {}
 	}
@@ -613,7 +720,6 @@ video into equirectangular.
 	}
 
 }
-&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;add-shader-to-sphere&quot;&gt;Add Shader to Sphere&lt;/h2&gt;
@@ -634,7 +740,7 @@ If you’re on Windows, Unity needs QuickTime for the import.&lt;/p&gt;
 
 &lt;p&gt;This is the code from community member &lt;a href=&quot;http://tengshanyuan.com/&quot;&gt;Shanyuan Teng&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;using UnityEngine;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;using UnityEngine;
 using System.Collections;
 
 public class VideoPlayback : MonoBehaviour {
@@ -650,7 +756,6 @@ public class VideoPlayback : MonoBehaviour {
 	}
 
 }
-&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;add-texture-to-video-sphere&quot;&gt;Add Texture to Video Sphere&lt;/h2&gt;
@@ -668,76 +773,14 @@ texture.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://lists.theta360.guide/uploads/default/original/2X/7/7416b3ee83c80c59f4167fa99d1ba2095cee7ca4.unitypackage&quot;&gt;Download Unity Package File&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</guid>
+        <pubDate>Sun, 16 Oct 2016 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</guid>
         
         
         <category>Video,</category>
         
         <category>Unity</category>
-        
-      </item>
-    
-      <item>
-        <title>First Impression of Unity for THETA Live Streaming</title>
-        <description>&lt;p&gt;I spent last night in Santa Cruz and was planning to go surfing this morning,
-but when I woke up, I saw that red tide had hit the coast and was I decided
-to stay on shore, install Unity on my laptop and get Makoto-san’s
-&lt;a href=&quot;https://github.com/theta360developers/ThetaWifiStreaming&quot;&gt;ThetaWifiStreaming&lt;/a&gt;
-app working.&lt;/p&gt;
-
-&lt;p&gt;Wow. I simply opened up the project in Unity, pressed &lt;em&gt;Play&lt;/em&gt;, and the WiFi
-360 streaming started to work.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/game-view-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Going to the &lt;em&gt;Scene&lt;/em&gt; tab, I was able to change the perspective.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-1-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Using the scroll wheel, I was able to zoom out on the sphere to see exterior
-of the 360 video.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-2-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Usually, when you watch a 360 video on YouTube, your perspective
-is from the center of the sphere. It’s cool to see the outside. It’s so
-cool that I zoomed out more and realized I could put the sphere on a plane.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-4-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I adjusted the Scene view to get a top-down perspective of the video sphere
-and see the stitching.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/scene-3-crop.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I then oriented the camera to face me directly to get a better view of the
-stitching.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/top-down-sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The stitching to equirectangular MotionJPEG is done inside of the THETA using
-RICOH’s proprietary ASIC chip. As you would expect, the stitching is great.
-The main downside is that the video stream
-is only 640x320 and streams over WiFi at 10fps.&lt;/p&gt;
-
-&lt;p&gt;In a
-&lt;a href=&quot;http://theta360.guide/blog/live/streaming/2016/10/14/wifi-streaming-theta-s-unity.html&quot;&gt;previous blog post&lt;/a&gt;, I showed a picture from Makoto-san of his app working
-on a mobile phone.&lt;/p&gt;
-
-&lt;p&gt;The streaming is intended only to preview still images. However, it’s fun to
-play with and get a taste for what might be possible in the future with 360
-video streams.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Oct 2016 00:00:00 +0000</pubDate>
-        <link>http://theta360.guide/blog/live/streaming/2016/10/15/unity-first-experience.html</link>
-        <guid isPermaLink="true">http://theta360.guide/blog/live/streaming/2016/10/15/unity-first-experience.html</guid>
-        
-        
-        <category>Live</category>
-        
-        <category>Streaming</category>
         
       </item>
     
