@@ -30,7 +30,11 @@ This example uses Glitch, a collaboration platform for coding web applications.
 
 ## 1. Organize 3 Images for gallery
 
-Copy 3 images from your camera to a folder on your computer.
+### Plug camera into computer with USB cable
+
+![](/blog/img/2017-06/vrgallery/thetaMount.png)
+
+Open camera folder.  Copy 3 images from your camera to a folder on your computer.
 
 
 ## 2. Remix Gallery Application on Glitch
@@ -88,16 +92,25 @@ Glitch will open up a new browser.
 
 ![](/blog/img/2017-06/vrgallery/glitchView.png)
 
-## 8. Share on Facebook
+## 8. Customize Your Gallery Title and Description
+
+Facebook will grab the title and description meta tags to
+automatically generate  a post when you share the link on your Wall
+or the group's wall. Edit the tags with your own title and message.
+
+![](/blog/img/2017-06/vrgallery/glitchMeta.png)
+
+
+## 9. Share on Facebook
 
 Grab the link from your browser to share on Facebook.
 
-Example: https://ablaze-bike.glitch.me/
+Example: https://craigjesse360.glitch.me/
 
-![](/blog/img/2017-06/vrgallery/glitchFB.png)
+![](/blog/img/2017-06/vrgallery/fbPost.png)
 
 
-## 9. Modify Code
+## 10. Modify Code
 
 A good next step is to upload menu pictures. The menus are 240x240 pixel images.
 
@@ -106,7 +119,7 @@ A good next step is to upload menu pictures. The menus are 240x240 pixel images.
 ![](/blog/img/2017-06/vrgallery/glitchImage2.png)
 
 
-## 10. Use in Cardboard
+## 11. Use in Cardboard
 
 Put the URL into Google Chrome on your phone and put your phone into
 Google Cardboard.
