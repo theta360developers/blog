@@ -8,17 +8,12 @@ categories: webvr
 ---
 ![](/blog/img/2017-06/vrgallery/topImage.png)
 
-A-Frame works on web, mobile, and headsets.
+A-Frame(1) works on web, mobile, and headsets.
 
 ## [Test It](https://kai360.glitch.me)
 
 The site works best with your phone in landscape mode.
 
-
-A-Frame is a leading
-open source frameworks for WebVR, an experimental specification
-for JavaScript APIs. For a status update on WebVR, go to
-[webvr.info](https://webvr.info/)
 
 
 ![](/blog/img/2017-06/vrgallery/gallery1.png)
@@ -133,3 +128,10 @@ Google Cardboard.
 ![](/blog/img/2017-06/vrgallery/vr.png)
 
 # [Discuss](http://lists.theta360.guide/t/easily-create-a-360-gallery-for-ricoh-theta-with-a-frame/456)
+
+### Notes <a name="#Notes"></a>
+
+(1) A-Frame is a leading
+open source frameworks for WebVR, an experimental specification
+for JavaScript APIs. For a status update on WebVR, go to
+[webvr.info](https://webvr.info/)
