@@ -70,7 +70,7 @@ Under the assets area, drag and drop your THETA images.
 ![](/blog/img/2017-06/vrgallery/glitchUrl.png)
 
 
-## 5. Copy URL Into HTML File
+## 5. Paste URL Into HTML File
 
 Select the index.html file in the left pane.
 
@@ -83,7 +83,7 @@ In the HTML, change the src of the first image, line 18.
 
 
 
-## 6. Copy URL for Next 2 Images
+## 6. Paste URL for Next 2 Images
 
 Repeat the process above for the next 2 files on lines 23 and 24.
 
