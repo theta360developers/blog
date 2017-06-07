@@ -109,8 +109,20 @@ or the group's wall. Edit the tags with your own title and message.
 
 ![](/blog/img/2017-06/vrgallery/glitchMeta.png)
 
+## 9. Create Glitch Account
 
-## 9. Share on Facebook
+Create a Glitch account to make sure your site is permanently saved.
+
+![](/blog/img/2017-06/vrgallery/glitchAccount.png)
+
+You can either use your Facebook or your GitHub account to sign in.
+
+![](/blog/img/2017-06/vrgallery/glitchSignIn.png)
+
+_Note: As of June 7, 2017, I'm unsure how long the URL is retained if you do
+not create a Glitch account._
+
+## 10. Share on Facebook
 
 Grab the link from your browser to share on Facebook.
 
@@ -119,7 +131,7 @@ Example: https://craigjesse360.glitch.me/
 ![](/blog/img/2017-06/vrgallery/fbPost.png)
 
 
-## 10. Modify Code
+## 11. Modify Code
 
 A good next step is to upload menu pictures. The menus are 240x240 pixel images.
 
@@ -128,7 +140,7 @@ A good next step is to upload menu pictures. The menus are 240x240 pixel images.
 ![](/blog/img/2017-06/vrgallery/glitchImage2.png)
 
 
-## 11. Use in Cardboard
+## 12. Use in Cardboard
 
 Put the URL into Google Chrome on your phone and put your phone into
 Google Cardboard.
