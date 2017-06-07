@@ -51,7 +51,9 @@ After the remix, your site will have a new random name.
 
 ![](/blog/img/2017-06/vrgallery/glitchRemixName.png)
 
-You can customize the name from the drop down menu.
+You can customize the name from the drop down menu. When you see a screen
+like the one below, click on the name (example: ablaze-bike) to
+edit the name.
 
 ![](/blog/img/2017-06/vrgallery/glitchNameChange.png)
 
