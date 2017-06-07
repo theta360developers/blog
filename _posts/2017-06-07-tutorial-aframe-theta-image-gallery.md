@@ -34,7 +34,13 @@ This example uses Glitch, a collaboration platform for coding web applications.
 
 ![](/blog/img/2017-06/vrgallery/thetaMount.png)
 
-Open camera folder.  Copy 3 images from your camera to a folder on your computer.
+Open camera folder.  
+
+![](/blog/img/2017-06/vrgallery/theta-drive.png)
+
+Copy 3 images from your camera to a folder on your computer.
+
+![](/blog/img/2017-06/vrgallery/thetaImages.png)
 
 
 ## 2. Remix Gallery Application on Glitch
