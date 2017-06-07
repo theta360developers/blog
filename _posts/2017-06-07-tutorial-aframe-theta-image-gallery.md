@@ -53,7 +53,7 @@ After the remix, your site will have a new random name.
 
 You can customize the name from the drop down menu.
 
-![](/blog/img/2017-06/vrgallery/NameChange.png)
+![](/blog/img/2017-06/vrgallery/glitchNameChange.png)
 
 
 
