@@ -12,7 +12,7 @@ A-Frame(1) works on web, mobile, and headsets.
 
 ## [Test It](https://kai360.glitch.me)
 
-The site works best with your phone in landscape mode.
+Put your phone in landscape mode.
 
 
 
@@ -21,7 +21,8 @@ The site works best with your phone in landscape mode.
 ![](/blog/img/2017-06/vrgallery/gallery2.png)
 
 
-This example uses Glitch, a collaboration platform for coding web applications.
+We're using [Glitch](https://glitch.com/), a fun tool to code web applications
+with your friends.
 
 ## 1. Organize 3 Images for gallery
 
@@ -70,6 +71,11 @@ Under the assets area, drag and drop your THETA images.
 
 
 ## 5. Copy URL Into HTML File
+
+Select the index.html file in the left pane.
+
+![](/blog/img/2017-06/vrgallery/glitchIndex.png)
+
 
 In the HTML, change the src of the first image, line 18.
 
