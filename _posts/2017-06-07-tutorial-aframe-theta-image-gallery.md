@@ -10,7 +10,8 @@ categories: webvr
 
 A-Frame(1) works on web, mobile, and headsets.
 
-## [Test It](https://kai360.glitch.me)
+## [Test It]
+## [http://bit.ly/kai360](https://kai360.glitch.me)
 
 Put your phone in landscape mode.
 
