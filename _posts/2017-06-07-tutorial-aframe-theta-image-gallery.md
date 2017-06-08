@@ -130,6 +130,13 @@ Example: https://craigjesse360.glitch.me/
 
 ![](/blog/img/2017-06/vrgallery/fbPost.png)
 
+In addition to posting to your personal Facebook feed, please join our THETA Workshop
+Facebook Group.
+
+![](/blog/img/2017-06/vrgallery/fbGroup.png)
+
+### [Join THETA Workshop Facebook Group](https://www.facebook.com/groups/1057417001027240/)
+
 
 ## 11. Modify Code
 
@@ -140,14 +147,20 @@ A good next step is to upload menu pictures. The menus are 240x240 pixel images.
 ![](/blog/img/2017-06/vrgallery/glitchImage2.png)
 
 
-## 12. Use in Cardboard
+## 12. Use Cardboard
 
 Put the URL into Google Chrome on your phone and put your phone into
 Google Cardboard.
 
 ![](/blog/img/2017-06/vrgallery/vr.png)
 
-# [Discuss](http://lists.theta360.guide/t/easily-create-a-360-gallery-for-ricoh-theta-with-a-frame/456)
+## 13. [Join THETA Workshop Facebook Group](https://www.facebook.com/groups/1057417001027240/)
+
+Share your creation on Facebook and keep in touch with other people that
+went through the tutorial or attended a THETA workshop. We'd love to see
+what you created.
+
+[Join Now](https://www.facebook.com/groups/1057417001027240/)
 
 ### Notes <a name="#Notes"></a>
 
