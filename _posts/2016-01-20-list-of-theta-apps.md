@@ -50,7 +50,7 @@ PanoVR also is great for things like tripod removal or fixing images. You can se
 
 ## Online Programs
 
-* [HoloBuilder](https://www.holobuilder.com/index.html) Complete tour tool and totally FREE - From our friend Fabian Fabian
+* [HoloBuilder](https://www.holobuilder.com/) Complete tour tool and totally FREE - From our friend Fabian Fabian
 
 * [Spinattic](http://www.spinattic.com/) Free tour creation tool, with social network integrated
 
