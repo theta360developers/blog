@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "How To: Facebook Live Streaming with Wi-Fi"
-date:   2018-07-30
+date:   2018-07-31
 author: "Craig Oda"
 categories: streaming
 ---
