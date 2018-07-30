@@ -19,20 +19,21 @@ Prior to this new technique, people needed to use a mobile phone or laptop
 to connect to the THETA with a USB cable. Now, you can stream events directly
 with no additional streaming equipment.
 
-A free user guide is available [here](http://theta360.guide/plugin/) that covers all the steps in detail.
-
-I'll provide a short overview in this article to get you started quickly.
+A free user guide is available [here](http://theta360.guide/plugin/) that covers all the steps in detail. This article provides a short overview to get you started quickly.
 
 ## Setup
 
-This example shows configuration for YouTube. The [user guide]((http://theta360.guide/plugin/)) covers
-Facebook as well. 
+This example shows configuration for YouTube. The [user guide]((http://theta360.guide/plugin/)) also includes a step-by-step guide for
+Facebook. 
+
+### Overview of Steps
 
 1. Download plug-in from THETA Store
 1. Install plug-in in camera
 1. Create Live 360° Event on YouTube
 1. Connect camera to an Internet router (Wi-Fi hotspot)
 1. Use web browser to configure camera with YouTube streaming settings
+1. Launch your Live 360° event and party
 
 Downloading and installing the plug-in is the same process for all plug-ins. See 
 the user guide for details. Steps specific to YouTube Live Events are shown below.
