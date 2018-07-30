@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "How To: Live Stream 360° Video Wirelessly to YouTube and Facebook"
+title:  "How To: Live Stream 360° Video Wirelessly to YouTube"
 date:   2018-07-30
 author: "Craig Oda"
 categories: streaming
