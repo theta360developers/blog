@@ -24,7 +24,9 @@ A free user guide is available [here](http://theta360.guide/plugin/) that covers
 ## Setup
 
 This example shows configuration for YouTube. The [user guide]((http://theta360.guide/plugin/)) also includes a step-by-step guide for
-Facebook. 
+Facebook. If you're eager to get started with streaming to Facebook, 
+I summarized the main points of Facebook
+configuration in [this](http://theta360.guide/blog/streaming/2018/07/31/facebook-wireless.html) blog post.
 
 ### Overview of Steps
 
