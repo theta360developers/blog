@@ -101,7 +101,7 @@ Assuming your have zeroconf installed, you can run the script with:
 
 If you're a developer, the short video below may be useful.
 
-[![](/blog/img/2018-08/find-ip/dns-sd.png)](https://youtu.be/z_9elAmeXv4)
+[![](/blog/img/2018-08/find-ip/youtube-find-ip.png)](https://youtu.be/z_9elAmeXv4)
 
 
 
