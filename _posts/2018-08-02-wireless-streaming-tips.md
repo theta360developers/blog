@@ -10,6 +10,8 @@ Thanks to the community, we received many tips to use the THETA V to stream to
 YouTube using Wi-Fi, mobile data hotspot, and USB tethering to a mobile phone.
 I've collected the best tips from the community here for you.
 
+Read the free [Plug-in User Guide](http://theta360.guide/plugin/) for more information.
+
 # Introduction
 
 The THETA V can stitch videos in real-time inside the camera. With this technology, a direct connection to a live streaming service such as YouTube can be easily implemented by using Plug-in.
