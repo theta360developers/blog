@@ -50,7 +50,7 @@ get the IP address quickly.
 
 ![](/blog/img/2018-08/find-ip/adb-shell.png)
 
-![](/blog/img/2018-08/find-ip/mobile-ip.png)
+![](/blog/img/2018-08/find-ip/ifconfig.png)
 
 In the example above, the IP address of my camera is 192.168.2.102.
 
