@@ -4,11 +4,480 @@
     <title>THETA 360 Unofficial Blog</title>
     <description>Community information for developers of applications for the RICOH THETA camera. Go to theta360.guide for more information.
 </description>
-    <link>http://localhost:4000/blog/</link>
-    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Jun 2017 17:01:23 -0700</pubDate>
-    <lastBuildDate>Wed, 07 Jun 2017 17:01:23 -0700</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <link>http://0.0.0.0:4000/blog/</link>
+    <atom:link href="http://0.0.0.0:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 23 Aug 2018 11:11:11 -0700</pubDate>
+    <lastBuildDate>Thu, 23 Aug 2018 11:11:11 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Wireless Live Streaming Top Tips</title>
+        <description>&lt;p&gt;Thanks to the community, we received many tips to use the THETA V to stream to
+YouTube using Wi-Fi, mobile data hotspot, and USB tethering to a mobile phone.
+I’ve collected the best tips from the community here for you.&lt;/p&gt;
+
+&lt;p&gt;Read the free &lt;a href=&quot;http://theta360.guide/plugin/&quot;&gt;Plug-in User Guide&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;The THETA V can stitch videos in real-time inside the camera. With this technology, a direct connection to a live streaming service such as YouTube can be easily implemented by using Plug-in.&lt;/p&gt;
+
+&lt;p&gt;A big benefit is that VR live streaming (“live”) can be easily accomplished without a computer using a wireless router (either a mobile router or a Wi-Fi router at home) or smartphone tethering. If you tether the THETA to your smartphone, you do not need to launch the THETA application even during live streaming.&lt;/p&gt;
+
+&lt;p&gt;The ability to stream directly from the camera to YouTube without a separate app appears to be a unique strength of the THETA V compared to other 360 cameras.&lt;/p&gt;
+
+&lt;p&gt;This is useful when you travel for a short time with mobile scenes such as travel destinations and events.&lt;/p&gt;
+
+&lt;p&gt;If you use the tethering function of a mobile router or smartphone to live stream on a 4G line, be careful of data bandwidth limitations. As a guideline, for 2k video, you need 3 Mbps (sufficient level for watching with a smartphone etc., insufficient resolution to see with HMD), and 1GB of packets will be used in about 45 minutes.&lt;/p&gt;
+
+&lt;p&gt;With 4k video, approximately 4 times the bandwidth is necessary. Also, in wireless LAN mode, since heat generation will increase, it’s not suitable for live streaming for a long time period. Thermal shutdown occurs. It is likely to be good enough if it is used for short time periods several times in a month.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If you do live streaming with a wired connection (directly connected to a router with a USB - Ethernet conversion cable) as described below, thermal shutdown will be less likely to occur because power consumption used by Wi-Fi is suppressed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-start-up-youtube-live-streaming-when-you-are-all-prepped&quot;&gt;How to Start Up YouTube Live Streaming When You Are All Prepped&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Everyday Usage&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Turn on tethering to smartphone. (This operation is unnecessary if it is a home Wi-Fi router)&lt;/li&gt;
+  &lt;li&gt;When you turn on the THETA V, the green wireless LED will be blinking. Once connected to tethering (router function), it changes to solid.&lt;/li&gt;
+  &lt;li&gt;Press the side MODE button for 2 seconds. The LED above the shutter button turns white.&lt;/li&gt;
+  &lt;li&gt;Press the shutter button. The red LED will begin flashing. This will start live streaming on YouTube. That’s all it takes!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After that, if you send the URL to your friends, etc., via text or email, you can watch live video from friends from smartphone or a computer, just by clicking the URL. It is not necessary to launch the THETA application. The same URL can be used many times. Live streaming anytime, anywhere, immediately.&lt;/p&gt;
+
+&lt;p&gt;The viewer may not be able to watch in 360 degrees unless the default browser is Chrome.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;*During evaluation so far, although it is possible to start and stop live streaming with THETA’s shutter button multiple times, YouTube will stop continuous live streaming by the following day. It has not been clarified on what timing it is stopping. However, even after YouTube stops live streaming, the original settings are preserved, so, it seems that live streaming can resume with the same URL and the same key.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;preliminary-preparation-of-youtube-settings&quot;&gt;Preliminary Preparation of YouTube settings&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;This is the most annoying part&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a YouTube account (channel). People who have one can use it as-is.&lt;/li&gt;
+  &lt;li&gt;Access YouTube from a PC or Mac. (It can not be set up from a smartphone.)&lt;/li&gt;
+  &lt;li&gt;Click on your account icon in the upper right corner of the YouTube site and select Creator Studio.&lt;/li&gt;
+  &lt;li&gt;When the dashboard comes up, click Live Streaming on the left side and select Events.&lt;/li&gt;
+  &lt;li&gt;Click New Live Event in the upper right.&lt;/li&gt;
+  &lt;li&gt;Fill in the Title. Any title is okay, even “test,” but you have to put in something.&lt;/li&gt;
+  &lt;li&gt;To the right of the Title, you select the video privacy setting. Let’s choose Public.&lt;/li&gt;
+  &lt;li&gt;Basically, if someone does not know the URL, whichever setting you choose, it will not change much, so you can leave it alone.&lt;/li&gt;
+  &lt;li&gt;There is a setting for the time and date under the Title. Set up the day and then set the time slightly before the current time (within 30 minutes). For example, if the current time is 2:20, set it to 2:00. With this setting, you can start broadcasting immediately.&lt;/li&gt;
+  &lt;li&gt;Click Advanced settings next to Basic info.&lt;/li&gt;
+  &lt;li&gt;At the lower right corner, place a ✓ for &lt;em&gt;This live stream is 360°&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;At the bottom right, click Create Event.&lt;/li&gt;
+  &lt;li&gt;At the bottom of the next screen, click &lt;em&gt;Reusable stream key&lt;/em&gt; and choose &lt;em&gt;Create new stream&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;You can enter anything for the Stream name.&lt;/li&gt;
+  &lt;li&gt;By choosing the maximum bit rate, you can assume mobile access and choose 1080p. In this case, the distribution will be Full HD. It’s realistic to get Full HD when it is used for mobile. When using 4k, it is necessary to secure enough bandwidth like having a network environment with fiber optic lines.&lt;/li&gt;
+  &lt;li&gt;Click Save Change. For the moment, your YouTube settings are all finished.&lt;/li&gt;
+  &lt;li&gt;Go to the live console screen and copy the URL and the streaming key. In my case, I sent it in Gmail to myself. (This will be useful later.) This URL and Key can be used repeatedly.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;preliminary-preparation-theta-v-setting&quot;&gt;Preliminary Preparation THETA V Setting&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;What is client mode?&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Background: Wireless LAN is a convenient function in Client Mode (CL). It is an indispensable setting when using wireless live streaming, cloud uploading, etc. However, before getting used to it, you may be confused by this setting.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;CL Mode is not difficult. Everyone uses a computer connected by Wi-Fi at home or office, are you not? In this case, since the computer is operating in CL Mode in a wireless environment, it is normal Wi-Fi usage and not special. THETA V’s CL Mode is equivalent to connecting via Wi-Fi to a router, just like a computer. Once set, it will automatically connect to Wi-Fi.&lt;/p&gt;
+
+&lt;p&gt;However, THETA has no display or keyboard. Therefore, some preliminary preparation is required. Everyone uses Wi-Fi when connecting THETA and smartphones, right? That one-to-one mode is called Wi-Fi Ad Hoc Mode. It is only a one-to-one connection, though, and a Wi-Fi connection is required every time since THETA is the parent, and the smartphone is the child. This can be inconvenient.&lt;/p&gt;
+
+&lt;p&gt;Using CL Mode, THETA can now connect with the net via a router just like other IoT devices. In other words, by using CL Mode, THETA V will be included with other IoT devices.&lt;/p&gt;
+
+&lt;p&gt;OK, I will return to preparation.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Confirm that wireless LAN is set to CL Mode as described in the previous step.
+  If it is not set to CL Mode, connect THETA V and smartphone via Wi-Fi Ad Hoc Mode (direct connection mode) and switch to CL Mode. CL Mode is the same as when a laptop is connected to Wi-Fi and an IP address is automatically assigned when connected to an access point or a router. CL Mode is also called Infrastructure Mode, which is more common, but Apple seems to call it CL Mode.&lt;/li&gt;
+  &lt;li&gt;If you are already in CL Mode, press the Wi-Fi button on the THETA and the blinking green LED will change to solid. You’re connected to the router. In this state, THETA is connected to the net by giving the router (parent) an IP address (address on the net) as a child, equivalent to other IoT devices (computer, smartphone etc. …).&lt;/li&gt;
+  &lt;li&gt;In this state, the smartphone is also connected to the router. In the Wi-Fi setting for the smartphone, find the SSID for THETA and connect to it there.&lt;/li&gt;
+  &lt;li&gt;Launch the THETA application and select Picture –&amp;gt; Settings in the camera.
+5.1 It is now connected to THETA via the router.
+5.2 If there’s a red display on the smartphone indicating that you’re not connected to the camera, it is not connected properly. Let’s try restarting the THETA once.&lt;/li&gt;
+  &lt;li&gt;Choose Camera Setting in Settings. Choose Wireless Live Streaming in the plug-in listing.&lt;/li&gt;
+  &lt;li&gt;Go back one and start the plugin. When you tap the web pages icon, the web screen display will come up. Now enter the streaming resolution and bitrate. I suggest copying the YouTube URL and Key from here. It’s a pain to enter URL and Key that you got on the computer to your smartphone. I sent the Key and URL information from the computer to the smartphone by Gmail and then can copy it easily on the smartphone. There are less mistakes this way.&lt;/li&gt;
+  &lt;li&gt;This time, the resolution for live streaming is 1920 x 1080 30 fps (in other words 2k) is chosen.&lt;/li&gt;
+  &lt;li&gt;Also, set the bit rate to 3 Mbps.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;start-streaming&quot;&gt;Start Streaming&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;When you turn on the THETA V power, the green wireless LED flashes. After that, it changes to solid when connected to tethering (router function).&lt;/li&gt;
+  &lt;li&gt;Press the side MODE button for 2 seconds. The LED above the shutter button turns white.&lt;/li&gt;
+  &lt;li&gt;On the above smartphone web screen, tap the streaming start button.
+The red LED on the THETA V will come on (indicating that it is streaming)&lt;/li&gt;
+  &lt;li&gt;Preview is done on the live control screen in YouTube (on the computer). If the live screen comes up, things are good. However, let’s keep going even if it does not come up.&lt;/li&gt;
+  &lt;li&gt;On the YouTube screen, press the start streaming button.&lt;/li&gt;
+  &lt;li&gt;Let’s get the YouTube broadcast URL by clicking on the share button.&lt;/li&gt;
+  &lt;li&gt;By entering the broadcast URL in a web browser, if you can see the live screen, it’s a success!&lt;/li&gt;
+  &lt;li&gt;Share the URL to your friends and when they enter it in a browser, they can see the live streaming from anywhere in the world.&lt;/li&gt;
+  &lt;li&gt;A delay of 10 - 20 seconds will occur, but live streaming is like that. (It will be faster if it is a paid service)&lt;/li&gt;
+  &lt;li&gt;If you share the URL by email, etc., viewers will see 360 degree movies / sound that can be rotated. However, when you share the URL by other apps, sometimes only equirectangular versions will only be displayed. Not all apps support 360° movies. In this case, the viewer will be able to play 360° movies by opening them in Safari, so it works fine but it will take a little while.&lt;/li&gt;
+  &lt;li&gt;Now you have set the URL that you will use, you can use the THETA V button at any time without touching the YouTube settings, as described above in &lt;em&gt;How to Start Up YouTube Live Streaming When You Are All Prepped.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;practical-use---live-streaming-in-mobile-environment&quot;&gt;Practical Use - Live streaming in mobile environment&lt;/h2&gt;
+
+&lt;p&gt;Basically, the tethering function of the Wi-Fi router, the mobile router, and the smartphone in the house, etc., have differences in the method connecting to the Internet, but all of these work equally well as seen from the THETA side.&lt;/p&gt;
+
+&lt;p&gt;Let’s try using the tethering function of the smartphone as a mobile router here.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Turn on the tethering function of the smartphone. For iPhone it is called Internet Sharing. Turn this on.&lt;/li&gt;
+  &lt;li&gt;In the CL Mode setting, set the smartphone model ID (equivalent to SSID) to the name and set the password for tethering. Security is set to WPA / WPA2 PSK.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In this state, when launching in THETA’s CL Mode in the mobile environment, the smartphone is automatically selected as a router. If there are two routers in the same environment, routers are chosen in the order of the setting priority.&lt;/p&gt;
+
+&lt;p&gt;As a precaution, both the tethering of the smartphone and the mobile router often have capacity restrictions such as 2 GB per month, so be careful.&lt;/p&gt;
+
+&lt;h2 id=&quot;practical-use---facebook-and-other-streaming-services&quot;&gt;Practical Use - Facebook and other streaming services&lt;/h2&gt;
+
+&lt;p&gt;There seems to be times where it is possible to live stream to Facebook and times when it can not be done. Since THETA V utilizes a streaming method called RTMP, basically it may work if you set Key and server URL provided from the streaming service for THETA. There are reports that it worked on Facebook, but in my case I did not succeed.&lt;/p&gt;
+
+&lt;h2 id=&quot;practical-use---live-and-merit-with-wired-connection&quot;&gt;Practical Use - Live and merit with wired connection&lt;/h2&gt;
+
+&lt;p&gt;Wi-Fi routers in homes and the like have Ethernet ports. By using the adapter, it seems possible to use THETA’s USB port and Ethernet, and make a wired LAN connection. (I have not tested it since I have not obtained an adapter.)&lt;/p&gt;
+
+&lt;p&gt;The advantage of this case is that computer was intervening in streaming in the past, but it is now theoretically possible to connect THETA and router directly. Furthermore, it seems that you can expect more stable live streaming than wireless LAN (Wi-Fi). This could be especially good in situations where there are a lot of interference from other radio signals such as in exhibition halls. Also, in wireless LAN mode, since THETA consumes extra power, thermal shutdown tends to occur, but a wired LAN connection may delay thermal shutdown.&lt;/p&gt;
+
+&lt;p&gt;※ The adapter is in development and currently under investigation.&lt;/p&gt;
+
+&lt;h2 id=&quot;important-point&quot;&gt;Important Point&lt;/h2&gt;
+
+&lt;p&gt;Some mobile routers have privacy separator settings. In this case, you need to set whether to prohibit mutual communication between the wireless LAN terminals connected to SSID A or not. In the Privacy Separator settings, if mutual communication is not permitted, trouble will occur in CL mode. Be sure to allow mutual communication with clients.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-set-cl-mode-for-theta-v&quot;&gt;How to Set CL Mode for THETA V&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Basically, the behavior is the same for home Wi-Fi routers (access points), mobile routers, and smart tethering (also a kind of router). Let’s prepare a computer to find the SSID of the router. Here is an example of a home Wi-Fi router. Required equipment is THETA V, smartphone, computer and Wi-Fi router connected to optical lines, etc., at home. Turn on the wireless mode of the computer.&lt;/li&gt;
+  &lt;li&gt;If it is Windows, let’s make sure that you can connect with the wireless LAN at the bottom right. This state is CL Mode for your computer.&lt;/li&gt;
+  &lt;li&gt;Click on the Wi-Fi icon to find the connected wireless LAN. The string that is written there is the SSID of the router. If you are connected, you should also know the password.&lt;/li&gt;
+  &lt;li&gt;Then, we connect THETA V and smartphone directly by wireless LAN. (It is the usual Wi-Fi connection.)&lt;/li&gt;
+  &lt;li&gt;Let’s press the wireless button of the THETA V main unit to make the blue LED blink.&lt;/li&gt;
+  &lt;li&gt;On your smartphone, launch THETA’s smartphone app.&lt;/li&gt;
+  &lt;li&gt;Camera Image –&amp;gt; Settings&lt;/li&gt;
+  &lt;li&gt;Let’s set the Wi-Fi frequency band to 5GHz.&lt;/li&gt;
+  &lt;li&gt;Tap Settings in Wireless LAN Client Mode.&lt;/li&gt;
+  &lt;li&gt;Tap Access point setting and tap Add connection destination.&lt;/li&gt;
+  &lt;li&gt;Register the SSID found above in the name.&lt;/li&gt;
+  &lt;li&gt;For security, choose WPA / WPA2 PSK. Enter the SSID password.&lt;/li&gt;
+  &lt;li&gt;Go back one screen and enter the THETA password in the authentication setting. 8 digits. CL Mode has been set up. Let’s restart THETA once.&lt;/li&gt;
+  &lt;li&gt;When the wireless button is pushed, the green LED will be blinking and then when it turns solid, the CL Mode connection has been established.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Read the free 
+&lt;a href=&quot;http://theta360.guide/plugin/&quot;&gt;Plug-in User Guide&lt;/a&gt; 
+for more information.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Aug 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/blog/plugin/2018/08/02/wireless-streaming-tips.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/plugin/2018/08/02/wireless-streaming-tips.html</guid>
+        
+        
+        <category>plugin</category>
+        
+      </item>
+    
+      <item>
+        <title>6 Ways to Find Your THETA IP Address</title>
+        <description>&lt;p&gt;In previous articles I explained how to configure &lt;a href=&quot;http://theta360.guide/blog/streaming/2018/07/30/wireless-live-streaming.html&quot;&gt;YouTube&lt;/a&gt; 
+and &lt;a href=&quot;http://theta360.guide/blog/streaming/2018/07/31/facebook-wireless.html&quot;&gt;Facebook&lt;/a&gt;
+for wireless live streaming.&lt;/p&gt;
+
+&lt;p&gt;Part of the configuration process involves using a web browser such as Chrome or
+Firefox to save the YouTube or Facebook stream key to the THETA V. In order to 
+start this configuration process, you need to know the IP address of your camera
+when the camera is in &lt;strong&gt;client mode&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here are six ways to find the IP address of your camera when it’s connected to a Wi-Fi
+hotspot as a &lt;em&gt;client&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-use-ricoh-mobile-app&quot;&gt;1. Use Ricoh Mobile App&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to find the IP address of your camera is to use the Ricoh mobile
+app. After establishing a connection between your camera and your Internet router, use
+the Ricoh mobile app and go to:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Settings -&amp;gt; Camera settings -&amp;gt; Camera version&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;You will see the IP address on the next screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/mobile-ip.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the easiest and best way to find your IP address. If you can’t use the
+mobile app or if you want to use a different method, read on.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-log-into-you-wi-fi-router&quot;&gt;2. Log into you Wi-Fi router&lt;/h2&gt;
+
+&lt;p&gt;If you are working at home, you can probably log into your Wi-Fi router
+as an administrator and see the IP address that the router assigned the THETA V.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-use-adb-shell-and-ifconfig&quot;&gt;3. Use adb shell and ifconfig&lt;/h2&gt;
+
+&lt;p&gt;If you’re doing development, you probably have your THETA connected to your 
+workstation with a USB cable. You can use the Android Debug Bridge (adb) to
+get the IP address quickly.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ adb shell
+$ ifconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/adb-shell.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/ifconfig.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the example above, the IP address of my camera is 192.168.2.102.&lt;/p&gt;
+
+&lt;p&gt;In order to use adb, you must unlock your THETA V by joining the partner program.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-use-vysor-to-view-camera-status&quot;&gt;4. Use Vysor to View Camera Status&lt;/h2&gt;
+
+&lt;p&gt;Vysor also requires that you unlock your camera.  You can see the IP
+address of the camera by going to &lt;em&gt;Settings&lt;/em&gt;, then &lt;em&gt;Phone status&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/phone-status.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you click on &lt;em&gt;Status&lt;/em&gt;, the IP address will be visible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/ip-address.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-dns-sd&quot;&gt;5. dns-sd&lt;/h2&gt;
+
+&lt;p&gt;If you’re on Mac OS X, you can use dns-sd. This technique does not
+require your camera to be unlocked. You do not need to join the
+partner program to use the techniques below.&lt;/p&gt;
+
+&lt;h3 id=&quot;technique-1-using-ping&quot;&gt;Technique 1: Using ping&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dns-sd -B _osc._tcp
+ping Instance_name.local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/ping.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;technique-2-using-theta-serial-number&quot;&gt;Technique 2: Using THETA serial number&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dns-sd -G v4 THETAYLXXXXXXXX.local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/dns-sd.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-use-python-scripts-for-zeroconf&quot;&gt;6. Use Python Scripts for Zeroconf&lt;/h2&gt;
+
+&lt;p&gt;This technique will work on any camera. The camera does not 
+need to be unlocked.&lt;/p&gt;
+
+&lt;p&gt;This &lt;a href=&quot;https://github.com/codetricity/theta-client-mode&quot;&gt;GitHub repository&lt;/a&gt; 
+has two simple scripts.&lt;/p&gt;
+
+&lt;p&gt;Assuming your have zeroconf installed, you can run the script with:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python3 find-theta.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re a developer, the short video below may be useful.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/z_9elAmeXv4&quot;&gt;&lt;img src=&quot;/blog/img/2018-08/find-ip/youtube-find-ip.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Read the free 
+&lt;a href=&quot;http://theta360.guide/plugin/&quot;&gt;Plug-in User Guide&lt;/a&gt; 
+for more information.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Aug 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/blog/plugin/2018/08/01/find-theta-ip-address.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/plugin/2018/08/01/find-theta-ip-address.html</guid>
+        
+        
+        <category>plugin</category>
+        
+      </item>
+    
+      <item>
+        <title>How To: Facebook Live Streaming with Wi-Fi</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/live-event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I covered &lt;a href=&quot;http://theta360.guide/blog/streaming/2018/07/30/wireless-live-streaming.html&quot;&gt;YouTube streaming configuration&lt;/a&gt; 
+in a previous post.&lt;/p&gt;
+
+&lt;p&gt;Here’s the main points for Facebook Live Event setup for the
+Wireless Live Streaming plug-in. I found Facebook slightly easier to setup 
+than YouTube.&lt;/p&gt;
+
+&lt;h2 id=&quot;facebook-live-event-setup&quot;&gt;Facebook Live Event Setup&lt;/h2&gt;
+
+&lt;p&gt;Go to https://www.facebook.com/live/create&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/flive.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Press the button &lt;em&gt;Create Live Stream&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/connect.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the &lt;em&gt;Settings&lt;/em&gt; panel to the right, open up the &lt;em&gt;360 VIDEO&lt;/em&gt; drop-down menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/360-event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure the box is checked for &lt;em&gt;Broadcast as a spherical video&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Select &lt;em&gt;360 Video - Standard&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/360-standard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;camera-configuration&quot;&gt;Camera Configuration&lt;/h2&gt;
+
+&lt;p&gt;Connect a browser such as Chrome to the IP address of your camera. 
+Copy the Server URL and Stream name/key from Facebook into your 
+camera configuration tool.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/theta-config.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Start the stream by pressing the physical shutter button of your camera or by
+pressing the button on your web interface.&lt;/p&gt;
+
+&lt;h2 id=&quot;publish-event&quot;&gt;Publish Event&lt;/h2&gt;
+
+&lt;p&gt;On Facebook, preview the event.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/preview.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Invite friends or make public.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/invite.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Chat.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/facebook/chat.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Read the free 
+&lt;a href=&quot;http://theta360.guide/plugin/&quot;&gt;Plug-in User Guide&lt;/a&gt; 
+for more information.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 Jul 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/blog/streaming/2018/07/31/facebook-wireless.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/streaming/2018/07/31/facebook-wireless.html</guid>
+        
+        
+        <category>streaming</category>
+        
+      </item>
+    
+      <item>
+        <title>How To: Live Stream 360° Video Wirelessly to YouTube</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/cover-config.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can stream live 360° events to Facebook and YouTube using the THETA V.
+First, connect the THETA to the Internet with Wi-Fi or Ethernet, then use
+the new Wireless Live Streaming plug-in to stream directly from the camera
+to either YouTube or Facebook.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/timeline.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Prior to this new technique, people needed to use a mobile phone or laptop 
+to connect to the THETA with a USB cable. Now, you can stream events directly
+with no additional streaming equipment.&lt;/p&gt;
+
+&lt;p&gt;A free user guide is available &lt;a href=&quot;http://theta360.guide/plugin/&quot;&gt;here&lt;/a&gt; that covers all the steps in detail. This article provides a short overview to get you started quickly.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;This example shows configuration for YouTube. The &lt;a href=&quot;(http://theta360.guide/plugin/)&quot;&gt;user guide&lt;/a&gt; also includes a step-by-step guide for
+Facebook. If you’re eager to get started with streaming to Facebook, 
+I summarized the main points of Facebook
+configuration in &lt;a href=&quot;http://theta360.guide/blog/streaming/2018/07/31/facebook-wireless.html&quot;&gt;this&lt;/a&gt; blog post.&lt;/p&gt;
+
+&lt;h3 id=&quot;overview-of-steps&quot;&gt;Overview of Steps&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download plug-in from THETA Store&lt;/li&gt;
+  &lt;li&gt;Install plug-in in camera&lt;/li&gt;
+  &lt;li&gt;Create Live 360° Event on YouTube&lt;/li&gt;
+  &lt;li&gt;Connect camera to an Internet router (Wi-Fi hotspot)&lt;/li&gt;
+  &lt;li&gt;Use web browser to configure camera with YouTube streaming settings&lt;/li&gt;
+  &lt;li&gt;Launch your Live 360° event and party&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Downloading and installing the plug-in is the same process for all plug-ins. See 
+the user guide for details. Steps specific to YouTube Live Events are shown below.&lt;/p&gt;
+
+&lt;h3 id=&quot;youtube-configuration&quot;&gt;YouTube Configuration&lt;/h3&gt;
+
+&lt;p&gt;When you set up your YouTube Live 360° Event, go to &lt;em&gt;Advanced settings&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/advanced-settings.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check the box for &lt;em&gt;This live stream is 360°&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/360-event.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to the &lt;em&gt;Events&lt;/em&gt; section to get the stream key.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/events.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check the button for &lt;em&gt;Reusable stream key&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/stream-key.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a new stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/new-stream.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Grab the Stream Name and Server URL.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/server-info.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;camera-configuration&quot;&gt;Camera Configuration&lt;/h3&gt;
+
+&lt;p&gt;Connect your camera to the Internet. Use a web browser to
+access the configuration page using the IP address of your
+camera.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/streaming-server.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fill in the Server URL and stream name/key with the information
+you have on the YouTube event page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/key-filled.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Start the stream by either pressing the button in the web 
+configuration tool or by pressing the shutter button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/stream-working.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want confirmation that everything is working, you can
+go back to your YouTube control room and make sure the stream is
+working.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/youtube-view.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can now make your event live to all your subscribers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-07/wireless/rotate-view.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you’ve configured the event, you can start and 
+stop the stream by pressing the shutter button.&lt;/p&gt;
+
+&lt;p&gt;Read the free 
+&lt;a href=&quot;http://theta360.guide/plugin/&quot;&gt;Plug-in User Guide&lt;/a&gt; 
+for more information.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Jul 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/blog/streaming/2018/07/30/wireless-live-streaming.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/streaming/2018/07/30/wireless-live-streaming.html</guid>
+        
+        
+        <category>streaming</category>
+        
+      </item>
     
       <item>
         <title>How To: Create a THETA Image VR Gallery with A-Frame</title>
@@ -162,8 +631,8 @@ for JavaScript APIs. For a status update on WebVR, go to
 &lt;a href=&quot;https://webvr.info/&quot;&gt;webvr.info&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Jun 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/blog/webvr/2017/06/07/tutorial-aframe-theta-image-gallery.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/webvr/2017/06/07/tutorial-aframe-theta-image-gallery.html</guid>
+        <link>http://0.0.0.0:4000/blog/webvr/2017/06/07/tutorial-aframe-theta-image-gallery.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/webvr/2017/06/07/tutorial-aframe-theta-image-gallery.html</guid>
         
         
         <category>webvr</category>
@@ -254,8 +723,8 @@ this technology trickle down to independent and boutique development partners in
 information can help other people.&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Jan 2017 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</guid>
+        <link>http://0.0.0.0:4000/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/video/2017/01/25/convert-dual-fisheye-to-equirectangular.html</guid>
         
         
         <category>Video</category>
@@ -386,8 +855,8 @@ tests showing 1920x1080 at 30fps.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/7/7dd76414c1632890274c340b31afedaf6a29c56a.png&quot; width=&quot;450&quot; height=&quot;247&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 02 Dec 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</guid>
+        <link>http://0.0.0.0:4000/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/video,/unity/2016/12/02/theta-usb-live-streaming-full-hd-1080-free-upgrade.html</guid>
         
         
         <category>Video,</category>
@@ -427,8 +896,8 @@ tests showing 1920x1080 at 30fps.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/0/0981257716e74b46d97218e1bab8925c170ab50e.jpg&quot; width=&quot;690&quot; height=&quot;385&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 29 Nov 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</guid>
+        <link>http://0.0.0.0:4000/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html</guid>
         
         
         <category>Unity</category>
@@ -478,8 +947,8 @@ Drag the THETA image into the &lt;em&gt;Images&lt;/em&gt; folder of Unity.&lt;/p
 &lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/29/export-unity-ricoh-theta-to-web.html&quot;&gt;Next Pt 4: Unity Export to Web&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Nov 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</guid>
+        <link>http://0.0.0.0:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</guid>
         
         
         <category>Unity</category>
@@ -526,312 +995,9 @@ like.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html&quot;&gt;Next Pt 3: Import images from camera to Unity&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Nov 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</guid>
+        <link>http://0.0.0.0:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</guid>
         
-        
-        <category>Unity</category>
-        
-      </item>
-    
-      <item>
-        <title>Guide to Using RICOH THETA Images With Unity Background Skybox Pt 1/4</title>
-        <description>&lt;p&gt;In order to help developers use THETA images in their projects, Jesse Casman and I have been working on a demonstration of THETA images in Unity Skybox. This &lt;a href=&quot;https://youtu.be/c-MoLjcYmi8&quot;&gt;video tutorial covers the steps&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We’ve prepared four scenes. Each scene only takes a few minutes to build. It would be better if @jcasman had supplied me with images of scenery without people. It’s better if the scene is taken outside. For example night sky, mountain view, canyon, agricultural field, city landscape.&lt;/p&gt;
-
-&lt;p&gt;This is the original scene taken outdoor in front of a museum by my daughter.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/b/b4cbbdb49621f51d6b195a7f3ed5b7ac7ad6bc40.png&quot; width=&quot;690&quot; height=&quot;374&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;This is a scene of San Francisco in front of the Oppkey global headquarters. Is that right, @jcasman?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/d/d1f8e59e3f03efc95b2c86fe103f808a498658f6.png&quot; width=&quot;690&quot; height=&quot;374&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;This is a scene taken from a museum.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/c/c71b4454a565598b759ca0638fcd94455a4e5766.png&quot; width=&quot;690&quot; height=&quot;374&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;This is scene taken at a bar where one of the staff looks like a giant.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/f/f5729a5fe734fabd2954ef0256bb09d3072d9e80.png&quot; width=&quot;690&quot; height=&quot;374&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Unity is free. You can download it from &lt;a href=&quot;https://unity3d.com/get-unity/download&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The Unity project file is &lt;a href=&quot;https://drive.google.com/file/d/0B3V9jzGQTmyBS3FjTHo3Q2V1Q28/view?usp=sharing&quot;&gt;here&lt;/a&gt;. (151MB download)&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html&quot;&gt;Next Pt 2: Install Files and Navigate in Unity&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Nov 2016 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html</guid>
-        
-        
-        <category>Unity</category>
-        
-      </item>
-    
-      <item>
-        <title>Augmented Reality Image Example</title>
-        <description>&lt;p&gt;Using the video tutorial on &lt;a href=&quot;https://www.youtube.com/watch?v=c-MoLjcYmi8&quot;&gt;using 360 images in Unity for augmented reality&lt;/a&gt;
-and &lt;a href=&quot;http://theta360.guide/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html&quot;&gt;blog post&lt;/a&gt;, you can use 360
-images as a background to your augmented reality project.&lt;/p&gt;
-
-&lt;p&gt;To illustrate the ease of creating Unity projects, I took my pre-teen daughter to
-Stanford University Cantor Arts Center and asked her to take pictures with a THETA
-S.&lt;/p&gt;
-
-&lt;p&gt;Back at home, I showed her how to import 3D assets into her 360 photo scenes.&lt;/p&gt;
-
-&lt;p&gt;Starting with a THETA image of rocks, she dropped it into the background
-and added free 3D assets from &lt;a href=&quot;http://archive3d.net/&quot;&gt;Archive3D&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is the original image.
-&lt;img src=&quot;/blog/img/2016-10/unity/ar/rocks.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;These are screenshots from the 3D scene she created.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/ar/girl-cat.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/ar/cat-door.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/ar/girl-window.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Outside of the museum, she took a picture of a field.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/ar/field.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;At home, she added additional 3D assets.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/ar/swan.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/ar/dog.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 23 Oct 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/blog/unity/2016/10/23/augmented-reality-image-example.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/10/23/augmented-reality-image-example.html</guid>
-        
-        
-        <category>Unity</category>
-        
-      </item>
-    
-      <item>
-        <title>Beginner Tutorial: RICOH THETA 360 Images in Unity</title>
-        <description>&lt;p&gt;There’s a new video tutorial on &lt;a href=&quot;https://www.youtube.com/watch?v=c-MoLjcYmi8&quot;&gt;using 360 images in Unity for augmented reality&lt;/a&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/c-MoLjcYmi8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Unity can be used to quickly create 3D worlds for augmented reality
- games and other experiences such as tours.&lt;/p&gt;
-
-&lt;p&gt;The editor allows 3D objects to be placed on the screen with a mouse.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/scene-background.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Images can be converted into cubemaps for placement inside of a 3D world as the
-background.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/cubemap-view.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once in the world, the image view can be navigated.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/up-view.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The application can be saved as a binary and run natively on Windows, Mac, and
-Linux.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/windows-icon.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The application can run in full-screen or windowed mode. You can use the
-mouse, arrow or WASD to walk or run around the environment.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/native-windowed.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can also run the application in a web browser such as Firefox or Chrome.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity/skybox/browser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;watch-the-video-now&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=c-MoLjcYmi8&quot;&gt;Watch The Video Now&lt;/a&gt;&lt;/h1&gt;
-</description>
-        <pubDate>Sat, 22 Oct 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/unity/2016/10/22/tutorial-unity-360-image-sphere.html</guid>
-        
-        
-        <category>Unity</category>
-        
-      </item>
-    
-      <item>
-        <title>RICOH THETA 360 Video (From File) Unity Tutorial</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fiucH5q_4VE&quot;&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/video-tutorial.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fiucH5q_4VE&quot;&gt;Video tutorial&lt;/a&gt; available.&lt;/p&gt;
-
-&lt;h2 id=&quot;prepare-theta-videos-in-equirectangular-format&quot;&gt;Prepare THETA Videos in Equirectangular Format&lt;/h2&gt;
-&lt;p&gt;Use the official THETA desktop application to convert the dual-fisheye
-video into equirectangular.
-&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/video-convert.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;create-new-unity-project&quot;&gt;Create New Unity Project&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/unity-new-project.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Save Scene as 360video&lt;/li&gt;
-  &lt;li&gt;Position Main Camera in center at 0, 0, 0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;create-sphere&quot;&gt;Create Sphere&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Position at 0, 0, 0&lt;/li&gt;
-  &lt;li&gt;Scale Sphere to 10, 10, 10&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;create-materials&quot;&gt;Create Materials&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create new folder called &lt;em&gt;Materials&lt;/em&gt; under &lt;em&gt;Assets&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;In &lt;em&gt;Materials&lt;/em&gt; create material called 360Video&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;add-material-to-sphere&quot;&gt;Add Material to Sphere&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/add-material-sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;create-shader&quot;&gt;Create Shader&lt;/h2&gt;
-&lt;p&gt;In &lt;em&gt;Assets&lt;/em&gt; create new folder, &lt;em&gt;Shaders&lt;/em&gt;. Create new Unlit Shader in the folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/unlit-shader.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Rename shader. I called mine, &lt;em&gt;ViewInside&lt;/em&gt; Double-click on the new Shader.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/shader-icon.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Drop in the code below from community member &lt;a href=&quot;http://tengshanyuan.com/&quot;&gt;Shanyuan Teng&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;Shader &quot;ThetaInsideShader&quot; {
-	Properties{
-		_MainTex(&quot;Base (RGB)&quot;, 2D) = &quot;white&quot; {}
-	}
-
-		SubShader{
-		Tags{ &quot;RenderType&quot; = &quot;Opaque&quot; }
-		Cull front    //  FLIP THE SURFACES
-		LOD 100
-
-		Pass{
-		CGPROGRAM
-#pragma vertex vert
-#pragma fragment frag
-
-#include &quot;UnityCG.cginc&quot;
-
-		struct appdata_t {
-		float4 vertex : POSITION;
-		float2 texcoord : TEXCOORD0;
-	};
-
-	struct v2f {
-		float4 vertex : SV_POSITION;
-		half2 texcoord : TEXCOORD0;
-	};
-
-	sampler2D _MainTex;
-	float4 _MainTex_ST;
-
-	v2f vert(appdata_t v)
-	{
-		v2f o;
-		o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
-		v.texcoord.x = 1 - v.texcoord.x;
-		o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
-		return o;
-	}
-
-	fixed4 frag(v2f i) : SV_Target
-	{
-		fixed4 col = tex2D(_MainTex, i.texcoord);
-	return col;
-	}
-		ENDCG
-	}
-	}
-
-}
-&lt;/div&gt;
-
-&lt;h2 id=&quot;add-shader-to-sphere&quot;&gt;Add Shader to Sphere&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/shader-sphere.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;add-360-video-asset&quot;&gt;Add 360 Video Asset&lt;/h2&gt;
-
-&lt;p&gt;In &lt;em&gt;Assets&lt;/em&gt;, create a new folder &lt;em&gt;Videos&lt;/em&gt;. Drop you THETA equirectangular video
-into the folder. Any resolution is fine.  Import may take several minutes.
-If you’re on Windows, Unity needs QuickTime for the import.&lt;/p&gt;
-
-&lt;h2 id=&quot;create-empty-game-object&quot;&gt;Create Empty Game Object&lt;/h2&gt;
-&lt;p&gt;I called mine &lt;em&gt;VideoPlayback&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;add-playback-script&quot;&gt;Add Playback Script&lt;/h2&gt;
-&lt;p&gt;Connect a video playback script to the new game object, &lt;em&gt;VideoPlayback&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;This is the code from community member &lt;a href=&quot;http://tengshanyuan.com/&quot;&gt;Shanyuan Teng&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;using UnityEngine;
-using System.Collections;
-
-public class VideoPlayback : MonoBehaviour {
-
-    public GameObject Sphere;
-
-	// Use this for initialization
-	void Start () {
-
-        MovieTexture video360 = (MovieTexture)Sphere.GetComponent&amp;lt;Renderer&amp;gt;().material.mainTexture;
-        video360.loop = true;
-        video360.Play();
-	}
-
-}
-&lt;/div&gt;
-
-&lt;h2 id=&quot;add-texture-to-video-sphere&quot;&gt;Add Texture to Video Sphere&lt;/h2&gt;
-
-&lt;p&gt;Drop your video onto the texture box in 360Video. Your video file is the
-texture.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/video-texture.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;play-it&quot;&gt;Play It!&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/blog/img/2016-10/unity-tutorial/play-video.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://lists.theta360.guide/uploads/default/original/2X/7/7416b3ee83c80c59f4167fa99d1ba2095cee7ca4.unitypackage&quot;&gt;Download Unity Package File&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 16 Oct 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html</guid>
-        
-        
-        <category>Video,</category>
         
         <category>Unity</category>
         

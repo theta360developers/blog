@@ -10,8 +10,8 @@
   <meta name="description" content="Satoru Yamada recently wrote ablog post describing how to access the RICOH THETA S withnode.js.">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/javascript/2015/12/17/theta-s-nodejs.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/blog/javascript/2015/12/17/theta-s-nodejs.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://0.0.0.0:4000/blog/feed.xml">
 
 </head>
 
@@ -90,7 +90,7 @@ English.</p>
 is also from him, including the summary, which includes an
 interesting idea about NFC tags to help with automation.</p>
 
-<div class="highlighter-rouge">var fs = require('fs');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var fs = require('fs');
 var OscClientClass = require('osc-client').OscClient;
 
 var domain = '192.168.1.1';
@@ -117,14 +117,14 @@ client.startSession().then(function(res){
   fs.writeFile(filename,imgData);
   return client.closeSession(sessionId);
 });
-</div>
+</code></pre></div></div>
 
 <p>By running the <code class="highlighter-rouge">node theta.js</code>, you can view the <code class="highlighter-rouge">fileUri</code>
 of the picture that you previously took.</p>
 
-<div class="highlighter-rouge">node theta.js
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node theta.js
 pictureUri :100RICOH/R0010009.JPG
-</div>
+</code></pre></div></div>
 
 <p>The file will be created in the directory where you executed
 the command.</p>

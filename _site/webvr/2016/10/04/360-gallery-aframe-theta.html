@@ -10,8 +10,8 @@
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/webvr/2016/10/04/360-gallery-aframe-theta.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/blog/webvr/2016/10/04/360-gallery-aframe-theta.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://0.0.0.0:4000/blog/feed.xml">
 
 </head>
 
@@ -129,7 +129,7 @@ names, you do not need to edit the code at all.</p>
 
 <p><img src="/blog/img/2016-10/edit-files.png" alt="" /></p>
 
-<div class="highlighter-rouge">&lt;body&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;body&gt;
   &lt;a-scene&gt;
     &lt;a-assets&gt;
       &lt;img id="kieran" src="img/1.jpg"&gt;
@@ -139,14 +139,14 @@ names, you do not need to edit the code at all.</p>
       &lt;audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"&gt;&lt;/audio&gt;
       &lt;img id="christian" crossorigin="anonymous" src="img/2.jpg"&gt;
       &lt;img id="eddie" crossorigin="anonymous" src="img/4.jpg"&gt;
-</div>
+</code></pre></div></div>
 
 <p>Assuming you are changing the file names, then edit the code for the
 menu links.</p>
 
 <p><img src="/blog/img/2016-10/edit-file-menu.png" alt="" /></p>
 
-<div class="highlighter-rouge">&lt;!-- 360-degree image. --&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- 360-degree image. --&gt;
 &lt;a-sky id="image-360" radius="10" src="#kieran"&gt;&lt;/a-sky&gt;
 
 &lt;!-- Image links. --&gt;
@@ -155,7 +155,7 @@ menu links.</p>
   &lt;a-entity template="src: #link" data-src="#kieran" data-thumb="#kieran-thumb"&gt;&lt;/a-entity&gt;
   &lt;a-entity template="src: #link" data-src="#eddie" data-thumb="#eddie-thumb"&gt;&lt;/a-entity&gt;
 &lt;/a-entity&gt;
-</div>
+</code></pre></div></div>
 
 <h2 id="push-to-github-pages">Push to GitHub Pages</h2>
 <p>That’s it. Add all your files to your local git repo, commit, and push to your forked repo, gh-pages branch.</p>

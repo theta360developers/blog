@@ -10,8 +10,8 @@
   <meta name="description" content="There is a new THETA API version 2.1. The version 2.0 API still works for now, but it is recommended that you update your apps to ensure future compatibility.">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/api/2016/09/14/ricoh-theta-api-update.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/blog/api/2016/09/14/ricoh-theta-api-update.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://0.0.0.0:4000/blog/feed.xml">
 
 </head>
 
@@ -88,7 +88,7 @@
 
 <p>In your program, you can set the API version with <code class="highlighter-rouge">camera.setOptions</code>.</p>
 
-<div class="highlighter-rouge">{
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "camera.setOptions",
     "parameters": {
         "sessionId": "SID_0001",
@@ -97,7 +97,7 @@
         }
     }
 }
-</div>
+</code></pre></div></div>
 
 <p>One of the major changes is that you do not have to specify the <code class="highlighter-rouge">sessionId</code> for command execution.</p>
 
@@ -105,24 +105,24 @@
 
 <p><em>version 2.0</em></p>
 
-<div class="highlighter-rouge">{
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "camera.takePicture",
     "parameters": {
     	"sessionId": "SID_0001"
     }
 }
-</div>
+</code></pre></div></div>
 
 <hr />
 
 <p><em>version 2.1</em></p>
 
-<div class="highlighter-rouge">{
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "camera.takePicture",
     "parameters": {
     }
 }
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -131,7 +131,7 @@
 <p>Example (<em>version 2.1</em>)
 <img src="http://lists.theta360.guide/uploads/default/optimized/1X/09aae769ef0a9cede748ee03d4e5520e236c92cc_1_690x56.png" width="690" height="56" /></p>
 
-<div class="highlighter-rouge">{
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "name": "camera.listFiles",
     "parameters": {
     	"fileType": "all",
@@ -139,7 +139,7 @@
         "maxThumbSize": 640
     }
 }
-</div>
+</code></pre></div></div>
 
 <hr />
 

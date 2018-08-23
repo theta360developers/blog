@@ -10,8 +10,8 @@
   <meta name="description" content="Video tutorial available.Prepare THETA Videos in Equirectangular FormatUse the official THETA desktop application to convert the dual-fisheyevideo into equir...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/blog/video,/unity/2016/10/16/video-file-on-unity-sphere.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://0.0.0.0:4000/blog/feed.xml">
 
 </head>
 
@@ -127,7 +127,7 @@ video into equirectangular.
 
 <p>Drop in the code below from community member <a href="http://tengshanyuan.com/">Shanyuan Teng</a>.</p>
 
-<div class="highlighter-rouge">Shader "ThetaInsideShader" {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Shader "ThetaInsideShader" {
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {}
 	}
@@ -176,7 +176,7 @@ video into equirectangular.
 	}
 
 }
-</div>
+</code></pre></div></div>
 
 <h2 id="add-shader-to-sphere">Add Shader to Sphere</h2>
 
@@ -196,7 +196,7 @@ If you’re on Windows, Unity needs QuickTime for the import.</p>
 
 <p>This is the code from community member <a href="http://tengshanyuan.com/">Shanyuan Teng</a>.</p>
 
-<div class="highlighter-rouge">using UnityEngine;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using UnityEngine;
 using System.Collections;
 
 public class VideoPlayback : MonoBehaviour {
@@ -212,7 +212,7 @@ public class VideoPlayback : MonoBehaviour {
 	}
 
 }
-</div>
+</code></pre></div></div>
 
 <h2 id="add-texture-to-video-sphere">Add Texture to Video Sphere</h2>
 

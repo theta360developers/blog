@@ -10,8 +10,8 @@
   <meta name="description" content="The main idea for this postoriginally appearedin the RICOH Developers Forum. Thanks to Rune Kyndal for building his awesome remote control and postinginforma...">
 
   <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/applications/2016/02/22/remote-shutter.html">
-  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://localhost:4000/blog/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/blog/applications/2016/02/22/remote-shutter.html">
+  <link rel="alternate" type="application/rss+xml" title="THETA 360 Unofficial Blog" href="http://0.0.0.0:4000/blog/feed.xml">
 
 </head>
 
@@ -120,9 +120,9 @@ thought I would share it.</p>
 <p>The only change I made to the code was to swap the I/O around to make it work with the
 I/O available on the smaller ESP-01 board</p>
 
-<div class="highlighter-rouge">const int buttonPin = 0;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const int buttonPin = 0;
 const int led2Pin = 2;
-</div>
+</code></pre></div></div>
 
 <p>I used a small Lipo battery and charger circuit and built the
 required ESP-01 circuit straight onto the 2x4 header.
