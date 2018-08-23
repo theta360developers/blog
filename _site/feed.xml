@@ -6,9 +6,177 @@
 </description>
     <link>http://0.0.0.0:4000/blog/</link>
     <atom:link href="http://0.0.0.0:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Aug 2018 11:11:11 -0700</pubDate>
-    <lastBuildDate>Thu, 23 Aug 2018 11:11:11 -0700</lastBuildDate>
+    <pubDate>Thu, 23 Aug 2018 14:53:09 -0700</pubDate>
+    <lastBuildDate>Thu, 23 Aug 2018 14:53:09 -0700</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>My First RICOH THETA Plug-in</title>
+        <description>&lt;p&gt;I like to learn new programming libraries by starting off with the smallest
+possible code base and building from there. I like “Hello, World” and “blinky”
+examples. Super small code examples make it easier to understand key
+concepts.&lt;/p&gt;
+
+&lt;p&gt;Although the &lt;a href=&quot;https://github.com/ricohapi/theta-plugin-sdk&quot;&gt;Ricoh Plug-in SDK&lt;/a&gt;
+provides a good starting point, the example uses &lt;a href=&quot;https://github.com/ricohapi/theta-plugin-sdk/blob/master/app/src/main/java/com/theta360/pluginapplication/task/TakePictureTask.java&quot;&gt;TakePictureTask.java&lt;/a&gt; to connect to the Web API inside the camera.&lt;/p&gt;
+
+&lt;p&gt;As I want to focus on the &lt;a href=&quot;https://api.ricoh/docs/theta-plugin-reference/camera-api/&quot;&gt;Camera API&lt;/a&gt;, I decided to ditch the 
+SDK example and start fresh with a new Android Studio Project. To make it easier to 
+control the camera, I imported the pluginlibrary as a module.&lt;/p&gt;
+
+&lt;p&gt;You can follow my example by using the pluginlibrary from the Ricoh SDK or by downloading my &lt;a href=&quot;https://github.com/theta360developers/pluginlibrary&quot;&gt;standalone GitHub
+repository for the library&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Import “pluginlibrary” in the SDK by selecting “File”-“New”-“Import Module…”&lt;/li&gt;
+  &lt;li&gt;Add “include ‘:app’, ‘:pluginlibrary’” in “settings.gradle” file&lt;/li&gt;
+  &lt;li&gt;You may need to add &lt;code class=&quot;highlighter-rouge&quot;&gt;implementation project(':pluginlibrary')&lt;/code&gt; in build.gradle&lt;/li&gt;
+  &lt;li&gt;Sync by selecting “File”-“Sync Project with Gradle Files”&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;start-new-project&quot;&gt;Start New Project&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/new-project-1.png&quot; alt=&quot;Start Project&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/new-project-2.png&quot; alt=&quot;Create Project&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;select-api-25&quot;&gt;Select API 25&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/api.png&quot; alt=&quot;API 25&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-activity&quot;&gt;Basic Activity&lt;/h2&gt;
+
+&lt;p&gt;I’m using Basic Activity. You can use any template and work from there.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/basic-activity-1.png&quot; alt=&quot;basic activity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/basic-activity-2.png&quot; alt=&quot;configure activity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/basic-activity-3.png&quot; alt=&quot;project structure&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;import-module&quot;&gt;Import module&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/import-module-1.png&quot; alt=&quot;import module&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/import-module-2.png&quot; alt=&quot;project structure&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;edit-gradle-configuration-files&quot;&gt;Edit Gradle Configuration Files&lt;/h2&gt;
+
+&lt;p&gt;In build.gradle&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/gradle-config-1.png&quot; alt=&quot;build.gradle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/gradle-config-2.png&quot; alt=&quot;implementation project&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In settings.gradle&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/gradle-config-3.png&quot; alt=&quot;settings.gradle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/gradle-config-4.png&quot; alt=&quot;plugin library&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/gradle-config-5.png&quot; alt=&quot;gradle sync project&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;import-pluginlibrary-into-mainactivityjava&quot;&gt;import pluginlibrary into MainActivity.java&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/import-pluginlibrary.png&quot; alt=&quot;import pluginlibrary&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;build-apk&quot;&gt;Build apk&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/build-apk-1.png&quot; alt=&quot;build apk&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Success.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/build-apk-2.png&quot; alt=&quot;build success&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;test-in-camera&quot;&gt;Test in Camera&lt;/h2&gt;
+
+&lt;p&gt;To verify that your application is controlling the camera, write a simple test will light up two LEDs on the camera when it is placed into plug-in mode.&lt;/p&gt;
+
+&lt;h3 id=&quot;code-listing-of-import-test&quot;&gt;Code Listing of Import Test&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;guide&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;libraryimporttest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;KeyEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pluginlibrary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;activity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PluginActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pluginlibrary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;KeyCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pluginlibrary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;receiver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;KeyReceiver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pluginlibrary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LedColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pluginlibrary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LedTarget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PluginActivity&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Override&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;setKeyCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyCallback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Override&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onKeyDown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keyCode&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyReceiver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;KEYCODE_CAMERA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;nf&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;theta debug: pressed camera mode button down&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Override&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onKeyUp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;notificationLedShow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LedTarget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LED6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;notificationLed3Show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LedColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MAGENTA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;nf&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;theta debug: camera now in plug-in mode  :-)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+            &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Override&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onKeyLongPress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;keyCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KeyEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;install-apk-into-camera&quot;&gt;Install apk into camera&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/install-camera-1.png&quot; alt=&quot;locate apk&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/install-camera-2.png&quot; alt=&quot;install apk&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;set-library-import-test-as-active-plug-in&quot;&gt;Set Library Import Test as Active Plug-in&lt;/h3&gt;
+
+&lt;p&gt;Use the THETA Desktop application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/active-plugin.png&quot; alt=&quot;active plugin&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;test-plug-in-on-camera&quot;&gt;Test Plug-in On Camera&lt;/h3&gt;
+
+&lt;p&gt;Reboot camera. Press mode button for two seconds.&lt;/p&gt;
+
+&lt;p&gt;Verify that app is lighting the correct LEDs with the correct color.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/test-camera.jpg&quot; alt=&quot;successful camera test&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;possible-issues-and-solutions&quot;&gt;Possible Issues and Solutions&lt;/h2&gt;
+
+&lt;h3 id=&quot;package-name-changes&quot;&gt;Package Name Changes&lt;/h3&gt;
+
+&lt;p&gt;I’ve had a few cases where the package name changed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/package-name.png&quot; alt=&quot;package name&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In some cases, I needed to refactor the directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/img/2018-08/first-plugin/refactor.png&quot; alt=&quot;refactor&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 23 Aug 2018 00:00:00 -0700</pubDate>
+        <link>http://0.0.0.0:4000/blog/plugin/2018/08/23/my-first-app.html</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/blog/plugin/2018/08/23/my-first-app.html</guid>
+        
+        
+        <category>plugin</category>
+        
+      </item>
     
       <item>
         <title>Wireless Live Streaming Top Tips</title>
@@ -949,54 +1117,6 @@ Drag the THETA image into the &lt;em&gt;Images&lt;/em&gt; folder of Unity.&lt;/p
         <pubDate>Fri, 25 Nov 2016 00:00:00 -0800</pubDate>
         <link>http://0.0.0.0:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/blog/unity/2016/11/25/import-ricoh-theta-unity.html</guid>
-        
-        
-        <category>Unity</category>
-        
-      </item>
-    
-      <item>
-        <title>Using RICOH THETA With Unity - Install and Navigate Pt 2/4</title>
-        <description>&lt;p&gt;This is intended for people that want to experiment with THETA images and
-Unity and have no experience. &lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/15/guide-to-theta-unity-skybox.html&quot;&gt;Part 1&lt;/a&gt; explains what your scenes will look
-like.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://unity3d.com/get-unity/download&quot;&gt;Download&lt;/a&gt; and install Unity&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/0B3V9jzGQTmyBS3FjTHo3Q2V1Q28/view?usp=sharing&quot;&gt;Download&lt;/a&gt; project files&lt;/p&gt;
-
-&lt;p&gt;Unzip project folder. It is called &lt;em&gt;Pusheen World&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;open-downloaded-project&quot;&gt;Open Downloaded Project&lt;/h2&gt;
-&lt;p&gt;Open project folder in Unity&lt;/p&gt;
-
-&lt;p&gt;Go to the &lt;em&gt;Project&lt;/em&gt; panel and select &lt;em&gt;Scenes&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/0/0f4c530b09543e0d6bbd3bef106d62ee2e8a209b.png&quot; width=&quot;185&quot; height=&quot;251&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Double click on one of the &lt;em&gt;Scenes&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/8/8ef0d2f490aa38851316f2a260cdb75110b07038.png&quot; width=&quot;204&quot; height=&quot;114&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In this example, I am using &lt;em&gt;art_museum&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;navigation-in-unity&quot;&gt;Navigation in Unity&lt;/h2&gt;
-
-&lt;p&gt;In the top &lt;em&gt;Scene&lt;/em&gt; view, click and hold the right mouse button.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://lists.theta360.guide/uploads/default/original/2X/9/99e4d0f4de334ae680dca6b8d11016cfb5f61b01.png&quot; width=&quot;468&quot; height=&quot;500&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Use the mouse to move the camera.  Mouse the WASD keys to move the player.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://theta360.guide/blog/unity/2016/11/25/import-ricoh-theta-unity.html&quot;&gt;Next Pt 3: Import images from camera to Unity&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 20 Nov 2016 00:00:00 -0800</pubDate>
-        <link>http://0.0.0.0:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/blog/unity/2016/11/20/theta-unity-skybox-install-navigate.html</guid>
         
         
         <category>Unity</category>
