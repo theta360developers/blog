@@ -17,12 +17,17 @@ Using a RICOH THETA plug-in you may want to apply a watermark to images that are
 
 # 2 Popular Libraries 
 
+![](/blog/img/2018-10/4-libraries/opencv_logo.png)
+
 ## OpenCV (Open Source Computer Vision Library)
 “OpenCV (Open Source Computer Vision Library) is released under a BSD license and hence it’s free for both academic and commercial use. It has C++, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications. Written in optimized C/C++, the library can take advantage of multi-core processing. Enabled with OpenCL, it can take advantage of the hardware acceleration of the underlying heterogeneous compute platform.
 Adopted all around the world, OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 14 million. Usage ranges from interactive art, to mines inspection, stitching maps on the web or through advanced robotics.”
 
 Download: https://opencv.org/releases.html  
 Tutorial: https://www.pyimagesearch.com/2016/04/25/watermarking-images-with-opencv-and-python/
+
+
+![](/blog/img/2018-10/4-libraries/imagemagick_logo.png)
 
 ## ImageMagick
 “Use ImageMagick® to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 200) including PNG, JPEG, GIF, HEIC, TIFF, DPX, EXR, WebP, Postscript, PDF, and SVG. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
@@ -35,11 +40,15 @@ Tutorial: https://www.the-art-of-web.com/system/imagemagick-watermark/
 # 2 Language-Specific Libraries (Python and C++)
 A wide range of libraries exist that may work better with specific programming language requirements.
 
+![](/blog/img/2018-10/4-libraries/python_logo.png)
+
 ## Pillow (fork of Python Imaging Libraries)
 Pillow is a fork of PIL (Python Image Library), started and maintained by Alex Clark and Contributors. It was based on the PIL code, and then evolved to a better, modern and more friendly version of PIL. It adds support for opening, manipulating, and saving many different image file formats. A lot of things work the same way as the original PIL.
 
 Download: https://github.com/python-pillow/Pillow  
 Tutorial: https://www.pythonforbeginners.com/gui/how-to-use-pillow
+
+![](/blog/img/2018-10/4-libraries/CImg_logo.png)
 
 ## CImg Library (C++ Libraries)
 “The CImg Library is a small and open-source C++ toolkit for image processing. CImg stands for Cool Image. It is easy to use, efficient and is intended to be a very pleasant toolbox to design image processing algorithms in C++. Due to its generic conception, it can cover a wide range of image processing applications.”
