@@ -46,7 +46,7 @@ Tutorial: https://www.pythonforbeginners.com/gui/how-to-use-pillow
 
 Download: http://cimg.eu/download.shtml
 
-Summary
+# Summary
 
 Adding editing functionality to the RICOH THETA V via plug-in technology allows for an incredible range of potential in-camera editing capabilities.
 
