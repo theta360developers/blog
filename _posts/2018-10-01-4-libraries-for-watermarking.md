@@ -21,7 +21,7 @@ Using a RICOH THETA plug-in you may want to apply a watermark to images that are
 “OpenCV (Open Source Computer Vision Library) is released under a BSD license and hence it’s free for both academic and commercial use. It has C++, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications. Written in optimized C/C++, the library can take advantage of multi-core processing. Enabled with OpenCL, it can take advantage of the hardware acceleration of the underlying heterogeneous compute platform.
 Adopted all around the world, OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 14 million. Usage ranges from interactive art, to mines inspection, stitching maps on the web or through advanced robotics.”
 
-Download: https://opencv.org/releases.html
+Download: https://opencv.org/releases.html  
 Tutorial: https://www.pyimagesearch.com/2016/04/25/watermarking-images-with-opencv-and-python/
 
 ## ImageMagick
@@ -29,7 +29,7 @@ Tutorial: https://www.pyimagesearch.com/2016/04/25/watermarking-images-with-open
  
 The functionality of ImageMagick is typically utilized from the command-line or you can use the features from programs written in your favorite language. Choose from these interfaces: G2F (Ada), MagickCore (C), MagickWand (C), ChMagick (Ch), ImageMagickObject (COM+), Magick++ (C++), JMagick (Java), JuliaIO (Julia), L-Magick (Lisp), Lua (LuaJIT), NMagick (Neko/haXe), Magick.NET (.NET), PascalMagick (Pascal), PerlMagick (Perl), MagickWand for PHP (PHP), IMagick(PHP), PythonMagick (Python), magick (R), RMagick (Ruby), or TclMagick (Tcl/TK). With a language interface, use ImageMagick to modify or create images dynamically and automagically.”
 
-Download: https://imagemagick.org/script/download.php
+Download: https://imagemagick.org/script/download.php  
 Tutorial: https://www.the-art-of-web.com/system/imagemagick-watermark/
 
 # 2 Language-Specific Libraries (Python and C++)
@@ -38,7 +38,7 @@ A wide range of libraries exist that may work better with specific programming l
 ## Pillow (fork of Python Imaging Libraries)
 Pillow is a fork of PIL (Python Image Library), started and maintained by Alex Clark and Contributors. It was based on the PIL code, and then evolved to a better, modern and more friendly version of PIL. It adds support for opening, manipulating, and saving many different image file formats. A lot of things work the same way as the original PIL.
 
-Download: https://github.com/python-pillow/Pillow
+Download: https://github.com/python-pillow/Pillow  
 Tutorial: https://www.pythonforbeginners.com/gui/how-to-use-pillow
 
 ## CImg Library (C++ Libraries)
