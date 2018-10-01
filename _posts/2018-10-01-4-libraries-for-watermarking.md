@@ -40,7 +40,7 @@ Tutorial: https://www.the-art-of-web.com/system/imagemagick-watermark/
 # 2 Language-Specific Libraries (Python and C++)
 A wide range of libraries exist that may work better with specific programming language requirements.
 
-![](/blog/img/2018-10/4-libraries/python_logo.png)
+![](/blog/img/2018-10/4-libraries/python_logo.jpg)
 
 ## Pillow (fork of Python Imaging Libraries)
 Pillow is a fork of PIL (Python Image Library), started and maintained by Alex Clark and Contributors. It was based on the PIL code, and then evolved to a better, modern and more friendly version of PIL. It adds support for opening, manipulating, and saving many different image file formats. A lot of things work the same way as the original PIL.
