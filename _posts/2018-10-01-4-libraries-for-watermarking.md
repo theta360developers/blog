@@ -64,3 +64,17 @@ There is probably no one perfect solution for every developer. One of those 4 li
 If you build a useful watermark plug-in with an open source stitching library, please leave a comment on theta360.guide so that can benefit!
 
 See [Getting Started with Plug-ins](http://theta360.guide/plugin/) for more plug-in examples and code.
+
+---
+# Extra Resources
+
+If you've registered with the Partner Program (putting your THETA in developer mode) and have sent in your serial number (allowing you to develop and upload plug-ins), I've got some super useful resources for you! 
+
+theta360.guide has pulled together a Top 10 THETA Developer Tips, pulling together feedback from developers, saving you time. We also have some choice apks that you can load immediately and try out with documentation and source code.
+
+Work with speaker volume, record audio files, build a Web GUI for your THETA and lots more!
+
+Send us your contact info and you'll get an email will all the download links.
+
+https://mailchi.mp/theta360/theta-plugin-resources 
+
