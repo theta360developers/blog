@@ -4,7 +4,7 @@ comments: true
 title:  "4 Things 360 Photographers Need to Know About EXR Use in Visual Effects"
 date:   2019-08-10
 author: "Craig Oda"
-categories: HDR, EXR, VFX
+categories: 3dmodel
 ---
 Light in a 360 scene behaves very differently from light in a traditional photograph.
 The photographer can't control the angle of light and framing. As most 360 
