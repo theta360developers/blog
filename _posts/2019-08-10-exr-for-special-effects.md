@@ -4,7 +4,7 @@ comments: true
 title:  "4 Things 360 Photographers Need to Know About EXR Use in Visual Effects"
 date:   2019-08-10
 author: "Craig Oda"
-categories: HDR, EXR
+categories: HDR, EXR, VFX
 ---
 Light in a 360 scene behaves very differently from light in a traditional photograph.
 The photographer can't control the angle of light and framing. As most 360 
@@ -70,7 +70,7 @@ EXR files combine light information from 11 different exposures into a single fi
 ![EXR 11](/blog/img/2019-08/exr-11.jpg)
 
 
-## 4. Automatic Generation of EXR Files Inside the THETA
+## 4. Automatically Generate EXR Files Inside the THETA
 
 Kasper Oerlemans created Authydra to automatically create high quality EXR files inside of the RICOH THETA V or Z1 cameras. The scene below was created by Alexandre Dizeux using Blender as a test of Authydra.
 
@@ -91,31 +91,55 @@ An upcoming release of Authydra will have THETA Z1 support and an improved web i
 
 The EXR file is commonly used in Nuke, Maya, or the free and open source Blender.
 
-If you have a RICOH THETA V, you can install Authydra 1.0.0 and higher from the RICOH THETA Plug-in Store. If you have a RICOH THETA Z1, you will need version 1.0.1 or higher. Note that the developer Kasper indicated that the Z1 support is basic right now.
+![Authydra example 2](/blog/img/2019-08/authydra-2.png)
 
-If you have a THETA S, SC, or M15, you can still experiment with HDR or EXR files using third-party software like Photoshop or the free and open source Luminance HDR. To use the S, SC, or M15 models, take bracketed shots at different exposures using the offical RICOH mobile app and then use software like Photoshop or Luminance HDR to create the HDR file.
-Using the EXR or HDRI File to Illuminate a Scene
-If you have access to Autodesk MAYA, it is easier to work with and better than Blender in my personal opinion. A tutorial on using Autodesk MAYA with RICOH THETA HDRI files is here.
+
+If you have a RICOH THETA V, you can install Authydra 1.0.0 and higher from the 
+[RICOH THETA Plug-in Store](https://pluginstore.theta360.com/plugins/com.kasper.authydra/). If you have a RICOH THETA Z1, you will need version 1.0.1 or higher. Note that the developer Kasper indicated that the Z1 support is basic right now.
+
+If you have a THETA S, SC, or M15, you can still experiment with HDR or EXR files using third-party software like Photoshop or the free and open source 
+[Luminance HDR](http://qtpfsgui.sourceforge.net/). To use the S, SC, or M15 models, take bracketed shots at different exposures using the offical RICOH mobile app and then use software like Photoshop or Luminance HDR to create the HDR file.
+
+### Using the EXR or HDRI File to Illuminate a Scene
+If you have access to 
+[Autodesk MAYA](https://www.autodesk.com/products/maya/overview), it is easier to work with and better than Blender in my personal opinion. A tutorial on using Autodesk MAYA with RICOH THETA HDRI files is 
+[here](https://community.theta360.guide/t/howto-use-autodesk-maya-and-ricoh-theta-hdri-files-for-accurate-light-and-reflection/3767).
 
 Alternately, you can use the screencast below:
 
+[https://youtu.be/y7zhLakP2oc](https://youtu.be/y7zhLakP2oc)
+
+
 The video does not cover Authydra, which is the recommended method to create an EXR file if you have a THETA V or a Z1.
-If you do not have MAYA, you can use Nuke Non-commercial. The developer of Authydra, Kasper Oerlemans recommends Nuke Non-commercial.
-If you’d prefer to use open source software with a vibrant community surrounding it, you can use Blender. Although Blender can be a bit confusing to use, version 2.8 is easier.
+
+If you do not have MAYA, you can use 
+[Nuke Non-commercial](https://www.foundry.com/products/nuke/non-commercial). The developer of Authydra, Kasper Oerlemans recommends Nuke Non-commercial.
+
+If you’d prefer to use open source software with a vibrant community surrounding it, you can use 
+[Blender](https://www.blender.org/). Although Blender can be a bit confusing to use, version 2.8 is easier.
 You can see the new features in Blender 2.8 in the video below by Blender Guru.
 
-My article, Using Blender with RICOH THETA HDRI Files, contains a link to a free video course by Creative Shrimp called, HDR Image-Based Lighting Workflow in Blender.
+[https://youtu.be/MyxWDHy4ppY](https://youtu.be/MyxWDHy4ppY)
+
+My article, [Using Blender with RICOH THETA HDRI Files](https://community.theta360.guide/t/using-blender-with-ricoh-theta-hdri-files/3786), contains a link to a free video course by Creative Shrimp called, HDR Image-Based Lighting Workflow in Blender.
+
 I went through the tutorial and was able to create realistic lighting from HDR files I created with the RICOH THETA.
+
+![blender example 1](/blog/img/2019-08/blender-1.jpg)
+
+![blender example 2](/blog/img/2019-08/blender-2.png)
 
 
 ## Summary
 
 If you’re a VFX professional, you should check out Authydra immediately as it’s likely the easiest way to create an EXR file inexpensively. It’s also free and open source and under active development.
+
 If you’re a hobbyist and just want to play around with 3D models for the first time, I suggest you use Blender 2.8 with a good tutorial. You can also use a trial version of Maya or Nuke. You can get free 3D models from a number of places, including:
 
-* cgtrader
-* TurboSquid
-* Free3D
+* [cgtrader](https://www.cgtrader.com/free-3d-models)
+* [TurboSquid](https://www.turbosquid.com/Search/3D-Models/free)
+* [Free3D](https://free3d.com/)
 
-If you’re more interested in lighting, you can also follow one of the tutorials described in this tutorial with a mirrored below.
+If you’re more interested in lighting, you can also follow one of the tutorials described in this tutorial with a mirrored ball.
+
 I also encourage 360 photographers to try using the HDRI or EXR files in models as it will help you to understand 360 degree lighting and what your audience is experiencing even with a standard 360 image.
