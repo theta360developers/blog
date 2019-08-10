@@ -50,9 +50,15 @@ On shiny objects like the face of a clock, you can even see a reflection of the 
 
 Before we get to HDRI and EXR files, let’s first look at a standard 360 image that is used as the skybox. The 3D model of the dog and swan are in the center of the 360 image. Since the sky has a green tinge from the Northern Lights, the dog has a green color.
 
+![green dog](/blog/img/2019-08/dog-green.png)
+
 If the 360 image is brown, the dog will be brown. The background tower is an image, not a 3D model.
 
+![brown dog](/blog/img/2019-08/dog-brown.png)
+
 Using the same image, if I rotate the scene, the dog will receive more white light.
+
+![white dog](/blog/img/2019-08/dog-white.png)
 
 Click here for a live view of the Northern Lights image with WebGL. Use the mouse and arrow keys to navigate the scene. Note that it may take a few minutes to load and will be blank while it is loading. Initially, you may be staring at the water in the pool, so use your mouse to rotate the scene.
 EXR Files
