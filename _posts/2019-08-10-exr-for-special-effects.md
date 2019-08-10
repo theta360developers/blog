@@ -60,7 +60,9 @@ Using the same image, if I rotate the scene, the dog will receive more white lig
 
 ![white dog](/blog/img/2019-08/dog-white.png)
 
-Click here for a live view of the Northern Lights image with WebGL. Use the mouse and arrow keys to navigate the scene. Note that it may take a few minutes to load and will be blank while it is loading. Initially, you may be staring at the water in the pool, so use your mouse to rotate the scene.
+## [Click here for a live view of the Northern Lights image with WebGL](https://codetricity.github.io/theta360aurora/) 
+
+Use the mouse and arrow keys to navigate the scene. Note that it may take a few minutes to load and will be blank while it is loading. Initially, you may be staring at the water in the pool, so use your mouse to rotate the scene.
 EXR Files
 
 EXR files combine light information from 11 different exposures into a single file. This allows the 3D artist to adjust the light of the scene globally. If you inspect an EXR file, it will appear like 11 images with different exposures.
