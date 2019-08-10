@@ -77,12 +77,17 @@ Kasper Oerlemans created Authydra to automatically create high quality EXR files
 ![Authydra demo](/blog/img/2019-08/authydra-demo.jpg)
 
 Authydra runs inside the RICOH THETA and takes 34 images with a single button press. The images are then combined to produce a single file inside the camera.
+
 The application does the following automatically:
-takes one image to set the base settings of the camera
-takes a set of 3 images for denoise
-repeats process of taking 3 images 11 times
-combines images into single EXR file
+
+1. takes one image to set the base settings of the camera
+2. takes a set of 3 images for denoise
+3. repeats process of taking 3 images 11 times
+4. combines images into single EXR file
+
 An upcoming release of Authydra will have THETA Z1 support and an improved web interface.
+
+![Authydra logo](/blog/img/2019-08/authydra-logo.png)
 
 The EXR file is commonly used in Nuke, Maya, or the free and open source Blender.
 
