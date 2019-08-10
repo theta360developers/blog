@@ -34,16 +34,16 @@ To understand scene lighting with a 360 image, let’s start with a standard 2D 
 
 In the upper right panel below, imagine that the yellow flower is a giant OLED panel shining at the clock.
 
-![flower shining on clock](img/2019-08/flower.jpg)
+![flower shining on clock](/blog/img/2019-08/flower.jpg)
 
 The picture will be brighter where the flower is yellow and where the sun is reflected off the flower.
 
-![flower shining on clock close](img/2019-08/flower2.jpg)
+![flower shining on clock close](/blog/img/2019-08/flower2.jpg)
 
 
 On shiny objects like the face of a clock, you can even see a reflection of the light source. Remember, the image of the flower is the light source.
 
-![flower shining on clock closeup](img/2019-08/flower3.jpg)
+![flower shining on clock closeup](/blog/img/2019-08/flower3.jpg)
 
 
 ## 3. Scene Lighting from 360 Images
