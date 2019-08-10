@@ -74,6 +74,8 @@ EXR files combine light information from 11 different exposures into a single fi
 
 Kasper Oerlemans created Authydra to automatically create high quality EXR files inside of the RICOH THETA V or Z1 cameras. The scene below was created by Alexandre Dizeux using Blender as a test of Authydra.
 
+![Authydra demo](/blog/img/2019-08/authydra-demo.jpg)
+
 Authydra runs inside the RICOH THETA and takes 34 images with a single button press. The images are then combined to produce a single file inside the camera.
 The application does the following automatically:
 takes one image to set the base settings of the camera
