@@ -67,6 +67,9 @@ EXR Files
 
 EXR files combine light information from 11 different exposures into a single file. This allows the 3D artist to adjust the light of the scene globally. If you inspect an EXR file, it will appear like 11 images with different exposures.
 
+![EXR 11](/blog/img/2019-08/exr-11.jpg)
+
+
 ## 4. Automatic Generation of EXR Files Inside the THETA
 
 Kasper Oerlemans created Authydra to automatically create high quality EXR files inside of the RICOH THETA V or Z1 cameras. The scene below was created by Alexandre Dizeux using Blender as a test of Authydra.
