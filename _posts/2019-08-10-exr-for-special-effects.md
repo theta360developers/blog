@@ -30,6 +30,7 @@ The first thing to understand is that the EXR file is light data, not the image
 the viewer sees.
 
 ## 2. Scene Lighting with an Image
+
 To understand scene lighting with a 360 image, let’s start with a standard 2D image as a light source.
 
 In the upper right panel below, imagine that the yellow flower is a giant OLED panel shining at the clock.
@@ -40,11 +41,9 @@ The picture will be brighter where the flower is yellow and where the sun is ref
 
 ![flower shining on clock close](/blog/img/2019-08/flower2.jpg)
 
-
 On shiny objects like the face of a clock, you can even see a reflection of the light source. Remember, the image of the flower is the light source.
 
 ![flower shining on clock closeup](/blog/img/2019-08/flower3.jpg)
-
 
 ## 3. Scene Lighting from 360 Images
 
@@ -69,10 +68,13 @@ EXR files combine light information from 11 different exposures into a single fi
 
 ![EXR 11](/blog/img/2019-08/exr-11.jpg)
 
-
 ## 4. Automatically Generate EXR Files Inside the THETA
 
-Kasper Oerlemans created Authydra to automatically create high quality EXR files inside of the RICOH THETA V or Z1 cameras. The scene below was created by Alexandre Dizeux using Blender as a test of Authydra.
+Kasper Oerlemans created Authydra to automatically create high quality EXR files inside of the RICOH THETA V or Z1 cameras. 
+If you have a RICOH THETA V, make sure you're running the latest firmware.  There were problems with Authydra and HDR2EXR with
+RICOH THETA V firmware 2.50.2 and earlier.
+
+The scene below was created by Alexandre Dizeux using Blender as a test of Authydra.
 
 ![Authydra demo](/blog/img/2019-08/authydra-demo.jpg)
 
