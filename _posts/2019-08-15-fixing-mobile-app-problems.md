@@ -11,7 +11,7 @@ Your THETA mobile app connects to your THETA, but you can't take a picture
 or adjust the settings. Here are tips to get your mobile app working again
 with THETA SC, S, V, and Z1.
 
-## Upgrade Firmware
+## 1. Upgrade Firmware
 
 ![firmware upgrade](/blog/img/2019-08/firmware-upgrade.png)
 
@@ -25,7 +25,7 @@ This video will help you with the firmware upgrade process.
 
 
 
-## Clear All Settings from Camera
+## 2. Clear All Settings from Camera
 
 ![reset button](/blog/img/2019-08/reset.png)
 
@@ -51,7 +51,7 @@ Note that clearing the settings has also worked for other problems, including
 [problems with self timer activation](https://community.theta360.guide/t/theta-v-3-00-1-solved-self-timer-activates-for-video-only/4516?u=codetricity).
 
 
-## Power Cycle
+## 3. Power Cycle
 
 Make sure you press and hold the power button for longer than 8 seconds. This will turn off the THETA V and reset the THETA SC and THETA S.
 
@@ -59,7 +59,7 @@ See this post on Facebook from someone with a THETA SC.
 
 ![reset button](/blog/img/2019-08/power-down.png)
 
-## Disable Mobile Phone Battery Optimization
+## 4. Disable Mobile Phone Battery Optimization
 
 ![battery optimization 1](/blog/img/2019-08/battery-optimization.png)
 
@@ -72,7 +72,7 @@ See this post on Facebook from someone with a THETA SC.
 ![battery optimization 5](/blog/img/2019-08/optimization-5.png)
 
 
-## Disable Mobile Data When Using Mobile App
+## 5. Disable Mobile Data When Using Mobile App
 
 Some phones have problems staying connected to the RICOH THETA camera as it
 does not provide Internet access.  The phone will automatically try to push
