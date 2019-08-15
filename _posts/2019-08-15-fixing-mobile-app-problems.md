@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Fixing RICOH THETA Mobile App Problems"
+title:  "5 Most Effective Fixes For RICOH THETA Mobile App Problems"
 date:   2019-08-15
 author: "Craig Oda"
 categories: mobile
