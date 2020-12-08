@@ -7,7 +7,7 @@ author: "community"
 categories: web
 ---
 
-https://github.com/theta-skunkworks/theta-plugin-extendedpreview
+[GitHub](https://github.com/theta-skunkworks/theta-plugin-extendedpreview)
 
 # Extended Live-Preview THETA Plug-in Sample
 
@@ -23,10 +23,10 @@ The usage of extended commands and examples of applications are described below.
 
 The IP address is the same as when not launching the plugin. It depends on the WLAN mode of THETA as follows.
 
-|WLAN mode of THETA|IP address|
+| WLAN mode of THETA | IP address |
 | --- | --- |
-|AP mode|192.168.1.1|
-|CL mode|IP address assigned to THETA by router|
+| AP mode | 192.168.1.1 |
+| CL mode | IP address assigned to THETA by router |
 
 The port number is 8888
 
@@ -74,12 +74,12 @@ In the case of AP mode:
 
 List of extended commands
 
-|No|Command Name|
+| No | Command Name |
 |---|---|
-|1|camera.getPreviewStat|
-|2|camera.startPreview|
-|3|camera.stopPreview|
-|4|camera.getPreviewFrame|
+| 1 | camera.getPreviewStat |
+| 2 | camera.startPreview |
+| 3 | camera.stopPreview |
+| 4 | camera.getPreviewFrame |
 
 
 ### camera.getPreviewStat
@@ -110,7 +110,7 @@ Start live-preview acquisition inside THETA plug-in.
 
 |Name|Type|Description|
 |---|---|---|
-|formatNo|Integer|1:640 x 320 pixels 8fps, <br>2:640 x 320 pixels 30fps, <br>3:1024 x 512 pixels 8fps, <br>4:1024 x 512 pixels 30fps, <br>5:1920 x 960 pixels 8fps<br>Optional. If omitted 4.|
+|formatNo|Integer|1:640 x 320 pixels 8fps, 2:640 x 320 pixels 30fps, 3:1024 x 512 pixels 8fps, 4:1024 x 512 pixels 30fps, 5:1920 x 960 pixels 8fps Optional. If omitted 4.|
 
 #### Results
 
@@ -143,8 +143,8 @@ Get the latest one frame of live-preview.
 
 |Name|Type|Description|
 |---|---|---|
-|resizeWidth|Integer|Do not resize : 0<br>Minimum value (minwidth): 2<br>Maximum value (maxwidth): same as createScaledBitmap ()<br>Optional. If omitted, same as do not resize.|
-|quality|Integer|Minimum value (minquality): 0<br>Maximum value (maxquality): 100<br>Optiona. If omitted, 100.|
+|resizeWidth|Integer|Do not resize : 0 Minimum value (minwidth): 2 Maximum value (maxwidth): same as createScaledBitmap ()Optional. If omitted, same as do not resize.|
+|quality|Integer|Minimum value (minquality): 0 Maximum value (maxquality): 100 Optional. If omitted, 100.|
 
 #### Results
 
@@ -165,14 +165,15 @@ Short press the Mode button to switch the live-preview acquisition state (on/off
 This sample program does not operate the THETA V LED and displays a live-preview on THETA Z1 OLED.
 The display of the THETA Z1 OLED display changes in the order of "normal display", "edge display", and "difference between frames" each time the WLAN button is pressed.
 
-![image|640x360](https://community.theta360.guide/uploads/default/original/2X/1/156533a9f3a2d4f9f5f0f870342a026407feebd2.png) 
+![image](https://community.theta360.guide/uploads/default/original/2X/1/156533a9f3a2d4f9f5f0f870342a026407feebd2.png) 
 
 
 This corresponds to the part of the source code below that is abbreviated as "**** OLED display sample code ****".<br>
 Please delete or rewrite this part according to your own purpose.
 
 
-```:MainActivity.java
+```
+MainActivity.java
     //==============================================================
     // OLED Thread
     //==============================================================
@@ -222,12 +223,12 @@ Please delete or rewrite this part according to your own purpose.
 A live-preview can be displayed on the WebUI to perform exposure compensation and shooting.
 By modifying the HTML files and javascript under assets, you can remotely control THETA with more commands.
 
-![image|640x360](https://community.theta360.guide/uploads/default/original/2X/a/a04ada45446093141601c221569987c516a8d78b.png) 
+![image](https://community.theta360.guide/uploads/default/original/2X/a/a04ada45446093141601c221569987c516a8d78b.png) 
 
 When THETA is set to CL mode and connected to the local network
 Live-previews can be obtained simultaneously from multiple devices on the same network.
 
-![image|640x360](https://community.theta360.guide/uploads/default/original/2X/b/b57929fabd3cc83e48e9afd45ce0c9f868591e2d.png) 
+![image](https://community.theta360.guide/uploads/default/original/2X/b/b57929fabd3cc83e48e9afd45ce0c9f868591e2d.png) 
 
 This type of usage places a heavy load on THETA, but you can reduce the load by adjusting the frequency of frame updates from the browser.
 The following is the relevant part of the source code. Currently, the code attempts to update the frame at intervals of about 30 ms.
@@ -243,7 +244,7 @@ function repeat() {
       break;
     }
   }
-  updatePreviwFrame();
+  updatePreviewFrame();
   updatePreviewStat();
   updateEv();
 }
@@ -255,7 +256,6 @@ function repeat() {
 Live-previews can be displayed on any device capable of HTTP communication, not just browsers.
 
 The following is an example of displaying the live-preview on [M5 Stack](https://m5stack.com/).<br>
-See [M5Stack_Sample](M5Stack_Sample) for details.
 
 
 ## Development Environment
