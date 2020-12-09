@@ -110,7 +110,7 @@ This is a side topic, but when checking include C++ support in Android Studio in
 
 — Plus adding the following configuration items inside build.gradle.
 
-'''
+```
 android {
     ・・・
     externalNativeBuild {
@@ -119,7 +119,7 @@ android {
         }
     }
 }
-'''
+```
 
 These are items necessary to use native language, and these are added to the sample code.
 
