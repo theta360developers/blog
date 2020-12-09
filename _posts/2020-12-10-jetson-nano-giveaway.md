@@ -9,6 +9,8 @@ categories:
 
 # THIS IS A FAKE PLACEHOLDER
 
+[Rules](https://theta360developers.github.io/blog/2020/12/10/jetson-giveaway-rules.html)
+
 ## Jetson Nano with Z1
 
 ![Jetson Nano](/blog/img/2020-12/nano_theta.png)
@@ -38,3 +40,6 @@ PWM fan is not included, but can be purchased on Amazon for $10.  The Nano comes
 
 ![robot](/blog/img/2020-12/robot.png)
 
+## How to Enter
+
+[Rules](https://theta360developers.github.io/blog/2020/12/10/jetson-giveaway-rules.html)
