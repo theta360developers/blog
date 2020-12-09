@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Create Instagrammable Pictures Using OpenGL Inside RICOH THETA"
+title:  "Running OpenCV In Your RICOH THETA"
 date:   2020-12-09
 author: "community"
 categories: "Image Processing Technologies"
