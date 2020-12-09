@@ -17,7 +17,7 @@ I wanted to show something unique using 360 degree images taken with THETA, so I
 
 For those who are not familiar with Tiny Planets, here is an example.
 
-![sunflower](../img/2019-08/sunflower.jpg)
+![sunflower](../img/2020-12/sunflower.jpg)
 
 360 degree pictures can be shown like this. Instagrammable!
 
