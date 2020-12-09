@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "ECreate Instagrammable Pictures Using OpenGL Inside RICOH THETA"
-date:   2020-12-08
+date:   2020-12-09
 author: "community"
 categories: "Image Processing Technologies"
 ---
@@ -17,7 +17,7 @@ I wanted to show something unique using 360 degree images taken with THETA, so I
 
 For those who are not familiar with Tiny Planets, here is an example.
 
-![sunflower](blog/img/2019-08/sunflower.jpg)
+![sunflower](/blog/img/2019-08/sunflower.jpg)
 
 360 degree pictures can be shown like this. Instagrammable!
 
@@ -110,6 +110,7 @@ This is a side topic, but when checking include C++ support in Android Studio in
 
 — Plus adding the following configuration items inside build.gradle.
 
+'''
 android {
     ・・・
     externalNativeBuild {
@@ -118,6 +119,7 @@ android {
         }
     }
 }
+'''
 
 These are items necessary to use native language, and these are added to the sample code.
 
