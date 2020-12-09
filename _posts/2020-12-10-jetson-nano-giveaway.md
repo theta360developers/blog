@@ -40,6 +40,13 @@ PWM fan is not included, but can be purchased on Amazon for $10.  The Nano comes
 
 ![robot](/blog/img/2020-12/robot.png)
 
+## Control Camera with USB Cable
+
+Turn on, turn off, sleep, wake, set to live stream, set for still image.
+
+![USB API](/blog/img/2020-12/usb_api_3.gif)
+
+
 ## How to Enter
 
 [Rules](https://theta360developers.github.io/blog/2020/12/10/jetson-giveaway-rules.html)
