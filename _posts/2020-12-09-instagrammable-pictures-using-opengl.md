@@ -177,7 +177,7 @@ http://theta360.guide/plugin-guide/tutorialvysor/
 
 When the plug-in is implemented and shutter button is pressed…
 
-![tiny planet](/blog/img/2019-08/tiny-planet.jpg)
+![tiny planet](../img/2020-12/tiny-planet.jpg)
 
 It's a Tiny Planet!
 
