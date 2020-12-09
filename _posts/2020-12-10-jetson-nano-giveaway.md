@@ -33,3 +33,8 @@ PWM fan is not included, but can be purchased on Amazon for $10.  The Nano comes
 ## Use CUDA
 
 ![CUDA](https://codetricity.github.io/theta-linux/images/hardware/jetson_monitor/jtop_info.png)
+
+## Nice for Robotics Prototypes
+
+![robot](/blog/img/2020-12/robot.png)
+
