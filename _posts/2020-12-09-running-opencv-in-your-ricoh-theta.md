@@ -9,9 +9,7 @@ categories: "Image Processing Technologies"
 
 This article was [originally published](https://qiita.com/roohii_3/items/63a546169981f41967df) in Japanese by [roohii_3](https://qiita.com/roohii_3) on the Qiita blogging site.
 
-**Currently (Feb 4) there is no repo publicly available. The first person in the community who builds this code and posts a working apk to GitHub, we will give out a Free Unity Virtual Reality Course ($79 value). Please help out the community!**
-
-**UPDATE: Woohoo, thank you @Kasper ! We got the repo (Feb 9) from community member @Kasper and have built and used it ourselves. Nice work! Details in replies below this main post.**
+Special thank you - We got the repo from community member @Kasper and have built and used it ourselves. Nice work! Details in replies below this main post.
 
 ---
 I attempted to run OpenCV inside a RICOH THETA. I hope this will be a good reference for people interested in building an app using OpenCV with Android Studio + NDK (ndk-build). 
@@ -38,7 +36,7 @@ By combining OpenCV + the Cloud, using a THETA plug-in, it might be possible to 
 
 ### OpenCV Android pack
 
-1. Download the newest version of  “Android pack”  from the [OpenCV Releases page](https://opencv.org/releases.html).
+1. Download the newest version of  “Android pack” from the [OpenCV Releases page](https://opencv.org/releases.html).
 
 2. After unzipping the downloaded file, save it to any convenient location. I renamed  ”OpenCV-android-sdk” to ”OpenCV-3.4.4-android-sdk”, and saved it here: 
 
@@ -375,16 +373,3 @@ Please be aware that the THETA with its serial number registered with the progra
 For detailed information regarding partner program please see [here](https://api.ricoh/products/theta-plugin/).
 
 The registration form is [here](https://www8.webcas.net/db/pub/ricoh/thetaplugin/create/input).
-
----
-# Extra Resources
-
-If you've registered with the Partner Program (putting your THETA in developer mode) and have sent in your serial number (allowing you to develop and upload plug-ins), I've got some super useful resources for you! 
-
-theta360.guide has pulled together a Top 10 THETA Developer Tips, pulling together feedback from developers, saving you time. We also have some choice apks that you can load immediately and try out with documentation and source code.
-
-Work with speaker volume, record audio files, build a Web GUI for your THETA and lots more!
-
-Send us your contact info and you'll get an email will all the download links.
-
-[https://mailchi.mp/theta360/theta-plugin-resources](https://mailchi.mp/theta360/theta-plugin-resources)
