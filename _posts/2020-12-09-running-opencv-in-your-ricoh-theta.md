@@ -9,7 +9,9 @@ categories: "Image Processing Technologies"
 
 This article was [originally published](https://qiita.com/roohii_3/items/63a546169981f41967df) in Japanese by [roohii_3](https://qiita.com/roohii_3) on the Qiita blogging site.
 
-Special thank you - We got the repo from community member @Kasper and have built and used it ourselves. Nice work! Details in replies below this main post.
+---
+
+Special thank you - We got the repo from community member @Kasper and have built and used it ourselves. Nice work! 
 
 ---
 I attempted to run OpenCV inside a RICOH THETA. I hope this will be a good reference for people interested in building an app using OpenCV with Android Studio + NDK (ndk-build). 
