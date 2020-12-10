@@ -20,7 +20,7 @@ You can open and play the RTSP Stream from RTSP client tool like VLC.
 
 1. Set RICOH THETA in Wireless LAN client mode.
 
-[Video](https://youtu.be/tkqyBNOWWIY)
+[Video](https://www.youtube.com/watch?v=tkqyBNOWWIY&feature=youtu.be)
 
 [Manual](https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html)
 
