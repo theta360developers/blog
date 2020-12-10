@@ -387,4 +387,4 @@ Work with speaker volume, record audio files, build a Web GUI for your THETA and
 
 Send us your contact info and you'll get an email will all the download links.
 
-https://mailchi.mp/theta360/theta-plugin-resources
+[https://mailchi.mp/theta360/theta-plugin-resources](https://mailchi.mp/theta360/theta-plugin-resources)
