@@ -20,8 +20,8 @@ You can open and play the RTSP Stream from RTSP client tool like VLC.
 
 1. Set RICOH THETA in Wireless LAN client mode.
 
-Video: https://www.youtube.com/watch?v=tkqyBNOWWIY&t=9s
-Manual:https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html
+Video: [https://youtu.be/tkqyBNOWWIY](https://youtu.be/tkqyBNOWWIY)
+Manual: [https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html](https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html)
 
 2. In the basic app for smartphone, select "Settings" > "Camera settings" and set "THETA RTSP Streaming" in "Plug-in", then tap the icon displayed next to "Starting plug-in".
 
@@ -70,9 +70,7 @@ Move the slider switch for Camera permissions.
 
 ![z1 running](/blog/img/2020-12/z1-running.png)
 
-When the plug-in is running, the 
-blue LED on the Z1 body turns aqua.
-The OLED shows a puzzle piece.
+When the plug-in is running, the blue LED on the Z1 body turns aqua. The OLED shows a puzzle piece.
 
 The USB cable is to supply power to the camera.
 
