@@ -62,11 +62,11 @@ By the way, I've referred to below links regarding OpenGL.
 
 —Multiplatform OpenGL ES Manual (basic version)
 
-http://www.cutt.co.jp/book/978-4-87783-301-5.html [in Japanese]
+[http://www.cutt.co.jp/book/978-4-87783-301-5.htm](http://www.cutt.co.jp/book/978-4-87783-301-5.html) [in Japanese]
 
 — OpenGL ES Manual for multiplatform (practical use version)
 
-http://www.cutt.co.jp/book/978-4-87783-343-5.html [in Japanese]
+[http://www.cutt.co.jp/book/978-4-87783-343-5.html](http://www.cutt.co.jp/book/978-4-87783-343-5.html) [in Japanese]
 
 Note: OpenGL ES is a flavor of the OpenGL specification intended for embedded devices.
 
@@ -127,7 +127,7 @@ In my sample code, the cpp folder is renamed to jni.
 
 Please see the following link for more details.
 
-https://developer.android.com/studio/projects/add-native-code
+[https://developer.android.com/studio/projects/add-native-code](https://developer.android.com/studio/projects/add-native-code)
 
 ## About Native Code
 
@@ -163,9 +163,9 @@ Release process occurs here.
 
 ## About Java and Native Function Exchange
 
-Please refer to the following link.
+Please refer to the following link:
 
-https://community.theta360.guide/t/how-android-developers-can-build-fastcv-apps-for-the-ricoh-theta-part-1/3920
+[https://community.theta360.guide/t/how-android-developers-can-build-fastcv-apps-for-the-ricoh-theta-part-1/3920](https://community.theta360.guide/t/how-android-developers-can-build-fastcv-apps-for-the-ricoh-theta-part-1/3920)
 
 # Displaying Tiny Planets
 
@@ -173,7 +173,7 @@ Checked the processed images using Vysor.
 
 For Vysor, please refer to the following article.
 
-http://theta360.guide/plugin-guide/tutorialvysor/
+[http://theta360.guide/plugin-guide/tutorialvysor/](http://theta360.guide/plugin-guide/tutorialvysor/)
 
 When the plug-in is implemented and shutter button is pressed…
 
@@ -181,9 +181,9 @@ When the plug-in is implemented and shutter button is pressed…
 
 It's a Tiny Planet!
 
-By the way, plug-in source code is available GitHub.
+By the way, plug-in source code is available GitHub:
 
-https://github.com/theta-skunkworks/theta-plugin-opengl-sample
+[https://github.com/theta-skunkworks/theta-plugin-opengl-sample](https://github.com/theta-skunkworks/theta-plugin-opengl-sample)
 
 However, since this is still a work in progress, this cannot be used as a plug-in yet.
 
