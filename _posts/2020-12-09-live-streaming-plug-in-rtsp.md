@@ -12,7 +12,7 @@ This is a Live Streaming Plug-in for the RICOH THETA V and Z1.  It starts an RTS
 server on the THETA.
 
 This software was developed by Science Arts.  The THETA V plug-in is available in the
-[plug-in store](https://pluginstore.theta360.com/plugins/com.sciencearts.rtspstreaming/).  I have heard from Science Arts that they are submitting the Z1 to the Plug-in Store.  You do not need to compile the plug-in from source unless you intend to modify the source code.   If you just want to use the plug-in, get the finished plug-in from the store.  It is free. 
+[RICOH THETA Plug-in Store](https://pluginstore.theta360.com/plugins/com.sciencearts.rtspstreaming/).  I have heard from Science Arts that they are submitting the Z1 to the Plug-in Store.  You do not need to compile the plug-in from source unless you intend to modify the source code.   If you just want to use the plug-in, get the finished plug-in from the store.  It is free. 
 
 ## Usage
 
@@ -21,6 +21,7 @@ You can open and play the RTSP Stream from RTSP client tool like VLC.
 1. Set RICOH THETA in Wireless LAN client mode.
 
 Video: [https://youtu.be/tkqyBNOWWIY](https://youtu.be/tkqyBNOWWIY)
+
 Manual: [https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html](https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html)
 
 2. In the basic app for smartphone, select "Settings" > "Camera settings" and set "THETA RTSP Streaming" in "Plug-in", then tap the icon displayed next to "Starting plug-in".
@@ -30,6 +31,7 @@ If the application is launched successfully, video LED on RICOH THETA turns on.
 3. Find out and remember the IP Address of RICOH THETA.
 
 i. Open the basic app for smartphone.
+
 ii. select "Setting" > "Camera setting" > "Camera version", then get IP Address.
 
 
@@ -38,10 +40,12 @@ ii. select "Setting" > "Camera setting" > "Camera version", then get IP Address.
 vlc live streaming example
 
 i. Open the vlc.
+
 ii. select "Media" > "Open Network Stream", then set a network URL like below.
 rtsp://[your RICOH THETA IP Address]:8554/live?resolution=1920x960
 You can set a resolution of camera by the parameter which name of "resolution".
 You can set the "resolution" to "640x320", "1024x512", "1920x960" or "3840x1920". "3840x1920" may not work because of bandwidth.
+
 iii. If you want to change the resolution, push Stop Playback Button and retry (ii).
 
 ### Select App in Settings to set permissions
