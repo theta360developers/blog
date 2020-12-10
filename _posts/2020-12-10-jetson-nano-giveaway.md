@@ -49,4 +49,10 @@ Turn on, turn off, sleep, wake, set to live stream, set for still image.
 
 ## How to Enter
 
-[Rules](https://theta360developers.github.io/blog/2020/12/10/jetson-giveaway-rules.html)
+![How to enter](/blog/img/2020-12/giveaway_signup.gif)
+
+
+1. Open the left drawer with by clicking on the hamburger menu
+2. Select Jetson Giveaway
+3. On the next screen, press the amber button in the upper right of the screen, "Enter Giveaway"
+4. That's it!
