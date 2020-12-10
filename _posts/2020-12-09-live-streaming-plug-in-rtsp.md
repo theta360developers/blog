@@ -20,9 +20,9 @@ You can open and play the RTSP Stream from RTSP client tool like VLC.
 
 1. Set RICOH THETA in Wireless LAN client mode.
 
-Video: [https://youtu.be/tkqyBNOWWIY](https://youtu.be/tkqyBNOWWIY)
+[Video](https://youtu.be/tkqyBNOWWIY)
 
-Manual: [https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html](https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html)
+[Manual](https://theta360.com/en/support/manual/v/content/prepare/prepare_08.html)
 
 2. In the basic app for smartphone, select "Settings" > "Camera settings" and set "THETA RTSP Streaming" in "Plug-in", then tap the icon displayed next to "Starting plug-in".
 
