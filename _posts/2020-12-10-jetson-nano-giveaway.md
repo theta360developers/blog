@@ -11,9 +11,15 @@ categories:
 
 [Rules](https://theta360developers.github.io/blog/2020/12/10/jetson-giveaway-rules.html)
 
+
+
+
 ## Jetson Nano with Z1
 
 ![Jetson Nano](/blog/img/2020-12/nano_theta.png)
+
+![How to enter](/blog/img/2020-12/giveaway_signup.gif)
+
 
 More information on the Nano is available [on Amazon](https://amzn.to/3396bbI). 
 
