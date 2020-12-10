@@ -357,7 +357,7 @@ When executed, the following will be displayed.
 
 *THETA does not have a display, so [Vysor](https://www.vysor.io/) is used. 
 
-![68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3330343730392f32663133303638662d643830332d326466342d313839392d3864326432643764373163642e6a706567|281x500](upload://ph9QgmgkyyAs1Viffm6mMkFXH6T.jpeg) 
+![opencv sample](/blog/img/2020-12/opencvsample.jpg)
 
 # Conclusion
 
