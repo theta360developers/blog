@@ -72,7 +72,7 @@ From [Android Developers](https://developer.android.com/studio/), download and i
 
 From the link below, download and install ”Java SE Developer Kit 8”
 
-https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+[https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ### RICOH THETA V
 
@@ -113,7 +113,7 @@ Open Android Studio, select "File > New Project”. Follow the screen and create
 
 Create a "jni" directory under the “app” directory, and create "Android.mk” and  “Application.mk”.
 
-![68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3330343730392f62393062323739382d633832302d373063612d323734612d6231363338373663613666312e706e67|339x437](upload://uGLMFgkB5SMHnT9WDmJUVI1H5b8.png) 
+![application.mk](/blog/img/2020-12/applicationmk.png)
 
 For each file, input the following:
 
@@ -151,7 +151,8 @@ Create a "jniLibs" directory under the “app” directory, then copy and paste 
     What to copy C:/(Where OpenCV Android pack is located)/sdk/native/libs/armeabi-v7a
     Where to copy to C:/(Where the Project File is located)/app/jniLibs/armeabi-v7a
 
-![68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3330343730392f36343236393633622d626566632d336136302d626136362d3265336463333435363237352e706e67|353x331](upload://tUGcB2s9LCFGM0lxZSRLfOr1HpS.png) 
+![create jnilibs dir](/blog/img/2020-12/jnilibs.png)
+ 
 
 4. Editing build.gradle
 
@@ -180,7 +181,8 @@ Right click “app” in the project tree, and select "Link C++ Project with Gra
 
 Specify the path of "ndk-build" in an open window of the Build System, set "Android.mk" in the path for Project Path, and click OK.
 
-![68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3330343730392f63393238376362612d613863632d313363302d353861342d3338356139326632323732322e706e67|509x234](upload://f4aKraxypmDdLEVxYV8OsRHGjcC.png) 
+![ndk-build](/blog/img/2020-12/ndk-build.png)
+
 
 # Implementation
 
@@ -284,7 +286,7 @@ Under "app > jni”, create a C/C++ file with any name.
 
 In `LOCAL_SRC_FILES` of “Android.mk”, set the file name that you just created. 
 
-![68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3330343730392f64336263623036642d393632652d656363372d633063642d6539666235363563643333632e706e67|298x197](upload://tTfDSRiwVYRpUJ06H2hLr0xlWBE.png) 
+![sample](/blog/img/2020-12/samplecpp.png)
 
 There seems to be unique rules for functions used in Java ↔ Native(C/C++). It's defined here: 
 
