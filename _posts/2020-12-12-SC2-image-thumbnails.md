@@ -7,12 +7,7 @@ author: "community"
 categories: 
 ---
 
-<img src="images/theta-dotguide-logo.png" width=20%>
-
-
-# RICOH THETA SC2 Image Thumbnails
-
-Last updated August 12, 2020.
+_Last updated August 12, 2020._
 
 This is a community document based on contributions of
 informal test results 
