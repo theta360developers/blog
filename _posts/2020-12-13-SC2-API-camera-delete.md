@@ -51,7 +51,7 @@ This is equivalent to firmware 1.31.
 
 Camera contains 5 images initially.
 
-![camera delete all](doc/images/delete.png)
+![camera delete all](/blog/img/2020-12/delete.png)
 
 First, check the files in the camera.
 
