@@ -7,9 +7,7 @@ author: "community"
 categories: 
 ---
 
-# SC2 API September Community Update
-
-Last updated September 18, 2020.
+_Last updated September 18, 2020._
 
 This is a community document based on contributions of
 informal test results 
@@ -20,17 +18,17 @@ own tests prior to deployment in a business setting.  As these are
 unofficial tips, the official RICOH THETA API may change unexpectedly
 and these techniques could stop working. 
 
+## Problem Description and Fixes
+
+With SC2B firmware version 6.01 and SC2 firmware 1.31, it was
+not possible to delete all the files with a single API call. 
+
+New firmware addresses this problem. 
+
 ## Firmware Update
 
 * SC2 for business: 6.12 released on Aug 25, 2020
 * SC2: 1.42 released on September 3, 2020
-
-## Problem Description and Fixes
-
-With SC2B firmware version 6.01 and SC2 firmware 1.31, it was
-not possible to delete all the files  with a single API call.  
-
-New firmware addresses this problem. 
 
 ## Model
 
